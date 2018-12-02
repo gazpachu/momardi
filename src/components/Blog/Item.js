@@ -15,7 +15,6 @@ const Item = props => {
       frontmatter: {
         title,
         category,
-        author,
         cover: {
           children: [{ fluid }]
         }

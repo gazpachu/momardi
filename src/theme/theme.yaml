@@ -69,6 +69,7 @@ font:
     initial: 'Arial, sans-serif'
     target: &font-family-target 'Open Sans'
   weight:
+    light: 100
     standard: 400
     bold: 600
   size:
@@ -147,4 +148,3 @@ header:
     default: 80px
     fixed: 50px;
     homepage: 100px;
-

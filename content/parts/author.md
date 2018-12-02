@@ -2,4 +2,4 @@
 title: author
 ---
 
-**Mr. Gatsby** Proin ornare ligula eu tellus tempus elementum. Aenean [bibendum](/) iaculis mi, nec blandit lacus interdum vitae. Vestibulum non nibh risus, a scelerisque purus. Blandit lacus interdum vitae. Vestibulum non nibh risus, a scelerisque purus.
+Article by **Tuesday Gutierrez**. I'm a former digital marketing manager for the London 2012 Festival, the largest UK festival ever staged. This is my blog about contemporary art, design, film, photography and all that move my soul.

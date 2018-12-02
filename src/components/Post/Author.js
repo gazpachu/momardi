@@ -32,10 +32,10 @@ const Author = props => {
           border-radius: 65% 75%;
           border: 1px solid ${theme.line.color};
           display: inline-block;
-          height: 50px;
-          margin: 5px 20px 0 0;
+          height: 70px;
+          margin: 0 20px 0 0;
           overflow: hidden;
-          width: 50px;
+          width: 70px;
         }
         .avatar img {
           width: 100%;

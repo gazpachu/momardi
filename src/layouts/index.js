@@ -19,16 +19,16 @@ class Layout extends React.Component {
     super();
 
     this.state = {
+      font100loaded: false,
       font400loaded: false,
-      font600loaded: false,
       screenWidth: 0,
       headerMinimized: false,
       theme: themeObjectFromYaml
     };
 
     if (typeof window !== `undefined`) {
+      this.loadFont("font100", "Open Sans", 100);
       this.loadFont("font400", "Open Sans", 400);
-      this.loadFont("font600", "Open Sans", 600);
     }
   }
 
@@ -112,7 +112,7 @@ class Layout extends React.Component {
 
           return (
             <ThemeContext.Provider value={this.state.theme}>
-              <FontLoadedContext.Provider value={this.state.font400loaded}>
+              <FontLoadedContext.Provider value={this.state.font100loaded}>
                 <ScreenWidthContext.Provider value={this.state.screenWidth}>
                   <React.Fragment>
                     <Header
@@ -141,14 +141,14 @@ class Layout extends React.Component {
                         padding: 0;
                       }
                       body {
-                        font-family: ${this.state.font400loaded
+                        font-family: ${this.state.font100loaded
                           ? "'Open Sans', sans-serif;"
                           : "Arial, sans-serif;"};
                       }
                       h1,
                       h2,
                       h3 {
-                        font-weight: ${this.state.font600loaded ? 600 : 400};
+                        font-weight: 100;
                         line-height: 1.1;
                         letter-spacing: -0.03em;
                         margin: 0;
@@ -160,7 +160,7 @@ class Layout extends React.Component {
                         margin: 0;
                       }
                       strong {
-                        font-weight: ${this.state.font600loaded ? 600 : 400};
+                        font-weight: 400;
                       }
                       a {
                         text-decoration: none;
@@ -169,6 +169,13 @@ class Layout extends React.Component {
                       main {
                         width: auto;
                         display: block;
+                      }
+                      figcaption {
+                        text-align: center;
+                        font-size: 14px;
+                        font-style: italic;
+                        color: #888;
+                        margin-bottom: 40px;
                       }
                     `}</style>
                   </React.Fragment>

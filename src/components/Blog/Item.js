@@ -1,4 +1,4 @@
-import { FaArrowRight } from "react-icons/fa/";
+import { FaAngleRight } from "react-icons/fa/";
 import { FaCalendar } from "react-icons/fa/";
 import { FaTag } from "react-icons/fa/";
 import Img from "gatsby-image";
@@ -30,7 +30,7 @@ const Item = props => {
             <Img fluid={fluid} />
           </div>
           <h1>
-            {title} <FaArrowRight className="arrow" />
+            {title} <FaAngleRight className="arrow" />
           </h1>
           <p className="meta">
             <span>
@@ -221,7 +221,6 @@ const Item = props => {
               display: inline-block;
               fill: ${theme.color.special.attention};
               stroke: ${theme.color.special.attention};
-              stroke-width: 40;
               stroke-linecap: round;
               opacity: 0;
               transition: all 0.5s;

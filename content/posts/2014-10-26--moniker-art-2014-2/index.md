@@ -24,6 +24,6 @@ Big star names like Shepard Fairey had one large original artwork and Moniker Pr
 
 
 Read more:
-[Street Art News: Moniker Art Fair
+- [Street Art News: Moniker Art Fair
 ](http://www.streetartnews.net/2014/10/coverage-moniker-art-fair-2014-in.html)
-[Cool Hunting: Moniker Art Fair](http://www.coolhunting.com/culture/moniker-art-fair-2014-london.php)
+- [Cool Hunting: Moniker Art Fair](http://www.coolhunting.com/culture/moniker-art-fair-2014-london.php)

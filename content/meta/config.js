@@ -1,7 +1,7 @@
 module.exports = {
   siteTitle: "Momardi - Tuesday Gutierrez", // <title>
   shortSiteTitle: "Momardi", // <title> ending for posts and pages
-  siteDescription: "Personal website of Tuesday Gutierrez. A Content Manager and Visual Artist",
+  siteDescription: "Tuesday Gutierrez. Creative writer, agile content manager and visual artist",
   siteUrl: "https://momardi.com",
   // pathPrefix: "",
   siteImage: "preview.jpg",

@@ -1,0 +1,262 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/momardi/component---src-templates-blog-post-js.5f396faadd7d5b28094a.css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/momardi/static/montserrat-latin-100-50d279861fb3cbfed809eae6ed8b9ac9.woff2) format("woff2"),url(/momardi/static/montserrat-latin-100-5e334eff013f12fbb8ed72c2a253f119.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/momardi/static/montserrat-latin-100italic-8c0705336558194799a8729840d7ed9d.woff2) format("woff2"),url(/momardi/static/montserrat-latin-100italic-03e19243272affe738654a157625ec26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/momardi/static/montserrat-latin-200-4343d3d91a9446226e7a8bbb024111ad.woff2) format("woff2"),url(/momardi/static/montserrat-latin-200-f2022ecd65a0703ec3edcb7641709a75.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/momardi/static/montserrat-latin-200italic-116c4c4b14ef76b0555da09854512022.woff2) format("woff2"),url(/momardi/static/montserrat-latin-200italic-89614a6008fc5c60739012463d0ee7e6.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/momardi/static/montserrat-latin-300-d2ad295b60682a6537c358e06ea80c61.woff2) format("woff2"),url(/momardi/static/montserrat-latin-300-3a371ee0d175f5c2b15ce1d6b981dc4e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/momardi/static/montserrat-latin-300italic-f6b6bf2431003f8142e800f9df157989.woff2) format("woff2"),url(/momardi/static/montserrat-latin-300italic-16521668f5f238098329cdd7d27c391e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/momardi/static/montserrat-latin-400-240a84447b78da0920fcb07e378f2c5f.woff2) format("woff2"),url(/momardi/static/montserrat-latin-400-b20cc131034316b1c85d0498fb9ed5c5.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/momardi/static/montserrat-latin-400italic-86172bb829de6be08b92512096b6aca6.woff2) format("woff2"),url(/momardi/static/montserrat-latin-400italic-9405e78785a55cf0e4ea7669d4616ea9.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/momardi/static/montserrat-latin-500-fb8d6b71dbe8d9294be43082936f649e.woff2) format("woff2"),url(/momardi/static/montserrat-latin-500-50825d47af7ae47e055018eb689c6c99.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/momardi/static/montserrat-latin-500italic-c0a555a4f8e997385a3eebbd4da0b9ee.woff2) format("woff2"),url(/momardi/static/montserrat-latin-500italic-635de59c4be86285b1f70068c95b9816.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/momardi/static/montserrat-latin-600-d5615136a08cfee70deb4be1ee1651df.woff2) format("woff2"),url(/momardi/static/montserrat-latin-600-f300da4fb4fe00e23915f62b2c643681.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/momardi/static/montserrat-latin-600italic-10f29d139edacde92df63374c5672568.woff2) format("woff2"),url(/momardi/static/montserrat-latin-600italic-2bc37d86a4ba12ce526c4af904a9946e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/momardi/static/montserrat-latin-700-7d77e1f03eefc452dab14d7f89080083.woff2) format("woff2"),url(/momardi/static/montserrat-latin-700-81826529772e52f0f14a4c73c2f2c7f1.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/momardi/static/montserrat-latin-700italic-1dd2b53f1567a29e0505de9b27c4352c.woff2) format("woff2"),url(/momardi/static/montserrat-latin-700italic-c162d257f5e9f9b108a96a604cfb2132.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/momardi/static/montserrat-latin-800-d4e7bf86bbd8e5f43ca73fa831218648.woff2) format("woff2"),url(/momardi/static/montserrat-latin-800-895aadbff357be35ac8dd107c7975ee7.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/momardi/static/montserrat-latin-800italic-fc0cbe442f7b3733c91e982e825c4daa.woff2) format("woff2"),url(/momardi/static/montserrat-latin-800italic-b3362875067300abedb7a8fb97903258.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/momardi/static/montserrat-latin-900-c8bdd772c0d1347720ff7e3fb72719f3.woff2) format("woff2"),url(/momardi/static/montserrat-latin-900-1b99ef78e627dd9bbd0ca4b5c0789547.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/momardi/static/montserrat-latin-900italic-cb72c1f90f66c124fb897a75bec64c78.woff2) format("woff2"),url(/momardi/static/montserrat-latin-900italic-b78bb9f8ecec6c5a924c873f1818095f.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/momardi/static/merriweather-latin-300-f015f1e9a46a3b9db4fd64564dacece4.woff2) format("woff2"),url(/momardi/static/merriweather-latin-300-92dfe81b725c342d31d962da975c07a6.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/momardi/static/merriweather-latin-300italic-7fd86b32accf2df4403d1d4fa3a81502.woff2) format("woff2"),url(/momardi/static/merriweather-latin-300italic-878b76f59d5ba58dd1652dc8d2a0f4f9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/momardi/static/merriweather-latin-400-12dbf4c00ae43698f278b099e4b0ec9e.woff2) format("woff2"),url(/momardi/static/merriweather-latin-400-1fffad22b085a877995812dbf1d9ac08.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/momardi/static/merriweather-latin-400italic-1e0d3e8121d88969bfb153c8f174b758.woff2) format("woff2"),url(/momardi/static/merriweather-latin-400italic-de18d4c4e8e808a7248a185f866ff094.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/momardi/static/merriweather-latin-700-dc8fec81a125fc63856587e6683da73b.woff2) format("woff2"),url(/momardi/static/merriweather-latin-700-d7d2ed8e58f303392cc3fc00ba3a9186.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/momardi/static/merriweather-latin-700italic-b7b7e5da4d7be8c12bd5a6c809edc8fc.woff2) format("woff2"),url(/momardi/static/merriweather-latin-700italic-6210a5fc1c54ca85a5d82aa85d7a9b5c.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/momardi/static/merriweather-latin-900-43f870d543dd89fbeb66d417c0d97276.woff2) format("woff2"),url(/momardi/static/merriweather-latin-900-8f3806df74937c7b8b53f24ae1e725d1.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/momardi/static/merriweather-latin-900italic-168c1ab28ed0e4e7d654334def288bc1.woff2) format("woff2"),url(/momardi/static/merriweather-latin-900italic-ae7778f01871e35ee142ef207b313b34.woff) format("woff")}figcaption{font-size:14px;color:grey;font-style:italic;margin-top:5px;text-align:center}</style><meta name="generator" content="Gatsby 2.0.60"/><link rel="alternate" type="application/rss+xml" href="/momardi/rss.xml"/><link rel="shortcut icon" href="/momardi/icons/icon-48x48.png"/><link rel="manifest" href="/momardi/manifest.webmanifest"/><meta name="theme-color" content="#663399"/><title data-react-helmet="true">1:54 Contemporary Art Fair 2014, Somerset House | Momardi</title><meta data-react-helmet="true" name="description" content="If you want to get a really good insight into the burgeoning contemporary African art scene, I hope you had a chance to see 1:54. With more…"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}</style><link as="script" rel="preload" href="/momardi/component---src-templates-blog-post-js-31d3b680c6f8ebc0fc87.js"/><link as="script" rel="preload" href="/momardi/app-bef4d960eb13ecef2792.js"/><link as="script" rel="preload" href="/momardi/1-1b87c73c26c76a3cb291.js"/><link as="script" rel="preload" href="/momardi/0-327661c7b7fc2a48bb3c.js"/><link as="script" rel="preload" href="/momardi/webpack-runtime-db7f2d96c3eec731f6a8.js"/><link rel="preload" href="/momardi/static/d/61/path---2014-10-18-154-contemporary-art-fair-2014-somerset-house-71-c-b60-UDSZMtmJivLZCpiaD4kbwAy6ME.json" as="fetch" crossOrigin="use-credentials"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group"><div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:2.625rem 1.3125rem"><h3 style="font-family:Montserrat, sans-serif;margin-top:0;margin-bottom:-1.75rem"><a style="box-shadow:none;text-decoration:none;color:inherit" href="/momardi/">Momardi</a></h3><h1>1:54 Contemporary Art Fair 2014, Somerset House</h1><p style="font-size:0.83255rem;line-height:1.75rem;display:block;margin-bottom:1.75rem;margin-top:-1.75rem">October 18, 2014</p><div><p>If you want to get a really good insight into the burgeoning contemporary African art scene, I hope you had a chance to see 1:54. With more than 27 galleries participating, Somerset House was a great exhibition space to bring this show together as it provided the perfect and intimate setting to observe and study the diverse but very solid output of these African artists. Compared to the frenetic Frieze Art fair, 1:54 is much more subdued which gave viewers the time to absorb every piece of artwork.</p>
+<p>Galleries had also been quite selective as they focussed on a few artists and a few pieces here and there rather than bombard the public with a whole bonanza. Surprisingly theres a lot of mixed media and digital art along side graffiti-like paintings from established artist Aboudia and metal sculptures of Romuald Hazoumee. There’s a lot of sculptures and installation pieces made from everyday materials that are transformed with African references. With all the art fairs this week, I wish I had more time to see 1:54 but I know that I’ll be back next year.  I predict that good things will come to 1:54 and it will just become bigger and better each year.</p>
+<p>
+  <figure class="gatsby-resp-image-figure" style="">
+  
+  <a
+    class="gatsby-resp-image-link"
+    href="/momardi/static/a209b8a73746afddd70bd9ca4d2eb5ab/ec4bb/2-Athi-Patra-Ruga_eumoiv.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 630px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 77.65625%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAQABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAMBAgX/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAQL/2gAMAwEAAhADEAAAAcl6rUoky//EABgQAAMBAQAAAAAAAAAAAAAAAAABAhIR/9oACAEBAAEFAslwuYNCrg6P/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFREBAQAAAAAAAAAAAAAAAAAAARD/2gAIAQIBAT8BGf/EABgQAQADAQAAAAAAAAAAAAAAAAAQITFB/9oACAEBAAY/AlRrXH//xAAZEAACAwEAAAAAAAAAAAAAAAAAAREhQWH/2gAIAQEAAT8hhSiCF1o+G+ipTGhHBYP/2gAMAwEAAgADAAAAEAgv/8QAGBEAAwEBAAAAAAAAAAAAAAAAAAERIUH/2gAIAQMBAT8QU6OXD//EABYRAQEBAAAAAAAAAAAAAAAAAAEAEf/aAAgBAgEBPxBAtb//xAAdEAEBAAIBBQAAAAAAAAAAAAABEQAxIUFhcYGR/9oACAEBAAE/ECBFUGC4F5dINd/eTet5h3gMSJtePmQFymBFcRo4ec//2Q=='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="Athi-Patra Ruga"
+        title="Athi-Patra Ruga. The Night of the Long Knives I, 2013. Archival Inkjet Print on Photorag Baryta Paper 150 x 190 cm. Courtesy the artist, WHATIFTHEWORLD"
+        src="/momardi/static/a209b8a73746afddd70bd9ca4d2eb5ab/8c020/2-Athi-Patra-Ruga_eumoiv.jpg"
+        srcset="/momardi/static/a209b8a73746afddd70bd9ca4d2eb5ab/da4c4/2-Athi-Patra-Ruga_eumoiv.jpg 158w,
+/momardi/static/a209b8a73746afddd70bd9ca4d2eb5ab/37caf/2-Athi-Patra-Ruga_eumoiv.jpg 315w,
+/momardi/static/a209b8a73746afddd70bd9ca4d2eb5ab/8c020/2-Athi-Patra-Ruga_eumoiv.jpg 630w,
+/momardi/static/a209b8a73746afddd70bd9ca4d2eb5ab/ec4bb/2-Athi-Patra-Ruga_eumoiv.jpg 640w"
+        sizes="(max-width: 630px) 100vw, 630px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    
+  <figcaption class="gatsby-resp-image-figcaption">Athi-Patra Ruga. The Night of the Long Knives I, 2013. Archival Inkjet Print on Photorag Baryta Paper 150 x 190 cm. Courtesy the artist, WHATIFTHEWORLD</figcaption>
+  </figure>
+      </p>
+<p>
+  <figure class="gatsby-resp-image-figure" style="">
+  
+  <a
+    class="gatsby-resp-image-link"
+    href="/momardi/static/e86b34cc4a7ac4f1c572fbd27d180093/ec4bb/Maimouna-Guerresi_q2an5x.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 630px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 65.3125%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIEBf/EABUBAQEAAAAAAAAAAAAAAAAAAAID/9oADAMBAAIQAxAAAAGtWmlTSEEf/8QAGhAAAgIDAAAAAAAAAAAAAAAAAAECAxESE//aAAgBAQABBQKyzU6OKLIJpQyz/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAGBAAAgMAAAAAAAAAAAAAAAAAECEAASL/2gAIAQEABj8CU0zTH//EABkQAQEBAQEBAAAAAAAAAAAAAAEAETEhgf/aAAgBAQABPyHPnUCPRzB9iZ2mX9i//9oADAMBAAIAAwAAABCz3//EABYRAQEBAAAAAAAAAAAAAAAAAAEQIf/aAAgBAwEBPxAMn//EABYRAQEBAAAAAAAAAAAAAAAAACEAEf/aAAgBAgEBPxDVm//EABwQAQEAAgIDAAAAAAAAAAAAAAERACExQVFhgf/aAAgBAQABPxBuYTD2+DI9kEabAh3vWdt5ZIfMRcUDkpOEblBLn//Z'); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="Maimouna-Guerresi"
+        title="Maimouna Guerresi, Egg Man, 2007 – M.I.A"
+        src="/momardi/static/e86b34cc4a7ac4f1c572fbd27d180093/8c020/Maimouna-Guerresi_q2an5x.jpg"
+        srcset="/momardi/static/e86b34cc4a7ac4f1c572fbd27d180093/da4c4/Maimouna-Guerresi_q2an5x.jpg 158w,
+/momardi/static/e86b34cc4a7ac4f1c572fbd27d180093/37caf/Maimouna-Guerresi_q2an5x.jpg 315w,
+/momardi/static/e86b34cc4a7ac4f1c572fbd27d180093/8c020/Maimouna-Guerresi_q2an5x.jpg 630w,
+/momardi/static/e86b34cc4a7ac4f1c572fbd27d180093/ec4bb/Maimouna-Guerresi_q2an5x.jpg 640w"
+        sizes="(max-width: 630px) 100vw, 630px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    
+  <figcaption class="gatsby-resp-image-figcaption">Maimouna Guerresi, Egg Man, 2007 – M.I.A</figcaption>
+  </figure>
+      </p>
+<p>
+  <figure class="gatsby-resp-image-figure" style="">
+  
+  <a
+    class="gatsby-resp-image-link"
+    href="/momardi/static/d3f6e27d6d078f246e23fcc90a31781c/ba22e/lawrence-lemaoana_bpndxt.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 480px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 144.79166666666666%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAdABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIDBAX/xAAWAQEBAQAAAAAAAAAAAAAAAAACAQT/2gAMAwEAAhADEAAAAdUSB0aRyXPJEY6owT//xAAdEAABBAIDAAAAAAAAAAAAAAACAAEDIRESBCJB/9oACAEBAAEFAvGfZDsiTKJqIu2VBYmV5XFuP//EABgRAAMBAQAAAAAAAAAAAAAAAAABIRAx/9oACAEDAQE/AeZRun//xAAWEQEBAQAAAAAAAAAAAAAAAAAQEQH/2gAIAQIBAT8BhcP/xAAdEAACAgMAAwAAAAAAAAAAAAAAAQJxECGRESJh/9oACAEBAAY/AvLlPp6yl0e30dmh2O3h2NfXh2f/xAAdEAACAgMBAQEAAAAAAAAAAAABEQAhMUHwsWFx/9oACAEBAAE/IVcRZwSzGCC19wgTGdlAYHTewEdPyM5YEIkcGUtXLs8Qha2PaCzhM9oT/9oADAMBAAIAAwAAABBsw8P/xAAYEQEBAAMAAAAAAAAAAAAAAAABACExUf/aAAgBAwEBPxBeJQdSJLMv/8QAFxEBAQEBAAAAAAAAAAAAAAAAAQAREP/aAAgBAgEBPxA0cALL/8QAHRABAAICAwEBAAAAAAAAAAAAAQARITFBUWFxsf/aAAgBAQABPxAPK3cIL3EFidjL+xc+tQmDthqLsltb8RcuyVazUBG/UAiFGavUEq0p9uFAUuvUOhwu95Rw1t3mXCZVD//Z'); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="lawrence-lemaoana"
+        title="Lawrence Lemaoana, fight the dying light, fabric and embroidery, 155×111 cm, 2008 – Afronova"
+        src="/momardi/static/d3f6e27d6d078f246e23fcc90a31781c/ba22e/lawrence-lemaoana_bpndxt.jpg"
+        srcset="/momardi/static/d3f6e27d6d078f246e23fcc90a31781c/81087/lawrence-lemaoana_bpndxt.jpg 158w,
+/momardi/static/d3f6e27d6d078f246e23fcc90a31781c/bccaa/lawrence-lemaoana_bpndxt.jpg 315w,
+/momardi/static/d3f6e27d6d078f246e23fcc90a31781c/ba22e/lawrence-lemaoana_bpndxt.jpg 480w"
+        sizes="(max-width: 480px) 100vw, 480px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    
+  <figcaption class="gatsby-resp-image-figcaption">Lawrence Lemaoana, fight the dying light, fabric and embroidery, 155×111 cm, 2008 – Afronova</figcaption>
+  </figure>
+      </p>
+<p>
+  <figure class="gatsby-resp-image-figure" style="">
+  
+  <a
+    class="gatsby-resp-image-link"
+    href="/momardi/static/4dd7f6ea5922dd4c71134a69c5516746/ec4bb/10-Owusu-Ankomah_iayjcy.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 630px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 66.71875%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwAC/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/2gAMAwEAAhADEAAAAXTO4aCr/8QAGRAAAgMBAAAAAAAAAAAAAAAAACEBAhES/9oACAEBAAEFAtdZZNTnBn//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAYEAACAwAAAAAAAAAAAAAAAAAQIQERMv/aAAgBAQAGPwKGxoWP/8QAHRABAAICAgMAAAAAAAAAAAAAAQARITFRwWGBkf/aAAgBAQABPyHUNm+IOLar3C1XDxWpYmfnuNlHN9wbOZ//2gAMAwEAAgADAAAAEBzf/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPxA//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPxA//8QAHBABAAIDAQEBAAAAAAAAAAAAARExACFBUWGR/9oACAEBAAE/EBzJTtYn9HFbIE2A0m/mQVCvtQ73JYxheh36nO2IJ3VJ3eUFZc+H3P/Z'); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="10-Owusu-Ankomah"
+        title="Owusu Ankomah, Microcron Begins No 17, 2013. Acrylic on canvas, 180 x 280 cm. Photo copyright, Joachim Fliegner Courtesy October Gallery"
+        src="/momardi/static/4dd7f6ea5922dd4c71134a69c5516746/8c020/10-Owusu-Ankomah_iayjcy.jpg"
+        srcset="/momardi/static/4dd7f6ea5922dd4c71134a69c5516746/da4c4/10-Owusu-Ankomah_iayjcy.jpg 158w,
+/momardi/static/4dd7f6ea5922dd4c71134a69c5516746/37caf/10-Owusu-Ankomah_iayjcy.jpg 315w,
+/momardi/static/4dd7f6ea5922dd4c71134a69c5516746/8c020/10-Owusu-Ankomah_iayjcy.jpg 630w,
+/momardi/static/4dd7f6ea5922dd4c71134a69c5516746/ec4bb/10-Owusu-Ankomah_iayjcy.jpg 640w"
+        sizes="(max-width: 630px) 100vw, 630px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    
+  <figcaption class="gatsby-resp-image-figcaption">Owusu Ankomah, Microcron Begins No 17, 2013. Acrylic on canvas, 180 x 280 cm. Photo copyright, Joachim Fliegner Courtesy October Gallery</figcaption>
+  </figure>
+      </p>
+<p>
+  <figure class="gatsby-resp-image-figure" style="">
+  
+  <a
+    class="gatsby-resp-image-link"
+    href="/momardi/static/e8ad01ce3f72c302621fab4ecccf0d79/ec4bb/4-Fabrice-Monteiro_z2mhxe.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 630px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGQABAAIDAAAAAAAAAAAAAAAAAAIEAQMF/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/2gAMAwEAAhADEAAAAe9X3VJb7CxEJA//xAAbEAABBAMAAAAAAAAAAAAAAAABAgMQMQAREv/aAAgBAQABBQInQbc7OKpm4CQI/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPwEf/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAgEBPwEf/8QAGRAAAQUAAAAAAAAAAAAAAAAAIAECESEx/9oACAEBAAY/ApB1Yo//xAAbEAACAgMBAAAAAAAAAAAAAAABEQAQITFBcf/aAAgBAQABPyF1DwI1mkLgGz3tKOUN7r//2gAMAwEAAgADAAAAEHjIPP/EABYRAQEBAAAAAAAAAAAAAAAAAAEgIf/aAAgBAwEBPxAMY//EABYRAAMAAAAAAAAAAAAAAAAAAAEgMf/aAAgBAgEBPxA1P//EAB8QAQACAgICAwAAAAAAAAAAAAERIQBBEDFhcYGh0f/aAAgBAQABPxA1BY0YMPW26dnxwKMXb6L/ADFYJIwI8H3hZiHs1GdNpr5Lx//Z'); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="4-Fabrice-Monteiro"
+        title="Fabrice Monteiro. Waxology serie. 1, 2014. 100 x 100cm"
+        src="/momardi/static/e8ad01ce3f72c302621fab4ecccf0d79/8c020/4-Fabrice-Monteiro_z2mhxe.jpg"
+        srcset="/momardi/static/e8ad01ce3f72c302621fab4ecccf0d79/da4c4/4-Fabrice-Monteiro_z2mhxe.jpg 158w,
+/momardi/static/e8ad01ce3f72c302621fab4ecccf0d79/37caf/4-Fabrice-Monteiro_z2mhxe.jpg 315w,
+/momardi/static/e8ad01ce3f72c302621fab4ecccf0d79/8c020/4-Fabrice-Monteiro_z2mhxe.jpg 630w,
+/momardi/static/e8ad01ce3f72c302621fab4ecccf0d79/ec4bb/4-Fabrice-Monteiro_z2mhxe.jpg 640w"
+        sizes="(max-width: 630px) 100vw, 630px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    
+  <figcaption class="gatsby-resp-image-figcaption">Fabrice Monteiro. Waxology serie. 1, 2014. 100 x 100cm</figcaption>
+  </figure>
+       </p>
+<p>
+  <figure class="gatsby-resp-image-figure" style="">
+  
+  <a
+    class="gatsby-resp-image-link"
+    href="/momardi/static/2e1650ad18b40ce788b64b12d0151b9f/ba22e/3-Dom-Nicolau_coivvm.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 480px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 149.79166666666666%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQBAgMF/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAED/9oADAMBAAIQAxAAAAHm2y0x0gsC8s3lWGA//8QAHBAAAgEFAQAAAAAAAAAAAAAAAAECAxAREzES/9oACAEBAAEFAlzo1ZMZITMmkjR8vSf/xAAXEQADAQAAAAAAAAAAAAAAAAAAARIQ/9oACAEDAQE/Aclks//EABcRAAMBAAAAAAAAAAAAAAAAAAACEhD/2gAIAQIBAT8By1LU/8QAGRAAAwEBAQAAAAAAAAAAAAAAAAEQMREh/9oACAEBAAY/AnVVdOv1Gn//xAAcEAADAQACAwAAAAAAAAAAAAAAAREhEDFBcYH/2gAIAQEAAT8h06WCUaoLo3Pgs2duBqYy7wqT6gevE//aAAwDAQACAAMAAAAQxOHx/8QAGBEBAQADAAAAAAAAAAAAAAAAEQAQIUH/2gAIAQMBAT8QeRb0w//EABgRAAMBAQAAAAAAAAAAAAAAAAARITFh/9oACAECAQE/EEqMlp0P/8QAHRABAQADAAIDAAAAAAAAAAAAAREAIUExUWGBof/aAAgBAQABPxBsFSh7W6/cOpo4YPU5moHpn2Y4ol95XgcwCylNTxiB6hMW7ccMFPjI4bbaI8j3BUiC6JYZ/9k='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="3-Dom-Nicolau"
+        title="Dom Nicolau. 24 x 36cm. Omar Victor Diop"
+        src="/momardi/static/2e1650ad18b40ce788b64b12d0151b9f/ba22e/3-Dom-Nicolau_coivvm.jpg"
+        srcset="/momardi/static/2e1650ad18b40ce788b64b12d0151b9f/81087/3-Dom-Nicolau_coivvm.jpg 158w,
+/momardi/static/2e1650ad18b40ce788b64b12d0151b9f/bccaa/3-Dom-Nicolau_coivvm.jpg 315w,
+/momardi/static/2e1650ad18b40ce788b64b12d0151b9f/ba22e/3-Dom-Nicolau_coivvm.jpg 480w"
+        sizes="(max-width: 480px) 100vw, 480px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    
+  <figcaption class="gatsby-resp-image-figcaption">Dom Nicolau. 24 x 36cm. Omar Victor Diop</figcaption>
+  </figure>
+        </p>
+<div>
+          <div
+            class="gatsby-resp-iframe-wrapper"
+            style="padding-bottom: 78.90625%; position: relative; height: 0; overflow: hidden;margin-bottom: 1.0725rem"
+          >
+            <iframe allowfullscreen class="youtube-player" frameborder="0" src="//www.youtube.com/embed/ebXk5TCW6rE?wmode=transparent&amp;fs=1&amp;hl=en&amp;modestbranding=1&amp;iv_load_policy=3&amp;showsearch=0&amp;rel=0&amp;theme=dark" title="YouTube video player" type="text/html" style="
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+          "></iframe>
+          </div>
+          </div>
+<figcaption>Artists from 1:54 Contemporary Art fair</figcaption></div><hr style="margin-top:1.75rem;margin-bottom:1.75rem"/><div style="display:flex;margin-bottom:4.375rem"><img src="/momardi/static/profile-pic-cc0076929fc572c755fc22ea61edba15.jpg" alt="Kyle Mathews" style="margin-right:0.875rem;margin-bottom:0;width:3.5rem;height:3.5rem"/><p>I&#x27;m a former digital marketing manager for the London 2012 Festival, the largest UK festival ever staged. This is my blog about contemporary art, design, film, photography and all that move my soul</p></div><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/momardi/2014-07-22---highlights-from-masterpiece-london-2014/">← <!-- -->Highlights from Masterpiece London 2014</a></li><li><a rel="next" href="/momardi/2014-10-26---moniker-art-2014-2/">Moniker Art 2014<!-- --> →</a></li></ul></div></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'undefined', 'auto', {});
+      
+      }
+      </script><script id="gatsby-script-loader">/*<![CDATA[*/window.page={"componentChunkName":"component---src-templates-blog-post-js","jsonName":"2014-10-18-154-contemporary-art-fair-2014-somerset-house-71c","path":"/2014-10-18---154-contemporary-art-fair-2014-somerset-house/"};window.dataPath="61/path---2014-10-18-154-contemporary-art-fair-2014-somerset-house-71-c-b60-UDSZMtmJivLZCpiaD4kbwAy6ME";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-bef4d960eb13ecef2792.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-22aaa75040151f6993a3.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js.5f396faadd7d5b28094a.css","/component---src-templates-blog-post-js-31d3b680c6f8ebc0fc87.js"],"component---src-pages-404-js":["/component---src-pages-404-js.12b03a3ce87a9d9e664c.css","/component---src-pages-404-js-5f88c27662a3bb9e2912.js"],"component---src-pages-index-js":["/component---src-pages-index-js.12b03a3ce87a9d9e664c.css","/component---src-pages-index-js-4b7f80d28a0da3ecd954.js"]};/*]]>*/</script><script src="/momardi/webpack-runtime-db7f2d96c3eec731f6a8.js" async=""></script><script src="/momardi/0-327661c7b7fc2a48bb3c.js" async=""></script><script src="/momardi/1-1b87c73c26c76a3cb291.js" async=""></script><script src="/momardi/app-bef4d960eb13ecef2792.js" async=""></script><script src="/momardi/component---src-templates-blog-post-js-31d3b680c6f8ebc0fc87.js" async=""></script></body></html>

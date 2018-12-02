@@ -1,0 +1,307 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/momardi/component---src-templates-blog-post-js.5f396faadd7d5b28094a.css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/momardi/static/montserrat-latin-100-50d279861fb3cbfed809eae6ed8b9ac9.woff2) format("woff2"),url(/momardi/static/montserrat-latin-100-5e334eff013f12fbb8ed72c2a253f119.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/momardi/static/montserrat-latin-100italic-8c0705336558194799a8729840d7ed9d.woff2) format("woff2"),url(/momardi/static/montserrat-latin-100italic-03e19243272affe738654a157625ec26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/momardi/static/montserrat-latin-200-4343d3d91a9446226e7a8bbb024111ad.woff2) format("woff2"),url(/momardi/static/montserrat-latin-200-f2022ecd65a0703ec3edcb7641709a75.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/momardi/static/montserrat-latin-200italic-116c4c4b14ef76b0555da09854512022.woff2) format("woff2"),url(/momardi/static/montserrat-latin-200italic-89614a6008fc5c60739012463d0ee7e6.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/momardi/static/montserrat-latin-300-d2ad295b60682a6537c358e06ea80c61.woff2) format("woff2"),url(/momardi/static/montserrat-latin-300-3a371ee0d175f5c2b15ce1d6b981dc4e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/momardi/static/montserrat-latin-300italic-f6b6bf2431003f8142e800f9df157989.woff2) format("woff2"),url(/momardi/static/montserrat-latin-300italic-16521668f5f238098329cdd7d27c391e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/momardi/static/montserrat-latin-400-240a84447b78da0920fcb07e378f2c5f.woff2) format("woff2"),url(/momardi/static/montserrat-latin-400-b20cc131034316b1c85d0498fb9ed5c5.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/momardi/static/montserrat-latin-400italic-86172bb829de6be08b92512096b6aca6.woff2) format("woff2"),url(/momardi/static/montserrat-latin-400italic-9405e78785a55cf0e4ea7669d4616ea9.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/momardi/static/montserrat-latin-500-fb8d6b71dbe8d9294be43082936f649e.woff2) format("woff2"),url(/momardi/static/montserrat-latin-500-50825d47af7ae47e055018eb689c6c99.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/momardi/static/montserrat-latin-500italic-c0a555a4f8e997385a3eebbd4da0b9ee.woff2) format("woff2"),url(/momardi/static/montserrat-latin-500italic-635de59c4be86285b1f70068c95b9816.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/momardi/static/montserrat-latin-600-d5615136a08cfee70deb4be1ee1651df.woff2) format("woff2"),url(/momardi/static/montserrat-latin-600-f300da4fb4fe00e23915f62b2c643681.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/momardi/static/montserrat-latin-600italic-10f29d139edacde92df63374c5672568.woff2) format("woff2"),url(/momardi/static/montserrat-latin-600italic-2bc37d86a4ba12ce526c4af904a9946e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/momardi/static/montserrat-latin-700-7d77e1f03eefc452dab14d7f89080083.woff2) format("woff2"),url(/momardi/static/montserrat-latin-700-81826529772e52f0f14a4c73c2f2c7f1.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/momardi/static/montserrat-latin-700italic-1dd2b53f1567a29e0505de9b27c4352c.woff2) format("woff2"),url(/momardi/static/montserrat-latin-700italic-c162d257f5e9f9b108a96a604cfb2132.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/momardi/static/montserrat-latin-800-d4e7bf86bbd8e5f43ca73fa831218648.woff2) format("woff2"),url(/momardi/static/montserrat-latin-800-895aadbff357be35ac8dd107c7975ee7.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/momardi/static/montserrat-latin-800italic-fc0cbe442f7b3733c91e982e825c4daa.woff2) format("woff2"),url(/momardi/static/montserrat-latin-800italic-b3362875067300abedb7a8fb97903258.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/momardi/static/montserrat-latin-900-c8bdd772c0d1347720ff7e3fb72719f3.woff2) format("woff2"),url(/momardi/static/montserrat-latin-900-1b99ef78e627dd9bbd0ca4b5c0789547.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/momardi/static/montserrat-latin-900italic-cb72c1f90f66c124fb897a75bec64c78.woff2) format("woff2"),url(/momardi/static/montserrat-latin-900italic-b78bb9f8ecec6c5a924c873f1818095f.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/momardi/static/merriweather-latin-300-f015f1e9a46a3b9db4fd64564dacece4.woff2) format("woff2"),url(/momardi/static/merriweather-latin-300-92dfe81b725c342d31d962da975c07a6.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/momardi/static/merriweather-latin-300italic-7fd86b32accf2df4403d1d4fa3a81502.woff2) format("woff2"),url(/momardi/static/merriweather-latin-300italic-878b76f59d5ba58dd1652dc8d2a0f4f9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/momardi/static/merriweather-latin-400-12dbf4c00ae43698f278b099e4b0ec9e.woff2) format("woff2"),url(/momardi/static/merriweather-latin-400-1fffad22b085a877995812dbf1d9ac08.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/momardi/static/merriweather-latin-400italic-1e0d3e8121d88969bfb153c8f174b758.woff2) format("woff2"),url(/momardi/static/merriweather-latin-400italic-de18d4c4e8e808a7248a185f866ff094.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/momardi/static/merriweather-latin-700-dc8fec81a125fc63856587e6683da73b.woff2) format("woff2"),url(/momardi/static/merriweather-latin-700-d7d2ed8e58f303392cc3fc00ba3a9186.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/momardi/static/merriweather-latin-700italic-b7b7e5da4d7be8c12bd5a6c809edc8fc.woff2) format("woff2"),url(/momardi/static/merriweather-latin-700italic-6210a5fc1c54ca85a5d82aa85d7a9b5c.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/momardi/static/merriweather-latin-900-43f870d543dd89fbeb66d417c0d97276.woff2) format("woff2"),url(/momardi/static/merriweather-latin-900-8f3806df74937c7b8b53f24ae1e725d1.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/momardi/static/merriweather-latin-900italic-168c1ab28ed0e4e7d654334def288bc1.woff2) format("woff2"),url(/momardi/static/merriweather-latin-900italic-ae7778f01871e35ee142ef207b313b34.woff) format("woff")}figcaption{font-size:14px;color:grey;font-style:italic;margin-top:5px;text-align:center}</style><meta name="generator" content="Gatsby 2.0.60"/><link rel="alternate" type="application/rss+xml" href="/momardi/rss.xml"/><link rel="shortcut icon" href="/momardi/icons/icon-48x48.png"/><link rel="manifest" href="/momardi/manifest.webmanifest"/><meta name="theme-color" content="#663399"/><title data-react-helmet="true">Degas: More than Just a Genius of Movement | Momardi</title><meta data-react-helmet="true" name="description" content="It is hard to imagine a world without Monet and his water lilies, and so much more without  Edgar Degas and his ballerinas . Ever since I…"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}</style><link as="script" rel="preload" href="/momardi/component---src-templates-blog-post-js-31d3b680c6f8ebc0fc87.js"/><link as="script" rel="preload" href="/momardi/app-bef4d960eb13ecef2792.js"/><link as="script" rel="preload" href="/momardi/1-1b87c73c26c76a3cb291.js"/><link as="script" rel="preload" href="/momardi/0-327661c7b7fc2a48bb3c.js"/><link as="script" rel="preload" href="/momardi/webpack-runtime-db7f2d96c3eec731f6a8.js"/><link rel="preload" href="/momardi/static/d/2/path---2011-10-15-degas-more-than-just-a-genius-of-movement-2-fa-997-bYHNbXYLUbnZ36Ms4Ckg0QsI4.json" as="fetch" crossOrigin="use-credentials"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group"><div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:2.625rem 1.3125rem"><h3 style="font-family:Montserrat, sans-serif;margin-top:0;margin-bottom:-1.75rem"><a style="box-shadow:none;text-decoration:none;color:inherit" href="/momardi/">Momardi</a></h3><h1>Degas: More than Just a Genius of Movement</h1><p style="font-size:0.83255rem;line-height:1.75rem;display:block;margin-bottom:1.75rem;margin-top:-1.75rem">October 15, 2011</p><div><p>It is hard to imagine a world without Monet and his water lilies, and so much more without <strong>Edgar Degas and his ballerinas</strong>. Ever since I saw Degas’ works at the <a href="http://www.musee-orsay.fr/en/home.html" title="Musee d&#x27;Orsay">Musee d’ Orsay</a>, I was introduced to a <strong>fascinating behind-the-scenes world of ballet dancers</strong>, which were more interesting than the actual spectacle.  </p>
+<p>Clearly, <strong>ballet was the domain of Edgar Degas</strong>,  who was known to be a fixture of the Paris Opera in the late 19th century in his attempt to capture movement and beauty.  But in this exhibit at the <a href="http://www.royalacademy.org.uk/exhibitions/degas/about-the-exhibition/" title="Royal academy of art: Degas">Royal Academy of Art</a>, there was so much more about Degas that I didn’t know.  I expected only to be bombarded by images of ballerinas, but <strong>the  exhibit also focused  on his  creative process and his experimentation with the technological advances</strong> of his time.</p>
+<p><span class="youtube"><div>
+          <div
+            class="gatsby-resp-iframe-wrapper"
+            style="padding-bottom: 78.90625%; position: relative; height: 0; overflow: hidden;margin-bottom: 1.0725rem"
+          >
+            <iframe allowfullscreen class="youtube-player" frameborder="0" src="//www.youtube.com/embed/sNHkujPaibY?wmode=transparent&amp;fs=1&amp;hl=en&amp;modestbranding=1&amp;iv_load_policy=3&amp;showsearch=0&amp;rel=0&amp;theme=dark" title="YouTube video player" type="text/html" style="
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+          "></iframe>
+          </div>
+          </div></iframe></span><br>
+<span style="color: #888888;"><em>Ann Dumas of the Royal Academy</em></span></p>
+<p><strong>The genius of Degas is of course his way of capturing special and unguarded moments.</strong>  Just look at the many images of ballet dancers slumped in a corner or when they are just in repose such as in the <strong>Dance Lesson and the Dance rehearsal</strong>. He captured this essence of spontaneity but <strong>framed the scenes asymmetrically allowing us  an experience of seeing it mid-scene</strong>. The composition of his paintings made me wonder whether he was sketching or fiddling with an advanced camera with a fantastic element of depth of field to record these scenes before actually painting them.</p>
+<p><a href="./images/Degas_the-dance-lesson_gvclqc.jpg">
+  <figure class="gatsby-resp-image-figure" style="">
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 630px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 42.96875%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAJABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAEDAgT/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/aAAwDAQACEAMQAAAB5E5RVTIP/8QAGRAAAgMBAAAAAAAAAAAAAAAAAAECEBEx/9oACAEBAAEFAnNo3US6q//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABUQAQEAAAAAAAAAAAAAAAAAACAy/9oACAEBAAY/ApX/xAAbEAACAgMBAAAAAAAAAAAAAAAAARExIUGxwf/aAAgBAQABPyE9CDbY8HP0sOz/2gAMAwEAAgADAAAAEP8AL//EABURAQEAAAAAAAAAAAAAAAAAABAR/9oACAEDAQE/EIf/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAcEAEBAAICAwAAAAAAAAAAAAABEQAhEEExcbH/2gAIAQEAAT8QaCa2VcS3oC60a6yFKr2ueL3+ue//2Q=='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="Degas the dance lesson gvclqc"
+        title="Degas_the-dance-lesson"
+        src="/momardi/static/627201ab448c80953e51f15fd5989203/8c020/Degas_the-dance-lesson_gvclqc.jpg"
+        srcset="/momardi/static/627201ab448c80953e51f15fd5989203/da4c4/Degas_the-dance-lesson_gvclqc.jpg 158w,
+/momardi/static/627201ab448c80953e51f15fd5989203/37caf/Degas_the-dance-lesson_gvclqc.jpg 315w,
+/momardi/static/627201ab448c80953e51f15fd5989203/8c020/Degas_the-dance-lesson_gvclqc.jpg 630w,
+/momardi/static/627201ab448c80953e51f15fd5989203/ec4bb/Degas_the-dance-lesson_gvclqc.jpg 640w"
+        sizes="(max-width: 630px) 100vw, 630px"
+      />
+    </span>
+  </span>
+  
+  <figcaption class="gatsby-resp-image-figcaption">Degas_the-dance-lesson</figcaption>
+  </figure>
+      </a><span style="color: #888888;"><em>Edgar Degas: The Dance Lesson, c. 1879</em></span><br>
+<span style="color: #888888;"><em>Oil on canvas</em></span><span style="color: #888888;"><em>, 38 x 88 cm</em></span><br>
+<span style="color: #888888;"><em>National Gallery of Art, Washington.</em></span><br>
+<span style="color: #888888;"><em>Collection of Mr. and Mrs. Paul Mellon, 1995.47.6</em></span><br>
+<span style="color: #888888;"><em>Photo National Gallery of Art, Washington</em></span></p>
+<p><a href="./images/Degas_the-rehearsal_xwlcrg.jpg">
+  <figure class="gatsby-resp-image-figure" style="">
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 630px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 67.8125%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAOABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAwACBP/EABYBAQEBAAAAAAAAAAAAAAAAAAMAAf/aAAwDAQACEAMQAAAB4XDYo8Ft/8QAGRAAAwEBAQAAAAAAAAAAAAAAAAERIQIS/9oACAEBAAEFAktsXo5HorP/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAgEBPwFH/8QAFxAAAwEAAAAAAAAAAAAAAAAAECAxYf/aAAgBAQAGPwLBU//EABkQAQEBAQEBAAAAAAAAAAAAAAERACExof/aAAgBAQABPyFqPcYwkXldzx+coTOMPRu//9oADAMBAAIAAwAAABB/3//EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAgBAwEBPxBsf//EABYRAQEBAAAAAAAAAAAAAAAAAAEQIf/aAAgBAgEBPxB1j//EABoQAQADAQEBAAAAAAAAAAAAAAEAESExQVH/2gAIAQEAAT8QaN9Be3Dxw+rYIic4UwiAqs7UTiZyyVGr7P/Z'); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="Degas the rehearsal xwlcrg"
+        title="Degas_the-rehearsal"
+        src="/momardi/static/f654f20049ec892a3379aee1f8b29ad6/8c020/Degas_the-rehearsal_xwlcrg.jpg"
+        srcset="/momardi/static/f654f20049ec892a3379aee1f8b29ad6/da4c4/Degas_the-rehearsal_xwlcrg.jpg 158w,
+/momardi/static/f654f20049ec892a3379aee1f8b29ad6/37caf/Degas_the-rehearsal_xwlcrg.jpg 315w,
+/momardi/static/f654f20049ec892a3379aee1f8b29ad6/8c020/Degas_the-rehearsal_xwlcrg.jpg 630w,
+/momardi/static/f654f20049ec892a3379aee1f8b29ad6/ec4bb/Degas_the-rehearsal_xwlcrg.jpg 640w"
+        sizes="(max-width: 630px) 100vw, 630px"
+      />
+    </span>
+  </span>
+  
+  <figcaption class="gatsby-resp-image-figcaption">Degas_the-rehearsal</figcaption>
+  </figure>
+      </a><span style="color: #888888;"><em>Edgar Degas: The Rehearsal, c. 1874</em></span><br>
+<span style="color: #888888;"><em>Oil on canvas, 58.4 x 83.8 cm</em></span><br>
+<span style="color: #888888;"><em>Lent by Culture and Sport Glasgow on behalf of Glasgow City Council. Gifted by Sir William and Lady Constance Burrell to the City of Glasgow, 1944.</em></span><br>
+<span style="color: #888888;"><em>Image copyright Culture and Sport Glasgow (Museums)</em></span></p>
+<p><strong>He was obsessed with human figure movement and choreography</strong>. Degas, however, couldn’t find alliance with his  Impressionists friends to share this new passion except for the photographers which eventually led him to photography. There were <strong>three photographs he shot of three ballet dancers</strong> which showed his interest in lighting effects.  There was also a photo of a woman in a bathtub which was the inspiration for the famous bathtub painting.</p>
+<p>The exhibit even went so far as including a clip <strong>(Serpentine Dance) from the Lumiere brothers</strong> and displaying items such as plate cameras which were a novelty during that time. <strong>Ann Dumas</strong>, curator of the Royal Academy of Art said these films were frequently shown in Montmarte and Degas would have certainly known about them.</p>
+<p><span class="youtube"><div>
+          <div
+            class="gatsby-resp-iframe-wrapper"
+            style="padding-bottom: 78.90625%; position: relative; height: 0; overflow: hidden;margin-bottom: 1.0725rem"
+          >
+            <iframe allowfullscreen class="youtube-player" frameborder="0" src="//www.youtube.com/embed/kjIvOc6szZ8?wmode=transparent&amp;fs=1&amp;hl=en&amp;modestbranding=1&amp;iv_load_policy=3&amp;showsearch=0&amp;rel=0&amp;theme=dark" title="YouTube video player" type="text/html" style="
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+          "></iframe>
+          </div>
+          </div></iframe></span><br>
+<span style="color: #888888;">*Serpentine Dance from the Lumiere brothers, 1899<br>
+*</span></p>
+<p><strong>The fantastic array of sketches included in the show also demonstrated his  dedication of studying movement</strong>. With photography as his new ally, he pushed boundaries in his art and translated himself in a variety of medium – oil painting, pastels and sculpture.</p>
+<p><a href="./images/Degas_dancer-charcoal_i6nkfl.jpg">
+  <figure class="gatsby-resp-image-figure" style="">
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 480px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 150.41666666666666%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAMBAgQF/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAL/2gAMAwEAAhADEAAAAemtuaWoQDJW0Cgf/8QAHRAAAgIBBQAAAAAAAAAAAAAAAQIAEBEDEhMxQv/aAAgBAQABBQIzkXfD02nlsT0TSi//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/AR//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAECAQE/AR//xAAaEAAABwAAAAAAAAAAAAAAAAAAARASMEFR/9oACAEBAAY/Ag21woP/xAAbEAEBAQEBAAMAAAAAAAAAAAABABEhMVFhcf/aAAgBAQABPyHgLXrMLDiUHD6IZ7bwEY9L8stVXbnxecv/2gAMAwEAAgADAAAAEMzejf/EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQMBAT8QH//EABURAQEAAAAAAAAAAAAAAAAAABAR/9oACAECAQE/ECn/xAAcEAEBAQADAAMAAAAAAAAAAAABEQAhMWFRgZH/2gAIAQEAAT8QUBwrLiUkdKQch8ONIqnBi2YVrm42BfvDiDw3zChUXsLmMek4mQUR+bpMvsHW/9k='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="Degas dancer charcoal i6nkfl"
+        title="Degas_dancer-charcoal"
+        src="/momardi/static/169ccfc5739297b506ee60770ffd0844/ba22e/Degas_dancer-charcoal_i6nkfl.jpg"
+        srcset="/momardi/static/169ccfc5739297b506ee60770ffd0844/81087/Degas_dancer-charcoal_i6nkfl.jpg 158w,
+/momardi/static/169ccfc5739297b506ee60770ffd0844/bccaa/Degas_dancer-charcoal_i6nkfl.jpg 315w,
+/momardi/static/169ccfc5739297b506ee60770ffd0844/ba22e/Degas_dancer-charcoal_i6nkfl.jpg 480w"
+        sizes="(max-width: 480px) 100vw, 480px"
+      />
+    </span>
+  </span>
+  
+  <figcaption class="gatsby-resp-image-figcaption">Degas_dancer-charcoal</figcaption>
+  </figure>
+      </a><em><span style="color: #888888;">Edgar Degas</span>**<span style="color: #888888;">: Dancer (Preparation en dedans), c. 1880-85</span></em><br>
+<em><span style="color: #888888;">Charcoal with stumping on buff paper</span>**<span style="color: #888888;">, 336 x 227 mm</span></em><br>
+<em><span style="color: #888888;">Trinity House, London and New York</span></em></p>
+<p><a href="./images/Degas_little-dancer_rndalm.jpg">
+  <figure class="gatsby-resp-image-figure" style="">
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 480px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 128.125%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAaABQDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAQCAQP/xAAWAQEBAQAAAAAAAAAAAAAAAAABAAL/2gAMAwEAAhADEAAAAaO7mzqltHnPcXIj/8QAHBAAAgICAwAAAAAAAAAAAAAAAAIBEQQQEhMh/9oACAEBAAEFAlPeyhS2bIGnjCNTClRGv//EABURAQEAAAAAAAAAAAAAAAAAABAR/9oACAEDAQE/ASn/xAAVEQEBAAAAAAAAAAAAAAAAAAAQEf/aAAgBAgEBPwEh/8QAGxAAAgIDAQAAAAAAAAAAAAAAARAAESExQXH/2gAIAQEABj8CgHC/CtXBYeAv/8QAHRAAAgICAwEAAAAAAAAAAAAAAAERITFBEHGhsf/aAAgBAQABPyFBtNC9HYQUBr4DyNmmEyCptbbM2ZQQHAuuP//aAAwDAQACAAMAAAAQ4Po8/8QAFxEBAQEBAAAAAAAAAAAAAAAAARARIf/aAAgBAwEBPxCAzpP/xAAWEQEBAQAAAAAAAAAAAAAAAAABEEH/2gAIAQIBAT8QisZ//8QAHxABAAMAAQQDAAAAAAAAAAAAAQARITEQQZGxUXGB/9oACAEBAAE/EL47nSBX29dJSE5BLB8UC/Z5ggHXJiNHmKKENQbBefkugBBL0qbS0e0uiKuiobzP/9k='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="Degas little dancer rndalm"
+        title="Degas_little-dancer"
+        src="/momardi/static/34f445131fa89d7c006b614619924f99/ba22e/Degas_little-dancer_rndalm.jpg"
+        srcset="/momardi/static/34f445131fa89d7c006b614619924f99/81087/Degas_little-dancer_rndalm.jpg 158w,
+/momardi/static/34f445131fa89d7c006b614619924f99/bccaa/Degas_little-dancer_rndalm.jpg 315w,
+/momardi/static/34f445131fa89d7c006b614619924f99/ba22e/Degas_little-dancer_rndalm.jpg 480w"
+        sizes="(max-width: 480px) 100vw, 480px"
+      />
+    </span>
+  </span>
+  
+  <figcaption class="gatsby-resp-image-figcaption">Degas_little-dancer</figcaption>
+  </figure>
+      </a><span style="color: #888888;"><em>Edgar Degas: The Little Dancer, Aged Fourteen, 1880-1, cast c. 1922</em></span><br>
+<span style="color: #888888;"><em>Painted bronze with muslin and silk, 98.4 x 36.5 cm</em></span><br>
+<span style="color: #888888;"><em>Tate. Purchased with assistance from The Art Fund 1952</em></span><br>
+<span style="color: #888888;"><em>Image copyright Tate, London, 2010</em></span></p>
+<p>The only sculpture he exhibited during his lifetime, the Little Dancer was a central piece of the show. The way people inspected the <strong>Little Dancer</strong> in the exhibit, <strong>I forgot how much this sculpture had been criticized and called ugly and a monkey</strong>. There were a whole lot more of figurative sculptures in the room, and I wonder if the criticism on Little Dancer led him to practice sculpture privately. The exhibit ends with a short clip of <strong>Degas captured in film</strong>, walking in Paris with a lady.</p>
+<p><em><span class="youtube"><div>
+          <div
+            class="gatsby-resp-iframe-wrapper"
+            style="padding-bottom: 78.90625%; position: relative; height: 0; overflow: hidden;margin-bottom: 1.0725rem"
+          >
+            <iframe allowfullscreen class="youtube-player" frameborder="0" src="//www.youtube.com/embed/Bo1TtfYdUTc?wmode=transparent&amp;fs=1&amp;hl=en&amp;modestbranding=1&amp;iv_load_policy=3&amp;showsearch=0&amp;rel=0&amp;theme=dark" title="YouTube video player" type="text/html" style="
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+          "></iframe>
+          </div>
+          </div></iframe></span></em><br>
+<span style="color: #888888;"><em>Film clip of Edgar Degas</em></span></p>
+<p><span class="youtube"><div>
+          <div
+            class="gatsby-resp-iframe-wrapper"
+            style="padding-bottom: 78.90625%; position: relative; height: 0; overflow: hidden;margin-bottom: 1.0725rem"
+          >
+            <iframe allowfullscreen class="youtube-player" frameborder="0" src="//www.youtube.com/embed/4u7MBPSNm5M?wmode=transparent&amp;fs=1&amp;hl=en&amp;modestbranding=1&amp;iv_load_policy=3&amp;showsearch=0&amp;rel=0&amp;theme=dark" title="YouTube video player" type="text/html" style="
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+          "></iframe>
+          </div>
+          </div></iframe></span><br>
+<span style="color: #888888;"><em>Degas: Private Life of a Dancer from the BBC</em></span></p>
+<p>Watch <a href="http://www.youtube.com/watch?v=SzT5mk4FCIc&#x26;feature=related" title="Private Life of a Dancer Part 2">Part 2</a>,<a href="http://www.youtube.com/watch?v=VdwH54mjKdg&#x26;feature=related" title="Private Life of a Dancer Part 3"> Part 3</a>, <a href="http://www.youtube.com/watch?v=wbyq1A_eq4I&#x26;feature=related" title="Private Life of a Dancer Part 4">Part 4</a></p>
+<p>Related Links:<a href="http://www.telegraph.co.uk/culture/art/art-reviews/8758374/Degas-and-the-Ballet-Picturing-Movement-Royal-Academy-of-Arts-review.html" title="Degas by Alastair Sooke"><br>
+Degas and the Ballet Picturing Movement by Alastair Sooke for the Telegraph </a> <a href="http://www.guardian.co.uk/artanddesign/gallery/2011/sep/12/degas-ballet-movement-in-pictures" title="Degas and Ballet in pictures: Guardian"><br>
+Degas and the Ballet in Pictures from the Guardian</a><br>
+<a href="http://www.nytimes.com/2011/09/24/arts/24iht-melikian24.html?_r=1&#x26;ref=royalacademyofarts" title="Degas from the New York Times">Degas: More than Just a Ballet Master by Souren Milikian for the New York Times</a><br>
+<a href="http://www.nytimes.com/2011/09/04/arts/dance/degass-ballet-at-the-phillips-collection-and-royal-academy.html?ref=royalacademyofarts" title="Alastair Macaulay for the New York Times">Workers wearing Toehoes by Alastair Macaulay for the New York Times</a> <a href="http://www.guardian.co.uk/artanddesign/2011/sep/07/edgar-degas-ballet-royal-academy" title="Degas: James Davidson"><br>
+A Fine Balance: Degas and the art of ballet by James Davidson for the Guardian</a></p>
+<p><a href="./images/Degas_dancers_q3gpcq.jpg">
+  <figure class="gatsby-resp-image-figure" style="">
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 480px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 125.62499999999999%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAZABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIDAQT/xAAWAQEBAQAAAAAAAAAAAAAAAAABAAL/2gAMAwEAAhADEAAAAeeLJDGmdT2lmQqJ/8QAGRAAAwEBAQAAAAAAAAAAAAAAAAERIRAx/9oACAEBAAEFAmzCDhKaxmi87//EABkRAAIDAQAAAAAAAAAAAAAAAAABAhASMf/aAAgBAwEBPwFKo8Mn/8QAFhEBAQEAAAAAAAAAAAAAAAAAEAER/9oACAECAQE/AdKf/8QAFxAAAwEAAAAAAAAAAAAAAAAAACAxof/aAAgBAQAGPwKlx4n/xAAbEAEAAwADAQAAAAAAAAAAAAABABEhEDFRkf/aAAgBAQABPyFb2hGkC5kdG/cImiZL0QuBteiV4WENfUYcf//aAAwDAQACAAMAAAAQdy2w/8QAGREAAwADAAAAAAAAAAAAAAAAAAEhEUFh/9oACAEDAQE/EEbIVkx9H//EABgRAAMBAQAAAAAAAAAAAAAAAAABESFR/9oACAECAQE/EGxRthVw/8QAHhABAAMAAgIDAAAAAAAAAAAAAQARITFBYYEQUXH/2gAIAQEAAT8Q70BC3PcvWm30Y1ya4K7gM9tA5PMIcb06IobxrWRfEsPthYNTw7KgnOdpxP35f//Z'); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="Degas dancers q3gpcq"
+        title="Degas_dancers"
+        src="/momardi/static/7c0b46b608566657124b9ccb48f31493/ba22e/Degas_dancers_q3gpcq.jpg"
+        srcset="/momardi/static/7c0b46b608566657124b9ccb48f31493/81087/Degas_dancers_q3gpcq.jpg 158w,
+/momardi/static/7c0b46b608566657124b9ccb48f31493/bccaa/Degas_dancers_q3gpcq.jpg 315w,
+/momardi/static/7c0b46b608566657124b9ccb48f31493/ba22e/Degas_dancers_q3gpcq.jpg 480w"
+        sizes="(max-width: 480px) 100vw, 480px"
+      />
+    </span>
+  </span>
+  
+  <figcaption class="gatsby-resp-image-figcaption">Degas_dancers</figcaption>
+  </figure>
+      </a><span style="color: #888888;"><em>Edgar Degas**: Dancers, c. 1899</em></span><br>
+<span style="color: #888888;"><em>Pastel on tracing paper laid down on board**, 588 x 463 mm</em></span><br>
+<span style="color: #888888;"><em>Princeton University Art Museum. Bequest of Henry K. Dick, Class of 1909.</em></span><br>
+<span style="color: #888888;"><em>Image Bruce M. White</em></span></p>
+<p><a href="./images/Degas_la-danse-grecque_kjjdmz.jpg">
+  <figure class="gatsby-resp-image-figure" style="">
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 480px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 121.45833333333333%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAYABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIBA//EABYBAQEBAAAAAAAAAAAAAAAAAAECAP/aAAwDAQACEAMQAAAB4zswWkiAqxj/xAAZEAADAQEBAAAAAAAAAAAAAAAAAQISESH/2gAIAQEAAQUCqOPiIhVLRknxPQ9Cto//xAAXEQADAQAAAAAAAAAAAAAAAAAAEBEh/9oACAEDAQE/AYa//8QAFhEBAQEAAAAAAAAAAAAAAAAAEQAQ/9oACAECAQE/AWd//8QAGhAAAgIDAAAAAAAAAAAAAAAAAAEQMREhYf/aAAgBAQAGPwJdhM3GIoo//8QAGhABAAMBAQEAAAAAAAAAAAAAAQARMSFBcf/aAAgBAQABPyE3rph6X3u7FJ7FfiOKYE4N9slEAUXn/9oADAMBAAIAAwAAABDsxzz/xAAWEQEBAQAAAAAAAAAAAAAAAAAAARH/2gAIAQMBAT8Qm4w1a//EABYRAQEBAAAAAAAAAAAAAAAAABEAEP/aAAgBAgEBPxBQ3//EABwQAQEAAwADAQAAAAAAAAAAAAERACFRMUFhgf/aAAgBAQABPxAONQgxk9zR+YRdtPTjACiLL4xYXercCptfcCFZ9meEduy5qolXfsDmVhA6Wjn/2Q=='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="Degas la danse grecque kjjdmz"
+        title="Degas_la-danse-grecque"
+        src="/momardi/static/144c7e7dd755667929169b7c612aca5d/ba22e/Degas_la-danse-grecque_kjjdmz.jpg"
+        srcset="/momardi/static/144c7e7dd755667929169b7c612aca5d/81087/Degas_la-danse-grecque_kjjdmz.jpg 158w,
+/momardi/static/144c7e7dd755667929169b7c612aca5d/bccaa/Degas_la-danse-grecque_kjjdmz.jpg 315w,
+/momardi/static/144c7e7dd755667929169b7c612aca5d/ba22e/Degas_la-danse-grecque_kjjdmz.jpg 480w"
+        sizes="(max-width: 480px) 100vw, 480px"
+      />
+    </span>
+  </span>
+  
+  <figcaption class="gatsby-resp-image-figcaption">Degas_la-danse-grecque</figcaption>
+  </figure>
+      </a><span style="color: #888888;"><em>Edgar Degas: La Danse Grecque (Dancing Ballerinas),1885-90</em></span><br>
+<span style="color: #888888;"><em>Pastel on joined paper laid down on board, 580 x 490 mm</em></span><br>
+<span style="color: #888888;"><em>On loan from the Honorable Earle I. Mack Collection</em></span></p>
+<p><a href="./images/Degas_ballet-scene_nobapv.jpg">
+  <figure class="gatsby-resp-image-figure" style="">
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 630px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 92.96875%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAATABQDASIAAhEBAxEB/8QAGQABAQEAAwAAAAAAAAAAAAAAAAMCAQQF/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/2gAMAwEAAhADEAAAAfDpbUdNcSwVyD//xAAaEAEAAwADAAAAAAAAAAAAAAABAAIREBIi/9oACAEBAAEFAsdDzO0baWVluf/EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQMBAT8BH//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQIBAT8BH//EABkQAAMAAwAAAAAAAAAAAAAAAAABERAgMf/aAAgBAQAGPwIeLDi1/8QAHhABAAICAQUAAAAAAAAAAAAAAQARITEQQVFhgZH/2gAIAQEAAT8hcHrHyB7IniJNP2Y3ZWmIWJrhaOGor3Z//9oADAMBAAIAAwAAABDXP8P/xAAWEQEBAQAAAAAAAAAAAAAAAAAhABD/2gAIAQMBAT8QZ3//xAAXEQEBAQEAAAAAAAAAAAAAAAABABAR/9oACAECAQE/EFbsZ//EABwQAQACAwEBAQAAAAAAAAAAAAEAESExQWFR4f/aAAgBAQABPxBeF8QaJWkEvfIgosTcMA1dgQyLKRf3MLh6LW37AELJlXGPbWfWf//Z'); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="Degas ballet scene nobapv"
+        title="Degas_ballet-scene"
+        src="/momardi/static/ac1d95e2383114a2492f488ce07e05c3/8c020/Degas_ballet-scene_nobapv.jpg"
+        srcset="/momardi/static/ac1d95e2383114a2492f488ce07e05c3/da4c4/Degas_ballet-scene_nobapv.jpg 158w,
+/momardi/static/ac1d95e2383114a2492f488ce07e05c3/37caf/Degas_ballet-scene_nobapv.jpg 315w,
+/momardi/static/ac1d95e2383114a2492f488ce07e05c3/8c020/Degas_ballet-scene_nobapv.jpg 630w,
+/momardi/static/ac1d95e2383114a2492f488ce07e05c3/ec4bb/Degas_ballet-scene_nobapv.jpg 640w"
+        sizes="(max-width: 630px) 100vw, 630px"
+      />
+    </span>
+  </span>
+  
+  <figcaption class="gatsby-resp-image-figcaption">Degas_ballet-scene</figcaption>
+  </figure>
+      </a><span style="color: #888888;"><em>Edgar Degas: Ballet Scene from Meyerbeer’s Opera ‘Robert le Diable’, 1876</em></span><br>
+<span style="color: #888888;"><em>Oil on canvas, 76.6 x 81.3 cm</em></span><br>
+<span style="color: #888888;"><em>Victoria &#x26; Albert Museum, London</em></span><br>
+<span style="color: #888888;"><em>Image copyright V&#x26;A Images / Victoria and Albert Museum, London</em></span></p></div><hr style="margin-top:1.75rem;margin-bottom:1.75rem"/><div style="display:flex;margin-bottom:4.375rem"><img src="/momardi/static/profile-pic-cc0076929fc572c755fc22ea61edba15.jpg" alt="Kyle Mathews" style="margin-right:0.875rem;margin-bottom:0;width:3.5rem;height:3.5rem"/><p>I&#x27;m a former digital marketing manager for the London 2012 Festival, the largest UK festival ever staged. This is my blog about contemporary art, design, film, photography and all that move my soul</p></div><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/momardi/2011-10-10---over-and-out-the-end-of-the-shape-of-things-to-come-at-the-saatchi/">← <!-- -->Over and Out: The End of The Shape of Things to Come at the Saatchi</a></li><li><a rel="next" href="/momardi/2011-10-20---rig-the-anti-monumental-and-ambiguous-phyllida-barlow-at-the-hauser-wirth/">Rig: The Anti-Monumental and Ambiguous Phyllida Barlow at the Hauser &amp; Wirth<!-- --> →</a></li></ul></div></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'undefined', 'auto', {});
+      
+      }
+      </script><script id="gatsby-script-loader">/*<![CDATA[*/window.page={"componentChunkName":"component---src-templates-blog-post-js","jsonName":"2011-10-15-degas-more-than-just-a-genius-of-movement-2fa","path":"/2011-10-15---degas-more-than-just-a-genius-of-movement/"};window.dataPath="2/path---2011-10-15-degas-more-than-just-a-genius-of-movement-2-fa-997-bYHNbXYLUbnZ36Ms4Ckg0QsI4";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-bef4d960eb13ecef2792.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-22aaa75040151f6993a3.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js.5f396faadd7d5b28094a.css","/component---src-templates-blog-post-js-31d3b680c6f8ebc0fc87.js"],"component---src-pages-404-js":["/component---src-pages-404-js.12b03a3ce87a9d9e664c.css","/component---src-pages-404-js-5f88c27662a3bb9e2912.js"],"component---src-pages-index-js":["/component---src-pages-index-js.12b03a3ce87a9d9e664c.css","/component---src-pages-index-js-4b7f80d28a0da3ecd954.js"]};/*]]>*/</script><script src="/momardi/webpack-runtime-db7f2d96c3eec731f6a8.js" async=""></script><script src="/momardi/0-327661c7b7fc2a48bb3c.js" async=""></script><script src="/momardi/1-1b87c73c26c76a3cb291.js" async=""></script><script src="/momardi/app-bef4d960eb13ecef2792.js" async=""></script><script src="/momardi/component---src-templates-blog-post-js-31d3b680c6f8ebc0fc87.js" async=""></script></body></html>

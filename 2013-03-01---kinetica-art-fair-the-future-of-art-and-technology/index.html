@@ -1,0 +1,263 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/momardi/component---src-templates-blog-post-js.5f396faadd7d5b28094a.css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/momardi/static/montserrat-latin-100-50d279861fb3cbfed809eae6ed8b9ac9.woff2) format("woff2"),url(/momardi/static/montserrat-latin-100-5e334eff013f12fbb8ed72c2a253f119.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/momardi/static/montserrat-latin-100italic-8c0705336558194799a8729840d7ed9d.woff2) format("woff2"),url(/momardi/static/montserrat-latin-100italic-03e19243272affe738654a157625ec26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/momardi/static/montserrat-latin-200-4343d3d91a9446226e7a8bbb024111ad.woff2) format("woff2"),url(/momardi/static/montserrat-latin-200-f2022ecd65a0703ec3edcb7641709a75.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/momardi/static/montserrat-latin-200italic-116c4c4b14ef76b0555da09854512022.woff2) format("woff2"),url(/momardi/static/montserrat-latin-200italic-89614a6008fc5c60739012463d0ee7e6.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/momardi/static/montserrat-latin-300-d2ad295b60682a6537c358e06ea80c61.woff2) format("woff2"),url(/momardi/static/montserrat-latin-300-3a371ee0d175f5c2b15ce1d6b981dc4e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/momardi/static/montserrat-latin-300italic-f6b6bf2431003f8142e800f9df157989.woff2) format("woff2"),url(/momardi/static/montserrat-latin-300italic-16521668f5f238098329cdd7d27c391e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/momardi/static/montserrat-latin-400-240a84447b78da0920fcb07e378f2c5f.woff2) format("woff2"),url(/momardi/static/montserrat-latin-400-b20cc131034316b1c85d0498fb9ed5c5.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/momardi/static/montserrat-latin-400italic-86172bb829de6be08b92512096b6aca6.woff2) format("woff2"),url(/momardi/static/montserrat-latin-400italic-9405e78785a55cf0e4ea7669d4616ea9.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/momardi/static/montserrat-latin-500-fb8d6b71dbe8d9294be43082936f649e.woff2) format("woff2"),url(/momardi/static/montserrat-latin-500-50825d47af7ae47e055018eb689c6c99.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/momardi/static/montserrat-latin-500italic-c0a555a4f8e997385a3eebbd4da0b9ee.woff2) format("woff2"),url(/momardi/static/montserrat-latin-500italic-635de59c4be86285b1f70068c95b9816.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/momardi/static/montserrat-latin-600-d5615136a08cfee70deb4be1ee1651df.woff2) format("woff2"),url(/momardi/static/montserrat-latin-600-f300da4fb4fe00e23915f62b2c643681.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/momardi/static/montserrat-latin-600italic-10f29d139edacde92df63374c5672568.woff2) format("woff2"),url(/momardi/static/montserrat-latin-600italic-2bc37d86a4ba12ce526c4af904a9946e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/momardi/static/montserrat-latin-700-7d77e1f03eefc452dab14d7f89080083.woff2) format("woff2"),url(/momardi/static/montserrat-latin-700-81826529772e52f0f14a4c73c2f2c7f1.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/momardi/static/montserrat-latin-700italic-1dd2b53f1567a29e0505de9b27c4352c.woff2) format("woff2"),url(/momardi/static/montserrat-latin-700italic-c162d257f5e9f9b108a96a604cfb2132.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/momardi/static/montserrat-latin-800-d4e7bf86bbd8e5f43ca73fa831218648.woff2) format("woff2"),url(/momardi/static/montserrat-latin-800-895aadbff357be35ac8dd107c7975ee7.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/momardi/static/montserrat-latin-800italic-fc0cbe442f7b3733c91e982e825c4daa.woff2) format("woff2"),url(/momardi/static/montserrat-latin-800italic-b3362875067300abedb7a8fb97903258.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/momardi/static/montserrat-latin-900-c8bdd772c0d1347720ff7e3fb72719f3.woff2) format("woff2"),url(/momardi/static/montserrat-latin-900-1b99ef78e627dd9bbd0ca4b5c0789547.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/momardi/static/montserrat-latin-900italic-cb72c1f90f66c124fb897a75bec64c78.woff2) format("woff2"),url(/momardi/static/montserrat-latin-900italic-b78bb9f8ecec6c5a924c873f1818095f.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/momardi/static/merriweather-latin-300-f015f1e9a46a3b9db4fd64564dacece4.woff2) format("woff2"),url(/momardi/static/merriweather-latin-300-92dfe81b725c342d31d962da975c07a6.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/momardi/static/merriweather-latin-300italic-7fd86b32accf2df4403d1d4fa3a81502.woff2) format("woff2"),url(/momardi/static/merriweather-latin-300italic-878b76f59d5ba58dd1652dc8d2a0f4f9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/momardi/static/merriweather-latin-400-12dbf4c00ae43698f278b099e4b0ec9e.woff2) format("woff2"),url(/momardi/static/merriweather-latin-400-1fffad22b085a877995812dbf1d9ac08.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/momardi/static/merriweather-latin-400italic-1e0d3e8121d88969bfb153c8f174b758.woff2) format("woff2"),url(/momardi/static/merriweather-latin-400italic-de18d4c4e8e808a7248a185f866ff094.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/momardi/static/merriweather-latin-700-dc8fec81a125fc63856587e6683da73b.woff2) format("woff2"),url(/momardi/static/merriweather-latin-700-d7d2ed8e58f303392cc3fc00ba3a9186.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/momardi/static/merriweather-latin-700italic-b7b7e5da4d7be8c12bd5a6c809edc8fc.woff2) format("woff2"),url(/momardi/static/merriweather-latin-700italic-6210a5fc1c54ca85a5d82aa85d7a9b5c.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/momardi/static/merriweather-latin-900-43f870d543dd89fbeb66d417c0d97276.woff2) format("woff2"),url(/momardi/static/merriweather-latin-900-8f3806df74937c7b8b53f24ae1e725d1.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/momardi/static/merriweather-latin-900italic-168c1ab28ed0e4e7d654334def288bc1.woff2) format("woff2"),url(/momardi/static/merriweather-latin-900italic-ae7778f01871e35ee142ef207b313b34.woff) format("woff")}figcaption{font-size:14px;color:grey;font-style:italic;margin-top:5px;text-align:center}</style><meta name="generator" content="Gatsby 2.0.60"/><link rel="alternate" type="application/rss+xml" href="/momardi/rss.xml"/><link rel="shortcut icon" href="/momardi/icons/icon-48x48.png"/><link rel="manifest" href="/momardi/manifest.webmanifest"/><meta name="theme-color" content="#663399"/><title data-react-helmet="true">(My Top Ten Picks) Kinetica Art Fair: The Future of Art and Technology | Momardi</title><meta data-react-helmet="true" name="description" content="The more our lives become intertwined with technology, the more the  Kinetica Art Fair  becomes a relevant platform for ambitious tech…"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}</style><link as="script" rel="preload" href="/momardi/component---src-templates-blog-post-js-31d3b680c6f8ebc0fc87.js"/><link as="script" rel="preload" href="/momardi/app-bef4d960eb13ecef2792.js"/><link as="script" rel="preload" href="/momardi/1-1b87c73c26c76a3cb291.js"/><link as="script" rel="preload" href="/momardi/0-327661c7b7fc2a48bb3c.js"/><link as="script" rel="preload" href="/momardi/webpack-runtime-db7f2d96c3eec731f6a8.js"/><link rel="preload" href="/momardi/static/d/420/path---2013-03-01-kinetica-art-fair-the-future-of-art-and-technology-508-2e2-9Cc4fFMfpy30Vm55UP1yWjWwif4.json" as="fetch" crossOrigin="use-credentials"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group"><div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:2.625rem 1.3125rem"><h3 style="font-family:Montserrat, sans-serif;margin-top:0;margin-bottom:-1.75rem"><a style="box-shadow:none;text-decoration:none;color:inherit" href="/momardi/">Momardi</a></h3><h1>(My Top Ten Picks) Kinetica Art Fair: The Future of Art and Technology</h1><p style="font-size:0.83255rem;line-height:1.75rem;display:block;margin-bottom:1.75rem;margin-top:-1.75rem">March 01, 2013</p><div><p>The more our lives become intertwined with technology, the more the <a href="http://www.kinetica-artfair.com/">Kinetica Art Fair</a> becomes a relevant platform for ambitious tech-related type of art. Now on its fifth year, <strong>Kinetica Art Fair is bustling with energy and possibilities.</strong> The great thing about the Kinetic Art Fair is that it looks to the future and yes, it’s future is oh so bright.  I predict that in a few years to come, it will become a much more important exhibition and would garner more funding from not just new media outfits but also by top art ponchos.</p>
+<p>A convergence of kinetic, electronic, robotic, sound, light, time-based and multi-disciplinary new media art, Kinetica Art Fair brings artworks from more than <strong>35 galleries and some of the artists featured are with international pedigree</strong>. It’s not surprising that this is not a curated art fair.  Art is for all and so is technology although I am sure that if it is curated better, it can be a formidable force in the arts world. But for now, here in the Kinetica Art Fair, there is a sense of <strong><span style="color: #000000;">collaborative spirit all happening between artists, designers, architects and new media students</span></strong> so much so that it seems like they are breeding this into their own playground.</p>
+<p>Interactivity is in the heart of the Kinetica Art Fair: from a typewriter that beats drum sounds into bottles to a large-scale sculptural zoetrope, there are unexpected things in this exhibition that can take your breath away.</p>
+<p><strong>1. A sculptural dream-world</strong></p>
+<p><span class="youtube"><div>
+          <div
+            class="gatsby-resp-iframe-wrapper"
+            style="padding-bottom: 78.90625%; position: relative; height: 0; overflow: hidden;margin-bottom: 1.0725rem"
+          >
+            <iframe allowfullscreen class="youtube-player" frameborder="0" src="//www.youtube.com/embed/OIHxjqZ7pTU?wmode=transparent&amp;fs=1&amp;hl=en&amp;modestbranding=1&amp;iv_load_policy=3&amp;showsearch=0&amp;rel=0&amp;theme=dark" title="YouTube video player" type="text/html" style="
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+          "></iframe>
+          </div>
+          </div></iframe></span><br>
+<em><span style="color: #888888;">Gregory Barsamian at Kinetica Art Fair 2013</span><br>
+<span style="color: #888888;">A modernisation of the Zoetrope, inspired by Carl Jung<br>
+</span></em></p>
+<p><strong>2. 3d but 2d</strong></p>
+<p><span class="youtube"><div>
+          <div
+            class="gatsby-resp-iframe-wrapper"
+            style="padding-bottom: 78.90625%; position: relative; height: 0; overflow: hidden;margin-bottom: 1.0725rem"
+          >
+            <iframe allowfullscreen class="youtube-player" frameborder="0" src="//www.youtube.com/embed/GPOtykKvTFI?wmode=transparent&amp;fs=1&amp;hl=en&amp;modestbranding=1&amp;iv_load_policy=3&amp;showsearch=0&amp;rel=0&amp;theme=dark" title="YouTube video player" type="text/html" style="
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+          "></iframe>
+          </div>
+          </div></iframe></span><br>
+<span style="color: #888888;"><em>The Trulife™ Hologram reproduces the same light wave which reflected off the original object *created by [<span style="color: #888888;"></em>Colour Holographic*</span>](<a href="http://www.colourholographic.com/">http://www.colourholographic.com/</a>)</span></p>
+<p><strong>3. Tech Ocean</strong></p>
+<p> <span class="youtube"><div>
+          <div
+            class="gatsby-resp-iframe-wrapper"
+            style="padding-bottom: 78.90625%; position: relative; height: 0; overflow: hidden;margin-bottom: 1.0725rem"
+          >
+            <iframe allowfullscreen class="youtube-player" frameborder="0" src="//www.youtube.com/embed/vAlrnRrrVpw?wmode=transparent&amp;fs=1&amp;hl=en&amp;modestbranding=1&amp;iv_load_policy=3&amp;showsearch=0&amp;rel=0&amp;theme=dark" title="YouTube video player" type="text/html" style="
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+          "></iframe>
+          </div>
+          </div></iframe></span><br>
+<span style="color: #888888;"><em>The Mechanical Ocean Wave Simulator, Ciboure 2013 by <a href="http://www.kinetica-artfair.com/?exhibitors/2013?cat=5"><span style="color: #888888;">Matthieu Schönholzer</span></a></em></span><br>
+<span style="color: #888888;"><em>One of the pioneers of 3d-FX computer graphics industry, this is Matthieu’s foray into the world of interactive sculpture</em></span></p>
+<p>** 4. Fibre optic figure**</p>
+<p><a href="./images/seated-child_roselin-de-thelin_jmnbdz.jpg">
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 630px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwAG/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAABz7EwFR//xAAYEAACAwAAAAAAAAAAAAAAAAACEAADEv/aAAgBAQABBQKWDlmv/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAGBAAAgMAAAAAAAAAAAAAAAAAARAAIXH/2gAIAQEABj8Cgxi1/8QAGhABAAIDAQAAAAAAAAAAAAAAAQARECFBYf/aAAgBAQABPyGXB4cBcOtzR3H/2gAMAwEAAgADAAAAEPPv/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPxA//8QAFhEBAQEAAAAAAAAAAAAAAAAAARAh/9oACAECAQE/EF2f/8QAGxABAAICAwAAAAAAAAAAAAAAAQARECFBUWH/2gAIAQEAAT8QnZ6iijYOFVEcIHwKrw2yp//Z'); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="seated child_roselin de thelin"
+        title=""
+        src="/momardi/static/5c7891e023a2384e0f2f36f3f8346d66/8c020/seated-child_roselin-de-thelin_jmnbdz.jpg"
+        srcset="/momardi/static/5c7891e023a2384e0f2f36f3f8346d66/da4c4/seated-child_roselin-de-thelin_jmnbdz.jpg 158w,
+/momardi/static/5c7891e023a2384e0f2f36f3f8346d66/37caf/seated-child_roselin-de-thelin_jmnbdz.jpg 315w,
+/momardi/static/5c7891e023a2384e0f2f36f3f8346d66/8c020/seated-child_roselin-de-thelin_jmnbdz.jpg 630w,
+/momardi/static/5c7891e023a2384e0f2f36f3f8346d66/ec4bb/seated-child_roselin-de-thelin_jmnbdz.jpg 640w"
+        sizes="(max-width: 630px) 100vw, 630px"
+      />
+    </span>
+  </span>
+  </a><em><span style="color: #888888;">Seated Child (Columba) by Roseline de Thelin</span></em><br>
+<span style="color: #888888;"><em>Roselin used fibre optics to create light points to create an illusion of a seated figure</em></span></p>
+<p>** 5. Type some sounds**</p>
+<p><a href="./images/xiaofei-dyson_rrfqhm.jpg">
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 630px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMFAgT/xAAWAQEBAQAAAAAAAAAAAAAAAAADAQL/2gAMAwEAAhADEAAAAWamoNKZwlz/AP/EABsQAAIBBQAAAAAAAAAAAAAAAAESEwACAyEi/9oACAEBAAEFAmUOEx2sJNt1Ma//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAaEAEAAQUAAAAAAAAAAAAAAAAAEQEQIWHB/9oACAEBAAY/AlYT1pi3/8QAGhABAAMAAwAAAAAAAAAAAAAAAQARITFBkf/aAAgBAQABPyEGRFXVbLblsaVviLLLuCmZP//aAAwDAQACAAMAAAAQ4/8A/8QAFhEBAQEAAAAAAAAAAAAAAAAAABEh/9oACAEDAQE/EMV//8QAFREBAQAAAAAAAAAAAAAAAAAAECH/2gAIAQIBAT8Qp//EABwQAQADAAIDAAAAAAAAAAAAAAEAESFBUYGxwf/aAAgBAQABPxCuHZVqZHdrFjXriBnalq+wJ1EYdpUo2uMfEMrK4hhP/9k='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="xiaofei dyson"
+        title=""
+        src="/momardi/static/115362e7edcf41d03e670f63f4006e8c/8c020/xiaofei-dyson_rrfqhm.jpg"
+        srcset="/momardi/static/115362e7edcf41d03e670f63f4006e8c/da4c4/xiaofei-dyson_rrfqhm.jpg 158w,
+/momardi/static/115362e7edcf41d03e670f63f4006e8c/37caf/xiaofei-dyson_rrfqhm.jpg 315w,
+/momardi/static/115362e7edcf41d03e670f63f4006e8c/8c020/xiaofei-dyson_rrfqhm.jpg 630w,
+/momardi/static/115362e7edcf41d03e670f63f4006e8c/ec4bb/xiaofei-dyson_rrfqhm.jpg 640w"
+        sizes="(max-width: 630px) 100vw, 630px"
+      />
+    </span>
+  </span>
+  </a><span style="color: #888888;">*A typewriter that drums bottles by Xiaofei Dyson – an interactive installation that invites young and adults to play *</span></p>
+<p>** 6. Flipping books**</p>
+<p><a href="./images/mechanical-flipbook_wendy-marvel_by9bw4.jpg">
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 630px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEAv/EABYBAQEBAAAAAAAAAAAAAAAAAAACA//aAAwDAQACEAMQAAABskXjO6RIf//EABkQAAMBAQEAAAAAAAAAAAAAAAABAgMSIf/aAAgBAQABBQKmpnOxs06dqLG/f//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABcQAAMBAAAAAAAAAAAAAAAAAAABINH/2gAIAQEABj8CHs//xAAbEAEAAgIDAAAAAAAAAAAAAAABABExgSFhcf/aAAgBAQABPyFYqHrBXkatAWY6+qrEBSrutSrKf//aAAwDAQACAAMAAAAQCy//xAAVEQEBAAAAAAAAAAAAAAAAAAAQEf/aAAgBAwEBPxCn/8QAFhEAAwAAAAAAAAAAAAAAAAAAARAx/9oACAECAQE/EBF//8QAHBABAQADAQADAAAAAAAAAAAAAREAITFRQWGR/9oACAEBAAE/EJMooQuBlaoU4679uUDh3pNHFfe/OM2BpOAPj6twJQ/uf//Z'); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="mechanical flipbook_wendy marvel"
+        title=""
+        src="/momardi/static/1d645e0ae51d1d6f6bc32e302dff214d/8c020/mechanical-flipbook_wendy-marvel_by9bw4.jpg"
+        srcset="/momardi/static/1d645e0ae51d1d6f6bc32e302dff214d/da4c4/mechanical-flipbook_wendy-marvel_by9bw4.jpg 158w,
+/momardi/static/1d645e0ae51d1d6f6bc32e302dff214d/37caf/mechanical-flipbook_wendy-marvel_by9bw4.jpg 315w,
+/momardi/static/1d645e0ae51d1d6f6bc32e302dff214d/8c020/mechanical-flipbook_wendy-marvel_by9bw4.jpg 630w,
+/momardi/static/1d645e0ae51d1d6f6bc32e302dff214d/ec4bb/mechanical-flipbook_wendy-marvel_by9bw4.jpg 640w"
+        sizes="(max-width: 630px) 100vw, 630px"
+      />
+    </span>
+  </span>
+  </a><span style="color: #888888;"><em>Mechanical Flipbook – created by Wendy Marvel and Mark Rosen. Made from Hand Machined parts from Bronze, Aluminum, Steel and 50’s era Aircraft Chassis Boxes</em></span></p>
+<p><strong>7. Keyboard beauty</strong></p>
+<p> <a href="./images/alexander-berchert_d6upd7.jpg">
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 630px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAQBAwX/xAAVAQEBAAAAAAAAAAAAAAAAAAACAf/aAAwDAQACEAMQAAABzGFLaUyAr//EABoQAAICAwAAAAAAAAAAAAAAAAITAAEDBBL/2gAIAQEAAQUC1uW3QJmEqA2Cuf/EABgRAQADAQAAAAAAAAAAAAAAAAECEBEh/9oACAEDAQE/AWScyv/EABYRAQEBAAAAAAAAAAAAAAAAAAEQUf/aAAgBAgEBPwEDZ//EABwQAAICAgMAAAAAAAAAAAAAAAERAAIDEBIiMf/aAAgBAQAGPwIcgxMnUPTPktVFnX//xAAcEAEAAgEFAAAAAAAAAAAAAAABABEhEDFBUXH/2gAIAQEAAT8hCIqHD5EoAKp6zoNNaO0a9wLLn//aAAwDAQACAAMAAAAQy/8A/8QAFxEAAwEAAAAAAAAAAAAAAAAAARARYf/aAAgBAwEBPxAhFav/xAAXEQEAAwAAAAAAAAAAAAAAAAABEBGB/9oACAECAQE/EFFuI//EABkQAQADAQEAAAAAAAAAAAAAAAEAESExkf/aAAgBAQABPxDVj/jdqipbpG4R7BBoE60SBNWLKoBHfI6n/9k='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="alexander berchert"
+        title=""
+        src="/momardi/static/378388a8431eec5c5967b23440cca046/8c020/alexander-berchert_d6upd7.jpg"
+        srcset="/momardi/static/378388a8431eec5c5967b23440cca046/da4c4/alexander-berchert_d6upd7.jpg 158w,
+/momardi/static/378388a8431eec5c5967b23440cca046/37caf/alexander-berchert_d6upd7.jpg 315w,
+/momardi/static/378388a8431eec5c5967b23440cca046/8c020/alexander-berchert_d6upd7.jpg 630w,
+/momardi/static/378388a8431eec5c5967b23440cca046/ec4bb/alexander-berchert_d6upd7.jpg 640w"
+        sizes="(max-width: 630px) 100vw, 630px"
+      />
+    </span>
+  </span>
+  </a><span style="color: #888888;"><em>Alexander Berchert creates this artwork combining his fascination for mass-produced objects and physics</em></span></p>
+<p><strong>8. Breathing H20</strong></p>
+<p><a href="./images/breathe_ben-tyers_tn2rcd.jpg">
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 630px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAGQAAAQUAAAAAAAAAAAAAAAAAAAECAwQG/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAABz70mK4B//8QAGRABAAIDAAAAAAAAAAAAAAAAAQAQAgMR/9oACAEBAAEFAo1i8diV/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFhAAAwAAAAAAAAAAAAAAAAAAECAh/9oACAEBAAY/Akg//8QAGhAAAQUBAAAAAAAAAAAAAAAAAQAQESFBUf/aAAgBAQABPyFCKjjQJVAaDf/aAAwDAQACAAMAAAAQ8+//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAZEAEBAAMBAAAAAAAAAAAAAAABEQAQMSH/2gAIAQEAAT8QO4Ak3qk90hMY8S4QooVQ81//2Q=='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="breathe_ben tyers"
+        title=""
+        src="/momardi/static/674b868883101cd5e3f6baafbe14a799/8c020/breathe_ben-tyers_tn2rcd.jpg"
+        srcset="/momardi/static/674b868883101cd5e3f6baafbe14a799/da4c4/breathe_ben-tyers_tn2rcd.jpg 158w,
+/momardi/static/674b868883101cd5e3f6baafbe14a799/37caf/breathe_ben-tyers_tn2rcd.jpg 315w,
+/momardi/static/674b868883101cd5e3f6baafbe14a799/8c020/breathe_ben-tyers_tn2rcd.jpg 630w,
+/momardi/static/674b868883101cd5e3f6baafbe14a799/ec4bb/breathe_ben-tyers_tn2rcd.jpg 640w"
+        sizes="(max-width: 630px) 100vw, 630px"
+      />
+    </span>
+  </span>
+  </a><em><span style="color: #888888;">Breathe by Ben Tyers. A water container that emulates the act of breathing.</span></em></p>
+<p><strong>9. Fishing line but not for fish</strong></p>
+<p><a href="./images/08015_david-ogle_shcl9d.jpg">
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 630px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAEDBf/EABYBAQEBAAAAAAAAAAAAAAAAAAECBP/aAAwDAQACEAMQAAAB4rO6oqF//8QAGBAAAwEBAAAAAAAAAAAAAAAAAAERAhD/2gAIAQEAAQUCRE9TtP/EABYRAQEBAAAAAAAAAAAAAAAAAAARIf/aAAgBAwEBPwGNf//EABcRAQEBAQAAAAAAAAAAAAAAAAEAESP/2gAIAQIBAT8BHTG53//EABQQAQAAAAAAAAAAAAAAAAAAACD/2gAIAQEABj8CX//EABoQAAICAwAAAAAAAAAAAAAAAAABMWEQIYH/2gAIAQEAAT8hdQ2UCHvIrO4f/9oADAMBAAIAAwAAABA0D//EABcRAQADAAAAAAAAAAAAAAAAAAARITH/2gAIAQMBAT8Q1SD/xAAYEQEAAwEAAAAAAAAAAAAAAAABACExQf/aAAgBAgEBPxAxCjY37P/EABkQAQEBAQEBAAAAAAAAAAAAAAERADFxQf/aAAgBAQABPxCKtDhLMQha8+z3QUMyL0eao0WVv//Z'); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="08015_david ogle"
+        title=""
+        src="/momardi/static/1ecfe7121659fff6df30e3977c0aa96a/8c020/08015_david-ogle_shcl9d.jpg"
+        srcset="/momardi/static/1ecfe7121659fff6df30e3977c0aa96a/da4c4/08015_david-ogle_shcl9d.jpg 158w,
+/momardi/static/1ecfe7121659fff6df30e3977c0aa96a/37caf/08015_david-ogle_shcl9d.jpg 315w,
+/momardi/static/1ecfe7121659fff6df30e3977c0aa96a/8c020/08015_david-ogle_shcl9d.jpg 630w,
+/momardi/static/1ecfe7121659fff6df30e3977c0aa96a/ec4bb/08015_david-ogle_shcl9d.jpg 640w"
+        sizes="(max-width: 630px) 100vw, 630px"
+      />
+    </span>
+  </span>
+  </a><span style="color: #808080;"><em>08015 by David Ogle – made from fluorescent fishing line and ultraviolet light</em></span>. <span style="color: #808080;"><em>David explores the notions of materiality, of permanence and the visual perceptions of object in space.</em></span></p>
+<p><strong>10. Tech fingers</strong></p>
+<p><a href="./images/bailey-bots_marko-kryut_fadvxt.jpg">
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 630px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 79.6875%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAQABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAIE/8QAFwEAAwEAAAAAAAAAAAAAAAAAAAECA//aAAwDAQACEAMQAAABpjZ3SDP/xAAaEAACAgMAAAAAAAAAAAAAAAAAAQISAxAR/9oACAEBAAEFAkSjzUchapZM/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAGBAAAgMAAAAAAAAAAAAAAAAAEBEAASH/2gAIAQEABj8Cmm2x/8QAGhAAAgMBAQAAAAAAAAAAAAAAAAERMUEhUf/aAAgBAQABPyGGDuIz4sHbELUKEVhM/9oADAMBAAIAAwAAABDfL//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EABkQAQADAQEAAAAAAAAAAAAAAAEAESExQf/aAAgBAQABPxA0CNOzuy4sXPsZp24LGrQ2Y6h5OWbP/9k='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="bailey bots_marko kryut"
+        title=""
+        src="/momardi/static/9944e39ab2949dade84d7142abd88729/8c020/bailey-bots_marko-kryut_fadvxt.jpg"
+        srcset="/momardi/static/9944e39ab2949dade84d7142abd88729/da4c4/bailey-bots_marko-kryut_fadvxt.jpg 158w,
+/momardi/static/9944e39ab2949dade84d7142abd88729/37caf/bailey-bots_marko-kryut_fadvxt.jpg 315w,
+/momardi/static/9944e39ab2949dade84d7142abd88729/8c020/bailey-bots_marko-kryut_fadvxt.jpg 630w,
+/momardi/static/9944e39ab2949dade84d7142abd88729/ec4bb/bailey-bots_marko-kryut_fadvxt.jpg 640w"
+        sizes="(max-width: 630px) 100vw, 630px"
+      />
+    </span>
+  </span>
+  </a><span style="color: #808080;"><em>Bailey Bots by Marko Kryut – two moving robotic hands exploring the origins of matter</em></span></p>
+<p>Read more:<br>
+<a href="http://www.culture24.org.uk/art/sculpture%20%26%20installation/art422490">Wunderkammeras and techno-animalism: Kinetica Art Fair returns to Ambika P3 –  Culture 24</a><br>
+<a href="http://www.newscientist.com/blogs/culturelab/2013/03/kinetica-artfair.html">Kinetica comes into its own illusory adventures – New Scientist blog</a><br>
+<a href="http://www.huffingtonpost.co.uk/2013/03/01/kinetica-2013-art-fair_n_2789402.html?utm_hp_ref=uk">When Art and Science Collide (Pictures) – Huffington Post</a><br>
+<a href="http://www.artlyst.com/articles/kinetica-art-fair-2013-half-matrix-half-diagon-alley">Kinetica Art Fair – Half Matrix – Half Diagon Alley – Artlyst</a></p>
+<p><span class="youtube"><div>
+          <div
+            class="gatsby-resp-iframe-wrapper"
+            style="padding-bottom: 78.90625%; position: relative; height: 0; overflow: hidden;margin-bottom: 1.0725rem"
+          >
+            <iframe allowfullscreen class="youtube-player" frameborder="0" src="//www.youtube.com/embed/eqNRrUDSI8Y?wmode=transparent&amp;fs=1&amp;hl=en&amp;modestbranding=1&amp;iv_load_policy=3&amp;showsearch=0&amp;rel=0&amp;theme=dark" title="YouTube video player" type="text/html" style="
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+          "></iframe>
+          </div>
+          </div></iframe></span><br>
+<span style="color: #808080;"><em>More on Kinetic Art Fair 2013</em></span></p></div><hr style="margin-top:1.75rem;margin-bottom:1.75rem"/><div style="display:flex;margin-bottom:4.375rem"><img src="/momardi/static/profile-pic-cc0076929fc572c755fc22ea61edba15.jpg" alt="Kyle Mathews" style="margin-right:0.875rem;margin-bottom:0;width:3.5rem;height:3.5rem"/><p>I&#x27;m a former digital marketing manager for the London 2012 Festival, the largest UK festival ever staged. This is my blog about contemporary art, design, film, photography and all that move my soul</p></div><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/momardi/2013-01-26---interview-with-artist-louise-champion-painting-the-mundane/">← <!-- -->Interview with Artist Louise Champion: Painting the Mundane</a></li><li><a rel="next" href="/momardi/2013-04-22---pedro-reyes-disarm-make-music-not-war/">Pedro Reyes - Disarm: Make Music, Not War<!-- --> →</a></li></ul></div></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'undefined', 'auto', {});
+      
+      }
+      </script><script id="gatsby-script-loader">/*<![CDATA[*/window.page={"componentChunkName":"component---src-templates-blog-post-js","jsonName":"2013-03-01-kinetica-art-fair-the-future-of-art-and-technology-508","path":"/2013-03-01---kinetica-art-fair-the-future-of-art-and-technology/"};window.dataPath="420/path---2013-03-01-kinetica-art-fair-the-future-of-art-and-technology-508-2e2-9Cc4fFMfpy30Vm55UP1yWjWwif4";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-bef4d960eb13ecef2792.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-22aaa75040151f6993a3.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js.5f396faadd7d5b28094a.css","/component---src-templates-blog-post-js-31d3b680c6f8ebc0fc87.js"],"component---src-pages-404-js":["/component---src-pages-404-js.12b03a3ce87a9d9e664c.css","/component---src-pages-404-js-5f88c27662a3bb9e2912.js"],"component---src-pages-index-js":["/component---src-pages-index-js.12b03a3ce87a9d9e664c.css","/component---src-pages-index-js-4b7f80d28a0da3ecd954.js"]};/*]]>*/</script><script src="/momardi/webpack-runtime-db7f2d96c3eec731f6a8.js" async=""></script><script src="/momardi/0-327661c7b7fc2a48bb3c.js" async=""></script><script src="/momardi/1-1b87c73c26c76a3cb291.js" async=""></script><script src="/momardi/app-bef4d960eb13ecef2792.js" async=""></script><script src="/momardi/component---src-templates-blog-post-js-31d3b680c6f8ebc0fc87.js" async=""></script></body></html>

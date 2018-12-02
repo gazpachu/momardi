@@ -50,7 +50,7 @@ const Bodytext = props => {
           :global(a.gatsby-resp-image-link) {
             border: 0;
             display: block;
-            margin: 2.5em 0;
+            margin: 1em 0;
             border-radius: ${theme.size.radius.default};
             overflow: hidden;
             border: 1px solid ${theme.line.color};

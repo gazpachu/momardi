@@ -21,6 +21,7 @@ class Layout extends React.Component {
     this.state = {
       font100loaded: false,
       font400loaded: false,
+      font600loaded: false,
       screenWidth: 0,
       headerMinimized: false,
       theme: themeObjectFromYaml
@@ -29,6 +30,7 @@ class Layout extends React.Component {
     if (typeof window !== `undefined`) {
       this.loadFont("font100", "Open Sans", 100);
       this.loadFont("font400", "Open Sans", 400);
+      this.loadFont("font600", "Open Sans", 600);
     }
   }
 
@@ -112,7 +114,7 @@ class Layout extends React.Component {
 
           return (
             <ThemeContext.Provider value={this.state.theme}>
-              <FontLoadedContext.Provider value={this.state.font100loaded}>
+              <FontLoadedContext.Provider value={this.state.font400loaded}>
                 <ScreenWidthContext.Provider value={this.state.screenWidth}>
                   <React.Fragment>
                     <Header
@@ -141,7 +143,7 @@ class Layout extends React.Component {
                         padding: 0;
                       }
                       body {
-                        font-family: ${this.state.font100loaded
+                        font-family: ${this.state.font400loaded
                           ? "'Open Sans', sans-serif;"
                           : "Arial, sans-serif;"};
                       }
@@ -160,7 +162,7 @@ class Layout extends React.Component {
                         margin: 0;
                       }
                       strong {
-                        font-weight: 400;
+                        font-weight: 600;
                       }
                       a {
                         text-decoration: none;

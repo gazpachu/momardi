@@ -4,7 +4,7 @@ cover: images/start-a-war_rbdhdg.jpg
 category: interviews
 ---
 
-Fresh from his successful show **‘SIX’** last year, London-based photographer Kevin Morosky continues to explore the nature of human on relationships in his new photography online exhibition[ ‘Start a War’](http://www.startawarmorosky.com/).  He moves on to collaborate with his buddies, the new wave pop duo **We the Committee**, who provided the song which became the backdrop for this amazing online exhibition.
+Fresh from his successful show **‘SIX’** last year, London-based photographer Kevin Morosky continues to explore the nature of human on relationships in his new photography online exhibition [‘Start a War’](http://www.startawarmorosky.com/). He moves on to collaborate with his buddies, the new wave pop duo **We the Committee**, who provided the song which became the backdrop for this amazing online exhibition.
 
 The haunting and melancholic sound by **We the Committee** heightens and complements **Kevin’s raw, intimate and honest series about a couple going through the motions of love and the infighting that goes along with it**. If Kevin’s ‘SIX’  explored the theory of six degrees of separation and how we are all connected with each other, [‘Start a War’](http://www.startawarmorosky.com/) is not afraid to  delve into the root and intimacy of love relationships. Morosky says, **‘The real question is, when we start a relationship, do we love and fight at the same time or are we just starting wars?’**
 

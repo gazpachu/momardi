@@ -51,9 +51,7 @@ const Bodytext = props => {
             border: 0;
             display: block;
             margin: 1em 0;
-            border-radius: ${theme.size.radius.default};
             overflow: hidden;
-            border: 1px solid ${theme.line.color};
           }
           :global(code.language-text) {
             background: ${theme.color.neutral.gray.c};

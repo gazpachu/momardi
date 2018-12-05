@@ -1,24 +1,19 @@
 ---
 title: "Top Five Art Sites for the Armchair Art Aficionado"
-slug: "/top-five-art-sites-for-the-armchair-art-aficionado"
-date: "2013-02-23T17:03:52.000Z"
-featured: false
-draft: true
-tags: ["art babble","art museum online","Artech","bbc your paintings","Galleries","google art project","google cultural institute","Museum","Paintings","pcf","tate channel","tate shots","the space","your paintings"]
+cover: images/armchair-art.jpg
+category: art
 ---
-
 
 I think we can all agree that this cold weather is just hanging about too long and we all really need to do some **flash mob sun salutation to lure back the sun god Ra**. If someone please ask [Olafur Eliasson to bring back The Weather Project](http://www.tate.org.uk/whats-on/exhibition/unilever-series-olafur-eliasson-weather-project) this week at the Tate, then I’d be more than pleased to go out and see a good art exhibition – artificial sunlight and all. But laziness plagues a dampened spirit and** my best friend these days is none other than my armchair**.
 
 Manet, Lichtenstein and Man Ray can all wait (great exhibitions around the city)- but here are some sites that you need to see when it’s just too cold to go out. At least, you don’t need to shell £15 to see some great masterpieces (and in your pyjamas!)
 
- 
+<iframe allowfullscreen="" frameborder="0" height="480" src="http://player.vimeo.com/video/23537135" width="640"></iframe>
 
-<iframe allowfullscreen="" frameborder="0" height="480" src="http://player.vimeo.com/video/23537135" width="640"></iframe>*<span style="color: #888888;">[<span style="color: #888888;">The Nation’s Oil Paintings</span>](http://vimeo.com/23537135) from [<span style="color: #888888;">The Public Catalogue Foundation</span>](http://vimeo.com/user6663908) on [<span style="color: #888888;">Vimeo</span>](http://vimeo.com). See how the PCF catalogued 211,880 oil paintings</span>  
-*
+<figcaption>The Nation’s Oil Paintings (http://vimeo.com/23537135) from [The Public Catalogue Foundation]. See how the PCF catalogued 211,880 oil paintings (http://vimeo.com/user6663908)</figcaption>
 
-**[1. Your Paintings  
-](http://www.bbc.co.uk/arts/yourpaintings/)**  
+**[1. Your Paintings](http://www.bbc.co.uk/arts/yourpaintings/)**
+
 With 211,880 oil paintings online, this site is a goldmine for discovering UK’s public art collection. Your Paintings is a joint initiative between the BBC and the charity Public Catalogue Foundation with the participation of  museums from across the UK. Most paintings on this site are part of a museum’s public collection that are not in public display at the moment (some are being repaired or conserved or being moved around for other exhibitions) so it’s a great way to familiarise yourself with paintings that you won’t probably see when visiting an actual museum. Your Paintings also includes [guided tours ](http://www.bbc.co.uk/arts/yourpaintings/guidedtours)from not just artists, art critics or experts but also by a more diverse bunch of people like actress [Sue Johnston](http://www.bbc.co.uk/arts/yourpaintings/guidedtours/sue-johnston) or like [Michelle Ackerley ](http://www.bbc.co.uk/arts/yourpaintings/guidedtours/michelle-ackerley)who is a children’s TV presenter. The site is also interactive – you can create your own personal collection and can also [tag paintings](http://tagger.thepcf.org.uk/)!
 
 Top 4 must see:
@@ -28,7 +23,7 @@ Top 4 must see:
 - [35 paintings by Edgar Degas](http://www.bbc.co.uk/arts/yourpaintings/artists/edgar-degas)
 - [112 paintings by Rembrandt](http://www.bbc.co.uk/arts/yourpaintings/artists/-rembrandt-van-rijn)
 
-*<span class="youtube"><iframe allowfullscreen="" class="youtube-player" frameborder="0" height="505" src="//www.youtube.com/embed/goLinbUZM7o?wmode=transparent&fs=1&hl=en&modestbranding=1&iv_load_policy=3&showsearch=0&rel=0&theme=dark&feature=player_embedded" title="YouTube video player" type="text/html" width="640"></iframe></span>  
+*<span class="youtube"><iframe allowfullscreen="" class="youtube-player" frameborder="0" height="505" src="//www.youtube.com/embed/goLinbUZM7o?wmode=transparent&fs=1&hl=en&modestbranding=1&iv_load_policy=3&showsearch=0&rel=0&theme=dark&feature=player_embedded" title="YouTube video player" type="text/html" width="640"></iframe></span>
 <span style="color: #888888;">The Google Cultural Institute</span>*
 
 **[2. The Google Cultural Institute ](www.google.com/culturalinstitute/)**
@@ -44,7 +39,7 @@ Top 4 must see:
 
  
 
-<span class="youtube"><iframe allowfullscreen="" class="youtube-player" frameborder="0" height="505" src="//www.youtube.com/embed/4ZdCByYeNRU?wmode=transparent&fs=1&hl=en&modestbranding=1&iv_load_policy=3&showsearch=0&rel=0&theme=dark" title="YouTube video player" type="text/html" width="640"></iframe></span>  
+<span class="youtube"><iframe allowfullscreen="" class="youtube-player" frameborder="0" height="505" src="//www.youtube.com/embed/4ZdCByYeNRU?wmode=transparent&fs=1&hl=en&modestbranding=1&iv_load_policy=3&showsearch=0&rel=0&theme=dark" title="YouTube video player" type="text/html" width="640"></iframe></span>
 <span style="color: #888888;">*The Google Art Project*</span>
 
 **[3. The Google Art Project](http://www.googleartproject.com)**
@@ -60,7 +55,7 @@ Top 4 must see:
 
  
 
-<span class="youtube"><iframe allowfullscreen="" class="youtube-player" frameborder="0" height="505" src="//www.youtube.com/embed/_QNlwAtZDYI?wmode=transparent&fs=1&hl=en&modestbranding=1&iv_load_policy=3&showsearch=0&rel=0&theme=dark" title="YouTube video player" type="text/html" width="640"></iframe></span>  
+<span class="youtube"><iframe allowfullscreen="" class="youtube-player" frameborder="0" height="505" src="//www.youtube.com/embed/_QNlwAtZDYI?wmode=transparent&fs=1&hl=en&modestbranding=1&iv_load_policy=3&showsearch=0&rel=0&theme=dark" title="YouTube video player" type="text/html" width="640"></iframe></span>
 <span style="color: #888888;">*Art Babble trailer*</span>
 
 **[4. Art Babble](http://www.artbabble.org/)**
@@ -74,7 +69,7 @@ Top 4 must see
 - [166 videos on Learning to Look](http://www.artbabble.org/topic/theme/learning-look)
 - [For Educators](http://www.artbabble.org/educators)
 
-<span class="youtube"><iframe allowfullscreen="" class="youtube-player" frameborder="0" height="505" src="//www.youtube.com/embed/_AU5aMAx80Q?wmode=transparent&fs=1&hl=en&modestbranding=1&iv_load_policy=3&showsearch=0&rel=0&theme=dark&list=PL146CE5FA976AC803&index=6" title="YouTube video player" type="text/html" width="640"></iframe></span>  
+<span class="youtube"><iframe allowfullscreen="" class="youtube-player" frameborder="0" height="505" src="//www.youtube.com/embed/_AU5aMAx80Q?wmode=transparent&fs=1&hl=en&modestbranding=1&iv_load_policy=3&showsearch=0&rel=0&theme=dark&list=PL146CE5FA976AC803&index=6" title="YouTube video player" type="text/html" width="640"></iframe></span>
 <span style="color: #888888;">*Tate Shots: The launching of the Kraftwerk at Tate Modern*</span>
 
 **[5. Tate Channel](http://www.tate.org.uk/context-comment/audio-video)**
@@ -87,8 +82,3 @@ Top 4 must see
 - [782 Tate audio clips](http://www.tate.org.uk/context-comment/audio-video/search?f[]=im_vid_46:1848&solrsort=is_end_date%20asc,%20is_start_date%20asc,%20is_published_date%20desc)
 - [1325 Tate Talks and Lectures](http://www.tate.org.uk/context-comment/audio-video/search?f[]=im_vid_46:1848&f[]=im_vid_47:1866&solrsort=is_end_date%20asc,%20is_start_date%20asc,%20is_published_date%20desc)
 - [324 Tate Interviews](http://www.tate.org.uk/context-comment/audio-video/search?f[]=im_vid_47:1868&solrsort=is_end_date%20asc,%20is_start_date%20asc,%20is_published_date%20desc)
-
- 
-
-
-

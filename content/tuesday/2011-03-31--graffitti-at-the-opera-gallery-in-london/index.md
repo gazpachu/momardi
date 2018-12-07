@@ -9,19 +9,23 @@ Uhm, I miss the food and the sun in Spain but after reading Adriane Searle´s ar
 
 Spending time in the art library without anyone to talk to does not help so I thought of changing my routine for the day.
 
-![](./images/P1020152_a4cezi.jpg "Opera Gallery London")](http://momardi.com/wp-content/uploads/2011/03/P1020152.jpg) (I decided to take a break from sending CVs today too and blogging at another site,  and you know what a relief that is!) I need to get the blood circulation moving to wake up so I decided to swing by **New Bond street** to check out [**The Opera Gallery**](http://www.operagallery.com/ "The Opera Gallery").
+![](./images/P1020152_a4cezi.jpg "Opera Gallery London")
 
-Apparently, The Opera Gallery is really an important gallery and they have offices in New York, Paris, Seoul, Singapore. Backpack was heavy together with my head but I pranced along. The door of the gallery was open and I noticed workers were coming in and out with a new set of paintings.  ***This must be a new installation and I am feeling lucky today***.
+I decided to take a break from sending CVs today too and blogging at another site,  and you know what a relief that is!) I need to get the blood circulation moving to wake up so I decided to swing by **New Bond street** to check out [**The Opera Gallery**](http://www.operagallery.com/ "The Opera Gallery").
 
-![](./images/P1020156_hjxmrz.jpg "The Queen by Rich Simmons")](./images/P1020156_hjxmrz.jpg)Before I went in, I took a photo of graffitti art of **The Queen** near the gallery door. I love the fact that the symbol of the Royal Highness is still relevant in art and more so because of the up-coming hoopla of a wedding.
+Apparently, The Opera Gallery is really an important gallery and they have offices in New York, Paris, Seoul, Singapore. Backpack was heavy together with my head but I pranced along. The door of the gallery was open and I noticed workers were coming in and out with a new set of paintings.  **This must be a new installation and I am feeling lucky today**.
+
+![](./images/P1020156_hjxmrz.jpg "The Queen by Rich Simmons") 
+Before I went in, I took a photo of graffitti art of **The Queen** near the gallery door. I love the fact that the symbol of the Royal Highness is still relevant in art and more so because of the up-coming hoopla of a wedding.
 
 Predictably inside, there´s another graffitti art painting of **William and Kate**  by Mr. Brainwash, an important graffitti artist. With galleries now works like these, this is a testament to how graffitti art have creeped into contemporary consciousness.
 
-![](./images/P1020153_iczidk.jpg "Mr Brainwash")](./images/P1020153_iczidk.jpg)Two years ago, while I was in Paris, there was a huge exhibit for graffitti artists which included **Jonone**, a famous American artist living now in Paris. 
+![](./images/P1020153_iczidk.jpg "Mr Brainwash")
+Two years ago, while I was in Paris, there was a huge exhibit for graffitti artists which included **Jonone**, a famous American artist living now in Paris. 
 
 *This looks like its from Mr. Brainwash*
 
-![](./images/katewilliam_gf7c1j.jpg "Future ***King by Rich Simmons")](http://momardi.com/wp-content/uploads/2011/03/katewilliam.jpg)
+![](./images/katewilliam_gf7c1j.jpg "Future ***King by Rich Simmons")]
 
 Heading home, and checking the internet for Brainwash, I learned that Banksy created a film about him so tonight I would definitely try to see that movie and will let you know what I think. Strangely, browsing Flickr for more photos, I stumbled upon** artisthecure's photostream** and found pictures of the opening of the graffiti exhibit at the Opera Gallery.
 

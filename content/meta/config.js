@@ -4,7 +4,7 @@ module.exports = {
   siteDescription: "Tuesday Gutierrez. Creative writer, agile content manager and visual artist",
   siteUrl: "https://momardi.com",
   // pathPrefix: "",
-  siteImage: "preview.jpg",
+  siteImage: "",
   siteLanguage: "en",
 
   /* author */

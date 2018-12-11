@@ -36,13 +36,13 @@ Dear Tuesday
 
 Many thanks for dropping your cv in today. Unfortunately there are currently no positions available at the studio.
 
-Best wishes  
- Laura
+Best wishes
+Laura
 
 <iframe allowfullscreen="" class="youtube-player" frameborder="0" height="505" src="//www.youtube.com/embed/_VBj-gyCcrU?wmode=transparent&fs=1&hl=en&modestbranding=1&iv_load_policy=3&showsearch=0&rel=0&theme=dark" title="YouTube video player" type="text/html" width="640"></iframe>
 
 <figcaption>Antony Gormley´s studio in Camden</figcaption>
 
 <iframe allowfullscreen="" class="youtube-player" frameborder="0" height="505" src="//www.youtube.com/embed/j_U5tScyY7k?wmode=transparent&fs=1&hl=en&modestbranding=1&iv_load_policy=3&showsearch=0&rel=0&theme=dark" title="YouTube video player" type="text/html" width="640"></iframe>
- 
+
 <figcaption>Antony Gormley encourages us to go barefoot to change the world</figcaption>

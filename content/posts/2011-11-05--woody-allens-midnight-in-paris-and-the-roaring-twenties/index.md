@@ -1,7 +1,7 @@
 ---
 title: "Woody Allen's Midnight in Paris and the Roaring Twenties"
 cover: images/midnightinparis1_asc0sa.jpg
-category: cinema
+category: film
 ---
 
 Wouldn’t you want to go back to the 20s and meet the greatest artists of all time? If you haven’t seen the movie **Midnight Paris** yet, try to catch a glimpse of **Woody Allen** in one of his finest. The boy wonder is not running out of ideas! And that makes me want to shrivel in one corner and curl myself in shame. I must admit, after Match Point and Vicky Cristina Barcelona, I thought Woody’s touch would start slipping away.

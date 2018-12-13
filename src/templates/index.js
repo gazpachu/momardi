@@ -15,7 +15,6 @@ class IndexPage extends React.Component {
 
   render() {
     const { currentPage, numPages } = this.props.pageContext;
-    console.log(currentPage);
     const isFirst = currentPage === 1 || !currentPage;
     const isLast = currentPage === numPages;
     const prevPage = currentPage - 1 === 1 ? "/" : (currentPage - 1).toString();
@@ -96,28 +95,27 @@ class IndexPage extends React.Component {
             lineHeight: "30px"
           }}
         >
-        {Array.from({ length: numPages }, (_, i) => (
+          {Array.from({ length: numPages }, (_, i) => (
             <li
-             key={`pagination-number${i + 1}`}
-             style={{
-               margin: 0,
-             }}
+              key={`pagination-number${i + 1}`}
+              style={{
+                margin: 0
+              }}
             >
               <Link
-                to={`/${i === 0 ? '' : i + 1}`}
+                to={`/${i === 0 ? "" : i + 1}`}
                 style={{
                   padding: "3px 8px",
                   borderRadius: "5px",
-                  textDecoration: 'none',
-                  color: i + 1 === currentPage ? '#ffffff' : '',
-                  background: i + 1 === currentPage ? '#007acc' : ''
+                  textDecoration: "none",
+                  color: i + 1 === currentPage ? "#ffffff" : "",
+                  background: i + 1 === currentPage ? "#007acc" : ""
                 }}
               >
                 {i + 1}
               </Link>
             </li>
-          ))
-        }
+          ))}
         </ul>
 
         <Seo />
@@ -142,11 +140,12 @@ export default IndexPage;
 
 //eslint-disable-next-line no-undef
 export const query = graphql`
-  query IndexQuery {
+  query IndexQuery($skip: Int!, $limit: Int!) {
     posts: allMarkdownRemark(
-      limit: 5
       filter: { fileAbsolutePath: { regex: "//posts/[0-9]+.*--/" } }
       sort: { fields: [fields___prefix], order: DESC }
+      limit: $limit
+      skip: $skip
     ) {
       edges {
         node {

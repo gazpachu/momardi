@@ -107,7 +107,7 @@ exports.createPages = ({ graphql, actions }) => {
         posts.forEach(({ node }, index) => {
           const slug = node.fields.slug;
           const next = index === 0 ? undefined : posts[index - 1].node;
-          const previous = index === posts.length - 1 ? undefined : posts[index + 1].node;
+          const prev = index === posts.length - 1 ? undefined : posts[index + 1].node;
           const source = node.fields.source;
 
           createPage({
@@ -115,7 +115,7 @@ exports.createPages = ({ graphql, actions }) => {
             component: postTemplate,
             context: {
               slug,
-              previous,
+              prev,
               next,
               source
             }

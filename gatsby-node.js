@@ -107,7 +107,7 @@ exports.createPages = ({ graphql, actions }) => {
         posts.forEach(({ node }, index) => {
           const slug = node.fields.slug;
           const next = index === 0 ? undefined : posts[index - 1].node;
-          const prev = index === posts.length - 1 ? undefined : posts[index + 1].node;
+          const previous = index === posts.length - 1 ? undefined : posts[index + 1].node;
           const source = node.fields.source;
 
           createPage({
@@ -115,7 +115,7 @@ exports.createPages = ({ graphql, actions }) => {
             component: postTemplate,
             context: {
               slug,
-              prev,
+              previous,
               next,
               source
             }
@@ -134,6 +134,23 @@ exports.createPages = ({ graphql, actions }) => {
             context: {
               slug,
               source
+            }
+          });
+        });
+
+        // Create blog post list pages
+        const postsPerPage = 2;
+        const numPages = Math.ceil(posts.length / postsPerPage);
+
+        _.times(numPages, i => {
+          createPage({
+            path: i === 0 ? `/` : `/${i + 1}`,
+            component: path.resolve("./src/templates/index.js"),
+            context: {
+              limit: postsPerPage,
+              skip: i * postsPerPage,
+              numPages,
+              currentPage: i + 1
             }
           });
         });

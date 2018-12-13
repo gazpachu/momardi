@@ -4,6 +4,9 @@ require("core-js/fn/array/from");
 
 import { FaHome } from "react-icons/fa/";
 import { FaSearch } from "react-icons/fa/";
+import { FaUser } from "react-icons/fa/";
+import { FaFile } from "react-icons/fa/";
+import { FaBriefcase } from "react-icons/fa/";
 import { FaEnvelope } from "react-icons/fa/";
 import { FaTag } from "react-icons/fa/";
 
@@ -15,13 +18,33 @@ class Menu extends React.Component {
     super(props);
     this.itemList = React.createRef();
 
-    const pages = props.pages.map(page => ({
-      to: page.node.fields.slug,
-      label: page.node.frontmatter.menuTitle
-        ? page.node.frontmatter.menuTitle
-        : page.node.frontmatter.title,
-      icon: page.node.fields.slug === "/contact/" ? FaEnvelope : null
-    }));
+    const pages = props.pages.map(page => {
+      let icon = null;
+
+      switch (page.node.fields.slug) {
+        case "/about/":
+          icon = FaUser;
+          break;
+        case "/cv/":
+          icon = FaFile;
+          break;
+        case "/contact/":
+          icon = FaEnvelope;
+          break;
+        case "/work/":
+          icon = FaBriefcase;
+          break;
+        default:
+      }
+
+      return {
+        to: page.node.fields.slug,
+        label: page.node.frontmatter.menuTitle
+          ? page.node.frontmatter.menuTitle
+          : page.node.frontmatter.title,
+        icon
+      };
+    });
 
     this.items = [
       //{ to: "/", label: "Home", icon: FaHome },

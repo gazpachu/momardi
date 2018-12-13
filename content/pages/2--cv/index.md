@@ -1,6 +1,6 @@
 ---
 title: Curriculum
-menuTitle: Curriculum
+menuTitle: CV
 ---
 
 ## Summary

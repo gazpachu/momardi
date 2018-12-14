@@ -34,6 +34,8 @@ const Footer = props => {
         @from-width desktop {
           .footer {
             padding: 0 1em 1.5em;
+            max-width: 800px;
+            margin: 0 auto;
 
             :global(ul) :global(li) {
               &::after {

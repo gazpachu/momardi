@@ -105,7 +105,7 @@ I handled administrative duties, communication correspondence and customer suppo
 #### Dec 2008 – Jan 2009 ([Paris, France](https://www.google.com/maps/place/Paris))
 ![](../3--work/images/cafebabel.jpg)
 
-I contributed articles for this European online magazine. [Sample 1](http://www.cafebabel.co.uk/article/28244/young-europeans-feelings-holocaust-war-movies.html), [Sample 2](http://www.cafebabel.co.uk/article/27242/financial-crisis-sport-nba-football-formula-one.html)
+I contributed articles for this European online magazine. [Sample 1](https://cafebabel.com/en/article/young-europeans-only-know-the-holocaust-through-war-movies-5ae00554f723b35a145de036/), [Sample 2](https://cafebabel.com/en/article/f1-premier-league-football-and-london-olympics-hit-by-crisis-5ae0054af723b35a145ddd9b/)
 
 ### Assistant Teacher (Volunteer) for a special education class
 #### 2008 ([Manila, Philippines](https://www.google.com/maps/place/Manila))

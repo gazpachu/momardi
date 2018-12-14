@@ -15,11 +15,18 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     const separtorIndex = ~slug.indexOf("--") ? slug.indexOf("--") : 0;
     const shortSlugStart = separtorIndex ? separtorIndex + 2 : 0;
 
-    if (source !== "parts") {
+    if (source !== "parts" && source !== "work") {
       createNodeField({
         node,
         name: `slug`,
         value: `${separtorIndex ? "/" : ""}${slug.substring(shortSlugStart)}`
+      });
+    }
+    if (source === "work") {
+      createNodeField({
+        node,
+        name: `slug`,
+        value: `${separtorIndex ? "/" : ""}work/${slug.substring(shortSlugStart)}`
       });
     }
     createNodeField({
@@ -122,9 +129,25 @@ exports.createPages = ({ graphql, actions }) => {
           });
         });
 
-        // and pages.
+        // pages
         const pages = items.filter(item => item.node.fields.source === "pages");
         pages.forEach(({ node }) => {
+          const slug = node.fields.slug;
+          const source = node.fields.source;
+
+          createPage({
+            path: slug,
+            component: pageTemplate,
+            context: {
+              slug,
+              source
+            }
+          });
+        });
+
+        // work
+        const work = items.filter(item => item.node.fields.source === "work");
+        work.forEach(({ node }) => {
           const slug = node.fields.slug;
           const source = node.fields.source;
 

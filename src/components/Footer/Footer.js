@@ -27,7 +27,15 @@ const Footer = props => {
               padding: ${theme.space.xxs} ${theme.space.s};
               position: relative;
               display: inline-block;
+            }
+          }
+        }
 
+        @from-width desktop {
+          .footer {
+            padding: 0 1em 1.5em;
+
+            :global(ul) :global(li) {
               &::after {
                 content: "•";
                 position: absolute;
@@ -37,12 +45,6 @@ const Footer = props => {
                 content: "";
               }
             }
-          }
-        }
-
-        @from-width desktop {
-          .footer {
-            padding: 0 1em 1.5em;
           }
         }
       `}</style>

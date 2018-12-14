@@ -90,8 +90,9 @@ class IndexPage extends React.Component {
             maxWidth: "700px",
             margin: "0 auto 60px auto",
             alignItems: "center",
+            justifyContent: "center",
             listStyle: "none",
-            padding: 0,
+            padding: "0 30px",
             lineHeight: "30px"
           }}
         >

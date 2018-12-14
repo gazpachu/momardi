@@ -37,7 +37,6 @@ class Header extends React.Component {
           <Link to="/" className="logoType">
             <div className="type">
               <h1>{config.headerTitle}</h1>
-              <h2>{config.headerSubTitle}</h2>
             </div>
           </Link>
           <FontLoadedContext.Consumer>
@@ -64,31 +63,14 @@ class Header extends React.Component {
         {/* --- STYLES --- */}
         <style jsx>{`
           .header {
-            align-items: center;
-            justify-content: center;
             background-color: ${theme.color.neutral.white};
-            display: flex;
-            height: ${theme.header.height.default};
             position: relative;
             top: 0;
             width: 100%;
-            align-items: center;
-
-            :global(a.logoType) {
-              align-items: center;
-              display: flex;
-              flex-direction: "column";
-              color: ${theme.text.color.primary};
-
-              .logo {
-                flex-shrink: 0;
-              }
-            }
 
             &.homepage {
               position: absolute;
               background-color: transparent;
-              height: ${theme.header.height.homepage};
             }
           }
 
@@ -96,13 +78,6 @@ class Header extends React.Component {
             font-size: ${theme.font.size.xxl};
             font-weight: ${theme.font.weight.light};
             margin: ${theme.space.stack.xs};
-          }
-
-          h2 {
-            font-weight: ${theme.font.weight.standard};
-            font-size: ${theme.font.size.xxs};
-            letter-spacing: 0;
-            margin: 0;
           }
 
           .sensor {
@@ -118,26 +93,24 @@ class Header extends React.Component {
 
           @from-width tablet {
             .header {
-              padding: ${theme.space.inset.l};
-
-              &.homepage {
-                height: ${theme.header.height.homepage};
-              }
+              padding: ${theme.space.inset.m};
             }
           }
 
           @below desktop {
-            .header.homepage {
-              .logo {
-                border: none;
-              }
+            .header {
+              text-align: center;
+              padding: ${theme.space.inset.m};
 
-              :global(a.logoType),
-              h1 {
-                color: ${theme.color.neutral.white};
-              }
-              h2 {
-                color: ${theme.color.neutral.gray.d};
+              &.homepage {
+                .logo {
+                  border: none;
+                }
+
+                :global(a.logoType),
+                h1 {
+                  color: ${theme.color.neutral.white};
+                }
               }
             }
           }
@@ -167,9 +140,16 @@ class Header extends React.Component {
                 h1 {
                   margin: ${theme.space.stack.xxs};
                 }
+              }
 
-                h2 {
-                  display: none;
+              :global(a.logoType) {
+                align-items: center;
+                display: flex;
+                flex-direction: "column";
+                color: ${theme.text.color.primary};
+
+                .logo {
+                  flex-shrink: 0;
                 }
               }
 
@@ -177,9 +157,6 @@ class Header extends React.Component {
                 :global(a.logoType),
                 h1 {
                   color: ${theme.color.neutral.white};
-                }
-                h2 {
-                  color: ${theme.color.neutral.gray.d};
                 }
               }
             }
@@ -201,20 +178,6 @@ class Header extends React.Component {
 
               .header.homepage:not(.fixed) & {
                 border: none;
-              }
-            }
-
-            h2 {
-              animation-duration: ${theme.time.duration.default};
-              animation-name: h2Entry;
-            }
-
-            @keyframes h2Entry {
-              from {
-                opacity: 0;
-              }
-              to {
-                opacity: 1;
               }
             }
           }

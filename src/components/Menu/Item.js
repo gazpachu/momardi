@@ -7,21 +7,15 @@ const Item = props => {
 
   return (
     <React.Fragment>
-      <li className={"hiddenItem" in props ? "hiddenItem" : "item"} key={label}>
-        <Link
-          to={to}
-          className={"hiddenItem" in props ? "inHiddenItem" : ""}
-          onClick={onClick}
-          data-slug={to}
-        >
+      <li className="item" key={label}>
+        <Link to={to} onClick={onClick} data-slug={to}>
           {Icon && <Icon />} {label}
         </Link>
       </li>
 
       {/* --- STYLES --- */}
       <style jsx>{`
-        .item,
-        .showItem {
+        .item {
           background: transparent;
           transition: all ${theme.time.duration.default};
           display: flex;
@@ -39,8 +33,12 @@ const Item = props => {
           }
         }
 
-        :global(.itemList .hideItem) {
-          display: none;
+        @below desktop {
+          .item {
+            :global(a) {
+              color: ${theme.color.neutral.white};
+            }
+          }
         }
 
         @from-width desktop {
@@ -74,22 +72,6 @@ const Item = props => {
               }
             }
           }
-
-          .showItem {
-            display: none;
-          }
-
-          .hiddenItem {
-            text-align: left;
-            padding: ${theme.space.xs};
-
-            & :global(a.inHiddenItem) {
-              color: ${theme.text.color.primary};
-              &:hover {
-                color: ${theme.color.brand.primary};
-              }
-            }
-          }
         }
       `}</style>
     </React.Fragment>
@@ -98,7 +80,6 @@ const Item = props => {
 
 Item.propTypes = {
   item: PropTypes.object,
-  hidden: PropTypes.bool,
   onClick: PropTypes.func,
   icon: PropTypes.func,
   theme: PropTypes.object.isRequired

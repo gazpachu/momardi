@@ -13,14 +13,13 @@ module.exports = {
 
   /* info */
   headerTitle: "MOMARDI",
-  headerSubTitle: "",
 
   /* manifest.json */
   manifestName: "Momardi - Tuesday Gutierrez",
   manifestShortName: "Momardi", // max 12 characters
   manifestStartUrl: "/index.html",
   manifestBackgroundColor: "white",
-  manifestThemeColor: "#555",
+  manifestThemeColor: "#1AA0CD",
   manifestDisplay: "standalone",
 
   // gravatar

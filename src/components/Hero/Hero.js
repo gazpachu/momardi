@@ -9,9 +9,7 @@ const Hero = props => {
   return (
     <React.Fragment>
       <section className="hero">
-        <h1>
-          Hi!, I&#39;m Tuesday. A writer, aspiring artist and creative content manager / strategist
-        </h1>
+        <h1>Hi!, I&#39;m Tuesday. An aspiring artist and creative content manager / strategist</h1>
         <button onClick={scrollToContent} aria-label="scroll" title="Read my latest blog posts">
           <FaAngleDown />
         </button>
@@ -79,6 +77,16 @@ const Hero = props => {
           }
           100% {
             transform: translateY(0);
+          }
+        }
+
+        @below tablet {
+          .hero {
+            padding-top: 200px;
+          }
+
+          h1 {
+            font-size: ${theme.font.size.xl};
           }
         }
 

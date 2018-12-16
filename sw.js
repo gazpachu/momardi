@@ -26,20 +26,20 @@ workbox.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-d1d8e972eb3919d6ad52.js"
+    "url": "webpack-runtime-5806a991b9e3eece6067.js"
   },
   {
-    "url": "app.8b1cc9920e75fff049f7.css"
+    "url": "app.c5b697a69e20cbc049e3.css"
   },
   {
-    "url": "app-cf19282ecb6bdb300d73.js"
+    "url": "app-2d68b0430e4ec4c56bda.js"
   },
   {
     "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-8fec9522ed849d38d6e1.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "518ebd96a5d68da225b9c8eb18611721"
+    "revision": "d8d620eb27ecb7f66af7b3e02674e7e5"
   },
   {
     "url": "component---src-pages-404-js-718506eefd248f6f227f.js"
@@ -81,7 +81,7 @@ var navigationRoute = new workbox.routing.NavigationRoute(function (_ref) {
 
     // Respond with the offline shell if we match the custom whitelist
     if (customWhitelist.includes(pathname)) {
-      var offlineShell = "/offline-plugin-app-shell-fallback/index.html";
+      var offlineShell = "/momardi/offline-plugin-app-shell-fallback/index.html";
       var cacheName = workbox.core.cacheNames.precache;
       return caches.match(offlineShell, {
         cacheName: cacheName
@@ -138,7 +138,7 @@ var messageApi = {
           includesPrefix = _ref3.includesPrefix;
 
       if (!includesPrefix) {
-        return "" + pathname;
+        return "/momardi" + pathname;
       } else {
         return pathname;
       }

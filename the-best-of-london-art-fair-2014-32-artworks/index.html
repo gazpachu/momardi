@@ -1,0 +1,1216 @@
+<!DOCTYPE html><html lang="en" prefix="og: http://ogp.me/ns#"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/component---src-templates-post-template-js.b6f197430f783b3e67aa.css">code[class*=language-],pre[class*=language-]{color:#f8f8f2;background:none;text-shadow:0 1px rgba(0,0,0,.3);font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto;border-radius:.3em}:not(pre)>code[class*=language-],pre[class*=language-]{background:#272822}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#f8f8f2}.namespace{opacity:.7}.token.constant,.token.deleted,.token.property,.token.symbol,.token.tag{color:#f92672}.token.boolean,.token.number{color:#ae81ff}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#a6e22e}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url,.token.variable{color:#f8f8f2}.token.atrule,.token.attr-value,.token.class-name,.token.function{color:#e6db74}.token.keyword{color:#66d9ef}.token.important,.token.regex{color:#fd971f}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}</style><style data-href="/app.8b1cc9920e75fff049f7.css">@font-face{font-family:Open Sans;font-style:normal;font-display:swap;font-weight:300;src:local("Open Sans Light "),local("Open Sans-Light"),url(/static/open-sans-latin-300-60c866748ff15f5b347fdba64596b1b1.woff2) format("woff2"),url(/static/open-sans-latin-300-521d17bc9f3526c690e8ada6eee55bec.woff) format("woff")}@font-face{font-family:Open Sans;font-style:italic;font-display:swap;font-weight:300;src:local("Open Sans Light italic"),local("Open Sans-Lightitalic"),url(/static/open-sans-latin-300italic-06bbd3188b34820cd83a0e0b3d0a6f57.woff2) format("woff2"),url(/static/open-sans-latin-300italic-8a648ff38ded89ea15916e84529d62d3.woff) format("woff")}@font-face{font-family:Open Sans;font-style:normal;font-display:swap;font-weight:400;src:local("Open Sans Regular "),local("Open Sans-Regular"),url(/static/open-sans-latin-400-cffb686d7d2f4682df8342bd4d276e09.woff2) format("woff2"),url(/static/open-sans-latin-400-bf2d0783515b7d75c35bde69e01b3135.woff) format("woff")}@font-face{font-family:Open Sans;font-style:italic;font-display:swap;font-weight:400;src:local("Open Sans Regular italic"),local("Open Sans-Regularitalic"),url(/static/open-sans-latin-400italic-987032ea5d57c93d8da215678eae3b86.woff2) format("woff2"),url(/static/open-sans-latin-400italic-db70d0b9cb27ada1a260a2b35e756b8b.woff) format("woff")}@font-face{font-family:Open Sans;font-style:normal;font-display:swap;font-weight:600;src:local("Open Sans SemiBold "),local("Open Sans-SemiBold"),url(/static/open-sans-latin-600-223a277bd88d8a90c8cdf24cda0ad5f5.woff2) format("woff2"),url(/static/open-sans-latin-600-1cd5320f8937d337b61d5117cf9d7b28.woff) format("woff")}@font-face{font-family:Open Sans;font-style:italic;font-display:swap;font-weight:600;src:local("Open Sans SemiBold italic"),local("Open Sans-SemiBolditalic"),url(/static/open-sans-latin-600italic-4950a7205f0b5cefe41fc03ac346e236.woff2) format("woff2"),url(/static/open-sans-latin-600italic-318ea1ada4102c0704a0637228dcad03.woff) format("woff")}@font-face{font-family:Open Sans;font-style:normal;font-display:swap;font-weight:700;src:local("Open Sans Bold "),local("Open Sans-Bold"),url(/static/open-sans-latin-700-d08c09f2f169f4a6edbcf8b8d1636cb4.woff2) format("woff2"),url(/static/open-sans-latin-700-623e3205570002af47fc2b88f9335d19.woff) format("woff")}@font-face{font-family:Open Sans;font-style:italic;font-display:swap;font-weight:700;src:local("Open Sans Bold italic"),local("Open Sans-Bolditalic"),url(/static/open-sans-latin-700italic-c02f5da6e82e1efe0b45841bfd49ce37.woff2) format("woff2"),url(/static/open-sans-latin-700italic-72e19cbb0e38c6773a7751156752cec4.woff) format("woff")}@font-face{font-family:Open Sans;font-style:normal;font-display:swap;font-weight:800;src:local("Open Sans ExtraBold "),local("Open Sans-ExtraBold"),url(/static/open-sans-latin-800-aaeffaf205b9bbb09920089a14dbe9e8.woff2) format("woff2"),url(/static/open-sans-latin-800-c6aa0c4a601fb6ac66f8253fa594dff5.woff) format("woff")}@font-face{font-family:Open Sans;font-style:italic;font-display:swap;font-weight:800;src:local("Open Sans ExtraBold italic"),local("Open Sans-ExtraBolditalic"),url(/static/open-sans-latin-800italic-6b3973ffe02bb6a8be0f8453506ec032.woff2) format("woff2"),url(/static/open-sans-latin-800italic-79b58175343190550489efe46a7f1138.woff) format("woff")}</style><meta name="generator" content="Gatsby 2.0.60"/><style id="__jsx-677817541">.item.jsx-677817541{background:transparent;-webkit-transition:all 0.5s;-webkit-transition:all 0.5s;transition:all 0.5s;display:-webkit-box;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}
+.item.jsx-677817541 a{padding:10px;display:-webkit-box;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}
+.item.jsx-677817541 svg{margin:0 5px 0 0;opacity:0.3;}
+@media screen and (max-width:1023px){.jsx-677817541:not(.homepage) .item.jsx-677817541 a{color:#ffffff;}}
+@media screen and (min-width:1024px){.item.jsx-677817541 a{color:#3e3e3c;padding:10px;-webkit-transition:all 0.5s;-webkit-transition:all 0.5s;transition:all 0.5s;border-radius:5px;}.homepage:not(.fixed) .item.jsx-677817541 a{color:#ffffff;}.item.jsx-677817541 a:hover{color:#709425;background:rgba(255,255,255,0.4);}.item.jsx-677817541 svg{-webkit-transition:all 0.5s;-webkit-transition:all 0.5s;transition:all 0.5s;}.item.jsx-677817541:hover svg{fill:#709425;opacity:1;}.hero .item.jsx-677817541:hover svg svg{fill:green;}}</style><style id="__jsx-1619051672">.menu.jsx-1619051672{-webkit-box-align:center;-ms-flex-align:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-flex:1;-ms-flex-positive:1;-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1;left:0;padding:0 10px;position:fixed;width:100%;z-index:1;-webkit-transition:all 0.5s;-webkit-transition:all 0.5s;transition:all 0.5s;}
+.itemList.jsx-1619051672{display:-webkit-box;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;list-style:none;margin:0;padding:0;position:relative;width:100%;}
+@media screen and (max-width:1023px){.menu.jsx-1619051672{position:static;position:initial;}}
+@media screen and (min-width:1024px){.menu.jsx-1619051672{border-top:none;background:transparent;display:-webkit-box;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;position:relative;-webkit-box-pack:end;-ms-flex-pack:end;-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end;padding-left:50px;-webkit-transition:none;-webkit-transition:none;transition:none;}.itemList.jsx-1619051672{-webkit-box-pack:end;-ms-flex-pack:end;-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end;padding:0;}}</style><style id="__jsx-937100772">.header.jsx-937100772{background-color:#ffffff;position:relative;top:0;width:100%;}
+.header.homepage.jsx-937100772{position:absolute;background-color:transparent;}
+h1.jsx-937100772{font-size:2.2em;font-weight:100;margin:0 0 5px 0;}
+.sensor.jsx-937100772{display:block;position:absolute;bottom:0;z-index:1;left:0;right:0;height:1px;top:80px;}
+@media screen and (min-width:600px){.header.jsx-937100772{padding:20px;}}
+@media screen and (max-width:1023px){.header.jsx-937100772{text-align:center;padding:20px;}.header.homepage.jsx-937100772 .logo.jsx-937100772{border:none;}.header.homepage.jsx-937100772 a.logoType,.header.homepage.jsx-937100772 h1.jsx-937100772{color:#ffffff;}}
+@media screen and (min-width:1024px){.header.jsx-937100772{-webkit-box-align:center;-ms-flex-align:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background-color:#ffffff;display:-webkit-box;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;position:absolute;top:0;width:100%;-webkit-box-pack:justify;-ms-flex-pack:justify;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-transition:padding 0.5s;-webkit-transition:padding 0.5s;transition:padding 0.5s;}.header.fixed.jsx-937100772{height:50px;;background-color:#ffffff;left:0;padding:0 20px;position:fixed;top:0;width:100%;z-index:1;border-bottom:1px solid #ecebea;}.header.fixed.jsx-937100772 h1.jsx-937100772{margin:0 0 2px 0;}.header.jsx-937100772 a.logoType{-webkit-box-align:center;-ms-flex-align:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:"column";-webkit-flex-direction:"column";-ms-flex-direction:"column";flex-direction:"column";color:#3e3e3c;}.header.jsx-937100772 a.logoType .logo.jsx-937100772{-ms-flex-negative:0;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;}.header.homepage.jsx-937100772:not(.fixed) a.logoType,.header.homepage.jsx-937100772:not(.fixed) h1.jsx-937100772{color:#ffffff;}.header.jsx-937100772 a.logoType{text-align:left;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-ms-flex-negative:0;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;width:auto;}.logo.jsx-937100772{margin:0 20px 0 0;}.fixed.jsx-937100772 .logo.jsx-937100772{height:36px;width:36px;}.header.homepage.jsx-937100772:not(.fixed) .logo.jsx-937100772{border:none;}}</style><style id="__jsx-2542452449">h1.jsx-2542452449{font-size:2.2em;margin:0 0 40px 0;-webkit-animation-name:headlineEntry;-webkit-animation-name:headlineEntry-jsx-2542452449;animation-name:headlineEntry-jsx-2542452449;-webkit-animation-duration:1s;-webkit-animation-duration:1s;animation-duration:1s;}
+h1.jsx-2542452449 span{font-weight:400;display:block;font-size:0.5em;-webkit-letter-spacing:0;-moz-letter-spacing:0;-ms-letter-spacing:0;letter-spacing:0;margin:0 0 5px 0;}
+h1.jsx-2542452449 svg{height:0.75em;fill:#709425;}
+@-webkit-keyframes headlineEntry{from.jsx-2542452449{opacity:0.5;}to.jsx-2542452449{opacity:1;}}
+@-webkit-keyframes headlineEntry-jsx-2542452449{from{opacity:0.5;}to{opacity:1;}}
+@keyframes headlineEntry-jsx-2542452449{from{opacity:0.5;}to{opacity:1;}}
+@media screen and (min-width:600px){h1.jsx-2542452449{font-size:calc(2em * 1.2);}}
+@media screen and (min-width:1024px){h1.jsx-2542452449{font-size:calc(2em * 1.4);}}</style><style id="__jsx-2703193364">.meta.jsx-2703193364{display:-webkit-box;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-flow:row wrap;-webkit-flex-flow:row wrap;-ms-flex-flow:row wrap;flex-flow:row wrap;font-size:0.8em;margin:20px 0;background:transparent;}
+.meta.jsx-2703193364 svg{fill:#709425;margin:0 5px 0 0;}
+.meta.jsx-2703193364 span.jsx-2703193364{-webkit-box-align:center;-ms-flex-align:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;text-transform:uppercase;margin:5px 10px 5px 0;}
+@media screen and (min-width:600px){.meta.jsx-2703193364{margin:calc(20px * 1.5) 0 20px;}}</style><style id="__jsx-1849375170">.bodytext.jsx-1849375170{-webkit-animation-name:bodytextEntry;-webkit-animation-name:bodytextEntry-jsx-1849375170;animation-name:bodytextEntry-jsx-1849375170;-webkit-animation-duration:1s;-webkit-animation-duration:1s;animation-duration:1s;}
+.bodytext.jsx-1849375170 h2,.bodytext.jsx-1849375170 h3{margin:1.5em 0 1em;}
+.bodytext.jsx-1849375170 h2{line-height:1.2;font-size:1.7em;}
+.bodytext.jsx-1849375170 h3{font-size:1.35em;line-height:1.3;}
+.bodytext.jsx-1849375170 p{font-size:1.1em;line-height:1.6;margin:0 0 1.5em;}
+.bodytext.jsx-1849375170 ul{list-style:circle;margin:0 0 1.5em;padding:0 0 0 1.5em;}
+.bodytext.jsx-1849375170 li{margin:0.7em 0;line-height:1.5;}
+.bodytext.jsx-1849375170 a{font-weight:600;color:#709425;-webkit-text-decoration:underline;text-decoration:underline;}
+.bodytext.jsx-1849375170 a.gatsby-resp-image-link{border:0;display:block;margin:1em 0;overflow:hidden;}
+.bodytext.jsx-1849375170 code.language-text{background:#ecebea;text-shadow:none;color:inherit;padding:0.1em 0.3em 0.2em;border-radius:0.1em;}
+@-webkit-keyframes bodytextEntry{from.jsx-1849375170{opacity:0;}to.jsx-1849375170{opacity:1;}}
+@-webkit-keyframes bodytextEntry-jsx-1849375170{from{opacity:0;}to{opacity:1;}}
+@keyframes bodytextEntry-jsx-1849375170{from{opacity:0;}to{opacity:1;}}</style><style id="__jsx-4158949110">.author.jsx-4158949110{margin:40px 0;padding:40px 0;border-top:1px solid #ecebea;border-bottom:1px solid #ecebea;}
+.avatar.jsx-4158949110{float:left;border-radius:65% 75%;border:1px solid #ecebea;display:inline-block;height:70px;margin:0 20px 0 0;overflow:hidden;width:70px;}
+.avatar.jsx-4158949110 img.jsx-4158949110{width:100%;}
+.note.jsx-4158949110{font-size:0.9em;line-height:1.6;}
+@media screen and (min-width:600px){.author.jsx-4158949110{display:-webkit-box;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}.avatar.jsx-4158949110{-webkit-box-flex:0;-ms-flex:0 0 auto;-webkit-flex:0 0 auto;-ms-flex:0 0 auto;flex:0 0 auto;}}</style><style id="__jsx-126278577">.links.jsx-126278577{display:-webkit-box;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;padding:0 20px 40px;border-bottom:1px solid #ecebea;margin:0 0 40px 0;}
+.links.jsx-126278577 a{display:-webkit-box;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}
+.links.jsx-126278577 a:nth-child(2){margin:20px 0 0;}
+.links.jsx-126278577 svg{fill:orange;width:20px;height:20px;-ms-flex-negative:0;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;-webkit-box-flex:0;-ms-flex-positive:0;-webkit-box-flex:0;-webkit-flex-grow:0;-ms-flex-positive:0;flex-grow:0;margin:0 20px 0 0;}
+h4.jsx-126278577{font-weight:600;margin:0;font-size:1.1em;}
+time.jsx-126278577{color:#969492;display:block;font-weight:400;font-size:0.8em;margin-top:0.5em;}
+@media screen and (min-width:1024px){.links.jsx-126278577{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-ms-flex-direction:row-reverse;-webkit-flex-direction:row-reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;}.links.jsx-126278577 a{-ms-flex-preferred-size:50%;-webkit-flex-basis:50%;-ms-flex-preferred-size:50%;flex-basis:50%;}.links.jsx-126278577 a:nth-child(2){margin:0;}.links.jsx-126278577 svg{-webkit-transition:all 0.5s;-webkit-transition:all 0.5s;transition:all 0.5s;margin:0 10px 0 0;}@media (hover:hover){.links.jsx-126278577 a:hover svg{-webkit-transform:scale(1.5);-webkit-transform:scale(1.5);-ms-transform:scale(1.5);transform:scale(1.5);}}}</style><style id="__jsx-1766939654">.article.jsx-1766939654{padding:20px;margin:0 auto;}
+@media screen and (min-width:600px){.article.jsx-1766939654{padding:calc(20px) calc(20px * 2);max-width:650px;}}
+@media screen and (min-width:1024px){.article.jsx-1766939654{padding:calc(20px * 2 + 90px) 0 calc(20px * 2);max-width:700px;}}</style><style id="__jsx-1209355388">.footer.jsx-1209355388{background:#ffffff;padding:20px;padding-top:0;padding-bottom:120px;}
+.footer.jsx-1209355388 ul{list-style:none;text-align:center;padding:0;}
+.footer.jsx-1209355388 ul li{color:#969492;font-size:.8em;padding:2px 10px;position:relative;display:inline-block;}
+@media screen and (min-width:1024px){.footer.jsx-1209355388{padding:0 1em 1.5em;max-width:800px;margin:0 auto;}.footer.jsx-1209355388 ul li::after{content:"•";position:absolute;right:calc(5px * -1);}.footer.jsx-1209355388 ul li:last-child::after{content:"";}}</style><style id="__jsx-3017011455">main.jsx-3017011455{min-height:80vh;}</style><style id="__jsx-901573039">html{-webkit-box-sizing:border-box;box-sizing:border-box;}
+*,*:after,*:before{-webkit-box-sizing:inherit;box-sizing:inherit;margin:0;padding:0;}
+body{font-family:Arial, sans-serif;;}
+h1,h2,h3{font-weight:100;line-height:1.1;-webkit-letter-spacing:-0.03em;-moz-letter-spacing:-0.03em;-ms-letter-spacing:-0.03em;letter-spacing:-0.03em;margin:0;}
+h1{-webkit-letter-spacing:-0.04em;-moz-letter-spacing:-0.04em;-ms-letter-spacing:-0.04em;letter-spacing:-0.04em;}
+p{margin:0;}
+strong{font-weight:600;}
+a{-webkit-text-decoration:none;text-decoration:none;color:#666;}
+main{width:auto;display:block;}
+figcaption{text-align:center;font-size:14px;font-style:italic;color:#888;margin-bottom:40px;}</style><title data-react-helmet="true">The Best of London Art Fair 2014: 32 Artworks - Momardi</title><meta data-react-helmet="true" name="description" content="Tuesday Gutierrez. Creative writer, agile content manager and visual artist"/><meta data-react-helmet="true" property="og:url" content="https://momardi.com/the-best-of-london-art-fair-2014-32-artworks/"/><meta data-react-helmet="true" property="og:title" content="The Best of London Art Fair 2014: 32 Artworks - Momardi"/><meta data-react-helmet="true" property="og:description" content="Tuesday Gutierrez. Creative writer, agile content manager and visual artist"/><meta data-react-helmet="true" property="og:image" content="https://momardi.comundefined/static/759d195c27945c4d577d4112a5ae7338/d927d/LAR_1.-Jin-Young_YU_hwt8bo.jpg"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="tuesdaygutz"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#1AA0CD"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link as="script" rel="preload" href="/webpack-runtime-d1d8e972eb3919d6ad52.js"/><link as="script" rel="preload" href="/app-19e66dfda9679ae89fc3.js"/><link as="script" rel="preload" href="/0-b46d511e229ccfe9bbb3.js"/><link as="script" rel="preload" href="/component---src-templates-post-template-js-6193f23506b3bdb852a8.js"/><link rel="preload" href="/static/d/768/path---the-best-of-london-art-fair-2014-32-artworks-6-b-0-073-SE79ZMKPABPTCaH2PvHJv5Uzs.json" as="fetch" crossOrigin="use-credentials"/><meta name="apple-mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-status-bar-style" content="#D0E0D8"/><meta name="apple-mobile-web-app-title" content="Lazywill"/><link rel="apple-touch-icon" href="/icons/apple-icon-57x57.png" sizes="57x57"/><link rel="apple-touch-icon" href="/icons/apple-icon-60x60.png" sizes="60x60"/><link rel="apple-touch-icon" href="/icons/apple-icon-72x72.png" sizes="72x72"/><link rel="apple-touch-icon" href="/icons/apple-icon-76x76.png" sizes="76x76"/><link rel="apple-touch-icon" href="/icons/apple-icon-114x114.png" sizes="114x114"/><link rel="apple-touch-icon" href="/icons/apple-icon-120x120.png" sizes="120x120"/><link rel="apple-touch-icon" href="/icons/apple-icon-144x144.png" sizes="144x144"/><link rel="apple-touch-icon" href="/icons/apple-icon-152x152.png" sizes="152x152"/><link rel="apple-touch-icon" href="/icons/apple-icon-180x180.png" sizes="180x180"/><link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png"/><link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png"/><link rel="icon" type="image/png" sizes="96x96" href="/icons/favicon-96x96.png"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group"><header class="jsx-937100772 header  "><a class="logoType" href="/"><div class="jsx-937100772 type"><h1 class="jsx-937100772">MOMARDI</h1></div></a><nav rel="js-menu" class="jsx-1619051672 menu"><ul class="jsx-1619051672 itemList"><li class="jsx-677817541 item"><a data-slug="/category/" href="/category/"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em"><path d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"></path></svg> <!-- -->Categories</a></li><li class="jsx-677817541 item"><a data-slug="/search/" href="/search/"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg> <!-- -->Search</a></li><li class="jsx-677817541 item"><a data-slug="/about/" href="/about/"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em"><path d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"></path></svg> <!-- -->About</a></li><li class="jsx-677817541 item"><a data-slug="/cv/" href="/cv/"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 384 512" height="1em" width="1em"><path d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm160-14.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"></path></svg> <!-- -->CV</a></li><li class="jsx-677817541 item"><a data-slug="/work/" href="/work/"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em"><path d="M320 336c0 8.84-7.16 16-16 16h-96c-8.84 0-16-7.16-16-16v-48H0v144c0 25.6 22.4 48 48 48h416c25.6 0 48-22.4 48-48V288H320v48zm144-208h-80V80c0-25.6-22.4-48-48-48H176c-25.6 0-48 22.4-48 48v48H48c-25.6 0-48 22.4-48 48v80h512v-80c0-25.6-22.4-48-48-48zm-144 0H192V96h128v32z"></path></svg> <!-- -->Work</a></li><li class="jsx-677817541 item"><a data-slug="/contact/" href="/contact/"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em"><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path></svg> <!-- -->Contact</a></li></ul></nav></header><div class="jsx-937100772 sensor"></div><main class="jsx-3017011455 jsx-901573039"><article class="jsx-1766939654 article"><header><h1 class="jsx-2542452449">The Best of London Art Fair 2014: 32 Artworks</h1><p class="jsx-2703193364 meta"><span class="jsx-2703193364"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" size="18" height="18" width="18"><path d="M12 192h424c6.6 0 12 5.4 12 12v260c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V204c0-6.6 5.4-12 12-12zm436-44v-36c0-26.5-21.5-48-48-48h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v36c0 6.6 5.4 12 12 12h424c6.6 0 12-5.4 12-12z"></path></svg> <!-- -->2014-01-27</span><span class="jsx-2703193364"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" size="18" height="18" width="18"><path d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"></path></svg><a href="/category/exhibits">exhibits</a></span></p></header><div class="jsx-1849375170 bodytext"><p>According to their newsletter which I received on my mail this week, <strong>over 30,000 people have visited the London Art Fair 2014</strong>. A good number of galleries are also saying that they’ve had fantastic sales on all price points. Great news all in all and a really great start for the art industry in this new year.</p>
+<p>This all sounds very exciting as it reflects the mass appeal now of the art market, but of course as you know, I am not a collector yet and all I wanted to do in this fair was to see good art. I was really looking forward to see emerging artists –  yes there were plenty but having them all alongside some of the great masters such as the unique exhibition of British Modernism from The Hepworth Wakefield and a few sprinkled here and there in some gallery stands, I can’t help but be pulled in to see works from** Barbara Hepworth, Henry Moore and of the recently deceased Sir Anthony Caro** and found myself really biased. I’ve spent more time looking at the prints of <strong>Henri Gaudier-Brezska and of Eduardo Chillida</strong>, and less of the younger and perhaps more flamboyant ones. I do like contemporary art and I would like nothing more to discover young and new artists, but in that moment, <strong>I found some solace and hope that what I was looking at was great art.</strong></p>
+<p>There must be a reason why Modern Art has been performing well and attracting collectors and art enthusiasts. In fact, The Economist has mentioned that last year’s art sales was mostly from the 20th  or 21th century. Personally, I enjoyed the London Art Fair very much, not for the contemporary art, though I’ve got a few favourites below. If it weren’t for the museum partnership with The Hepworth gallery – who aren’t really selling – I would not have enjoyed it as much, but that’s only me and is a matter of personal preference. It doesn’t really matter anyway.  I won’t be able to collect art in any which way, young or old.  In art fairs, the opinion of those buying art matters. So I better shut up. </p>
+<p>In any case, here are my favourites: </p>
+<h2>Hepworth Wakefield</h2>
+<p><strong>1. Eduardo Paolozzi, 1929-2005</strong>
+White Plaster Relief, 1975
+painted plaster and wood</p>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/d8ddd1dadaef00930c251d5d5a03130a/33e24/1.-Eduardo-Paolozzi_White-Plaster-Relief_wk5n1x.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 480px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 150%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQBAwUC/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/2gAMAwEAAhADEAAAAVNBB+MIgsufybCo4D//xAAeEAACAAYDAAAAAAAAAAAAAAABAgADBBIhMRARE//aAAgBAQABBQKlRWLU8uGGaVujfg7kbJg7RrY9eP/EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQMBAT8BH//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQIBAT8BH//EABwQAAEDBQAAAAAAAAAAAAAAADEAARACEiAhYf/aAAgBAQAGPwJ7kTFS2ew+Aj//xAAdEAADAQACAwEAAAAAAAAAAAAAAREhMWEQQXHw/9oACAEBAAE/Ia5kMvD0xCE67M4tg3ax0obf0aMOHRtfSt5afi+P/9oADAMBAAIAAwAAABDU+83/xAAWEQEBAQAAAAAAAAAAAAAAAAAQASH/2gAIAQMBAT8Qhp//xAAWEQEBAQAAAAAAAAAAAAAAAAABECH/2gAIAQIBAT8QSZP/xAAeEAEBAQACAgMBAAAAAAAAAAABEQAhMUFRgaGxwf/aAAgBAQABPxCFBI2DbgIpeiwG6EfeRyKEScd5170AVdbhnLj5wrKJInzhSiL57+9V/a/dWqh4Zusv+MtV9t3/2Q=='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="1. Eduardo Paolozzi_White Plaster Relief"
+        title=""
+        src="/static/d8ddd1dadaef00930c251d5d5a03130a/33e24/1.-Eduardo-Paolozzi_White-Plaster-Relief_wk5n1x.jpg"
+        srcset="/static/d8ddd1dadaef00930c251d5d5a03130a/7084e/1.-Eduardo-Paolozzi_White-Plaster-Relief_wk5n1x.jpg 200w,
+/static/d8ddd1dadaef00930c251d5d5a03130a/e263b/1.-Eduardo-Paolozzi_White-Plaster-Relief_wk5n1x.jpg 400w,
+/static/d8ddd1dadaef00930c251d5d5a03130a/33e24/1.-Eduardo-Paolozzi_White-Plaster-Relief_wk5n1x.jpg 480w"
+        sizes="(max-width: 480px) 100vw, 480px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<p><strong>2. Kenneth Armitage, 1916-2003</strong>
+SeatedWoman with Square Head
+bronze</p>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/eb62e86301ffbb6ad8b179683880519a/55fd7/2.-Kenneth-Armitage_Seated-Woman-with-Square_xadqju.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 640px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAQCAwX/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEAMQAAABhWuDhnkf/8QAGRAAAwEBAQAAAAAAAAAAAAAAAQIDEQAh/9oACAEBAAEFAo06tg1Q08n4HXKlV3//xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAwEBPwFX/8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAIAQIBAT8BR//EABsQAAEEAwAAAAAAAAAAAAAAAAABESExAiBB/9oACAEBAAY/AsH5YsQxWn//xAAbEAEAAwEAAwAAAAAAAAAAAAABABEhMWGR0f/aAAgBAQABPyEaOR9MqnoLuPHxH118xbcR33AITZ//2gAMAwEAAgADAAAAENP/AP/EABURAQEAAAAAAAAAAAAAAAAAAAEQ/9oACAEDAQE/ECP/xAAXEQADAQAAAAAAAAAAAAAAAAAAARFR/9oACAECAQE/EGi9P//EAB0QAQADAQACAwAAAAAAAAAAAAEAESFBMVFhgbH/2gAIAQEAAT8QGEgCBHTnOxLECdBC2znmolFs+X6kAU3rbqXKVY+nqYIzt7P/2Q=='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="2. Kenneth Armitage_Seated Woman with Square"
+        title=""
+        src="/static/eb62e86301ffbb6ad8b179683880519a/55fd7/2.-Kenneth-Armitage_Seated-Woman-with-Square_xadqju.jpg"
+        srcset="/static/eb62e86301ffbb6ad8b179683880519a/e81c0/2.-Kenneth-Armitage_Seated-Woman-with-Square_xadqju.jpg 200w,
+/static/eb62e86301ffbb6ad8b179683880519a/8e8ea/2.-Kenneth-Armitage_Seated-Woman-with-Square_xadqju.jpg 400w,
+/static/eb62e86301ffbb6ad8b179683880519a/55fd7/2.-Kenneth-Armitage_Seated-Woman-with-Square_xadqju.jpg 640w"
+        sizes="(max-width: 640px) 100vw, 640px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<p><strong>3. Kenneth Armitage, 1916-2003</strong>
+Figure Lying on its side
+bronze</p>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/44c76b195071e7f8c477b19d5aaeca68/33e24/3.-Kenneth-Armitage_Figure-Lying-on-its-Side_g4ejl6.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 480px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 150%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAeABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABAACA//EABUBAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIQAxAAAAHnoiCh0LyCpMSP/8QAHhAAAgICAgMAAAAAAAAAAAAAAQIAAxESBBMhIiP/2gAIAQEAAQUCpX3tX6tWAdvLrqoc4NHYDxxOtZmZmZ//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/AR//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAECAQE/AR//xAAfEAACAQMFAQAAAAAAAAAAAAAAARECEiEDECAxM3H/2gAIAQEABj8CjoSMkRMk3U7Kq5L6Z1aT1XD/xAAdEAEAAgICAwAAAAAAAAAAAAABABEhQRBhMVFx/9oACAEBAAE/Iblb6qDkX3U8Mr1iLLoHBU6BgNJlLeoER1gZdy/J/9oADAMBAAIAAwAAABCD1zD/xAAXEQADAQAAAAAAAAAAAAAAAAAAAREQ/9oACAEDAQE/EBNQuf/EABcRAQEBAQAAAAAAAAAAAAAAAAEAEBH/2gAIAQIBAT8QkeyZ/8QAHBABAAIDAQEBAAAAAAAAAAAAAQARITFBYXGR/9oACAEBAAE/EBzUugaz7AKHLQXvhKribu4/LYINblxW+3CeAIAtfIIDTy4eKJtNF4ioIGgZdFQ4UvxgjbFxVz//2Q=='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="3. Kenneth Armitage_Figure Lying on its Side"
+        title=""
+        src="/static/44c76b195071e7f8c477b19d5aaeca68/33e24/3.-Kenneth-Armitage_Figure-Lying-on-its-Side_g4ejl6.jpg"
+        srcset="/static/44c76b195071e7f8c477b19d5aaeca68/7084e/3.-Kenneth-Armitage_Figure-Lying-on-its-Side_g4ejl6.jpg 200w,
+/static/44c76b195071e7f8c477b19d5aaeca68/e263b/3.-Kenneth-Armitage_Figure-Lying-on-its-Side_g4ejl6.jpg 400w,
+/static/44c76b195071e7f8c477b19d5aaeca68/33e24/3.-Kenneth-Armitage_Figure-Lying-on-its-Side_g4ejl6.jpg 480w"
+        sizes="(max-width: 480px) 100vw, 480px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<p><strong>4. Bryan Wynter, 1915-1975</strong>
+High Country, 1956</p>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/c5c4d04d8a624387c79c04696e9f661d/55fd7/4.-Bryan-Wynter_High-Country_ecotcs.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 640px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEBf/EABYBAQEBAAAAAAAAAAAAAAAAAAABAv/aAAwDAQACEAMQAAABnpzKYWLGv//EABkQAAMBAQEAAAAAAAAAAAAAAAECAxEAEv/aAAgBAQABBQKQBtRRirom/ljYcHzv/8QAFxEBAAMAAAAAAAAAAAAAAAAAAAIRUf/aAAgBAwEBPwFccf/EABURAQEAAAAAAAAAAAAAAAAAAAAh/9oACAECAQE/AVf/xAAZEAEBAQADAAAAAAAAAAAAAAAAASERMUH/2gAIAQEABj8C4XI8Srrp/8QAGhABAAMBAQEAAAAAAAAAAAAAAQARITGBcf/aAAgBAQABPyG4yuiTA5DyBZfqXI+xjXKNZDFIfs//2gAMAwEAAgADAAAAEIv/AP/EABcRAQEBAQAAAAAAAAAAAAAAAAEAIaH/2gAIAQMBAT8QII3pv//EABcRAAMBAAAAAAAAAAAAAAAAAAABEVH/2gAIAQIBAT8Qdo1o/8QAGxABAQADAAMAAAAAAAAAAAAAAREAIVFhcYH/2gAIAQEAAT8QkOBuUoOJQgv2Pvcrgbm28trBVR08YUgjbNrOnblefoz/2Q=='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="4. Bryan Wynter_High Country"
+        title=""
+        src="/static/c5c4d04d8a624387c79c04696e9f661d/55fd7/4.-Bryan-Wynter_High-Country_ecotcs.jpg"
+        srcset="/static/c5c4d04d8a624387c79c04696e9f661d/e81c0/4.-Bryan-Wynter_High-Country_ecotcs.jpg 200w,
+/static/c5c4d04d8a624387c79c04696e9f661d/8e8ea/4.-Bryan-Wynter_High-Country_ecotcs.jpg 400w,
+/static/c5c4d04d8a624387c79c04696e9f661d/55fd7/4.-Bryan-Wynter_High-Country_ecotcs.jpg 640w"
+        sizes="(max-width: 640px) 100vw, 640px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<p><strong>5. Sir Anthony Caro (1924-2013)</strong>
+Table Place CLXIX, 1973-74</p>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/ac487fe2193fa88119942c72cbb3fece/55fd7/5.-Sir-Anthony-Caro_Table-Place_ciy7w8.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 640px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAMEBf/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIQAxAAAAHPCXQiAr//xAAaEAACAwEBAAAAAAAAAAAAAAABAgAREhMh/9oACAEBAAEFAu4ZQToPmUIG8Zhf/8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAIAQMBAT8BV//EABcRAQADAAAAAAAAAAAAAAAAAAABERL/2gAIAQIBAT8BpmH/xAAdEAACAQQDAAAAAAAAAAAAAAAAARECECEiMTJR/9oACAEBAAY/AoqQsx6aKVbhHVH/xAAcEAEAAgMAAwAAAAAAAAAAAAABACERMVFBgbH/2gAIAQEAAT8hbGuy/Mf75whnAd0uLaWbl+rMzI/Cf//aAAwDAQACAAMAAAAQPB//xAAWEQEBAQAAAAAAAAAAAAAAAAAAEQH/2gAIAQMBAT8Qq8f/xAAYEQACAwAAAAAAAAAAAAAAAAAAIQERMf/aAAgBAgEBPxBFBZp//8QAHRAAAgICAwEAAAAAAAAAAAAAAREAITFBUWGRsf/aAAgBAQABPxAgULaEomeRUeycYKE/IYu5g8Fqw+olAncEQxjEP1AOR0k//9k='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="5. Sir Anthony Caro_Table Place"
+        title=""
+        src="/static/ac487fe2193fa88119942c72cbb3fece/55fd7/5.-Sir-Anthony-Caro_Table-Place_ciy7w8.jpg"
+        srcset="/static/ac487fe2193fa88119942c72cbb3fece/e81c0/5.-Sir-Anthony-Caro_Table-Place_ciy7w8.jpg 200w,
+/static/ac487fe2193fa88119942c72cbb3fece/8e8ea/5.-Sir-Anthony-Caro_Table-Place_ciy7w8.jpg 400w,
+/static/ac487fe2193fa88119942c72cbb3fece/55fd7/5.-Sir-Anthony-Caro_Table-Place_ciy7w8.jpg 640w"
+        sizes="(max-width: 640px) 100vw, 640px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<p><strong>6.William Crazer, 1930-2011</strong>
+Essex Landscape, 1959</p>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/e41da9aadb1c085b0270441dc233bf95/55fd7/6.-William-Craser_Essex-Landscape2_ihrmcg.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 640px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAAC/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgH/2gAMAwEAAhADEAAAAR6Gw00eZ//EABoQAAMBAAMAAAAAAAAAAAAAAAECAwAREiH/2gAIAQEAAQUCl61Z4lxp06l6o6c7/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFhEAAwAAAAAAAAAAAAAAAAAAEBEh/9oACAECAQE/Aax//8QAHBAAAgEFAQAAAAAAAAAAAAAAAAERECEiMUFR/9oACAEBAAY/Asrko2yTxrlP/8QAGhAAAgMBAQAAAAAAAAAAAAAAAREAIVEQMf/aAAgBAQABPyExvVENiGxAFBVDjxUvDAQDwneP/9oADAMBAAIAAwAAABCoP//EABYRAQEBAAAAAAAAAAAAAAAAABEAAf/aAAgBAwEBPxDAjL//xAAXEQEAAwAAAAAAAAAAAAAAAAAAASFR/9oACAECAQE/EJF6/8QAHRABAAICAgMAAAAAAAAAAAAAAQARIUExUWGRof/aAAgBAQABPxA7RfJm/kEV+/bM6QBGipm+o9ICxjwy2fOYMulLbn//2Q=='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="6. William Craser_Essex Landscape2"
+        title=""
+        src="/static/e41da9aadb1c085b0270441dc233bf95/55fd7/6.-William-Craser_Essex-Landscape2_ihrmcg.jpg"
+        srcset="/static/e41da9aadb1c085b0270441dc233bf95/e81c0/6.-William-Craser_Essex-Landscape2_ihrmcg.jpg 200w,
+/static/e41da9aadb1c085b0270441dc233bf95/8e8ea/6.-William-Craser_Essex-Landscape2_ihrmcg.jpg 400w,
+/static/e41da9aadb1c085b0270441dc233bf95/55fd7/6.-William-Craser_Essex-Landscape2_ihrmcg.jpg 640w"
+        sizes="(max-width: 640px) 100vw, 640px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<p><strong>7.  Sir Eduardo Paolozzi, 1924-2005</strong>
+Head (self-portrait)
+bronze</p>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/fd6c71f5919311de4ffbc63abd8abaee/55fd7/7.-Eduardo-Paolozzi_Head-Self-portrait2_rydzhr.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 640px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAEDBP/EABUBAQEAAAAAAAAAAAAAAAAAAAEC/9oADAMBAAIQAxAAAAEgnLmJlH//xAAaEAACAwEBAAAAAAAAAAAAAAAAAQMREgIh/9oACAEBAAEFAuUmX4yN6bjyWf/EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABoQAAICAwAAAAAAAAAAAAAAAAABEBIRQaH/2gAIAQEABj8CK6jA3bkf/8QAGRAAAwEBAQAAAAAAAAAAAAAAAAERITFh/9oACAEBAAE/IVMLb1jZ6dDt8qYqDlcDP//aAAwDAQACAAMAAAAQlA//xAAWEQEBAQAAAAAAAAAAAAAAAAABECH/2gAIAQMBAT8QDJ//xAAWEQADAAAAAAAAAAAAAAAAAAAQESH/2gAIAQIBAT8QdH//xAAaEAACAwEBAAAAAAAAAAAAAAABEQAhMUGx/9oACAEBAAE/EMSiKDUBrQ8gB4cD3yyoPeMdDlk//9k='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="7. Eduardo Paolozzi_Head Self portrait2"
+        title=""
+        src="/static/fd6c71f5919311de4ffbc63abd8abaee/55fd7/7.-Eduardo-Paolozzi_Head-Self-portrait2_rydzhr.jpg"
+        srcset="/static/fd6c71f5919311de4ffbc63abd8abaee/e81c0/7.-Eduardo-Paolozzi_Head-Self-portrait2_rydzhr.jpg 200w,
+/static/fd6c71f5919311de4ffbc63abd8abaee/8e8ea/7.-Eduardo-Paolozzi_Head-Self-portrait2_rydzhr.jpg 400w,
+/static/fd6c71f5919311de4ffbc63abd8abaee/55fd7/7.-Eduardo-Paolozzi_Head-Self-portrait2_rydzhr.jpg 640w"
+        sizes="(max-width: 640px) 100vw, 640px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<p><strong>8. William Turnbull, 1922-2012</strong>
+Untitled</p>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/98574fc5d86c529cc2640d6a7bec5212/33e24/8.-William-Turnbull_Untitled_sbothk.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 480px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 150%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIDBAX/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEAMQAAABx2neXjlxH085xyAf/8QAHRAAAgEEAwAAAAAAAAAAAAAAAQIDABESMwQTMf/aAAgBAQABBQLjxqVMQYsMWgt1uQan3ReJkam3KwAzFmN2/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPwEf/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAgEBPwEf/8QAHhAAAQQBBQAAAAAAAAAAAAAAAAECEYEhEDFBUXH/2gAIAQEABj8CVzq0VCzDsz0OLGpx6OIWaN3En//EAB0QAQACAgMBAQAAAAAAAAAAAAEAESFBMVFxYZH/2gAIAQEAAT8hZxsaBuLi6O7nzWcBUchJeNwwNiD9YsHRR8SZw5atg7jv1ijkdopTZesS2yzP/9oADAMBAAIAAwAAABBzK0H/xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/EB//xAAWEQADAAAAAAAAAAAAAAAAAAAAEBH/2gAIAQIBAT8QK//EAB4QAAIDAQACAwAAAAAAAAAAAAERACExUUFxkaHR/9oACAEBAAE/EAwQKqx9xeAxSAXa8Xk3C6uEwBiQuhYHXCzMcAERxAk3BEwwv9CWJooKsCV0YrCNsec6IIgZ+YDlSeHzAioEMeBUsoCXkTNnZ//Z'); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="8. William Turnbull_Untitled"
+        title=""
+        src="/static/98574fc5d86c529cc2640d6a7bec5212/33e24/8.-William-Turnbull_Untitled_sbothk.jpg"
+        srcset="/static/98574fc5d86c529cc2640d6a7bec5212/7084e/8.-William-Turnbull_Untitled_sbothk.jpg 200w,
+/static/98574fc5d86c529cc2640d6a7bec5212/e263b/8.-William-Turnbull_Untitled_sbothk.jpg 400w,
+/static/98574fc5d86c529cc2640d6a7bec5212/33e24/8.-William-Turnbull_Untitled_sbothk.jpg 480w"
+        sizes="(max-width: 480px) 100vw, 480px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<p><strong>9. Barbara Hepworth, 1903-1975</strong>
+Kneeling Figure, 1932</p>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/d6d3630197aa9352a41a5d57059b85df/55fd7/9.-Barbara-Hepworth_Kneeling-Figure_jtrdk5.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 640px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAQFAf/EABUBAQEAAAAAAAAAAAAAAAAAAAAC/9oADAMBAAIQAxAAAAFZqfpVJJNf/8QAGBAAAwEBAAAAAAAAAAAAAAAAAQIDIhH/2gAIAQEAAQUCmdRYVfBCyLGI60rBE//EABURAQEAAAAAAAAAAAAAAAAAAAAh/9oACAEDAQE/AUf/xAAVEQEBAAAAAAAAAAAAAAAAAAAAIf/aAAgBAgEBPwFX/8QAGRABAQEBAQEAAAAAAAAAAAAAAQACESJB/9oACAEBAAY/AvbJCXM2gflzR2//xAAaEAEAAwEBAQAAAAAAAAAAAAABABEhMVGR/9oACAEBAAE/IV0EsmA6ZycQRPIHa9+R6R017KodWWT/2gAMAwEAAgADAAAAEIPP/8QAFhEAAwAAAAAAAAAAAAAAAAAAARAR/9oACAEDAQE/EBE//8QAFxEAAwEAAAAAAAAAAAAAAAAAAAERUf/aAAgBAgEBPxB0uD//xAAbEAEAAwEBAQEAAAAAAAAAAAABABEhMVGxcf/aAAgBAQABPxAl88Bv3PsIli12DtxpPOLR6k1AQ25wzeIvisF/Llqu2EUEM7+z/9k='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="9. Barbara Hepworth_Kneeling Figure"
+        title=""
+        src="/static/d6d3630197aa9352a41a5d57059b85df/55fd7/9.-Barbara-Hepworth_Kneeling-Figure_jtrdk5.jpg"
+        srcset="/static/d6d3630197aa9352a41a5d57059b85df/e81c0/9.-Barbara-Hepworth_Kneeling-Figure_jtrdk5.jpg 200w,
+/static/d6d3630197aa9352a41a5d57059b85df/8e8ea/9.-Barbara-Hepworth_Kneeling-Figure_jtrdk5.jpg 400w,
+/static/d6d3630197aa9352a41a5d57059b85df/55fd7/9.-Barbara-Hepworth_Kneeling-Figure_jtrdk5.jpg 640w"
+        sizes="(max-width: 640px) 100vw, 640px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<p><strong>10. Ben Nicholson, 1984-1902</strong>
+Piquet, 1933
+oil on gesso</p>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/c8f34a59579cdfd32eb977d437d3b68b/55fd7/10.-Ben-Nicholson_Piquet_z5gk3a.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 640px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEAv/EABUBAQEAAAAAAAAAAAAAAAAAAAEC/9oADAMBAAIQAxAAAAFe5mS0E4n/xAAaEAACAgMAAAAAAAAAAAAAAAAAAREhAgMS/9oACAEBAAEFAsbLTkTSc6zo/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAHBAAAQQDAQAAAAAAAAAAAAAAAQAQEXECITNR/9oACAEBAAY/AjS340ZGF0k03//EABsQAAIDAAMAAAAAAAAAAAAAAAERACExQYGR/9oACAEBAAE/IaA5x6IBa01dQwR4qewqJwFBoUM//9oADAMBAAIAAwAAABBHH//EABYRAAMAAAAAAAAAAAAAAAAAABARIf/aAAgBAwEBPxCIf//EABYRAAMAAAAAAAAAAAAAAAAAABARIf/aAAgBAgEBPxCsf//EABwQAQEAAgIDAAAAAAAAAAAAAAERACFBUTFhcf/aAAgBAQABPxBgQI3QY8FzUR1VPInrDWvWTflOGER4+ZM9eYqpJZ7woOf/2Q=='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="10. Ben Nicholson_Piquet"
+        title=""
+        src="/static/c8f34a59579cdfd32eb977d437d3b68b/55fd7/10.-Ben-Nicholson_Piquet_z5gk3a.jpg"
+        srcset="/static/c8f34a59579cdfd32eb977d437d3b68b/e81c0/10.-Ben-Nicholson_Piquet_z5gk3a.jpg 200w,
+/static/c8f34a59579cdfd32eb977d437d3b68b/8e8ea/10.-Ben-Nicholson_Piquet_z5gk3a.jpg 400w,
+/static/c8f34a59579cdfd32eb977d437d3b68b/55fd7/10.-Ben-Nicholson_Piquet_z5gk3a.jpg 640w"
+        sizes="(max-width: 640px) 100vw, 640px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<p><strong>11. Henry Moore, 1898-1986</strong>
+Five Metal Forms, 1937
+crayon and chalk on paper</p>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/3ce168b1a6b9c6c7a470a5398823a9ff/55fd7/11.-Henry-Moore_Five-Metal-Forms_fcioqq.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 640px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEAv/EABYBAQEBAAAAAAAAAAAAAAAAAAECA//aAAwDAQACEAMQAAABcRYzpxKL/8QAGRAAAwEBAQAAAAAAAAAAAAAAAQIDEgAR/9oACAEBAAEFAlIE9jr+b2jTOOq4Zv/EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EAB0QAAIBBAMAAAAAAAAAAAAAAAABAhEhMTNRcaH/2gAIAQEABj8ChZYMRF0RTnShs8LcH//EABsQAQACAgMAAAAAAAAAAAAAAAEAESFRMWHB/9oACAEBAAE/IWK5dJi8ohQB0gpCOph5wYXYUn//2gAMAwEAAgADAAAAELsP/8QAFhEBAQEAAAAAAAAAAAAAAAAAAQAR/9oACAEDAQE/ENYb/8QAFhEBAQEAAAAAAAAAAAAAAAAAABFh/9oACAECAQE/EJqP/8QAGxABAAMBAAMAAAAAAAAAAAAAAQARITFBUZH/2gAIAQEAAT8QDBlalWLWKuczbMKgryygI1Bu/InTjzeRrJFqTS/c/9k='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="11. Henry Moore_Five Metal Forms"
+        title=""
+        src="/static/3ce168b1a6b9c6c7a470a5398823a9ff/55fd7/11.-Henry-Moore_Five-Metal-Forms_fcioqq.jpg"
+        srcset="/static/3ce168b1a6b9c6c7a470a5398823a9ff/e81c0/11.-Henry-Moore_Five-Metal-Forms_fcioqq.jpg 200w,
+/static/3ce168b1a6b9c6c7a470a5398823a9ff/8e8ea/11.-Henry-Moore_Five-Metal-Forms_fcioqq.jpg 400w,
+/static/3ce168b1a6b9c6c7a470a5398823a9ff/55fd7/11.-Henry-Moore_Five-Metal-Forms_fcioqq.jpg 640w"
+        sizes="(max-width: 640px) 100vw, 640px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<p><strong>12. Henry Moore, 1898-1986</strong>
+Pitboys at Pithead, 1942
+(Pencil, pen and ink)
+wax coloured crayon and watercolour wash on paper</p>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/2213094716a875290369d0c00911819d/55fd7/12.-Henry-Moore_Pitboys-at-Pithead_ilr6hu.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 640px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAQBAv/EABUBAQEAAAAAAAAAAAAAAAAAAAEC/9oADAMBAAIQAxAAAAEk6itSk//EABoQAAIDAQEAAAAAAAAAAAAAAAIDARETABL/2gAIAQEAAQUCEoFOw26oaLV56p5h+j//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAaEAACAwEBAAAAAAAAAAAAAAAAAQIREiEy/9oACAEBAAY/Ak8p9Kwh0ZnZ5kNn/8QAGBABAQEBAQAAAAAAAAAAAAAAAREAIVH/2gAIAQEAAT8hb6FHcsM5EQMYEo3m6UtoyJfd/9oADAMBAAIAAwAAABDX7//EABcRAQEBAQAAAAAAAAAAAAAAAAEAESH/2gAIAQMBAT8Q0l7f/8QAFxEBAQEBAAAAAAAAAAAAAAAAAQARIf/aAAgBAgEBPxDGDl//xAAcEAEBAQABBQAAAAAAAAAAAAABEQAxQVFxgeH/2gAIAQEAAT8QeZQS6kOs4bgJIoHjUH5B7+8wJjhv3AaHTy3/2Q=='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="12. Henry Moore_Pitboys at Pithead"
+        title=""
+        src="/static/2213094716a875290369d0c00911819d/55fd7/12.-Henry-Moore_Pitboys-at-Pithead_ilr6hu.jpg"
+        srcset="/static/2213094716a875290369d0c00911819d/e81c0/12.-Henry-Moore_Pitboys-at-Pithead_ilr6hu.jpg 200w,
+/static/2213094716a875290369d0c00911819d/8e8ea/12.-Henry-Moore_Pitboys-at-Pithead_ilr6hu.jpg 400w,
+/static/2213094716a875290369d0c00911819d/55fd7/12.-Henry-Moore_Pitboys-at-Pithead_ilr6hu.jpg 640w"
+        sizes="(max-width: 640px) 100vw, 640px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<h2>Main London Art Fair 2014</h2>
+<p><strong>1. Jin Young</strong> 
+Yu
+Union Gallery</p>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/759d195c27945c4d577d4112a5ae7338/55fd7/LAR_1.-Jin-Young_YU_hwt8bo.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 640px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAUCBv/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIQAxAAAAGi57RbRlf/xAAaEAACAwEBAAAAAAAAAAAAAAAAAQIRExIU/9oACAEBAAEFAnM7LNpN7yv0M//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABYQAAMAAAAAAAAAAAAAAAAAAAAgMf/aAAgBAQAGPwJYf//EABkQAAMBAQEAAAAAAAAAAAAAAAABESExkf/aAAgBAQABPyGA9G9Y7jfgprINfEZ//9oADAMBAAIAAwAAABC7D//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QP//EABYRAQEBAAAAAAAAAAAAAAAAAAARIf/aAAgBAgEBPxDFf//EABkQAQEBAQEBAAAAAAAAAAAAAAERIQBRof/aAAgBAQABPxCpKSE5cUkvSSFTqzy6YzzksjAOfemmJup3/9k='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="LAR_1. Jin Young_YU"
+        title=""
+        src="/static/759d195c27945c4d577d4112a5ae7338/55fd7/LAR_1.-Jin-Young_YU_hwt8bo.jpg"
+        srcset="/static/759d195c27945c4d577d4112a5ae7338/e81c0/LAR_1.-Jin-Young_YU_hwt8bo.jpg 200w,
+/static/759d195c27945c4d577d4112a5ae7338/8e8ea/LAR_1.-Jin-Young_YU_hwt8bo.jpg 400w,
+/static/759d195c27945c4d577d4112a5ae7338/55fd7/LAR_1.-Jin-Young_YU_hwt8bo.jpg 640w"
+        sizes="(max-width: 640px) 100vw, 640px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<p><strong>2. Keith Coventry</strong>
+Bancroft Estate, 1907
+oil on canvas, wood, gesso and glaze
+Vigo Gallery</p>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/63ad5cd1d6310d9de21d383bb5457685/55fd7/LAR_2.-Keith-Coventry_Bancroft-Estate_fefqrz.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 640px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMFAgT/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/aAAwDAQACEAMQAAAB2+c6a7iMJ//EABsQAAMAAgMAAAAAAAAAAAAAAAECAwARBBQx/9oACAEBAAEFApqNN5Oc2TjtqJpnYCn/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAaEAACAgMAAAAAAAAAAAAAAAAAAREhEEGB/9oACAEBAAY/AqdGxNqzuIg//8QAGhABAAMBAQEAAAAAAAAAAAAAAQARMSFRcf/aAAgBAQABPyEA7aG4x4cbcPl6ld9QMLil3qf/2gAMAwEAAgADAAAAEBAv/8QAFxEBAQEBAAAAAAAAAAAAAAAAAQARIf/aAAgBAwEBPxAwLl//xAAWEQEBAQAAAAAAAAAAAAAAAAABABH/2gAIAQIBAT8QdWdv/8QAHBABAAICAwEAAAAAAAAAAAAAAQARITFRYXGh/9oACAEBAAE/EM4gULfYHGAFWC8VFjXYn2EhtqDaEX1tjCaWW9z/2Q=='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="LAR_2. Keith Coventry_Bancroft Estate"
+        title=""
+        src="/static/63ad5cd1d6310d9de21d383bb5457685/55fd7/LAR_2.-Keith-Coventry_Bancroft-Estate_fefqrz.jpg"
+        srcset="/static/63ad5cd1d6310d9de21d383bb5457685/e81c0/LAR_2.-Keith-Coventry_Bancroft-Estate_fefqrz.jpg 200w,
+/static/63ad5cd1d6310d9de21d383bb5457685/8e8ea/LAR_2.-Keith-Coventry_Bancroft-Estate_fefqrz.jpg 400w,
+/static/63ad5cd1d6310d9de21d383bb5457685/55fd7/LAR_2.-Keith-Coventry_Bancroft-Estate_fefqrz.jpg 640w"
+        sizes="(max-width: 640px) 100vw, 640px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<p><strong>3. Wycliffe Stutchbury</strong>
+Sheffield Park, 2013
+Bug Oak</p>
+<p>[
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/b25a8764e47e1463bfc987a61ff1dad1/55fd7/LAR_3.-Wycliffe-Stutchbury_ksxwtm.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 640px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABAAFBv/EABYBAQEBAAAAAAAAAAAAAAAAAAEAAv/aAAwDAQACEAMQAAABTnLCXQR7R//EABwQAAAGAwAAAAAAAAAAAAAAAAABAwQREgIiM//aAAgBAQABBQJ0e4Q4u5vGQROqP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABsQAAIBBQAAAAAAAAAAAAAAAAABAhARMVFx/9oACAEBAAY/AlykSNtGCKZ//8QAGRABAQEBAQEAAAAAAAAAAAAAAQARMXGh/9oACAEBAAE/IcLgbsh8ZpRs159TdIF//9oADAMBAAIAAwAAABDMz//EABYRAQEBAAAAAAAAAAAAAAAAAAEAEf/aAAgBAwEBPxATLb//xAAWEQEBAQAAAAAAAAAAAAAAAAABABH/2gAIAQIBAT8QR2y//8QAHxABAAICAAcAAAAAAAAAAAAAAQARIUExUWGRscHR/9oACAEBAAE/EALdX7MA4QuvyxEAvs5xNl7PsONM047Z/9k='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="LAR_3. Wycliffe Stutchbury"
+        title=""
+        src="/static/b25a8764e47e1463bfc987a61ff1dad1/55fd7/LAR_3.-Wycliffe-Stutchbury_ksxwtm.jpg"
+        srcset="/static/b25a8764e47e1463bfc987a61ff1dad1/e81c0/LAR_3.-Wycliffe-Stutchbury_ksxwtm.jpg 200w,
+/static/b25a8764e47e1463bfc987a61ff1dad1/8e8ea/LAR_3.-Wycliffe-Stutchbury_ksxwtm.jpg 400w,
+/static/b25a8764e47e1463bfc987a61ff1dad1/55fd7/LAR_3.-Wycliffe-Stutchbury_ksxwtm.jpg 640w"
+        sizes="(max-width: 640px) 100vw, 640px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<p><strong>4. Alan Davie b1920</strong>
+Snake Dream, Feb 1983
+oil on canvas
+Anthony Hepworth Gallery</p>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/adbdfe7ffc7b3793f2e6868ba78b6a15/55fd7/LAR_4.-Alan-Davie_Snake-Dream_m1g8n4.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 640px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAMBBAX/xAAVAQEBAAAAAAAAAAAAAAAAAAACA//aAAwDAQACEAMQAAABYttOVNggR//EAB0QAAIBBAMAAAAAAAAAAAAAAAIDAAEEERIhIjP/2gAIAQEAAQUCf7b4iOQuAOrhUyI6r//EABURAQEAAAAAAAAAAAAAAAAAAAAB/9oACAEDAQE/AVf/xAAWEQEBAQAAAAAAAAAAAAAAAAAAATH/2gAIAQIBAT8BTH//xAAYEAADAQEAAAAAAAAAAAAAAAAAASECEP/aAAgBAQAGPwLRLxvKKin/xAAcEAEAAgIDAQAAAAAAAAAAAAABABEhMUFRccH/2gAIAQEAAT8hAenyDruNlSquHPEwIGoDcY7Imje5/9oADAMBAAIAAwAAABAPP//EABgRAQADAQAAAAAAAAAAAAAAAAEAETFx/9oACAEDAQE/EGlOE01P/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAERMf/aAAgBAgEBPxBVUyp//8QAGxABAQACAwEAAAAAAAAAAAAAAREAITFBUWH/2gAIAQEAAT8QamMCk9GVD7AEnuCpo28ODKrC2p4DpcfVXSjd/HO5dqzn7q5//9k='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="LAR_4. Alan Davie_Snake Dream"
+        title=""
+        src="/static/adbdfe7ffc7b3793f2e6868ba78b6a15/55fd7/LAR_4.-Alan-Davie_Snake-Dream_m1g8n4.jpg"
+        srcset="/static/adbdfe7ffc7b3793f2e6868ba78b6a15/e81c0/LAR_4.-Alan-Davie_Snake-Dream_m1g8n4.jpg 200w,
+/static/adbdfe7ffc7b3793f2e6868ba78b6a15/8e8ea/LAR_4.-Alan-Davie_Snake-Dream_m1g8n4.jpg 400w,
+/static/adbdfe7ffc7b3793f2e6868ba78b6a15/55fd7/LAR_4.-Alan-Davie_Snake-Dream_m1g8n4.jpg 640w"
+        sizes="(max-width: 640px) 100vw, 640px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<p><strong>5. John Forrester 1922-2002</strong>
+Sigena with Red
+oil, sand and grit on canvas
+Paesnel Gallery</p>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/1b084bb13bd4645a1350ba7be092f0d8/55fd7/LAR_5.-John-Forrester_Sigena-with-Red_uft1u8.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 640px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAQFAv/EABUBAQEAAAAAAAAAAAAAAAAAAAEC/9oADAMBAAIQAxAAAAFOtAYiqBkH/8QAGxABAAICAwAAAAAAAAAAAAAAAgERABITISL/2gAIAQEAAQUCFWIiQhFla5y+U+//xAAVEQEBAAAAAAAAAAAAAAAAAAABEP/aAAgBAwEBPwEn/8QAFREBAQAAAAAAAAAAAAAAAAAAARD/2gAIAQIBAT8BZ//EABoQAAICAwAAAAAAAAAAAAAAAAEQABECEjH/2gAIAQEABj8C5cN4sDZf/8QAGxAAAgIDAQAAAAAAAAAAAAAAAREAIRAxQVH/2gAIAQEAAT8hEKo8isAhU4EUDPINrY2bvC//2gAMAwEAAgADAAAAELcv/8QAFhEBAQEAAAAAAAAAAAAAAAAAAQAR/9oACAEDAQE/EEZYX//EABURAQEAAAAAAAAAAAAAAAAAABEA/9oACAECAQE/EEzf/8QAHBABAAICAwEAAAAAAAAAAAAAAQARIVExQWGB/9oACAEBAAE/EAKVCGG/YvvrRB65nwEBKFqmEnNMEXuFUGp//9k='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="LAR_5. John Forrester_Sigena with Red"
+        title=""
+        src="/static/1b084bb13bd4645a1350ba7be092f0d8/55fd7/LAR_5.-John-Forrester_Sigena-with-Red_uft1u8.jpg"
+        srcset="/static/1b084bb13bd4645a1350ba7be092f0d8/e81c0/LAR_5.-John-Forrester_Sigena-with-Red_uft1u8.jpg 200w,
+/static/1b084bb13bd4645a1350ba7be092f0d8/8e8ea/LAR_5.-John-Forrester_Sigena-with-Red_uft1u8.jpg 400w,
+/static/1b084bb13bd4645a1350ba7be092f0d8/55fd7/LAR_5.-John-Forrester_Sigena-with-Red_uft1u8.jpg 640w"
+        sizes="(max-width: 640px) 100vw, 640px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<p><strong>6. Henri Gaudier-Brzeska, 1891-1915</strong>
+Rotten Row, circa 1913
+pen and ink
+Browse and Durby gallery</p>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/2a47650ed818a2c158e6a21a25fad5ec/55fd7/LAR_6.-Henri-Gaudier-Brzeska_Rotten-Row_be0mpm.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 640px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAIBAwT/xAAVAQEBAAAAAAAAAAAAAAAAAAACA//aAAwDAQACEAMQAAABeclkqMKMf//EABoQAAIDAQEAAAAAAAAAAAAAAAECABESAxD/2gAIAQEAAQUCUDNDwdVUb1Lqf//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABoQAQABBQAAAAAAAAAAAAAAAAAhAhAiQZH/2gAIAQEABj8Cb7aWNKX/xAAcEAEAAgEFAAAAAAAAAAAAAAABABExIVFhcYH/2gAIAQEAAT8hfaibSOlEuniVFQWS+k0Ayqf/2gAMAwEAAgADAAAAEMv/AP/EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAgBAwEBPxDYr//EABcRAAMBAAAAAAAAAAAAAAAAAAABETH/2gAIAQIBAT8QjosP/8QAHBABAAMAAgMAAAAAAAAAAAAAAQARIUHBMVGR/9oACAEBAAE/ECCv20xdYifFHcANqjWXh3bYD7YdYbyh3FeLBfNT/9k='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="LAR_6. Henri Gaudier-Brzeska_Rotten Row"
+        title=""
+        src="/static/2a47650ed818a2c158e6a21a25fad5ec/55fd7/LAR_6.-Henri-Gaudier-Brzeska_Rotten-Row_be0mpm.jpg"
+        srcset="/static/2a47650ed818a2c158e6a21a25fad5ec/e81c0/LAR_6.-Henri-Gaudier-Brzeska_Rotten-Row_be0mpm.jpg 200w,
+/static/2a47650ed818a2c158e6a21a25fad5ec/8e8ea/LAR_6.-Henri-Gaudier-Brzeska_Rotten-Row_be0mpm.jpg 400w,
+/static/2a47650ed818a2c158e6a21a25fad5ec/55fd7/LAR_6.-Henri-Gaudier-Brzeska_Rotten-Row_be0mpm.jpg 640w"
+        sizes="(max-width: 640px) 100vw, 640px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<p><strong>7. Reg Butler</strong>
+St. Catherine 1959
+Goodman Fine Art</p>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/0cd67cb8e30f55a1225bb525d664350e/55fd7/LAR_7.Reg-Butler_St-Catherine_uzi8rt.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 640px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAQFAv/EABUBAQEAAAAAAAAAAAAAAAAAAAEC/9oADAMBAAIQAxAAAAFtFPE1RJon/8QAGhAAAwEAAwAAAAAAAAAAAAAAAQIDEgATIf/aAAgBAQABBQIvkLUu9D7o2cbmO9+f/8QAFREBAQAAAAAAAAAAAAAAAAAAEBH/2gAIAQMBAT8Bp//EABURAQEAAAAAAAAAAAAAAAAAABAR/9oACAECAQE/AYf/xAAbEAABBQEBAAAAAAAAAAAAAAAAAQIRMVEQIf/aAAgBAQAGPwKX+YJhRcQg53P/xAAbEAACAgMBAAAAAAAAAAAAAAABEQAhMUFRkf/aAAgBAQABPyERgIyF3HoSmicyuiNcnFqAbg1wMqK55P/aAAwDAQACAAMAAAAQMM//xAAXEQEAAwAAAAAAAAAAAAAAAAAAARFB/9oACAEDAQE/EJwt/8QAFhEBAQEAAAAAAAAAAAAAAAAAABFR/9oACAECAQE/ENI//8QAGxABAQACAwEAAAAAAAAAAAAAAREAITFBUWH/2gAIAQEAAT8QAyyTrBy9GBI9ZtKNUH3HZhOxPbi9XcsDOCe/cFMirTd4aly//9k='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="LAR_7.Reg Butler_St Catherine"
+        title=""
+        src="/static/0cd67cb8e30f55a1225bb525d664350e/55fd7/LAR_7.Reg-Butler_St-Catherine_uzi8rt.jpg"
+        srcset="/static/0cd67cb8e30f55a1225bb525d664350e/e81c0/LAR_7.Reg-Butler_St-Catherine_uzi8rt.jpg 200w,
+/static/0cd67cb8e30f55a1225bb525d664350e/8e8ea/LAR_7.Reg-Butler_St-Catherine_uzi8rt.jpg 400w,
+/static/0cd67cb8e30f55a1225bb525d664350e/55fd7/LAR_7.Reg-Butler_St-Catherine_uzi8rt.jpg 640w"
+        sizes="(max-width: 640px) 100vw, 640px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<p><strong>8. Reg Butler</strong>
+Head Looking Up, 1952
+Monotype
+Goodman Fine Art</p>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/e4d42d672a06949933888c31b255e713/55fd7/LAR_8.-Reg-Butler_Head-Looking-Up_ftvhnt.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 640px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAAD/8QAFgEBAQEAAAAAAAAAAAAAAAAAAgED/9oADAMBAAIQAxAAAAHXBBM2+PKf/8QAGBABAQEBAQAAAAAAAAAAAAAAAQIRITH/2gAIAQEAAQUCzsXtHlIITNFc/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAGBABAQEBAQAAAAAAAAAAAAAAAAEREnH/2gAIAQEABj8CjMiJ43pH/8QAGhABAAMAAwAAAAAAAAAAAAAAAQARYTFxkf/aAAgBAQABPyHiYsc1Q5EPRLzaFQ4W1k8Kf//aAAwDAQACAAMAAAAQ+M//xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAwEBPxBX/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPxA//8QAGhABAAMAAwAAAAAAAAAAAAAAAQARUSFx0f/aAAgBAQABPxBAoEKSYHstHROCRCcR0qDdbUz9RUM6E//Z'); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="LAR_8. Reg Butler_Head Looking Up"
+        title=""
+        src="/static/e4d42d672a06949933888c31b255e713/55fd7/LAR_8.-Reg-Butler_Head-Looking-Up_ftvhnt.jpg"
+        srcset="/static/e4d42d672a06949933888c31b255e713/e81c0/LAR_8.-Reg-Butler_Head-Looking-Up_ftvhnt.jpg 200w,
+/static/e4d42d672a06949933888c31b255e713/8e8ea/LAR_8.-Reg-Butler_Head-Looking-Up_ftvhnt.jpg 400w,
+/static/e4d42d672a06949933888c31b255e713/55fd7/LAR_8.-Reg-Butler_Head-Looking-Up_ftvhnt.jpg 640w"
+        sizes="(max-width: 640px) 100vw, 640px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<p><strong>9. Henry Moore</strong>
+Animal Head, 1956
+Goodman Fine Art
+
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/fa1170ec03e01057cc9f749ef6a88c28/55fd7/LAR_9.-Henry-Moore_Animal-Head_kv9t8h.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 640px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAMBAgT/xAAVAQEBAAAAAAAAAAAAAAAAAAADAv/aAAwDAQACEAMQAAABZVSTrYSCn//EABkQAAIDAQAAAAAAAAAAAAAAAAEDAgQTEv/aAAgBAQABBQKVvJq7ZMnjRioaW7EY78FZ/8QAFhEBAQEAAAAAAAAAAAAAAAAAAAER/9oACAEDAQE/AUx//8QAGBEAAgMAAAAAAAAAAAAAAAAAAAEDESH/2gAIAQIBAT8BG5Lw/8QAHBAAAgIDAQEAAAAAAAAAAAAAAQIAESExQSJx/9oACAEBAAY/AmUiwJZr5LXUcnWbhAFAHkKovnmZ/8QAGhAAAwADAQAAAAAAAAAAAAAAAAERITGBcf/aAAgBAQABPyF6V0psYsLiFVycKE8p4k4RlULwZ4KD/9oADAMBAAIAAwAAABAsP//EABcRAAMBAAAAAAAAAAAAAAAAAAABIRH/2gAIAQMBAT8QpFaf/8QAFhEAAwAAAAAAAAAAAAAAAAAAABEh/9oACAECAQE/EIOEh//EAB0QAQEAAgIDAQAAAAAAAAAAAAERADFhgSFBkcH/2gAIAQEAAT8Qgbs0VPm8YlvYKHC7yrtBXgf3CoCR9jGDhXJl8L3zi8xUkWd5/9k='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="LAR_9. Henry Moore_Animal Head"
+        title=""
+        src="/static/fa1170ec03e01057cc9f749ef6a88c28/55fd7/LAR_9.-Henry-Moore_Animal-Head_kv9t8h.jpg"
+        srcset="/static/fa1170ec03e01057cc9f749ef6a88c28/e81c0/LAR_9.-Henry-Moore_Animal-Head_kv9t8h.jpg 200w,
+/static/fa1170ec03e01057cc9f749ef6a88c28/8e8ea/LAR_9.-Henry-Moore_Animal-Head_kv9t8h.jpg 400w,
+/static/fa1170ec03e01057cc9f749ef6a88c28/55fd7/LAR_9.-Henry-Moore_Animal-Head_kv9t8h.jpg 640w"
+        sizes="(max-width: 640px) 100vw, 640px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<p><strong>10. Barbara Hepworth</strong>
+Oval with Two Forms, 1971
+bronze
+Jenna Burlingham Fine Art</p>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/37b2e5164baf7a9672a02e159aa22269/55fd7/LAR_10.-Barbara-Hepworth_Oval-with-Two-Forms_llscfy.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 640px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAQCA//EABcBAAMBAAAAAAAAAAAAAAAAAAABAgP/2gAMAwEAAhADEAAAAXeOXO9qQv/EABwQAAICAgMAAAAAAAAAAAAAAAECAxEAIgQSE//aAAgBAQABBQKB643oSGosdYkHVtc//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAGxAAAgIDAQAAAAAAAAAAAAAAAAERIQIiMYH/2gAIAQEABj8CrptHgxrEmS0f/8QAHBAAAwACAwEAAAAAAAAAAAAAAAERIWExQVGR/9oACAEBAAE/IXqcQ2siSxl2FYOc+iVUuibX4aLZ/9oADAMBAAIAAwAAABB3/wD/xAAXEQADAQAAAAAAAAAAAAAAAAAAAREh/9oACAEDAQE/EFiKf//EABgRAAIDAAAAAAAAAAAAAAAAAAAxARFh/9oACAECAQE/EHLK0//EABwQAQACAwADAAAAAAAAAAAAAAEAMREhQWFxkf/aAAgBAQABPxA40I4Nw85ho36YHCcrwg7o78rjms0nR9gPKgbZ/9k='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="LAR_10. Barbara Hepworth_Oval with Two Forms"
+        title=""
+        src="/static/37b2e5164baf7a9672a02e159aa22269/55fd7/LAR_10.-Barbara-Hepworth_Oval-with-Two-Forms_llscfy.jpg"
+        srcset="/static/37b2e5164baf7a9672a02e159aa22269/e81c0/LAR_10.-Barbara-Hepworth_Oval-with-Two-Forms_llscfy.jpg 200w,
+/static/37b2e5164baf7a9672a02e159aa22269/8e8ea/LAR_10.-Barbara-Hepworth_Oval-with-Two-Forms_llscfy.jpg 400w,
+/static/37b2e5164baf7a9672a02e159aa22269/55fd7/LAR_10.-Barbara-Hepworth_Oval-with-Two-Forms_llscfy.jpg 640w"
+        sizes="(max-width: 640px) 100vw, 640px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<p><strong>11. Terry Frost, 1915-2003</strong>
+Title, unknown
+watercolour on paper</p>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/6c2f568e8c3c55be8b00b2d9b9fb51ac/55fd7/LAR_11.-Terry-Frost_bqfmti.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 640px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAwABBP/EABUBAQEAAAAAAAAAAAAAAAAAAAID/9oADAMBAAIQAxAAAAHpDCm3jkf/xAAcEAACAgIDAAAAAAAAAAAAAAABAgARAxITITH/2gAIAQEAAQUCfJoeW57HGzFe7of/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAYEAACAwAAAAAAAAAAAAAAAAAQMQABQf/aAAgBAQAGPwJx2dH/xAAZEAEBAQEBAQAAAAAAAAAAAAABABEhMVH/2gAIAQEAAT8hxTRs9YPqAFHnkfWQyDf/2gAMAwEAAgADAAAAEGcv/8QAFhEBAQEAAAAAAAAAAAAAAAAAARBB/9oACAEDAQE/EBNn/8QAFxEAAwEAAAAAAAAAAAAAAAAAARARIf/aAAgBAgEBPxCG4v/EAB0QAQEAAQUBAQAAAAAAAAAAAAERACExUWHRQZH/2gAIAQEAAT8QaDqgSEDrvEUQGKp5kC6mpecbNBYTg8xOiO+5rn3Bu/uf/9k='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="LAR_11. Terry Frost"
+        title=""
+        src="/static/6c2f568e8c3c55be8b00b2d9b9fb51ac/55fd7/LAR_11.-Terry-Frost_bqfmti.jpg"
+        srcset="/static/6c2f568e8c3c55be8b00b2d9b9fb51ac/e81c0/LAR_11.-Terry-Frost_bqfmti.jpg 200w,
+/static/6c2f568e8c3c55be8b00b2d9b9fb51ac/8e8ea/LAR_11.-Terry-Frost_bqfmti.jpg 400w,
+/static/6c2f568e8c3c55be8b00b2d9b9fb51ac/55fd7/LAR_11.-Terry-Frost_bqfmti.jpg 640w"
+        sizes="(max-width: 640px) 100vw, 640px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<p><strong>12. David Bomberg, 1890-1957</strong>
+Barge and Canal Bank
+signed 1921
+gauche on paper</p>
+<p><strong>13. David Bomberg</strong>
+St Paul’s 
+signed 44
+charcoal on paper
+Waterhouse and Dodd Gallery</p>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/d74f652264c6be25ff7700cf798704a6/55fd7/LAR_12-13-David-Bomberg_St-Pauls_Bargee-and-Canal-Bank_jsgr8c.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 640px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwAB/8QAFgEBAQEAAAAAAAAAAAAAAAAAAwEC/9oADAMBAAIQAxAAAAHUGJBhtT//xAAZEAEBAAMBAAAAAAAAAAAAAAABAgADEhP/2gAIAQEAAQUC9AvZbK7axg6s6Wc//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAGhAAAQUBAAAAAAAAAAAAAAAAABAREjFBIf/aAAgBAQAGPwKGllk9H4n/xAAaEAEBAQADAQAAAAAAAAAAAAABEQAhQVGR/9oACAEBAAE/IQKMQgwhJNaezsM/Rovq5bym/9oADAMBAAIAAwAAABA3z//EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAgBAwEBPxBdf//EABURAQEAAAAAAAAAAAAAAAAAAAAh/9oACAECAQE/EEf/xAAdEAEAAwABBQAAAAAAAAAAAAABABEhUTFBYXGx/9oACAEBAAE/EH6LGcTFEgNLfdHiDS2CjE8WBA4eux2ayFFFVJfHuYY6wC37P//Z'); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="LAR_12 & 13 David Bomberg_St Pauls_Bargee and Canal Bank"
+        title=""
+        src="/static/d74f652264c6be25ff7700cf798704a6/55fd7/LAR_12-13-David-Bomberg_St-Pauls_Bargee-and-Canal-Bank_jsgr8c.jpg"
+        srcset="/static/d74f652264c6be25ff7700cf798704a6/e81c0/LAR_12-13-David-Bomberg_St-Pauls_Bargee-and-Canal-Bank_jsgr8c.jpg 200w,
+/static/d74f652264c6be25ff7700cf798704a6/8e8ea/LAR_12-13-David-Bomberg_St-Pauls_Bargee-and-Canal-Bank_jsgr8c.jpg 400w,
+/static/d74f652264c6be25ff7700cf798704a6/55fd7/LAR_12-13-David-Bomberg_St-Pauls_Bargee-and-Canal-Bank_jsgr8c.jpg 640w"
+        sizes="(max-width: 640px) 100vw, 640px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<p><strong>14. Maria Colonne, 1951</strong>
+Portland 
+collage
+Portland Gallery</p>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/0dda3f635650518d4e2f0ae02b8bd2a8/55fd7/LAR_14.-Maria-Colonne_Portland_q7cpkv.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 640px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAQCA//EABYBAQEBAAAAAAAAAAAAAAAAAAIAAf/aAAwDAQACEAMQAAABnshBZcm3/8QAGRABAAMBAQAAAAAAAAAAAAAAAQACERID/9oACAEBAAEFAvMlgS2b051aOs//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAYEAACAwAAAAAAAAAAAAAAAAAAEBEhMf/aAAgBAQAGPwLC1D//xAAbEAEBAQACAwAAAAAAAAAAAAABEQAhMUFxkf/aAAgBAQABPyEr0+bgrn1gZAmiQSZPyZtZv//aAAwDAQACAAMAAAAQl8//xAAVEQEBAAAAAAAAAAAAAAAAAAAAIf/aAAgBAwEBPxCI/8QAFhEBAQEAAAAAAAAAAAAAAAAAAQAh/9oACAECAQE/EBbb/8QAGxABAQEAAgMAAAAAAAAAAAAAAREAIVExQXH/2gAIAQEAAT8QY3i7ciw+vTPumU05IRVwiqCRj5xvlhFpv//Z'); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="LAR_14. Maria Colonne_Portland"
+        title=""
+        src="/static/0dda3f635650518d4e2f0ae02b8bd2a8/55fd7/LAR_14.-Maria-Colonne_Portland_q7cpkv.jpg"
+        srcset="/static/0dda3f635650518d4e2f0ae02b8bd2a8/e81c0/LAR_14.-Maria-Colonne_Portland_q7cpkv.jpg 200w,
+/static/0dda3f635650518d4e2f0ae02b8bd2a8/8e8ea/LAR_14.-Maria-Colonne_Portland_q7cpkv.jpg 400w,
+/static/0dda3f635650518d4e2f0ae02b8bd2a8/55fd7/LAR_14.-Maria-Colonne_Portland_q7cpkv.jpg 640w"
+        sizes="(max-width: 640px) 100vw, 640px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<p><strong>15. Sir Anthony Caro</strong>
+Basket Table Bronze, 1989-90
+cast bronze
+Annely Judia Fine Art</p>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/768de2f464765b3ecc7aa497a04f8ff1/55fd7/LAR_15.-Sir-Anthony-Caro_Basket-Table-Bronze_iuvfj9.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 640px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAAD/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQL/2gAMAwEAAhADEAAAAdBqBKi0k//EABsQAQACAgMAAAAAAAAAAAAAAAECAwAREiIj/9oACAEBAAEFAr/ILVY6C2XKJHupn//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABoQAAMAAwEAAAAAAAAAAAAAAAABERASMXH/2gAIAQEABj8CUE7fSarChw//xAAaEAEBAQADAQAAAAAAAAAAAAABEQAhMVFx/9oACAEBAAE/IUMFvF81cEdVZken7rZ4jpOMxsdb/9oADAMBAAIAAwAAABAwH//EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oACAEDAQE/EKr/xAAWEQEBAQAAAAAAAAAAAAAAAAAREDH/2gAIAQIBAT8QDJ//xAAcEAEBAAMBAAMAAAAAAAAAAAABEQAhQTFRcfD/2gAIAQEAAT8QDDvUhc58feEx1qFEdy61fMGE3TXCVKUHv64PmrVXDYTSsm+5/9k='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="LAR_15. Sir Anthony Caro_Basket Table Bronze"
+        title=""
+        src="/static/768de2f464765b3ecc7aa497a04f8ff1/55fd7/LAR_15.-Sir-Anthony-Caro_Basket-Table-Bronze_iuvfj9.jpg"
+        srcset="/static/768de2f464765b3ecc7aa497a04f8ff1/e81c0/LAR_15.-Sir-Anthony-Caro_Basket-Table-Bronze_iuvfj9.jpg 200w,
+/static/768de2f464765b3ecc7aa497a04f8ff1/8e8ea/LAR_15.-Sir-Anthony-Caro_Basket-Table-Bronze_iuvfj9.jpg 400w,
+/static/768de2f464765b3ecc7aa497a04f8ff1/55fd7/LAR_15.-Sir-Anthony-Caro_Basket-Table-Bronze_iuvfj9.jpg 640w"
+        sizes="(max-width: 640px) 100vw, 640px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<p><strong>16. Gro Thorsen, 1966</strong>
+‘Gallery Studies’
+oil on aluminum
+series of 105
+Jill George Gallery</p>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/b8a1f8d9a456ff3d944803a90348db2c/55fd7/LAR_16.-Gro-Thorsen_Gallery-Studies_nntavo.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 640px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEAv/EABYBAQEBAAAAAAAAAAAAAAAAAAEAAv/aAAwDAQACEAMQAAABeyDWGgjG/8QAGBABAAMBAAAAAAAAAAAAAAAAAAECERL/2gAIAQEAAQUCrd2myJa1/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFhAAAwAAAAAAAAAAAAAAAAAAACAx/9oACAEBAAY/Air/AP/EABoQAAICAwAAAAAAAAAAAAAAAAABETEhUWH/2gAIAQEAAT8hYlY2gSuzoS2POz//2gAMAwEAAgADAAAAEOzv/8QAFREBAQAAAAAAAAAAAAAAAAAAEBH/2gAIAQMBAT8Qp//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EABgQAQEBAQEAAAAAAAAAAAAAAAERADGR/9oACAEBAAE/EAhZlgoy1VckIPMwnGcjP//Z'); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="LAR_16. Gro Thorsen_Gallery Studies"
+        title=""
+        src="/static/b8a1f8d9a456ff3d944803a90348db2c/55fd7/LAR_16.-Gro-Thorsen_Gallery-Studies_nntavo.jpg"
+        srcset="/static/b8a1f8d9a456ff3d944803a90348db2c/e81c0/LAR_16.-Gro-Thorsen_Gallery-Studies_nntavo.jpg 200w,
+/static/b8a1f8d9a456ff3d944803a90348db2c/8e8ea/LAR_16.-Gro-Thorsen_Gallery-Studies_nntavo.jpg 400w,
+/static/b8a1f8d9a456ff3d944803a90348db2c/55fd7/LAR_16.-Gro-Thorsen_Gallery-Studies_nntavo.jpg 640w"
+        sizes="(max-width: 640px) 100vw, 640px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<p><strong>17. Bruce Mclean, 1944</strong>
+Garden Blue, 2012
+Monoprint with collage
+Jill George Gallery</p>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/c5bc50a2fa51d438c1674ca74a297052/33e24/LAR_17.-Bruce-Mclean_Garden-Blue_yjkfu6.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 480px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 150%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAMBBAUC/8QAFgEBAQEAAAAAAAAAAAAAAAAAAQIA/9oADAMBAAIQAxAAAAGxZzXRtAQLhEvw85Jr/8QAGxABAAICAwAAAAAAAAAAAAAAAQACAxIRISP/2gAIAQEAAQUC30hlm7GwZNgnPWV9F6o+aVslKs4n/8QAFhEBAQEAAAAAAAAAAAAAAAAAEAER/9oACAEDAQE/AaYf/8QAGBEAAgMAAAAAAAAAAAAAAAAAAAEQETH/2gAIAQIBAT8BRY8j/8QAIRAAAgADCQAAAAAAAAAAAAAAAAECEHERITFBUWGBkcH/2gAIAQEABj8C4LfZQ53IewhUUoaCbbMH2aH/xAAdEAEAAgIDAQEAAAAAAAAAAAABABEhMRBBYVFx/9oACAEBAAE/IaoK6O2aMq8gqHd/ZcBlimpxFV/OFr9+PDEtBQQbCfslQDA63P/aAAwDAQACAAMAAAAQeww9/8QAFxEBAQEBAAAAAAAAAAAAAAAAAQARMf/aAAgBAwEBPxB5yyUuxf/EABkRAAMAAwAAAAAAAAAAAAAAAAABERAhMf/aAAgBAgEBPxButuIg2jH/xAAeEAEBAAIBBQEAAAAAAAAAAAABEQAhMUFhkaHRcf/aAAgBAQABPxCTnkoK21ozFdL0sk8JiCwGkFO2sMjgYaAhROjq6wLOG/bjhWcHjFjXffOn5jhrX7cNnJFNd1yeD/L0GKqAwF9nP//Z'); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="LAR_17. Bruce Mclean_Garden-Blue"
+        title=""
+        src="/static/c5bc50a2fa51d438c1674ca74a297052/33e24/LAR_17.-Bruce-Mclean_Garden-Blue_yjkfu6.jpg"
+        srcset="/static/c5bc50a2fa51d438c1674ca74a297052/7084e/LAR_17.-Bruce-Mclean_Garden-Blue_yjkfu6.jpg 200w,
+/static/c5bc50a2fa51d438c1674ca74a297052/e263b/LAR_17.-Bruce-Mclean_Garden-Blue_yjkfu6.jpg 400w,
+/static/c5bc50a2fa51d438c1674ca74a297052/33e24/LAR_17.-Bruce-Mclean_Garden-Blue_yjkfu6.jpg 480w"
+        sizes="(max-width: 480px) 100vw, 480px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<p><strong>18. Alison Lambert, 1957</strong>
+‘Magnus’, 2013
+charcoal and pastel on paper
+Jill George Gallery</p>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/35ae89a7cb7cd2b0a8c3144d37f28a19/55fd7/LAR_18.-Alison-Lambert_Magnus_gwncde.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 640px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAQDBf/EABUBAQEAAAAAAAAAAAAAAAAAAAEC/9oADAMBAAIQAxAAAAGzGFFdhOT/xAAaEAEAAgMBAAAAAAAAAAAAAAACAQMAESEx/9oACAEBAAEFAocHBfu0+Wzg3LK5/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAGxABAAICAwAAAAAAAAAAAAAAAQARAhAxQYH/2gAIAQEABj8Cbe42z2WcmULNf//EABsQAAMAAgMAAAAAAAAAAAAAAAABESFhMVFx/9oACAEBAAE/IW0CyIJi0yWz2GcVwBs6K29EG9Z//9oADAMBAAIAAwAAABB4/wD/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAVEQEBAAAAAAAAAAAAAAAAAAABEP/aAAgBAgEBPxAn/8QAHRABAAIDAAMBAAAAAAAAAAAAAQARITFBYXGxwf/aAAgBAQABPxAaQaB76hFiXxKxVS2jf0Y9BINvJBUmyuK1vJDI3f7M/9k='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="LAR_18. Alison Lambert_Magnus"
+        title=""
+        src="/static/35ae89a7cb7cd2b0a8c3144d37f28a19/55fd7/LAR_18.-Alison-Lambert_Magnus_gwncde.jpg"
+        srcset="/static/35ae89a7cb7cd2b0a8c3144d37f28a19/e81c0/LAR_18.-Alison-Lambert_Magnus_gwncde.jpg 200w,
+/static/35ae89a7cb7cd2b0a8c3144d37f28a19/8e8ea/LAR_18.-Alison-Lambert_Magnus_gwncde.jpg 400w,
+/static/35ae89a7cb7cd2b0a8c3144d37f28a19/55fd7/LAR_18.-Alison-Lambert_Magnus_gwncde.jpg 640w"
+        sizes="(max-width: 640px) 100vw, 640px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<p><strong>19. Kelly Ratchford b. 1963</strong>
+‘Be Not Afraid’, 2013
+acrylic and charcoal on matchboxes
+set of 25</p>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/35089539550872ddb0c3cce0a13c84fa/33e24/LAR_19.-Kelly-Ratchford_Be-Not-Afraid_wboyee.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 480px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 150%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAEDBAL/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAQL/2gAMAwEAAhADEAAAAdVMzxqxIiC5VWIEf//EABoQAAIDAQEAAAAAAAAAAAAAAAABAhESIRD/2gAIAQEAAQUC0omvJMsT5JlifLss0f/EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQMBAT8BH//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQIBAT8BH//EABYQAAMAAAAAAAAAAAAAAAAAABAwgf/aAAgBAQAGPwIxP//EAB0QAAIDAAIDAAAAAAAAAAAAAAABESExQVFhcbH/2gAIAQEAAT8hWjqRr0Np2IkPy5fwoejS+B23koEdIjOEVUH/2gAMAwEAAgADAAAAEGQ9Q//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQMBAT8QH//EABYRAAMAAAAAAAAAAAAAAAAAAAAQEf/aAAgBAgEBPxAr/8QAHRABAAICAwEBAAAAAAAAAAAAAQARITFBYaFR4f/aAAgBAQABPxDEB2w6hxFbfC5R/Rcwhhtx3DFMvCLnu8MxB0fuPQOe8dTm+IGtGyptW3caoVE//9k='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="LAR_19. Kelly Ratchford_Be Not Afraid"
+        title=""
+        src="/static/35089539550872ddb0c3cce0a13c84fa/33e24/LAR_19.-Kelly-Ratchford_Be-Not-Afraid_wboyee.jpg"
+        srcset="/static/35089539550872ddb0c3cce0a13c84fa/7084e/LAR_19.-Kelly-Ratchford_Be-Not-Afraid_wboyee.jpg 200w,
+/static/35089539550872ddb0c3cce0a13c84fa/e263b/LAR_19.-Kelly-Ratchford_Be-Not-Afraid_wboyee.jpg 400w,
+/static/35089539550872ddb0c3cce0a13c84fa/33e24/LAR_19.-Kelly-Ratchford_Be-Not-Afraid_wboyee.jpg 480w"
+        sizes="(max-width: 480px) 100vw, 480px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<p><strong>20. Eduardo Chillida</strong>
+Lithograph
+Adam gallery</p>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/4348e4d004bd3b1f64be4f9a139dba3f/55fd7/LAR_20.-Eduardo-Chillida_gqwkhl.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 640px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEBf/EABUBAQEAAAAAAAAAAAAAAAAAAAID/9oADAMBAAIQAxAAAAHSTMqbgIRn/8QAGhAAAwADAQAAAAAAAAAAAAAAAQIDABAREv/aAAgBAQABBQJXFJkpj1PtOpItr//EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oACAEDAQE/AVf/xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAgEBPwFH/8QAHhAAAQIHAQAAAAAAAAAAAAAAAAIRARAhMVFxgZH/2gAIAQEABj8CdvSkEcFbyMWl/8QAGRAAAwEBAQAAAAAAAAAAAAAAAAERMSFB/9oACAEBAAE/IVWMbkWjuyPUwe2HYV28ILkej62z/9oADAMBAAIAAwAAABBDz//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QH//EABYRAQEBAAAAAAAAAAAAAAAAAAARQf/aAAgBAgEBPxDUP//EABwQAQADAAIDAAAAAAAAAAAAAAEAESFhgUFRwf/aAAgBAQABPxDa3USiX46lQ5xTtHPuLWAQBQKz5Hb6PFcFkDqoC3qIcvW5/9k='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="LAR_20. Eduardo Chillida"
+        title=""
+        src="/static/4348e4d004bd3b1f64be4f9a139dba3f/55fd7/LAR_20.-Eduardo-Chillida_gqwkhl.jpg"
+        srcset="/static/4348e4d004bd3b1f64be4f9a139dba3f/e81c0/LAR_20.-Eduardo-Chillida_gqwkhl.jpg 200w,
+/static/4348e4d004bd3b1f64be4f9a139dba3f/8e8ea/LAR_20.-Eduardo-Chillida_gqwkhl.jpg 400w,
+/static/4348e4d004bd3b1f64be4f9a139dba3f/55fd7/LAR_20.-Eduardo-Chillida_gqwkhl.jpg 640w"
+        sizes="(max-width: 640px) 100vw, 640px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<p>Read more:</p>
+<ul>
+<li><a href="http://www.economist.com/news/britain/21594262-rapid-growth-art-fairs-changing-way-galleries-operate-fairly-popular">The art market: The rapid growth of art fairs is changing how galleries operate – The Economist</a></li>
+</ul></div><footer><div>Loading...</div><div class="jsx-4158949110 author"><div class="jsx-4158949110 avatar"><img src="/static/avatar-9fed4a6a589d12d55cab4b5621bd21b3.jpg" alt="Momardi - Tuesday Gutierrez" class="jsx-4158949110"/></div><div class="jsx-4158949110 note"><p>Article by <strong>Tuesday Gutierrez</strong>. Former digital marketing manager for the London 2012 Festival, the largest UK festival ever staged. This is her blog about contemporary art, design, film, photography and all that move her soul.</p></div></div><div class="jsx-126278577 links"><a href="/16-of-the-best-artworks-from-art14-london/"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em"><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"></path></svg><h4 class="jsx-126278577">16 of the Best artworks from Art14 London<!-- --> <time class="jsx-126278577">2014-03-04<!-- --> </time></h4></a><a href="/come-and-see-jake-and-dinos-chapman-at-the-serpentine-sackler-gallery/"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em"><path d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"></path></svg><h4 class="jsx-126278577">Come and See: Jake and Dinos Chapman at the Serpentine Sackler Gallery<!-- --> <time class="jsx-126278577">2014-01-07</time></h4></a></div></footer></article></main><footer class="jsx-1209355388 footer"><ul>
+<li>All content copyright by MOMARDI - Tuesday Gutierrez © 2018 All rights reserved</li>
+<li>Copywriter, Content Manager, Strategy, Branding and Marketing || Proudly published with <a href="https://www.gatsbyjs.org/">GatsbyJS</a> and <a href="https://github.com">Github</a></li>
+</ul></footer></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-268014-11', 'auto', {});
+      
+      }
+      </script><script id="gatsby-script-loader">/*<![CDATA[*/window.page={"componentChunkName":"component---src-templates-post-template-js","jsonName":"the-best-of-london-art-fair-2014-32-artworks-6b0","path":"/the-best-of-london-art-fair-2014-32-artworks/"};window.dataPath="768/path---the-best-of-london-art-fair-2014-32-artworks-6-b-0-073-SE79ZMKPABPTCaH2PvHJv5Uzs";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app.8b1cc9920e75fff049f7.css","/app-19e66dfda9679ae89fc3.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-8fec9522ed849d38d6e1.js"],"component---src-templates-category-template-js":["/component---src-templates-category-template-js-bbbc53f0d10a363d3916.js"],"component---src-templates-post-template-js":["/component---src-templates-post-template-js.b6f197430f783b3e67aa.css","/component---src-templates-post-template-js-6193f23506b3bdb852a8.js"],"component---src-templates-page-template-js":["/component---src-templates-page-template-js-3207c1dd6e884134e246.js"],"component---src-templates-index-js":["/component---src-templates-index-js-206102ca59d9d3ce11c5.js"],"component---src-pages-404-js":["/component---src-pages-404-js-718506eefd248f6f227f.js"],"component---src-pages-category-js":["/component---src-pages-category-js-17964a73e7bbfeb80cbf.js"],"component---src-pages-search-js":["/component---src-pages-search-js-42ae346864b4602c817e.js"]};/*]]>*/</script><script src="/component---src-templates-post-template-js-6193f23506b3bdb852a8.js" async=""></script><script src="/0-b46d511e229ccfe9bbb3.js" async=""></script><script src="/app-19e66dfda9679ae89fc3.js" async=""></script><script src="/webpack-runtime-d1d8e972eb3919d6ad52.js" async=""></script></body></html>

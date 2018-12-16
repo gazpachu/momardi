@@ -26,26 +26,23 @@ workbox.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-db7f2d96c3eec731f6a8.js"
+    "url": "webpack-runtime-d1d8e972eb3919d6ad52.js"
   },
   {
-    "url": "app-bef4d960eb13ecef2792.js"
+    "url": "app.8b1cc9920e75fff049f7.css"
   },
   {
-    "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-22aaa75040151f6993a3.js"
+    "url": "app-19e66dfda9679ae89fc3.js"
+  },
+  {
+    "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-8fec9522ed849d38d6e1.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "9c51dd0179cf83e17e663c4c51a4a040"
+    "revision": "d16b7a83276c9de43eddd73fc7938c4d"
   },
   {
-    "url": "component---src-pages-404-js.12b03a3ce87a9d9e664c.css"
-  },
-  {
-    "url": "component---src-pages-404-js-5f88c27662a3bb9e2912.js"
-  },
-  {
-    "url": "0-327661c7b7fc2a48bb3c.js"
+    "url": "component---src-pages-404-js-718506eefd248f6f227f.js"
   },
   {
     "url": "static/d/164/path---404-html-516-62a-NZuapzHg3X9TaN1iIixfv1W23E.json",
@@ -57,7 +54,7 @@ self.__precacheManifest = [
   },
   {
     "url": "manifest.webmanifest",
-    "revision": "32123b83dbfe18bcbb48f6063e953b80"
+    "revision": "3b255f3f69d84dd2d0fb7437809d0734"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
@@ -84,7 +81,7 @@ var navigationRoute = new workbox.routing.NavigationRoute(function (_ref) {
 
     // Respond with the offline shell if we match the custom whitelist
     if (customWhitelist.includes(pathname)) {
-      var offlineShell = "/momardi/offline-plugin-app-shell-fallback/index.html";
+      var offlineShell = "/offline-plugin-app-shell-fallback/index.html";
       var cacheName = workbox.core.cacheNames.precache;
       return caches.match(offlineShell, {
         cacheName: cacheName
@@ -141,7 +138,7 @@ var messageApi = {
           includesPrefix = _ref3.includesPrefix;
 
       if (!includesPrefix) {
-        return "/momardi" + pathname;
+        return "" + pathname;
       } else {
         return pathname;
       }

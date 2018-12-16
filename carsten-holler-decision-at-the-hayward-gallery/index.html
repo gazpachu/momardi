@@ -1,0 +1,424 @@
+<!DOCTYPE html><html lang="en" prefix="og: http://ogp.me/ns#"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/component---src-templates-post-template-js.b6f197430f783b3e67aa.css">code[class*=language-],pre[class*=language-]{color:#f8f8f2;background:none;text-shadow:0 1px rgba(0,0,0,.3);font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto;border-radius:.3em}:not(pre)>code[class*=language-],pre[class*=language-]{background:#272822}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#f8f8f2}.namespace{opacity:.7}.token.constant,.token.deleted,.token.property,.token.symbol,.token.tag{color:#f92672}.token.boolean,.token.number{color:#ae81ff}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#a6e22e}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url,.token.variable{color:#f8f8f2}.token.atrule,.token.attr-value,.token.class-name,.token.function{color:#e6db74}.token.keyword{color:#66d9ef}.token.important,.token.regex{color:#fd971f}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}</style><style data-href="/app.8b1cc9920e75fff049f7.css">@font-face{font-family:Open Sans;font-style:normal;font-display:swap;font-weight:300;src:local("Open Sans Light "),local("Open Sans-Light"),url(/static/open-sans-latin-300-60c866748ff15f5b347fdba64596b1b1.woff2) format("woff2"),url(/static/open-sans-latin-300-521d17bc9f3526c690e8ada6eee55bec.woff) format("woff")}@font-face{font-family:Open Sans;font-style:italic;font-display:swap;font-weight:300;src:local("Open Sans Light italic"),local("Open Sans-Lightitalic"),url(/static/open-sans-latin-300italic-06bbd3188b34820cd83a0e0b3d0a6f57.woff2) format("woff2"),url(/static/open-sans-latin-300italic-8a648ff38ded89ea15916e84529d62d3.woff) format("woff")}@font-face{font-family:Open Sans;font-style:normal;font-display:swap;font-weight:400;src:local("Open Sans Regular "),local("Open Sans-Regular"),url(/static/open-sans-latin-400-cffb686d7d2f4682df8342bd4d276e09.woff2) format("woff2"),url(/static/open-sans-latin-400-bf2d0783515b7d75c35bde69e01b3135.woff) format("woff")}@font-face{font-family:Open Sans;font-style:italic;font-display:swap;font-weight:400;src:local("Open Sans Regular italic"),local("Open Sans-Regularitalic"),url(/static/open-sans-latin-400italic-987032ea5d57c93d8da215678eae3b86.woff2) format("woff2"),url(/static/open-sans-latin-400italic-db70d0b9cb27ada1a260a2b35e756b8b.woff) format("woff")}@font-face{font-family:Open Sans;font-style:normal;font-display:swap;font-weight:600;src:local("Open Sans SemiBold "),local("Open Sans-SemiBold"),url(/static/open-sans-latin-600-223a277bd88d8a90c8cdf24cda0ad5f5.woff2) format("woff2"),url(/static/open-sans-latin-600-1cd5320f8937d337b61d5117cf9d7b28.woff) format("woff")}@font-face{font-family:Open Sans;font-style:italic;font-display:swap;font-weight:600;src:local("Open Sans SemiBold italic"),local("Open Sans-SemiBolditalic"),url(/static/open-sans-latin-600italic-4950a7205f0b5cefe41fc03ac346e236.woff2) format("woff2"),url(/static/open-sans-latin-600italic-318ea1ada4102c0704a0637228dcad03.woff) format("woff")}@font-face{font-family:Open Sans;font-style:normal;font-display:swap;font-weight:700;src:local("Open Sans Bold "),local("Open Sans-Bold"),url(/static/open-sans-latin-700-d08c09f2f169f4a6edbcf8b8d1636cb4.woff2) format("woff2"),url(/static/open-sans-latin-700-623e3205570002af47fc2b88f9335d19.woff) format("woff")}@font-face{font-family:Open Sans;font-style:italic;font-display:swap;font-weight:700;src:local("Open Sans Bold italic"),local("Open Sans-Bolditalic"),url(/static/open-sans-latin-700italic-c02f5da6e82e1efe0b45841bfd49ce37.woff2) format("woff2"),url(/static/open-sans-latin-700italic-72e19cbb0e38c6773a7751156752cec4.woff) format("woff")}@font-face{font-family:Open Sans;font-style:normal;font-display:swap;font-weight:800;src:local("Open Sans ExtraBold "),local("Open Sans-ExtraBold"),url(/static/open-sans-latin-800-aaeffaf205b9bbb09920089a14dbe9e8.woff2) format("woff2"),url(/static/open-sans-latin-800-c6aa0c4a601fb6ac66f8253fa594dff5.woff) format("woff")}@font-face{font-family:Open Sans;font-style:italic;font-display:swap;font-weight:800;src:local("Open Sans ExtraBold italic"),local("Open Sans-ExtraBolditalic"),url(/static/open-sans-latin-800italic-6b3973ffe02bb6a8be0f8453506ec032.woff2) format("woff2"),url(/static/open-sans-latin-800italic-79b58175343190550489efe46a7f1138.woff) format("woff")}</style><meta name="generator" content="Gatsby 2.0.60"/><style id="__jsx-677817541">.item.jsx-677817541{background:transparent;-webkit-transition:all 0.5s;-webkit-transition:all 0.5s;transition:all 0.5s;display:-webkit-box;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}
+.item.jsx-677817541 a{padding:10px;display:-webkit-box;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}
+.item.jsx-677817541 svg{margin:0 5px 0 0;opacity:0.3;}
+@media screen and (max-width:1023px){.jsx-677817541:not(.homepage) .item.jsx-677817541 a{color:#ffffff;}}
+@media screen and (min-width:1024px){.item.jsx-677817541 a{color:#3e3e3c;padding:10px;-webkit-transition:all 0.5s;-webkit-transition:all 0.5s;transition:all 0.5s;border-radius:5px;}.homepage:not(.fixed) .item.jsx-677817541 a{color:#ffffff;}.item.jsx-677817541 a:hover{color:#709425;background:rgba(255,255,255,0.4);}.item.jsx-677817541 svg{-webkit-transition:all 0.5s;-webkit-transition:all 0.5s;transition:all 0.5s;}.item.jsx-677817541:hover svg{fill:#709425;opacity:1;}.hero .item.jsx-677817541:hover svg svg{fill:green;}}</style><style id="__jsx-1619051672">.menu.jsx-1619051672{-webkit-box-align:center;-ms-flex-align:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-flex:1;-ms-flex-positive:1;-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1;left:0;padding:0 10px;position:fixed;width:100%;z-index:1;-webkit-transition:all 0.5s;-webkit-transition:all 0.5s;transition:all 0.5s;}
+.itemList.jsx-1619051672{display:-webkit-box;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;list-style:none;margin:0;padding:0;position:relative;width:100%;}
+@media screen and (max-width:1023px){.menu.jsx-1619051672{position:static;position:initial;}}
+@media screen and (min-width:1024px){.menu.jsx-1619051672{border-top:none;background:transparent;display:-webkit-box;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;position:relative;-webkit-box-pack:end;-ms-flex-pack:end;-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end;padding-left:50px;-webkit-transition:none;-webkit-transition:none;transition:none;}.itemList.jsx-1619051672{-webkit-box-pack:end;-ms-flex-pack:end;-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end;padding:0;}}</style><style id="__jsx-937100772">.header.jsx-937100772{background-color:#ffffff;position:relative;top:0;width:100%;}
+.header.homepage.jsx-937100772{position:absolute;background-color:transparent;}
+h1.jsx-937100772{font-size:2.2em;font-weight:100;margin:0 0 5px 0;}
+.sensor.jsx-937100772{display:block;position:absolute;bottom:0;z-index:1;left:0;right:0;height:1px;top:80px;}
+@media screen and (min-width:600px){.header.jsx-937100772{padding:20px;}}
+@media screen and (max-width:1023px){.header.jsx-937100772{text-align:center;padding:20px;}.header.homepage.jsx-937100772 .logo.jsx-937100772{border:none;}.header.homepage.jsx-937100772 a.logoType,.header.homepage.jsx-937100772 h1.jsx-937100772{color:#ffffff;}}
+@media screen and (min-width:1024px){.header.jsx-937100772{-webkit-box-align:center;-ms-flex-align:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background-color:#ffffff;display:-webkit-box;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;position:absolute;top:0;width:100%;-webkit-box-pack:justify;-ms-flex-pack:justify;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-transition:padding 0.5s;-webkit-transition:padding 0.5s;transition:padding 0.5s;}.header.fixed.jsx-937100772{height:50px;;background-color:#ffffff;left:0;padding:0 20px;position:fixed;top:0;width:100%;z-index:1;border-bottom:1px solid #ecebea;}.header.fixed.jsx-937100772 h1.jsx-937100772{margin:0 0 2px 0;}.header.jsx-937100772 a.logoType{-webkit-box-align:center;-ms-flex-align:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:"column";-webkit-flex-direction:"column";-ms-flex-direction:"column";flex-direction:"column";color:#3e3e3c;}.header.jsx-937100772 a.logoType .logo.jsx-937100772{-ms-flex-negative:0;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;}.header.homepage.jsx-937100772:not(.fixed) a.logoType,.header.homepage.jsx-937100772:not(.fixed) h1.jsx-937100772{color:#ffffff;}.header.jsx-937100772 a.logoType{text-align:left;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-ms-flex-negative:0;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;width:auto;}.logo.jsx-937100772{margin:0 20px 0 0;}.fixed.jsx-937100772 .logo.jsx-937100772{height:36px;width:36px;}.header.homepage.jsx-937100772:not(.fixed) .logo.jsx-937100772{border:none;}}</style><style id="__jsx-2542452449">h1.jsx-2542452449{font-size:2.2em;margin:0 0 40px 0;-webkit-animation-name:headlineEntry;-webkit-animation-name:headlineEntry-jsx-2542452449;animation-name:headlineEntry-jsx-2542452449;-webkit-animation-duration:1s;-webkit-animation-duration:1s;animation-duration:1s;}
+h1.jsx-2542452449 span{font-weight:400;display:block;font-size:0.5em;-webkit-letter-spacing:0;-moz-letter-spacing:0;-ms-letter-spacing:0;letter-spacing:0;margin:0 0 5px 0;}
+h1.jsx-2542452449 svg{height:0.75em;fill:#709425;}
+@-webkit-keyframes headlineEntry{from.jsx-2542452449{opacity:0.5;}to.jsx-2542452449{opacity:1;}}
+@-webkit-keyframes headlineEntry-jsx-2542452449{from{opacity:0.5;}to{opacity:1;}}
+@keyframes headlineEntry-jsx-2542452449{from{opacity:0.5;}to{opacity:1;}}
+@media screen and (min-width:600px){h1.jsx-2542452449{font-size:calc(2em * 1.2);}}
+@media screen and (min-width:1024px){h1.jsx-2542452449{font-size:calc(2em * 1.4);}}</style><style id="__jsx-2703193364">.meta.jsx-2703193364{display:-webkit-box;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-flow:row wrap;-webkit-flex-flow:row wrap;-ms-flex-flow:row wrap;flex-flow:row wrap;font-size:0.8em;margin:20px 0;background:transparent;}
+.meta.jsx-2703193364 svg{fill:#709425;margin:0 5px 0 0;}
+.meta.jsx-2703193364 span.jsx-2703193364{-webkit-box-align:center;-ms-flex-align:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;text-transform:uppercase;margin:5px 10px 5px 0;}
+@media screen and (min-width:600px){.meta.jsx-2703193364{margin:calc(20px * 1.5) 0 20px;}}</style><style id="__jsx-1849375170">.bodytext.jsx-1849375170{-webkit-animation-name:bodytextEntry;-webkit-animation-name:bodytextEntry-jsx-1849375170;animation-name:bodytextEntry-jsx-1849375170;-webkit-animation-duration:1s;-webkit-animation-duration:1s;animation-duration:1s;}
+.bodytext.jsx-1849375170 h2,.bodytext.jsx-1849375170 h3{margin:1.5em 0 1em;}
+.bodytext.jsx-1849375170 h2{line-height:1.2;font-size:1.7em;}
+.bodytext.jsx-1849375170 h3{font-size:1.35em;line-height:1.3;}
+.bodytext.jsx-1849375170 p{font-size:1.1em;line-height:1.6;margin:0 0 1.5em;}
+.bodytext.jsx-1849375170 ul{list-style:circle;margin:0 0 1.5em;padding:0 0 0 1.5em;}
+.bodytext.jsx-1849375170 li{margin:0.7em 0;line-height:1.5;}
+.bodytext.jsx-1849375170 a{font-weight:600;color:#709425;-webkit-text-decoration:underline;text-decoration:underline;}
+.bodytext.jsx-1849375170 a.gatsby-resp-image-link{border:0;display:block;margin:1em 0;overflow:hidden;}
+.bodytext.jsx-1849375170 code.language-text{background:#ecebea;text-shadow:none;color:inherit;padding:0.1em 0.3em 0.2em;border-radius:0.1em;}
+@-webkit-keyframes bodytextEntry{from.jsx-1849375170{opacity:0;}to.jsx-1849375170{opacity:1;}}
+@-webkit-keyframes bodytextEntry-jsx-1849375170{from{opacity:0;}to{opacity:1;}}
+@keyframes bodytextEntry-jsx-1849375170{from{opacity:0;}to{opacity:1;}}</style><style id="__jsx-4158949110">.author.jsx-4158949110{margin:40px 0;padding:40px 0;border-top:1px solid #ecebea;border-bottom:1px solid #ecebea;}
+.avatar.jsx-4158949110{float:left;border-radius:65% 75%;border:1px solid #ecebea;display:inline-block;height:70px;margin:0 20px 0 0;overflow:hidden;width:70px;}
+.avatar.jsx-4158949110 img.jsx-4158949110{width:100%;}
+.note.jsx-4158949110{font-size:0.9em;line-height:1.6;}
+@media screen and (min-width:600px){.author.jsx-4158949110{display:-webkit-box;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}.avatar.jsx-4158949110{-webkit-box-flex:0;-ms-flex:0 0 auto;-webkit-flex:0 0 auto;-ms-flex:0 0 auto;flex:0 0 auto;}}</style><style id="__jsx-126278577">.links.jsx-126278577{display:-webkit-box;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;padding:0 20px 40px;border-bottom:1px solid #ecebea;margin:0 0 40px 0;}
+.links.jsx-126278577 a{display:-webkit-box;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}
+.links.jsx-126278577 a:nth-child(2){margin:20px 0 0;}
+.links.jsx-126278577 svg{fill:orange;width:20px;height:20px;-ms-flex-negative:0;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;-webkit-box-flex:0;-ms-flex-positive:0;-webkit-box-flex:0;-webkit-flex-grow:0;-ms-flex-positive:0;flex-grow:0;margin:0 20px 0 0;}
+h4.jsx-126278577{font-weight:600;margin:0;font-size:1.1em;}
+time.jsx-126278577{color:#969492;display:block;font-weight:400;font-size:0.8em;margin-top:0.5em;}
+@media screen and (min-width:1024px){.links.jsx-126278577{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-ms-flex-direction:row-reverse;-webkit-flex-direction:row-reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;}.links.jsx-126278577 a{-ms-flex-preferred-size:50%;-webkit-flex-basis:50%;-ms-flex-preferred-size:50%;flex-basis:50%;}.links.jsx-126278577 a:nth-child(2){margin:0;}.links.jsx-126278577 svg{-webkit-transition:all 0.5s;-webkit-transition:all 0.5s;transition:all 0.5s;margin:0 10px 0 0;}@media (hover:hover){.links.jsx-126278577 a:hover svg{-webkit-transform:scale(1.5);-webkit-transform:scale(1.5);-ms-transform:scale(1.5);transform:scale(1.5);}}}</style><style id="__jsx-1766939654">.article.jsx-1766939654{padding:20px;margin:0 auto;}
+@media screen and (min-width:600px){.article.jsx-1766939654{padding:calc(20px) calc(20px * 2);max-width:650px;}}
+@media screen and (min-width:1024px){.article.jsx-1766939654{padding:calc(20px * 2 + 90px) 0 calc(20px * 2);max-width:700px;}}</style><style id="__jsx-1209355388">.footer.jsx-1209355388{background:#ffffff;padding:20px;padding-top:0;padding-bottom:120px;}
+.footer.jsx-1209355388 ul{list-style:none;text-align:center;padding:0;}
+.footer.jsx-1209355388 ul li{color:#969492;font-size:.8em;padding:2px 10px;position:relative;display:inline-block;}
+@media screen and (min-width:1024px){.footer.jsx-1209355388{padding:0 1em 1.5em;max-width:800px;margin:0 auto;}.footer.jsx-1209355388 ul li::after{content:"•";position:absolute;right:calc(5px * -1);}.footer.jsx-1209355388 ul li:last-child::after{content:"";}}</style><style id="__jsx-3017011455">main.jsx-3017011455{min-height:80vh;}</style><style id="__jsx-901573039">html{-webkit-box-sizing:border-box;box-sizing:border-box;}
+*,*:after,*:before{-webkit-box-sizing:inherit;box-sizing:inherit;margin:0;padding:0;}
+body{font-family:Arial, sans-serif;;}
+h1,h2,h3{font-weight:100;line-height:1.1;-webkit-letter-spacing:-0.03em;-moz-letter-spacing:-0.03em;-ms-letter-spacing:-0.03em;letter-spacing:-0.03em;margin:0;}
+h1{-webkit-letter-spacing:-0.04em;-moz-letter-spacing:-0.04em;-ms-letter-spacing:-0.04em;letter-spacing:-0.04em;}
+p{margin:0;}
+strong{font-weight:600;}
+a{-webkit-text-decoration:none;text-decoration:none;color:#666;}
+main{width:auto;display:block;}
+figcaption{text-align:center;font-size:14px;font-style:italic;color:#888;margin-bottom:40px;}</style><title data-react-helmet="true">Carsten Holler - Decision at the Hayward Gallery - Momardi</title><meta data-react-helmet="true" name="description" content="Tuesday Gutierrez. Creative writer, agile content manager and visual artist"/><meta data-react-helmet="true" property="og:url" content="https://momardi.com/carsten-holler-decision-at-the-hayward-gallery/"/><meta data-react-helmet="true" property="og:title" content="Carsten Holler - Decision at the Hayward Gallery - Momardi"/><meta data-react-helmet="true" property="og:description" content="Tuesday Gutierrez. Creative writer, agile content manager and visual artist"/><meta data-react-helmet="true" property="og:image" content="https://momardi.comundefined/static/6ffb943c706e20a17b3f9859efb79b1c/039c6/0B49mgIHaCi2Fd21RT1lJR0I3MTg_yfxnau.png"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="tuesdaygutz"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#1AA0CD"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link as="script" rel="preload" href="/webpack-runtime-d1d8e972eb3919d6ad52.js"/><link as="script" rel="preload" href="/app-19e66dfda9679ae89fc3.js"/><link as="script" rel="preload" href="/0-b46d511e229ccfe9bbb3.js"/><link as="script" rel="preload" href="/component---src-templates-post-template-js-6193f23506b3bdb852a8.js"/><link rel="preload" href="/static/d/447/path---carsten-holler-decision-at-the-hayward-gallery-d-62-28d-YQAWjIwEtIFYvWkIJIAxnVhkkRA.json" as="fetch" crossOrigin="use-credentials"/><meta name="apple-mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-status-bar-style" content="#D0E0D8"/><meta name="apple-mobile-web-app-title" content="Lazywill"/><link rel="apple-touch-icon" href="/icons/apple-icon-57x57.png" sizes="57x57"/><link rel="apple-touch-icon" href="/icons/apple-icon-60x60.png" sizes="60x60"/><link rel="apple-touch-icon" href="/icons/apple-icon-72x72.png" sizes="72x72"/><link rel="apple-touch-icon" href="/icons/apple-icon-76x76.png" sizes="76x76"/><link rel="apple-touch-icon" href="/icons/apple-icon-114x114.png" sizes="114x114"/><link rel="apple-touch-icon" href="/icons/apple-icon-120x120.png" sizes="120x120"/><link rel="apple-touch-icon" href="/icons/apple-icon-144x144.png" sizes="144x144"/><link rel="apple-touch-icon" href="/icons/apple-icon-152x152.png" sizes="152x152"/><link rel="apple-touch-icon" href="/icons/apple-icon-180x180.png" sizes="180x180"/><link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png"/><link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png"/><link rel="icon" type="image/png" sizes="96x96" href="/icons/favicon-96x96.png"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group"><header class="jsx-937100772 header  "><a class="logoType" href="/"><div class="jsx-937100772 type"><h1 class="jsx-937100772">MOMARDI</h1></div></a><nav rel="js-menu" class="jsx-1619051672 menu"><ul class="jsx-1619051672 itemList"><li class="jsx-677817541 item"><a data-slug="/category/" href="/category/"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em"><path d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"></path></svg> <!-- -->Categories</a></li><li class="jsx-677817541 item"><a data-slug="/search/" href="/search/"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg> <!-- -->Search</a></li><li class="jsx-677817541 item"><a data-slug="/about/" href="/about/"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em"><path d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"></path></svg> <!-- -->About</a></li><li class="jsx-677817541 item"><a data-slug="/cv/" href="/cv/"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 384 512" height="1em" width="1em"><path d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm160-14.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"></path></svg> <!-- -->CV</a></li><li class="jsx-677817541 item"><a data-slug="/work/" href="/work/"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em"><path d="M320 336c0 8.84-7.16 16-16 16h-96c-8.84 0-16-7.16-16-16v-48H0v144c0 25.6 22.4 48 48 48h416c25.6 0 48-22.4 48-48V288H320v48zm144-208h-80V80c0-25.6-22.4-48-48-48H176c-25.6 0-48 22.4-48 48v48H48c-25.6 0-48 22.4-48 48v80h512v-80c0-25.6-22.4-48-48-48zm-144 0H192V96h128v32z"></path></svg> <!-- -->Work</a></li><li class="jsx-677817541 item"><a data-slug="/contact/" href="/contact/"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em"><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path></svg> <!-- -->Contact</a></li></ul></nav></header><div class="jsx-937100772 sensor"></div><main class="jsx-3017011455 jsx-901573039"><article class="jsx-1766939654 article"><header><h1 class="jsx-2542452449">Carsten Holler - Decision at the Hayward Gallery</h1><p class="jsx-2703193364 meta"><span class="jsx-2703193364"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" size="18" height="18" width="18"><path d="M12 192h424c6.6 0 12 5.4 12 12v260c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V204c0-6.6 5.4-12 12-12zm436-44v-36c0-26.5-21.5-48-48-48h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v36c0 6.6 5.4 12 12 12h424c6.6 0 12-5.4 12-12z"></path></svg> <!-- -->2015-06-26</span><span class="jsx-2703193364"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" size="18" height="18" width="18"><path d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"></path></svg><a href="/category/exhibits">exhibits</a></span></p></header><div class="jsx-1849375170 bodytext"><p>Forget about theme parks - Carsten Höller brings you the playground at the heart of London and into the gallery setting. I never thought this could be done in this scale and not at this capacity. <strong>If you are into interactive installations, it doesn’t get as interactive as this.</strong></p>
+<p>It doesn’t matter that you have to spend at least 5-10 mins blind as a bat finding your way through a totally dark make-shift hallway where only your hands guide you and small bits of light along the path. It’s a bit scary but you plough through because you muster up the courage and make the decision to go all the way.</p>
+<p>And as soon as you find the light at the end of the tunnel and finish the first part of the exhibition - <strong>there’s no other sensation but relief</strong>, and a bit of pride for making it through the first round.</p>
+<h3>Decision</h3>
+<p>This is <strong>Carsten’s largest survey</strong> and it brings together both old and newly commissioned work. The focus of the exhibition is Decision and it summons the visitors to make series of choices/decisions throughout. It already looks like a big hit - which reflects the public’s thirst for experiential installations whilst also putting a spotlight on our need to play as a tool to question choices and ultimately make decisions.</p>
+<p>The rest of the exhibition present joyrides which is why most people come here in groups. <strong>The exhibition is meant to be experienced in a pack or two</strong>, as the experience calls you to take into consideration not only your perspective but that of another person. And because the experience is immediate, the conversation and questioning happens in real-time.</p>
+<p>Except when you finally hit the Isometric slide - you’re all by yourself - gleefully exiting the exhibition.</p>
+<p>
+  <figure class="gatsby-resp-image-figure" style="">
+  
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/7b9541757123cce34e52ef9bd08baaf0/9c96a/Carsten-Ho_z0pm4e.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 640px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 66.5625%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAAsSAAALEgHS3X78AAADJElEQVQozwEZA+b8ACghDzQvIC0pHi4mHp6VjPXr3M/Ctl5WTVZPSFZORlhUT6COhaWYk3hzakpCNkpHQ4N8ciUiHU1JPVdSRQAbFQc2LyJ6dGuwrqTr7N/6++7x6dqlmo1iWlRTSkJkYluohX6+oZtEQzs4MSWMhn6XjoOAdWaDe2xxal0AKCIZurCk8NLD86+U/LOZ98ay7NrJ4su70cW7eHBmcWdgYFVJlW5jdGVWh3xusaKXtKSapZuMn5WJjoZ5ADIqJOqcT/NPF9cwG6UpEN5iQt+Nct1+Ztd6Y8izqHRmWGdZSpyMeranl8C1qqiFd7Ock8O9trWsoqKbkAAsLCZoVDrDdDXbVhSNTC6zSzPVd1qvOibKLhXadkqdg22SiX+xqaK5tbO7uLa3s7HEwcDLxMG+uLCwqJ0AeXpzjZKTho6QiYRytoFcc080XCoOnTsfk0wzhGFHgnNoiYF6w8HC3t7j2tre2tnd1NLUzcjFxL64t7CmAHV2b5CQi6GfmaGgm5aal3d4bmRhVkZGPTo3L4FvXzEiGXFvbuXk59bW29rb4NjX3NXU19DNy8jBvLq0qwBrZ12AfXWQjYWempChnJKSjoOtqJtTUklCPTjUt6R5a2Q9Pj/i4ujd3+Xg4enf3+Xb3ODW1dbMx8O8tq0AGhkUNDIqTUk/Y15TdXBljod4s6udc25kd3RrjIiAPDUzTEZCyMPDzsvLycbGxcHBxMC+xcG9vrewraabAH11Z46EdZuQgq+kmL+1rMzEvd3Y1Kykm1hQPzgvJC4fF4RdSIlyXYqBcdPOydTPy8/JxL+2q6icjJOHdQCpm4q1qJe/s6TIvLHUysLa0s3e2dbb1tO3squfi32Td2KLdFyeime3rJrY0czY09DZ1dPQycK/taitopEAnZB/qZmJsqKSvK2ey72y1MjA1ci+2MrB387CtaOVrJiDyrag0sW308a7zcG4y8C3w7ittqucqp6OmpCAAJeJeaGRf6KOe66ah8Sxocy4qsiyoNC9rdPAs9S/rtC8q8ezoMm4qMW0o8Cyo7yvn7KllaiaipyRf42Dc0djvqdxWFf9AAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="Carsten Höller, Flying Mushrooms"
+        title="Carsten Höller, Flying Mushrooms, 2015 © Carsten Höller. Installation View Carsten Höller l Decision, Hayward Gallery, London 2015. Courtesy of the artist, Photo © Linda Nylind"
+        src="/static/7b9541757123cce34e52ef9bd08baaf0/9c96a/Carsten-Ho_z0pm4e.png"
+        srcset="/static/7b9541757123cce34e52ef9bd08baaf0/bd500/Carsten-Ho_z0pm4e.png 200w,
+/static/7b9541757123cce34e52ef9bd08baaf0/4a386/Carsten-Ho_z0pm4e.png 400w,
+/static/7b9541757123cce34e52ef9bd08baaf0/9c96a/Carsten-Ho_z0pm4e.png 640w"
+        sizes="(max-width: 640px) 100vw, 640px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    
+  <figcaption class="gatsby-resp-image-figcaption">Carsten Höller, Flying Mushrooms, 2015 © Carsten Höller. Installation View Carsten Höller l Decision, Hayward Gallery, London 2015. Courtesy of the artist, Photo © Linda Nylind</figcaption>
+  </figure>
+      </p>
+<p>
+  <figure class="gatsby-resp-image-figure" style="">
+  
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/4cd0ea062f0c65cddb0895e40db69c31/9c96a/Carsten-Ho_ller_-Upside-Down-Goggles_-2015-_-Carsten-Ho_ller.-Installation-View-Carsten-Ho_ller-l-Decision_-Hayward-Gallery_-London-2015.-Courtesy-of-the-artist_-Photo-_-Linda-Nylind_y6uomj.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 640px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 67.03125%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAAsSAAALEgHS3X78AAADJElEQVQozwEZA+b8AI2FdLarmMe9rMi/rcG5qLu1pZuXiaGdkqypna+soKunm7Ool4+HdcC6q9DHt4R3ZI+FdIqCdHlyZ2ZiWQANDQklIxtJRDtqZVmMh3qro5WYk4iGhYOKiIR3dWtvamB5c2WVjX29tKWqo5dOTEdFRUM/Pz06OTg8Pj0ALismLCsmJyUhHx0ZJSgYLy0haVhUXkpHaldTSEdDPj85W1hLY2BZVlZSfXZrl5CGYF9dY2NhYWFfX15cAIaCeISAdoaDe39/c3t/Z3J1XpmOhINpXph1Z1ROSVpdWI6HdjAsKhYODmhXT7atoGpnYWppZmpoZWdmYwCopJOYmoZ3gWSBjWWFjWfIw7LEsJ54VjXdw7nDrZaUjHiFhn0/NTA8MS8rMTZsbGh3cmtsa2ZvbWpsamgAuauXxrqlyr+p0cew0ciz7dnSxqmRxJda7cmY6b6CzKp4Mzk9aGhsnpiYERojHCAjeHJqcWxlbmpka2dhAMW2o9PCrbuvnby4rreyqretpq6bgryWXMOcX8uhZNa/pC4yNldaWriuqkxRVbGupdDMwcvGvL+6sbexpwDKwbTTzMDAvLKoqaS+vrjY2tbKwKyvjFfCnF/Gnmbx49o+QURkX1y4rac8Qkff3dXw6+Lp5t/q6OLq6OMA1dTP2trV6Ofi8fDp7+7m9fbyyr6ntI5U2a1mz6Ji4ci7RkpMHx8gJyUlTU9P3NvU2dbO2NXM1tXO19bRANzb1OXj3ebl3ujn4efl4Pb28Hp7ekg4IYRpQl9MMrqonWtdWwAAAAAAA5WXlvLw6drY0eDf2d7d2NTTzgDX1c/a2dTc29be3djc3dfl5d9TWl4AAAEEBgsAChakoqHQvrYODhEFBwuysq/m5N3e3dfe3NXf3tnU0ssA1NPO1tXQ2tnT2dnU2NjT6+njaGtsAAMKHB0hCA0TpqWj3MrHKyosGx0g3d3X4+Lb3NvV3dzW2tfR0c/IANbV0dXV0NjW0tbV0NnX0+/s5oCBgQ0RGD0/QwkME76+vOXZ1ConKCwtL+bl4OLh3NrY097d2NXRys3Jw/ids2hk5J/bAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="Carsten-Ho_ller_-Upside-Down-Goggles"
+        title="Carsten Höller, Upside Down Goggles, 2015 © Carsten Höller. Installation View Carsten Höller l Decision, Hayward Gallery, London 2015. Courtesy of the artist, Photo © Linda Nylind"
+        src="/static/4cd0ea062f0c65cddb0895e40db69c31/9c96a/Carsten-Ho_ller_-Upside-Down-Goggles_-2015-_-Carsten-Ho_ller.-Installation-View-Carsten-Ho_ller-l-Decision_-Hayward-Gallery_-London-2015.-Courtesy-of-the-artist_-Photo-_-Linda-Nylind_y6uomj.png"
+        srcset="/static/4cd0ea062f0c65cddb0895e40db69c31/bd500/Carsten-Ho_ller_-Upside-Down-Goggles_-2015-_-Carsten-Ho_ller.-Installation-View-Carsten-Ho_ller-l-Decision_-Hayward-Gallery_-London-2015.-Courtesy-of-the-artist_-Photo-_-Linda-Nylind_y6uomj.png 200w,
+/static/4cd0ea062f0c65cddb0895e40db69c31/4a386/Carsten-Ho_ller_-Upside-Down-Goggles_-2015-_-Carsten-Ho_ller.-Installation-View-Carsten-Ho_ller-l-Decision_-Hayward-Gallery_-London-2015.-Courtesy-of-the-artist_-Photo-_-Linda-Nylind_y6uomj.png 400w,
+/static/4cd0ea062f0c65cddb0895e40db69c31/9c96a/Carsten-Ho_ller_-Upside-Down-Goggles_-2015-_-Carsten-Ho_ller.-Installation-View-Carsten-Ho_ller-l-Decision_-Hayward-Gallery_-London-2015.-Courtesy-of-the-artist_-Photo-_-Linda-Nylind_y6uomj.png 640w"
+        sizes="(max-width: 640px) 100vw, 640px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    
+  <figcaption class="gatsby-resp-image-figcaption">Carsten Höller, Upside Down Goggles, 2015 © Carsten Höller. Installation View Carsten Höller l Decision, Hayward Gallery, London 2015. Courtesy of the artist, Photo © Linda Nylind</figcaption>
+  </figure>
+      </p>
+<p>
+  <figure class="gatsby-resp-image-figure" style="">
+  
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/c94111154f6f354f466197d68e5325e6/9c96a/0B49mgIHaCi2FSDQxQ01hdnJBMDQ_vhegpt.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 640px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 66.71875%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAAsSAAALEgHS3X78AAADJElEQVQozwEZA+b8ABEMCxQODRkSES8oJlZORyoiICciHCokHh8aFTkyL4N4eU9IQSEcFxcQDiMdGCYgGhEKCh4XFCUfGw0HBwATDw0WFBIaFBQcFRQwKiUmIB4bFBQlHx9EPjosJiUiGxolHxsrJiAeFxQmIRsuKiQVDw4gGxk5NSwjIBsAKh4WKRQSLSEaMSYdRzwuSTwtRTkqRT0tVE5GVVJJQ0A2S0c9UlBDZmZUdXVgUlJEb25ca2hWdnZkXl5PAFg8LEoXFUIsH0s2IXpmPm1YN3xqS6CTZ5WQdpybhpSTgoWFdISHcYmLdIuMd42NeqajkJqVgaqllo2LegBdQzE6FBA1IxhDLxxuXDdmVTNeTDFSQymRinGfnYZ5eWdwcF1vcV92eGV9fWqKiHSLh3R4dGF+eml2cmEAYUk2PRQQPiofW0YtZFEyVUQnZlg1STsiamNRlI92c25YYFxIXVtJYF5LY19MU1JDRkU7VlJDUk4/WlZGAFREMXdYSaCNd1pLLF1OLF5PKkk8IUM4J2BWQq2hja+jj3xyXjw3Jz04KUtGN0A+MisqI05JOktGN0M+LgBKPi2AblzCsp+roZGPhnh0altcUDZWRytaTjZ6bVq1ppaKdl1aTDRCOyw7MyErJBMpIxUwKx0vKx4zLyEAf2xPeWdKXVFCSD41OjIrXlA7oYtjqpJqemhIb2JH5NbIo4x8npCGbmlkjIN3r6SUlIlyWU8yRj0kOTMeAG5dQWpaPVVHMGBSOXJiRIt4VJuHYaWRaa2Yb7CbeZmIeZCBeHptaVRJR4B1bs/Bts2+s6WScZB9Vn1tSgB7aEyQe1ujjWqtl3OynHi3on3AqobJs43RupbDrYtnVkAzJRgiGBI7LiZMPTFENShCNCefi2y9pX+ljmsAk35fo41stJ17vKeExrCNzLaT0buZ072b1b+d1b2ZqpNxcGBGXk86ZFQ/YlNBQTYlYVI4nodlrpVzo41pAJmEZqmTc7affbqlgsOuisiyjs23lM+5ltG6l9C5kcy0i8uxi8SpgLmeeauRbpN6WIpzUpZ/XJ6HY5V/XVhxHyJYuYPaAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="Carsten Höller, Two Roaming Beds"
+        title="Carsten Höller, Two Roaming Beds (Grey), 2015. © Carsten Höller. Produced with Bonniers Konsthall, Stockholm, and HangarBicocca, Milano. Installation view: Carsten Höller: Decision, Hayward Gallery, London, 2015. Photo  © David Levene copy"
+        src="/static/c94111154f6f354f466197d68e5325e6/9c96a/0B49mgIHaCi2FSDQxQ01hdnJBMDQ_vhegpt.png"
+        srcset="/static/c94111154f6f354f466197d68e5325e6/bd500/0B49mgIHaCi2FSDQxQ01hdnJBMDQ_vhegpt.png 200w,
+/static/c94111154f6f354f466197d68e5325e6/4a386/0B49mgIHaCi2FSDQxQ01hdnJBMDQ_vhegpt.png 400w,
+/static/c94111154f6f354f466197d68e5325e6/9c96a/0B49mgIHaCi2FSDQxQ01hdnJBMDQ_vhegpt.png 640w"
+        sizes="(max-width: 640px) 100vw, 640px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    
+  <figcaption class="gatsby-resp-image-figcaption">Carsten Höller, Two Roaming Beds (Grey), 2015. © Carsten Höller. Produced with Bonniers Konsthall, Stockholm, and HangarBicocca, Milano. Installation view: Carsten Höller: Decision, Hayward Gallery, London, 2015. Photo  © David Levene copy</figcaption>
+  </figure>
+      </p>
+<p>
+  <figure class="gatsby-resp-image-figure" style="">
+  
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/f81c813fc86925a2096fdf1e981863b2/9c96a/0B49mgIHaCi2FeE9mX3NLZTZKRjQ_oyncqq.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 640px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 66.71875%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAAsSAAALEgHS3X78AAADAklEQVQozzXOS0zTABgH8CYmRuPJGC8cPBv1arwYDyoHE40PEkVAg0QjIqgkPonE+AyPICowlEjGAA2DIdoJbOzBZFvL2vWxrVvXrY91D1q6bowNNMSLRWPyy5fv8M/3/wDSZqR+fKO9MwysscQXrXHEyiF2Dt3E+x2b0E2sz8ZAM5EFMOicJOzjuM0I0AtfOWROJFxJ0p0KajwZypuh4Ez4L+r/pOBUCNIyAuZkkTmtKeIxAxw8nSTmMxQk0T6ZRmQGkWPocsz/j/KXtsgMKkXRpQiyFIbTIa9I/hAwO5DEHHIYXo4imzkWzydDCk8qHJEXg1mBzCUCuUQoywc0y/FATggpLJHlCK1jKQwBKdLF++ezMUzlCZnFSK8lTaNqIkBjLpnFpRi2zAZWklE1Ec4KYQZ3S3EiQS2qCe0KDgjY/PcRXZbFtRIphl44edxhHvul8N2PGlEHGFm0Mej8msQVUjGB9F4/fRS2jHusk6sZRk0EAZXxq3HtYawgBmnUWX5of/uTe3mWcA/3c7BzNR0tpKLrMr8mJzFwZN+urQioX1P4khTPJyNAyGv1zJrWpWgpHXabR/fu2X2jtlIgFrpaHhjaWotSTBGoKOYpZbip/jc7t2+lHKZE2McG4V85EXB9fm0fblfJaQUD+5427dm5zdTTMtRxb2/Zjo5bZ9SglYcmvSbdBuvubK4v276l9dp522i3d2rgd8oPiJY+waJjp9+p7sG2OxfPHdlf8g2Db5oaTh+U7O9WEGMB+1LAJzco0K67233uwGBzxQoxtRYEl6AxgB5vxQz3RfOrnKOrq/HUy9rD8uzLhfdNj2uP5Vw9JWhAcvSIlrfrviHV1jn3vIoZe7HuH1UhA2vVAczHS/HBGk5fKwxdcT4rh14dTxpqIn1nfR0ncsa6/MTV0lT9T3NjEWxe+XIzM1KX/tRQnHlUnG0pzjwECF0N3ltJ6qpC/TX424pAb0X0QyXddybWe0rUV2f0VdLoJVW7YrqhTDSk9dVpw2XJeDP7tVk23f4DlPg3jBD4t8UAAAAASUVORK5CYII='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="Carsten Höller, The Forests"
+        title="Carsten Höller, The Forests, 2002/2015 © Carsten Höller. Installation View Carsten Höller l Decision, Hayward Gallery, London 2015. Courtesy of the artist and Air de Paris. Photo © Linda Nylind"
+        src="/static/f81c813fc86925a2096fdf1e981863b2/9c96a/0B49mgIHaCi2FeE9mX3NLZTZKRjQ_oyncqq.png"
+        srcset="/static/f81c813fc86925a2096fdf1e981863b2/bd500/0B49mgIHaCi2FeE9mX3NLZTZKRjQ_oyncqq.png 200w,
+/static/f81c813fc86925a2096fdf1e981863b2/4a386/0B49mgIHaCi2FeE9mX3NLZTZKRjQ_oyncqq.png 400w,
+/static/f81c813fc86925a2096fdf1e981863b2/9c96a/0B49mgIHaCi2FeE9mX3NLZTZKRjQ_oyncqq.png 640w"
+        sizes="(max-width: 640px) 100vw, 640px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    
+  <figcaption class="gatsby-resp-image-figcaption">Carsten Höller, The Forests, 2002/2015 © Carsten Höller. Installation View Carsten Höller l Decision, Hayward Gallery, London 2015. Courtesy of the artist and Air de Paris. Photo © Linda Nylind</figcaption>
+  </figure>
+      </p>
+<p>
+  <figure class="gatsby-resp-image-figure" style="">
+  
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/6ffb943c706e20a17b3f9859efb79b1c/9c96a/0B49mgIHaCi2Fd21RT1lJR0I3MTg_yfxnau.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 640px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 66.71875%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAAsSAAALEgHS3X78AAADJElEQVQozwEZA+b8AH6AgJGLh5WSj4eChnl4f4qUoa21wKuxtzkzKjQqHc3FucnEvLe5uJuUj6Cfob7H0svJxZWDap+GbK+ejgBxbWpsWVdfW1YyMjMrKy1LTlNxcW16e3KGgXaBenCDfHSDfnmLjI7Ky8zLzdG0sa2Ne2eSf22ZiH41MS8AV1FPMiUlNDIuHiEgHRsbJScqODw/XF9XgH5zX19deXp3iIyRrK2wlJOUq6Sfs6GNlod2a2dnJiYpEhISAFdYWjQyMiwtLC0sKjMvLjExMTEyN1pdYltcXGVqbZGYn7i6vbG3vn59f4+EebWol4J9eUpMUSUpLBkYGQCMj5KKiYdXWVtMTU9HREZCQkNGPDpZUFJbXWKVn6jCvb63k4OLiotsbW5bV1VVWF14eH6CfHw6P0QjIyUAtLe7t7m6gomOaG10ZGZtX2VsXFhcZl1eb3J4o6y0rpGDfldFblxUWFpeODo+SkxSd3uCiYaISEpQLS0vAMnM0MPHy6GpsHuFjoKHj3+Fi3B2f29rb2RfYIJ7c8+7qMCypKOajzgyLkZERmVgY3p0d21qcERFSjAvMgDl5ebg4uPM0tWbpq+WnqamqayCjJVlb3poZ2pfUECOfmi8qI+Vh3diWEx8aF+Rb2SQcGplXF85Oj4qKiwA3uPo5erv3OLnvcfOnqq0oaqxl6Gpbn6KZ3aAmo6Dk4FtmodxqJmHy7+wnpKMkHdviHp4VVVZLi4xJiYoAK/B08XV49fh6s7W3a66xIWYqHCCkl9tekdXZIF+e6WXiJyOgqybjK2akJ2NiZaQkHh8gUBDRz09PGppZQBdeZp5m7qtxdnG1OCywtCCmKtbcoc7TmIvOkgsNDxITFBkZ2d0cW54cnF9fn96f4NfZWo+QUN1c22uqaEAJjhRLVB0W4Spepm3bYikQ155L0NXJTVGFyAqFRohFBkhGh8lISUqKjA1QUdMWl5hXV9ieXl1tLCpyMW+ACw2SiQ3Uz5cg2R6l1dgdh4pOwsUHw4UHBATGBETGQ8QFQkJDgYGCxITGC4uM0hITWxpaaeindDMxry5tSj0XrpnYUrrAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="Carsten Höller, Isomeric Slides"
+        title="Carsten Höller, Isomeric Slides, 2015 © Carsten Höller. Installation View Carsten Höller l Decision, Hayward Gallery, London 2015. Courtesy of the artist and LUMA Foundation Photo © Linda Nylind"
+        src="/static/6ffb943c706e20a17b3f9859efb79b1c/9c96a/0B49mgIHaCi2Fd21RT1lJR0I3MTg_yfxnau.png"
+        srcset="/static/6ffb943c706e20a17b3f9859efb79b1c/bd500/0B49mgIHaCi2Fd21RT1lJR0I3MTg_yfxnau.png 200w,
+/static/6ffb943c706e20a17b3f9859efb79b1c/4a386/0B49mgIHaCi2Fd21RT1lJR0I3MTg_yfxnau.png 400w,
+/static/6ffb943c706e20a17b3f9859efb79b1c/9c96a/0B49mgIHaCi2Fd21RT1lJR0I3MTg_yfxnau.png 640w"
+        sizes="(max-width: 640px) 100vw, 640px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    
+  <figcaption class="gatsby-resp-image-figcaption">Carsten Höller, Isomeric Slides, 2015 © Carsten Höller. Installation View Carsten Höller l Decision, Hayward Gallery, London 2015. Courtesy of the artist and LUMA Foundation Photo © Linda Nylind</figcaption>
+  </figure>
+      </p>
+<p>
+  <figure class="gatsby-resp-image-figure" style="">
+  
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/1818acf7b6c09b297170d210e72c5582/7a4cd/0B49mgIHaCi2FdUZHZ1V2aGRxSFE_cdabrv.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 480px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 126.04166666666667%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,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'); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="Carsten Höller, Isomeric Slides"
+        title="Carsten Höller, Isomeric Slides, 2015 during installation of Carsten Höller: Decision at Hayward Gallery, Courtesy the artist and LUMA Foundation. Photo David Levene"
+        src="/static/1818acf7b6c09b297170d210e72c5582/7a4cd/0B49mgIHaCi2FdUZHZ1V2aGRxSFE_cdabrv.png"
+        srcset="/static/1818acf7b6c09b297170d210e72c5582/c4eb4/0B49mgIHaCi2FdUZHZ1V2aGRxSFE_cdabrv.png 200w,
+/static/1818acf7b6c09b297170d210e72c5582/baec7/0B49mgIHaCi2FdUZHZ1V2aGRxSFE_cdabrv.png 400w,
+/static/1818acf7b6c09b297170d210e72c5582/7a4cd/0B49mgIHaCi2FdUZHZ1V2aGRxSFE_cdabrv.png 480w"
+        sizes="(max-width: 480px) 100vw, 480px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    
+  <figcaption class="gatsby-resp-image-figcaption">Carsten Höller, Isomeric Slides, 2015 during installation of Carsten Höller: Decision at Hayward Gallery, Courtesy the artist and LUMA Foundation. Photo David Levene</figcaption>
+  </figure>
+      </p>
+<p>
+  <figure class="gatsby-resp-image-figure" style="">
+  
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/18058bd055ea401b2dc598e5e65d015f/9c96a/Carsten-Ho_ller_-Decision-Corridors_-2015-_-Carsten-Ho_ller.-Installation-View-Carsten-Ho_ller-l-Decision_-Hayward-Gallery_-London-2015.-Courtesy-of-the-artist_-Photo-_-Linda-Nylind_cvpnpu.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 640px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 67.03125%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAAsSAAALEgHS3X78AAACzUlEQVQozzWS3UvbYBTGk7axaaNJmqQxeZO3NUmTtDVp06attbVa7ZdddaXzYyg4RfelOL0YDCaDbQzBjU3GEMZwF4N5tQ22++H/tigODpyb8zvn4TwPEgxiI2QYSlE7rZp6LJ1UnUyyWs5P14rVyZzrpsola6qaq1XcUsG2LX16yqlMOoYR4zgSCQT8XlFUOGPruaypacDJ6vWZwspyt92q7O9tvnn17GBvY2dzqdMsDxZnH+7cXV3p2JbKscOI3+/z+dDgEGYaY95umgkbSTnnGv3+3OKtqY/vXnw5O7m/vdRolAxDyjj6nUEXyNwQFvDAKxhFfeEwrmmwVMpEIsMJQ84Wkmvri3uP1n58//Lpw/H21lKzWUmNq3k33es1YUzAg0FP7zWMoEyEUlTZdccZlhzTxHzJ7A8auia9P3l98e3zQq9qjWswNppKq53OjKJIIRy/uhwIBFAUAUAwTaVWc7WEZGW0Vmty894AiMzxy+c/L74u9+fcfNrO6IWi1VtoWJZOkgSG/YdhTHKc1Ppaf6HfHiwvHh09PT8/e3K4/+f3r8vLv6enbw8Od7e213cebDze3Zqfr/Oj9MhI0JPtRxBEEHhVhdWqqybGFG3MyWcqtXKx5LY7s+1ua65Zzzp2MmWUyvmF2+1CMUtSBI5jNzDHMgDwqgK8N2KYHw9hBBkMDKG8SKkm4AFDEDhBhFiOTqYSkiyGQrin9wZmGVqShbgiXQ0N4xFmBMCoILNOway3Jkxbi/I0w1EsF0nocQiBB3smIVcuowjDUBAKigJIKuwFhuFIqAiqAWrT2aXVzsRUVgAcF6U9LxQVypJ4A19nBI3QJJR4Q5NYZpimCZYlYYz30lKtWPPd6sSkLcs8z0eiUVJToQRGw3jQA5GAz+c1liLjQtROQJElWYrgOVqJi4YqlnNGY9ot5pJxmRejEYGlkgqMA8F7lwf+A2eFfWFSbvydAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="Carsten Höller, Decision Corridors"
+        title="Carsten Höller, Decision Corridors, 2015 © Carsten Höller. Installation View Carsten Höller l Decision, Hayward Gallery, London 2015. Courtesy of the artist, Photo © Linda Nylind"
+        src="/static/18058bd055ea401b2dc598e5e65d015f/9c96a/Carsten-Ho_ller_-Decision-Corridors_-2015-_-Carsten-Ho_ller.-Installation-View-Carsten-Ho_ller-l-Decision_-Hayward-Gallery_-London-2015.-Courtesy-of-the-artist_-Photo-_-Linda-Nylind_cvpnpu.png"
+        srcset="/static/18058bd055ea401b2dc598e5e65d015f/bd500/Carsten-Ho_ller_-Decision-Corridors_-2015-_-Carsten-Ho_ller.-Installation-View-Carsten-Ho_ller-l-Decision_-Hayward-Gallery_-London-2015.-Courtesy-of-the-artist_-Photo-_-Linda-Nylind_cvpnpu.png 200w,
+/static/18058bd055ea401b2dc598e5e65d015f/4a386/Carsten-Ho_ller_-Decision-Corridors_-2015-_-Carsten-Ho_ller.-Installation-View-Carsten-Ho_ller-l-Decision_-Hayward-Gallery_-London-2015.-Courtesy-of-the-artist_-Photo-_-Linda-Nylind_cvpnpu.png 400w,
+/static/18058bd055ea401b2dc598e5e65d015f/9c96a/Carsten-Ho_ller_-Decision-Corridors_-2015-_-Carsten-Ho_ller.-Installation-View-Carsten-Ho_ller-l-Decision_-Hayward-Gallery_-London-2015.-Courtesy-of-the-artist_-Photo-_-Linda-Nylind_cvpnpu.png 640w"
+        sizes="(max-width: 640px) 100vw, 640px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    
+  <figcaption class="gatsby-resp-image-figcaption">Carsten Höller, Decision Corridors, 2015 © Carsten Höller. Installation View Carsten Höller l Decision, Hayward Gallery, London 2015. Courtesy of the artist, Photo © Linda Nylind</figcaption>
+  </figure>
+      </p>
+<p>
+  <figure class="gatsby-resp-image-figure" style="">
+  
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/24eda905206649be7ff6ff326a669b9c/7a4cd/0B49mgIHaCi2FUW9icllRckh2eDQ_vme6kn.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 480px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 150.20833333333331%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,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'); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="Carsten Höller, Isomeric Slides"
+        title="Carsten Höller, Isomeric Slides, 2015 © Carsten Höller. Installation View Carsten Höller l Decision, Hayward Gallery, London 2015. Courtesy of the artist and LUMA Foundation Photo © Linda Nylind"
+        src="/static/24eda905206649be7ff6ff326a669b9c/7a4cd/0B49mgIHaCi2FUW9icllRckh2eDQ_vme6kn.png"
+        srcset="/static/24eda905206649be7ff6ff326a669b9c/c4eb4/0B49mgIHaCi2FUW9icllRckh2eDQ_vme6kn.png 200w,
+/static/24eda905206649be7ff6ff326a669b9c/baec7/0B49mgIHaCi2FUW9icllRckh2eDQ_vme6kn.png 400w,
+/static/24eda905206649be7ff6ff326a669b9c/7a4cd/0B49mgIHaCi2FUW9icllRckh2eDQ_vme6kn.png 480w"
+        sizes="(max-width: 480px) 100vw, 480px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    
+  <figcaption class="gatsby-resp-image-figcaption">Carsten Höller, Isomeric Slides, 2015 © Carsten Höller. Installation View Carsten Höller l Decision, Hayward Gallery, London 2015. Courtesy of the artist and LUMA Foundation Photo © Linda Nylind</figcaption>
+  </figure>
+      </p>
+<p>
+  <figure class="gatsby-resp-image-figure" style="">
+  
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/6cabf68731a7e3f66e443c8b5aba1b23/9c96a/0B49mgIHaCi2FXzZtMFZsc0lYUzg_ywvtk2.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 640px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 66.71875%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAAsSAAALEgHS3X78AAADIElEQVQozxWN7U8TBwCH7x/Yt30j++BmNg06rnfX3lvvrXd9LxTq2yoBihUaWAZKilAtvevRrrxWYRFMCmKzrSsim1FHwkp7R2kFgYLgAHVMNsnM/ox1ye/D8+V5fsAZaQWW8qio4qJChRWDnBP6c6ZIzhxVHINq3cjKxbHVhsnNK1M7vuReR/pN98/vxGfH0cV/RnL/AmelFUjMa0MqFlKIkEJLWS6c5WXF9L+crx0tnh97cXliqymx673/uy+5/036ddkPPn0fXfwAfCkVQDEPhVRdn4IGM3jvEzLwRO+fpbt/4nsfWm49sgXnnKG5C5HHDePFqzN7HfPHnY+Oun856vv1GADlIhRe0Yhq+b/S1Q1aGj/jPSepcycQY6W5GXEHsQaJ8Y3C9ivOwPfuuxucp691cvna/N/+x38Bmv41WC7CcgG8+VvFKeQTkP3iogi2JbDrKebWU7OccQwVrDHVEJglW4ZPfwpV8W5votSeOuyYewfAsXUksopEX8Bds7ra1grBB3XNE+FlSsyyUtYYUYzyEtt5T6DPVX708Rn2Un3ioHF635vcb0sfAuhwCR1YR2IbaFOYvpHWxrbRkIL3ZYhQhpKWuP6cQc5yXTPGy0FXU8glpi9N7tTf2/bM7LemDgE8vq2P7yLBBdLtJyJ5qn9ZL6uEpOqlHBXOsbLCR1Rh8LnlzpY1vu4c33BPv/E8+KN5ercpUQKE8R124i3sHSJ9w9jINh0rcNE8EVapSJ79tsAPrJlGt2zxTdtwwTmUtYvz1s7bRq/I1Xkgrhpo/PGo5u5LpKalLrbgmtx1fbdRn3hVPVbiY8tGeVHo+YFpjzP1ftThwQ12mOAQlKyCMAilIYIDzENZ/mZK5/S57x94HxyEU6UbsamvfD10bTPOOyCU0uG0Bsa0GKXRlaeHCAOIsTApaEgBsIwXwdp29uvbruSfFyY26wJT5TaoJbU4jZIcgjMkZ8UZM8aYcdpUBsJgx1gbZnBo9CbAPJo5rTXYeqdMgaTO7f8cYgjOSnIWkrUwxmrO7GRNNWWgeTvJWmmhmhJqcM6mY60gKfwH+wJbtx9elKQAAAAASUVORK5CYII='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="Carsten Höller, Two Flying Machines"
+        title="Carsten Höller, Two Flying Machines, 2015 © Carsten Höller. Installation View Carsten Höller l Decision, Hayward Gallery, London 2015. Courtesy of the artist and Gagosian Gallery. Photo © Ela Bialkowska, OKNO studio"
+        src="/static/6cabf68731a7e3f66e443c8b5aba1b23/9c96a/0B49mgIHaCi2FXzZtMFZsc0lYUzg_ywvtk2.png"
+        srcset="/static/6cabf68731a7e3f66e443c8b5aba1b23/bd500/0B49mgIHaCi2FXzZtMFZsc0lYUzg_ywvtk2.png 200w,
+/static/6cabf68731a7e3f66e443c8b5aba1b23/4a386/0B49mgIHaCi2FXzZtMFZsc0lYUzg_ywvtk2.png 400w,
+/static/6cabf68731a7e3f66e443c8b5aba1b23/9c96a/0B49mgIHaCi2FXzZtMFZsc0lYUzg_ywvtk2.png 640w"
+        sizes="(max-width: 640px) 100vw, 640px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    
+  <figcaption class="gatsby-resp-image-figcaption">Carsten Höller, Two Flying Machines, 2015 © Carsten Höller. Installation View Carsten Höller l Decision, Hayward Gallery, London 2015. Courtesy of the artist and Gagosian Gallery. Photo © Ela Bialkowska, OKNO studio</figcaption>
+  </figure>
+      </p></div><footer><div>Loading...</div><div class="jsx-4158949110 author"><div class="jsx-4158949110 avatar"><img src="/static/avatar-9fed4a6a589d12d55cab4b5621bd21b3.jpg" alt="Momardi - Tuesday Gutierrez" class="jsx-4158949110"/></div><div class="jsx-4158949110 note"><p>Article by <strong>Tuesday Gutierrez</strong>. Former digital marketing manager for the London 2012 Festival, the largest UK festival ever staged. This is her blog about contemporary art, design, film, photography and all that move her soul.</p></div></div><div class="jsx-126278577 links"><a href="/moniker-art-2014-2/"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em"><path d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"></path></svg><h4 class="jsx-126278577">Moniker Art 2014<!-- --> <time class="jsx-126278577">2014-10-26</time></h4></a></div></footer></article></main><footer class="jsx-1209355388 footer"><ul>
+<li>All content copyright by MOMARDI - Tuesday Gutierrez © 2018 All rights reserved</li>
+<li>Copywriter, Content Manager, Strategy, Branding and Marketing || Proudly published with <a href="https://www.gatsbyjs.org/">GatsbyJS</a> and <a href="https://github.com">Github</a></li>
+</ul></footer></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-268014-11', 'auto', {});
+      
+      }
+      </script><script id="gatsby-script-loader">/*<![CDATA[*/window.page={"componentChunkName":"component---src-templates-post-template-js","jsonName":"carsten-holler-decision-at-the-hayward-gallery-d62","path":"/carsten-holler-decision-at-the-hayward-gallery/"};window.dataPath="447/path---carsten-holler-decision-at-the-hayward-gallery-d-62-28d-YQAWjIwEtIFYvWkIJIAxnVhkkRA";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app.8b1cc9920e75fff049f7.css","/app-19e66dfda9679ae89fc3.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-8fec9522ed849d38d6e1.js"],"component---src-templates-category-template-js":["/component---src-templates-category-template-js-bbbc53f0d10a363d3916.js"],"component---src-templates-post-template-js":["/component---src-templates-post-template-js.b6f197430f783b3e67aa.css","/component---src-templates-post-template-js-6193f23506b3bdb852a8.js"],"component---src-templates-page-template-js":["/component---src-templates-page-template-js-3207c1dd6e884134e246.js"],"component---src-templates-index-js":["/component---src-templates-index-js-206102ca59d9d3ce11c5.js"],"component---src-pages-404-js":["/component---src-pages-404-js-718506eefd248f6f227f.js"],"component---src-pages-category-js":["/component---src-pages-category-js-17964a73e7bbfeb80cbf.js"],"component---src-pages-search-js":["/component---src-pages-search-js-42ae346864b4602c817e.js"]};/*]]>*/</script><script src="/component---src-templates-post-template-js-6193f23506b3bdb852a8.js" async=""></script><script src="/0-b46d511e229ccfe9bbb3.js" async=""></script><script src="/app-19e66dfda9679ae89fc3.js" async=""></script><script src="/webpack-runtime-d1d8e972eb3919d6ad52.js" async=""></script></body></html>

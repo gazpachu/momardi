@@ -1,0 +1,392 @@
+<!DOCTYPE html><html lang="en" prefix="og: http://ogp.me/ns#"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/component---src-templates-post-template-js.b6f197430f783b3e67aa.css">code[class*=language-],pre[class*=language-]{color:#f8f8f2;background:none;text-shadow:0 1px rgba(0,0,0,.3);font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto;border-radius:.3em}:not(pre)>code[class*=language-],pre[class*=language-]{background:#272822}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#f8f8f2}.namespace{opacity:.7}.token.constant,.token.deleted,.token.property,.token.symbol,.token.tag{color:#f92672}.token.boolean,.token.number{color:#ae81ff}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#a6e22e}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url,.token.variable{color:#f8f8f2}.token.atrule,.token.attr-value,.token.class-name,.token.function{color:#e6db74}.token.keyword{color:#66d9ef}.token.important,.token.regex{color:#fd971f}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}</style><style data-href="/app.8b1cc9920e75fff049f7.css">@font-face{font-family:Open Sans;font-style:normal;font-display:swap;font-weight:300;src:local("Open Sans Light "),local("Open Sans-Light"),url(/static/open-sans-latin-300-60c866748ff15f5b347fdba64596b1b1.woff2) format("woff2"),url(/static/open-sans-latin-300-521d17bc9f3526c690e8ada6eee55bec.woff) format("woff")}@font-face{font-family:Open Sans;font-style:italic;font-display:swap;font-weight:300;src:local("Open Sans Light italic"),local("Open Sans-Lightitalic"),url(/static/open-sans-latin-300italic-06bbd3188b34820cd83a0e0b3d0a6f57.woff2) format("woff2"),url(/static/open-sans-latin-300italic-8a648ff38ded89ea15916e84529d62d3.woff) format("woff")}@font-face{font-family:Open Sans;font-style:normal;font-display:swap;font-weight:400;src:local("Open Sans Regular "),local("Open Sans-Regular"),url(/static/open-sans-latin-400-cffb686d7d2f4682df8342bd4d276e09.woff2) format("woff2"),url(/static/open-sans-latin-400-bf2d0783515b7d75c35bde69e01b3135.woff) format("woff")}@font-face{font-family:Open Sans;font-style:italic;font-display:swap;font-weight:400;src:local("Open Sans Regular italic"),local("Open Sans-Regularitalic"),url(/static/open-sans-latin-400italic-987032ea5d57c93d8da215678eae3b86.woff2) format("woff2"),url(/static/open-sans-latin-400italic-db70d0b9cb27ada1a260a2b35e756b8b.woff) format("woff")}@font-face{font-family:Open Sans;font-style:normal;font-display:swap;font-weight:600;src:local("Open Sans SemiBold "),local("Open Sans-SemiBold"),url(/static/open-sans-latin-600-223a277bd88d8a90c8cdf24cda0ad5f5.woff2) format("woff2"),url(/static/open-sans-latin-600-1cd5320f8937d337b61d5117cf9d7b28.woff) format("woff")}@font-face{font-family:Open Sans;font-style:italic;font-display:swap;font-weight:600;src:local("Open Sans SemiBold italic"),local("Open Sans-SemiBolditalic"),url(/static/open-sans-latin-600italic-4950a7205f0b5cefe41fc03ac346e236.woff2) format("woff2"),url(/static/open-sans-latin-600italic-318ea1ada4102c0704a0637228dcad03.woff) format("woff")}@font-face{font-family:Open Sans;font-style:normal;font-display:swap;font-weight:700;src:local("Open Sans Bold "),local("Open Sans-Bold"),url(/static/open-sans-latin-700-d08c09f2f169f4a6edbcf8b8d1636cb4.woff2) format("woff2"),url(/static/open-sans-latin-700-623e3205570002af47fc2b88f9335d19.woff) format("woff")}@font-face{font-family:Open Sans;font-style:italic;font-display:swap;font-weight:700;src:local("Open Sans Bold italic"),local("Open Sans-Bolditalic"),url(/static/open-sans-latin-700italic-c02f5da6e82e1efe0b45841bfd49ce37.woff2) format("woff2"),url(/static/open-sans-latin-700italic-72e19cbb0e38c6773a7751156752cec4.woff) format("woff")}@font-face{font-family:Open Sans;font-style:normal;font-display:swap;font-weight:800;src:local("Open Sans ExtraBold "),local("Open Sans-ExtraBold"),url(/static/open-sans-latin-800-aaeffaf205b9bbb09920089a14dbe9e8.woff2) format("woff2"),url(/static/open-sans-latin-800-c6aa0c4a601fb6ac66f8253fa594dff5.woff) format("woff")}@font-face{font-family:Open Sans;font-style:italic;font-display:swap;font-weight:800;src:local("Open Sans ExtraBold italic"),local("Open Sans-ExtraBolditalic"),url(/static/open-sans-latin-800italic-6b3973ffe02bb6a8be0f8453506ec032.woff2) format("woff2"),url(/static/open-sans-latin-800italic-79b58175343190550489efe46a7f1138.woff) format("woff")}</style><meta name="generator" content="Gatsby 2.0.60"/><style id="__jsx-677817541">.item.jsx-677817541{background:transparent;-webkit-transition:all 0.5s;-webkit-transition:all 0.5s;transition:all 0.5s;display:-webkit-box;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}
+.item.jsx-677817541 a{padding:10px;display:-webkit-box;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}
+.item.jsx-677817541 svg{margin:0 5px 0 0;opacity:0.3;}
+@media screen and (max-width:1023px){.jsx-677817541:not(.homepage) .item.jsx-677817541 a{color:#ffffff;}}
+@media screen and (min-width:1024px){.item.jsx-677817541 a{color:#3e3e3c;padding:10px;-webkit-transition:all 0.5s;-webkit-transition:all 0.5s;transition:all 0.5s;border-radius:5px;}.homepage:not(.fixed) .item.jsx-677817541 a{color:#ffffff;}.item.jsx-677817541 a:hover{color:#709425;background:rgba(255,255,255,0.4);}.item.jsx-677817541 svg{-webkit-transition:all 0.5s;-webkit-transition:all 0.5s;transition:all 0.5s;}.item.jsx-677817541:hover svg{fill:#709425;opacity:1;}.hero .item.jsx-677817541:hover svg svg{fill:green;}}</style><style id="__jsx-1619051672">.menu.jsx-1619051672{-webkit-box-align:center;-ms-flex-align:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-flex:1;-ms-flex-positive:1;-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1;left:0;padding:0 10px;position:fixed;width:100%;z-index:1;-webkit-transition:all 0.5s;-webkit-transition:all 0.5s;transition:all 0.5s;}
+.itemList.jsx-1619051672{display:-webkit-box;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;list-style:none;margin:0;padding:0;position:relative;width:100%;}
+@media screen and (max-width:1023px){.menu.jsx-1619051672{position:static;position:initial;}}
+@media screen and (min-width:1024px){.menu.jsx-1619051672{border-top:none;background:transparent;display:-webkit-box;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;position:relative;-webkit-box-pack:end;-ms-flex-pack:end;-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end;padding-left:50px;-webkit-transition:none;-webkit-transition:none;transition:none;}.itemList.jsx-1619051672{-webkit-box-pack:end;-ms-flex-pack:end;-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end;padding:0;}}</style><style id="__jsx-937100772">.header.jsx-937100772{background-color:#ffffff;position:relative;top:0;width:100%;}
+.header.homepage.jsx-937100772{position:absolute;background-color:transparent;}
+h1.jsx-937100772{font-size:2.2em;font-weight:100;margin:0 0 5px 0;}
+.sensor.jsx-937100772{display:block;position:absolute;bottom:0;z-index:1;left:0;right:0;height:1px;top:80px;}
+@media screen and (min-width:600px){.header.jsx-937100772{padding:20px;}}
+@media screen and (max-width:1023px){.header.jsx-937100772{text-align:center;padding:20px;}.header.homepage.jsx-937100772 .logo.jsx-937100772{border:none;}.header.homepage.jsx-937100772 a.logoType,.header.homepage.jsx-937100772 h1.jsx-937100772{color:#ffffff;}}
+@media screen and (min-width:1024px){.header.jsx-937100772{-webkit-box-align:center;-ms-flex-align:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background-color:#ffffff;display:-webkit-box;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;position:absolute;top:0;width:100%;-webkit-box-pack:justify;-ms-flex-pack:justify;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-transition:padding 0.5s;-webkit-transition:padding 0.5s;transition:padding 0.5s;}.header.fixed.jsx-937100772{height:50px;;background-color:#ffffff;left:0;padding:0 20px;position:fixed;top:0;width:100%;z-index:1;border-bottom:1px solid #ecebea;}.header.fixed.jsx-937100772 h1.jsx-937100772{margin:0 0 2px 0;}.header.jsx-937100772 a.logoType{-webkit-box-align:center;-ms-flex-align:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:"column";-webkit-flex-direction:"column";-ms-flex-direction:"column";flex-direction:"column";color:#3e3e3c;}.header.jsx-937100772 a.logoType .logo.jsx-937100772{-ms-flex-negative:0;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;}.header.homepage.jsx-937100772:not(.fixed) a.logoType,.header.homepage.jsx-937100772:not(.fixed) h1.jsx-937100772{color:#ffffff;}.header.jsx-937100772 a.logoType{text-align:left;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-ms-flex-negative:0;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;width:auto;}.logo.jsx-937100772{margin:0 20px 0 0;}.fixed.jsx-937100772 .logo.jsx-937100772{height:36px;width:36px;}.header.homepage.jsx-937100772:not(.fixed) .logo.jsx-937100772{border:none;}}</style><style id="__jsx-2542452449">h1.jsx-2542452449{font-size:2.2em;margin:0 0 40px 0;-webkit-animation-name:headlineEntry;-webkit-animation-name:headlineEntry-jsx-2542452449;animation-name:headlineEntry-jsx-2542452449;-webkit-animation-duration:1s;-webkit-animation-duration:1s;animation-duration:1s;}
+h1.jsx-2542452449 span{font-weight:400;display:block;font-size:0.5em;-webkit-letter-spacing:0;-moz-letter-spacing:0;-ms-letter-spacing:0;letter-spacing:0;margin:0 0 5px 0;}
+h1.jsx-2542452449 svg{height:0.75em;fill:#709425;}
+@-webkit-keyframes headlineEntry{from.jsx-2542452449{opacity:0.5;}to.jsx-2542452449{opacity:1;}}
+@-webkit-keyframes headlineEntry-jsx-2542452449{from{opacity:0.5;}to{opacity:1;}}
+@keyframes headlineEntry-jsx-2542452449{from{opacity:0.5;}to{opacity:1;}}
+@media screen and (min-width:600px){h1.jsx-2542452449{font-size:calc(2em * 1.2);}}
+@media screen and (min-width:1024px){h1.jsx-2542452449{font-size:calc(2em * 1.4);}}</style><style id="__jsx-2703193364">.meta.jsx-2703193364{display:-webkit-box;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-flow:row wrap;-webkit-flex-flow:row wrap;-ms-flex-flow:row wrap;flex-flow:row wrap;font-size:0.8em;margin:20px 0;background:transparent;}
+.meta.jsx-2703193364 svg{fill:#709425;margin:0 5px 0 0;}
+.meta.jsx-2703193364 span.jsx-2703193364{-webkit-box-align:center;-ms-flex-align:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;text-transform:uppercase;margin:5px 10px 5px 0;}
+@media screen and (min-width:600px){.meta.jsx-2703193364{margin:calc(20px * 1.5) 0 20px;}}</style><style id="__jsx-1849375170">.bodytext.jsx-1849375170{-webkit-animation-name:bodytextEntry;-webkit-animation-name:bodytextEntry-jsx-1849375170;animation-name:bodytextEntry-jsx-1849375170;-webkit-animation-duration:1s;-webkit-animation-duration:1s;animation-duration:1s;}
+.bodytext.jsx-1849375170 h2,.bodytext.jsx-1849375170 h3{margin:1.5em 0 1em;}
+.bodytext.jsx-1849375170 h2{line-height:1.2;font-size:1.7em;}
+.bodytext.jsx-1849375170 h3{font-size:1.35em;line-height:1.3;}
+.bodytext.jsx-1849375170 p{font-size:1.1em;line-height:1.6;margin:0 0 1.5em;}
+.bodytext.jsx-1849375170 ul{list-style:circle;margin:0 0 1.5em;padding:0 0 0 1.5em;}
+.bodytext.jsx-1849375170 li{margin:0.7em 0;line-height:1.5;}
+.bodytext.jsx-1849375170 a{font-weight:600;color:#709425;-webkit-text-decoration:underline;text-decoration:underline;}
+.bodytext.jsx-1849375170 a.gatsby-resp-image-link{border:0;display:block;margin:1em 0;overflow:hidden;}
+.bodytext.jsx-1849375170 code.language-text{background:#ecebea;text-shadow:none;color:inherit;padding:0.1em 0.3em 0.2em;border-radius:0.1em;}
+@-webkit-keyframes bodytextEntry{from.jsx-1849375170{opacity:0;}to.jsx-1849375170{opacity:1;}}
+@-webkit-keyframes bodytextEntry-jsx-1849375170{from{opacity:0;}to{opacity:1;}}
+@keyframes bodytextEntry-jsx-1849375170{from{opacity:0;}to{opacity:1;}}</style><style id="__jsx-4158949110">.author.jsx-4158949110{margin:40px 0;padding:40px 0;border-top:1px solid #ecebea;border-bottom:1px solid #ecebea;}
+.avatar.jsx-4158949110{float:left;border-radius:65% 75%;border:1px solid #ecebea;display:inline-block;height:70px;margin:0 20px 0 0;overflow:hidden;width:70px;}
+.avatar.jsx-4158949110 img.jsx-4158949110{width:100%;}
+.note.jsx-4158949110{font-size:0.9em;line-height:1.6;}
+@media screen and (min-width:600px){.author.jsx-4158949110{display:-webkit-box;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}.avatar.jsx-4158949110{-webkit-box-flex:0;-ms-flex:0 0 auto;-webkit-flex:0 0 auto;-ms-flex:0 0 auto;flex:0 0 auto;}}</style><style id="__jsx-126278577">.links.jsx-126278577{display:-webkit-box;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;padding:0 20px 40px;border-bottom:1px solid #ecebea;margin:0 0 40px 0;}
+.links.jsx-126278577 a{display:-webkit-box;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}
+.links.jsx-126278577 a:nth-child(2){margin:20px 0 0;}
+.links.jsx-126278577 svg{fill:orange;width:20px;height:20px;-ms-flex-negative:0;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;-webkit-box-flex:0;-ms-flex-positive:0;-webkit-box-flex:0;-webkit-flex-grow:0;-ms-flex-positive:0;flex-grow:0;margin:0 20px 0 0;}
+h4.jsx-126278577{font-weight:600;margin:0;font-size:1.1em;}
+time.jsx-126278577{color:#969492;display:block;font-weight:400;font-size:0.8em;margin-top:0.5em;}
+@media screen and (min-width:1024px){.links.jsx-126278577{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-ms-flex-direction:row-reverse;-webkit-flex-direction:row-reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;}.links.jsx-126278577 a{-ms-flex-preferred-size:50%;-webkit-flex-basis:50%;-ms-flex-preferred-size:50%;flex-basis:50%;}.links.jsx-126278577 a:nth-child(2){margin:0;}.links.jsx-126278577 svg{-webkit-transition:all 0.5s;-webkit-transition:all 0.5s;transition:all 0.5s;margin:0 10px 0 0;}@media (hover:hover){.links.jsx-126278577 a:hover svg{-webkit-transform:scale(1.5);-webkit-transform:scale(1.5);-ms-transform:scale(1.5);transform:scale(1.5);}}}</style><style id="__jsx-1766939654">.article.jsx-1766939654{padding:20px;margin:0 auto;}
+@media screen and (min-width:600px){.article.jsx-1766939654{padding:calc(20px) calc(20px * 2);max-width:650px;}}
+@media screen and (min-width:1024px){.article.jsx-1766939654{padding:calc(20px * 2 + 90px) 0 calc(20px * 2);max-width:700px;}}</style><style id="__jsx-1209355388">.footer.jsx-1209355388{background:#ffffff;padding:20px;padding-top:0;padding-bottom:120px;}
+.footer.jsx-1209355388 ul{list-style:none;text-align:center;padding:0;}
+.footer.jsx-1209355388 ul li{color:#969492;font-size:.8em;padding:2px 10px;position:relative;display:inline-block;}
+@media screen and (min-width:1024px){.footer.jsx-1209355388{padding:0 1em 1.5em;max-width:800px;margin:0 auto;}.footer.jsx-1209355388 ul li::after{content:"•";position:absolute;right:calc(5px * -1);}.footer.jsx-1209355388 ul li:last-child::after{content:"";}}</style><style id="__jsx-3017011455">main.jsx-3017011455{min-height:80vh;}</style><style id="__jsx-901573039">html{-webkit-box-sizing:border-box;box-sizing:border-box;}
+*,*:after,*:before{-webkit-box-sizing:inherit;box-sizing:inherit;margin:0;padding:0;}
+body{font-family:Arial, sans-serif;;}
+h1,h2,h3{font-weight:100;line-height:1.1;-webkit-letter-spacing:-0.03em;-moz-letter-spacing:-0.03em;-ms-letter-spacing:-0.03em;letter-spacing:-0.03em;margin:0;}
+h1{-webkit-letter-spacing:-0.04em;-moz-letter-spacing:-0.04em;-ms-letter-spacing:-0.04em;letter-spacing:-0.04em;}
+p{margin:0;}
+strong{font-weight:600;}
+a{-webkit-text-decoration:none;text-decoration:none;color:#666;}
+main{width:auto;display:block;}
+figcaption{text-align:center;font-size:14px;font-style:italic;color:#888;margin-bottom:40px;}</style><title data-react-helmet="true">Hijacking the Domestic: Rashid Johnson - Shelter at the South London Gallery - Momardi</title><meta data-react-helmet="true" name="description" content="Tuesday Gutierrez. Creative writer, agile content manager and visual artist"/><meta data-react-helmet="true" property="og:url" content="https://momardi.com/hijacking-the-domestic-rashid-johnson-shelter-at-the-south-london-gallery/"/><meta data-react-helmet="true" property="og:title" content="Hijacking the Domestic: Rashid Johnson - Shelter at the South London Gallery - Momardi"/><meta data-react-helmet="true" property="og:description" content="Tuesday Gutierrez. Creative writer, agile content manager and visual artist"/><meta data-react-helmet="true" property="og:image" content="https://momardi.comundefined/static/edea61969613653d95fb6a594953895e/d927d/Rashid-Johnson_Shelter-installation-view-3_xauzc2.jpg"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="tuesdaygutz"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#1AA0CD"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link as="script" rel="preload" href="/webpack-runtime-d1d8e972eb3919d6ad52.js"/><link as="script" rel="preload" href="/app-19e66dfda9679ae89fc3.js"/><link as="script" rel="preload" href="/0-b46d511e229ccfe9bbb3.js"/><link as="script" rel="preload" href="/component---src-templates-post-template-js-6193f23506b3bdb852a8.js"/><link rel="preload" href="/static/d/233/path---hijacking-the-domestic-rashid-johnson-shelter-at-the-south-london-gallery-0-c-9-e85-bBCtaIFZcEfR1hQj83myoX87WjQ.json" as="fetch" crossOrigin="use-credentials"/><meta name="apple-mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-status-bar-style" content="#D0E0D8"/><meta name="apple-mobile-web-app-title" content="Lazywill"/><link rel="apple-touch-icon" href="/icons/apple-icon-57x57.png" sizes="57x57"/><link rel="apple-touch-icon" href="/icons/apple-icon-60x60.png" sizes="60x60"/><link rel="apple-touch-icon" href="/icons/apple-icon-72x72.png" sizes="72x72"/><link rel="apple-touch-icon" href="/icons/apple-icon-76x76.png" sizes="76x76"/><link rel="apple-touch-icon" href="/icons/apple-icon-114x114.png" sizes="114x114"/><link rel="apple-touch-icon" href="/icons/apple-icon-120x120.png" sizes="120x120"/><link rel="apple-touch-icon" href="/icons/apple-icon-144x144.png" sizes="144x144"/><link rel="apple-touch-icon" href="/icons/apple-icon-152x152.png" sizes="152x152"/><link rel="apple-touch-icon" href="/icons/apple-icon-180x180.png" sizes="180x180"/><link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png"/><link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png"/><link rel="icon" type="image/png" sizes="96x96" href="/icons/favicon-96x96.png"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group"><header class="jsx-937100772 header  "><a class="logoType" href="/"><div class="jsx-937100772 type"><h1 class="jsx-937100772">MOMARDI</h1></div></a><nav rel="js-menu" class="jsx-1619051672 menu"><ul class="jsx-1619051672 itemList"><li class="jsx-677817541 item"><a data-slug="/category/" href="/category/"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em"><path d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"></path></svg> <!-- -->Categories</a></li><li class="jsx-677817541 item"><a data-slug="/search/" href="/search/"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg> <!-- -->Search</a></li><li class="jsx-677817541 item"><a data-slug="/about/" href="/about/"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em"><path d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"></path></svg> <!-- -->About</a></li><li class="jsx-677817541 item"><a data-slug="/cv/" href="/cv/"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 384 512" height="1em" width="1em"><path d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm160-14.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"></path></svg> <!-- -->CV</a></li><li class="jsx-677817541 item"><a data-slug="/work/" href="/work/"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em"><path d="M320 336c0 8.84-7.16 16-16 16h-96c-8.84 0-16-7.16-16-16v-48H0v144c0 25.6 22.4 48 48 48h416c25.6 0 48-22.4 48-48V288H320v48zm144-208h-80V80c0-25.6-22.4-48-48-48H176c-25.6 0-48 22.4-48 48v48H48c-25.6 0-48 22.4-48 48v80h512v-80c0-25.6-22.4-48-48-48zm-144 0H192V96h128v32z"></path></svg> <!-- -->Work</a></li><li class="jsx-677817541 item"><a data-slug="/contact/" href="/contact/"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em"><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path></svg> <!-- -->Contact</a></li></ul></nav></header><div class="jsx-937100772 sensor"></div><main class="jsx-3017011455 jsx-901573039"><article class="jsx-1766939654 article"><header><h1 class="jsx-2542452449">Hijacking the Domestic: Rashid Johnson - Shelter at the South London Gallery</h1><p class="jsx-2703193364 meta"><span class="jsx-2703193364"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" size="18" height="18" width="18"><path d="M12 192h424c6.6 0 12 5.4 12 12v260c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V204c0-6.6 5.4-12 12-12zm436-44v-36c0-26.5-21.5-48-48-48h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v36c0 6.6 5.4 12 12 12h424c6.6 0 12-5.4 12-12z"></path></svg> <!-- -->2012-11-20</span><span class="jsx-2703193364"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" size="18" height="18" width="18"><path d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"></path></svg><a href="/category/exhibits">exhibits</a></span></p></header><div class="jsx-1849375170 bodytext"><p>It’s the final week of Rashid Johnson’s Shelter at the <a href="http://www.southlondongallery.org/">South London Gallery</a> and after reading the <a href="http://www.google.co.uk/url?sa=t&#x26;rct=j&#x26;q=&#x26;esrc=s&#x26;source=web&#x26;cd=1&#x26;ved=0CCIQFjAA&#x26;url=http%3A%2F%2Fwww.timeout.com%2Flondon%2Fart%2Fevent%2F60258%2Frashid-johnson-shelter&#x26;ei=RaGrUMiKFKiq0AWt9IC4Bw&#x26;usg=AFQjCNEAUM1WUm7mQM6b1-vSAe5qgYhG9g">TimeOut 5/5 review</a>, I was not going to miss it. Clad in my own black ensemble bag and jacket, little did I know that I’d be echoing the colour of Shelter.</p>
+<p><strong>Shelter is a space where blackness pervades.</strong> Somehow, all the blackened artworks all look familiar and comforting. Rashid has taken all these everyday materials, broken them down, ‘blackened, gouged, splintered’ and transformed them into an orderly chaos. Blackened parquet floors, soap and wax become almost zen-like abstract paintings – but I wonder at how violently these materials have been manipulated in order to achieve artworks that embody peace and calm.</p>
+<p>
+  <figure class="gatsby-resp-image-figure" style="">
+  
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/16663732bf2d7dec07658d5ddfd243ad/55fd7/Rashid-Johnson-Shelter-1_ld6oqf.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 640px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 75.15624999999999%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAQDBf/EABYBAQEBAAAAAAAAAAAAAAAAAAABAv/aAAwDAQACEAMQAAAB6Wc0uVoX/8QAGxABAAICAwAAAAAAAAAAAAAAAgABAxETFDH/2gAIAQEAAQUCWpSpTsDeV5bg5gvZ/8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAIAQMBAT8BR//EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oACAECAQE/AVf/xAAbEAACAwADAAAAAAAAAAAAAAAAAREhMQJhgf/aAAgBAQAGPwLs0dOiOC9JhGH/xAAbEAACAgMBAAAAAAAAAAAAAAABEQAhMUFRYf/aAAgBAQABPyH0UE1dZUqBcUxDHRmoRyOwbIH0T//aAAwDAQACAAMAAAAQ7A//xAAVEQEBAAAAAAAAAAAAAAAAAAAQEf/aAAgBAwEBPxCD/8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAIAQIBAT8QqX//xAAdEAEAAgICAwAAAAAAAAAAAAABABEhMVFhcYGh/9oACAEBAAE/EHiOQUhzqUmS6Ad6r7EkwRuDJBEulFb4LxApI1ghbne+5QXZkgKe5//Z'); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="Rashid Johnson - Shelter"
+        title="Rashid Johnson - Shelter. Images courtesy the artist and the South London Gallery. Photo: Andy Keate"
+        src="/static/16663732bf2d7dec07658d5ddfd243ad/55fd7/Rashid-Johnson-Shelter-1_ld6oqf.jpg"
+        srcset="/static/16663732bf2d7dec07658d5ddfd243ad/e81c0/Rashid-Johnson-Shelter-1_ld6oqf.jpg 200w,
+/static/16663732bf2d7dec07658d5ddfd243ad/8e8ea/Rashid-Johnson-Shelter-1_ld6oqf.jpg 400w,
+/static/16663732bf2d7dec07658d5ddfd243ad/55fd7/Rashid-Johnson-Shelter-1_ld6oqf.jpg 640w"
+        sizes="(max-width: 640px) 100vw, 640px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    
+  <figcaption class="gatsby-resp-image-figcaption">Rashid Johnson - Shelter. Images courtesy the artist and the South London Gallery. Photo: Andy Keate</figcaption>
+  </figure>
+      </p>
+<p>
+  <figure class="gatsby-resp-image-figure" style="">
+  
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/3a1ed3e0384c9d746538bbef92e1a81e/55fd7/Rashid-Johnson_Shelter-installation-view_ym7q9o.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 640px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 74.0625%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFAQP/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAQL/2gAMAwEAAhADEAAAAaG8082mLh//xAAaEAACAgMAAAAAAAAAAAAAAAABAgARAxIh/9oACAEBAAEFAhwWt1CocOMizZp//8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAIAQMBAT8BR//EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oACAECAQE/Aar/xAAaEAACAwEBAAAAAAAAAAAAAAABMQACESEQ/9oACAEBAAY/AmINt0r2ormBTrn/xAAbEAEAAwEAAwAAAAAAAAAAAAABABExIUFRcf/aAAgBAQABPyF8CCom4vcpOssryShORukKM/E//9oADAMBAAIAAwAAABAL7//EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oACAEDAQE/EIp//8QAFhEBAQEAAAAAAAAAAAAAAAAAAAER/9oACAECAQE/EJDL/8QAGhABAAMBAQEAAAAAAAAAAAAAAQARITFxQf/aAAgBAQABPxBTRFoVq2cYeznioi0EMFjQmkv90lX5LyV+f0aJ/9k='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="Rashid Johnson_Shelter (installation view)"
+        title="Installation View, Rashid Johnson: Shelter at the South London Gallery, 2012. Image courtesy of the artist, South London Gallery and Hauser & Wirth. Photo: Andy Keate"
+        src="/static/3a1ed3e0384c9d746538bbef92e1a81e/55fd7/Rashid-Johnson_Shelter-installation-view_ym7q9o.jpg"
+        srcset="/static/3a1ed3e0384c9d746538bbef92e1a81e/e81c0/Rashid-Johnson_Shelter-installation-view_ym7q9o.jpg 200w,
+/static/3a1ed3e0384c9d746538bbef92e1a81e/8e8ea/Rashid-Johnson_Shelter-installation-view_ym7q9o.jpg 400w,
+/static/3a1ed3e0384c9d746538bbef92e1a81e/55fd7/Rashid-Johnson_Shelter-installation-view_ym7q9o.jpg 640w"
+        sizes="(max-width: 640px) 100vw, 640px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    
+  <figcaption class="gatsby-resp-image-figcaption">Installation View, Rashid Johnson: Shelter at the South London Gallery, 2012. Image courtesy of the artist, South London Gallery and Hauser & Wirth. Photo: Andy Keate</figcaption>
+  </figure>
+      </p>
+<p>At the same time, <strong>there is really something unsettling in this space of peace</strong>. <strong>Six stained wooden day beds in zebra skins bear scorching marks and are lying on top of stained Persian rugs – all speaking of unspoken nightmares</strong>. Just at the tip of the iceberg, it all looks Freduian-esque to me but it goes on to touch a deeper ground about cultural psyche or possibly a question about identity? Look at how the bed connotes African culture while the rug is very Oriental and all strangely presented as Western interiors.</p>
+<p>Rashid has surely taken us into a psychological ride on Shelter. <strong>Rashid calls his process as ‘hijacking the domestic’</strong>, presenting us with concepts that are comfortingly familiar which somehow help us begin to open ourselves us more into space for self-reflection. Strangely, that sounds as if we are in a psychoanalytic therapy session. But isn’t it true that when finally succumbed into the depths of blackness, we can now ask if we really know who we  are and what we have become?</p>
+<p>If I could only lie in one of these African zebra-skin beds….</p>
+<p>Rashid Johnson: Shelter runs until 25 November at the <a href="http://www.southlondongallery.org/">South London Gallery</a>. You can also buy a catalogue <a href="http://www.southlondongallery.org/page/rashid-johnson-shelter">here</a>. Watch the BBC interview on <a href="http://www.bbc.co.uk/programmes/p00zws0z">Rashid Johnson here</a>.</p>
+<p>
+  <figure class="gatsby-resp-image-figure" style="">
+  
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/dea86e03d0368b5e2a0597bcb2f8031c/55fd7/Rashid-Johnson-Shelter-installation-view-2_pwhkcy.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 640px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 75.15624999999999%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAQCBQb/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEAMQAAABenWpxpBMj//EABoQAAIDAQEAAAAAAAAAAAAAAAECAAMSERP/2gAIAQEAAQUCY2e2m2O8uawzN8rclP/EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oACAECAQE/AVf/xAAgEAACAAQHAAAAAAAAAAAAAAAAAQIREkEDISIxMlGR/9oACAEBAAY/AoKeFyJK0jPcpw1Jdl/TWpM//8QAGhAAAwEBAQEAAAAAAAAAAAAAAAERIVExYf/aAAgBAQABPyGCD481hfo0M9Q2InrWJDqddK04OM//2gAMAwEAAgADAAAAEET/AP/EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oACAEDAQE/EIj/xAAVEQEBAAAAAAAAAAAAAAAAAAABEP/aAAgBAgEBPxAY/8QAHRABAQACAgMBAAAAAAAAAAAAAREAITFxQVFhgf/aAAgBAQABPxAVCx0CXf76wV0xCSQrx0Y5wI0WrngGKCdG6GIAWikVnBziKdJIj9I5/9k='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="Installation view, Rashid Johnson"
+        title="Installation view, Rashid Johnson: Shelter at the South London Gallery, 2012. Image courtesy of the artist, South London Gallery and Hauser & Wirth. Photo: Andy Keate"
+        src="/static/dea86e03d0368b5e2a0597bcb2f8031c/55fd7/Rashid-Johnson-Shelter-installation-view-2_pwhkcy.jpg"
+        srcset="/static/dea86e03d0368b5e2a0597bcb2f8031c/e81c0/Rashid-Johnson-Shelter-installation-view-2_pwhkcy.jpg 200w,
+/static/dea86e03d0368b5e2a0597bcb2f8031c/8e8ea/Rashid-Johnson-Shelter-installation-view-2_pwhkcy.jpg 400w,
+/static/dea86e03d0368b5e2a0597bcb2f8031c/55fd7/Rashid-Johnson-Shelter-installation-view-2_pwhkcy.jpg 640w"
+        sizes="(max-width: 640px) 100vw, 640px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    
+  <figcaption class="gatsby-resp-image-figcaption">Installation view, Rashid Johnson: Shelter at the South London Gallery, 2012. Image courtesy of the artist, South London Gallery and Hauser & Wirth. Photo: Andy Keate</figcaption>
+  </figure>
+      </p>
+<p>
+  <figure class="gatsby-resp-image-figure" style="">
+  
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/edea61969613653d95fb6a594953895e/55fd7/Rashid-Johnson_Shelter-installation-view-3_xauzc2.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 640px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 74.37499999999999%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAQCBQb/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEAMQAAABs4opxoRQP//EABoQAAIDAQEAAAAAAAAAAAAAAAIDAAESESH/2gAIAQEAAQUC16LaKo1vILCCLPY//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAIAQIBAT8BV//EABkQAAMBAQEAAAAAAAAAAAAAAAABETECEP/aAAgBAQAGPwKFV2eTlGFR/8QAGhABAAMBAQEAAAAAAAAAAAAAAQARIVFBgf/aAAgBAQABPyHBo7e1hKqI8CXGax63Hst9gncdJ//aAAwDAQACAAMAAAAQ1x//xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAwEBPxCI/8QAFREBAQAAAAAAAAAAAAAAAAAAARD/2gAIAQIBAT8QGP/EAB0QAQADAAIDAQAAAAAAAAAAAAEAESExYUFRcYH/2gAIAQEAAT8QQ06VS1HtiIiGnl8/O4AiNAy4b1seN5dug/g1EA3pHhn/2Q=='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="Installation view, Rashid Johnson"
+        title="Installation view, Rashid Johnson: Shelter at the South London Gallery, 2012. Image courtesy of the artist, South London Gallery and Hauser & Wirth. Photo: Andy Keate"
+        src="/static/edea61969613653d95fb6a594953895e/55fd7/Rashid-Johnson_Shelter-installation-view-3_xauzc2.jpg"
+        srcset="/static/edea61969613653d95fb6a594953895e/e81c0/Rashid-Johnson_Shelter-installation-view-3_xauzc2.jpg 200w,
+/static/edea61969613653d95fb6a594953895e/8e8ea/Rashid-Johnson_Shelter-installation-view-3_xauzc2.jpg 400w,
+/static/edea61969613653d95fb6a594953895e/55fd7/Rashid-Johnson_Shelter-installation-view-3_xauzc2.jpg 640w"
+        sizes="(max-width: 640px) 100vw, 640px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    
+  <figcaption class="gatsby-resp-image-figcaption">Installation view, Rashid Johnson: Shelter at the South London Gallery, 2012. Image courtesy of the artist, South London Gallery and Hauser & Wirth. Photo: Andy Keate</figcaption>
+  </figure>
+      </p>
+<p>
+  <figure class="gatsby-resp-image-figure" style="">
+  
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/851299009cbc08dbb9c5bc3a14d43a09/55fd7/Rashid-Johnson_Shelter_untitled-daybed1_owuydh.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 640px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 75.15624999999999%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAMBBP/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIQAxAAAAHhRyWiY//EABkQAAMAAwAAAAAAAAAAAAAAAAABEQISQf/aAAgBAQABBQJZKbwp0p//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAZEAABBQAAAAAAAAAAAAAAAAAAAREgITH/2gAIAQEABj8CtHMj/8QAHBAAAQUAAwAAAAAAAAAAAAAAAAERITFRQWFx/9oACAEBAAE/IUnJd0NpHHFcuFiTwf/aAAwDAQACAAMAAAAQY8//xAAVEQEBAAAAAAAAAAAAAAAAAAAQEf/aAAgBAwEBPxCn/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPxA//8QAHhABAQACAAcAAAAAAAAAAAAAAREAITFBUWFxobH/2gAIAQEAAT8QUFvA6PpgirfQ3vxm0ZXIxsAA7ZAT7kTZc//Z'); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="Untitled daybed 1, 2012, Rashid Johnson"
+        title="Untitled daybed 1, 2012, Rashid Johnson. Photo: Andy Keate. Image courtesy of the artist, South London Gallery and Hauser & Wirth"
+        src="/static/851299009cbc08dbb9c5bc3a14d43a09/55fd7/Rashid-Johnson_Shelter_untitled-daybed1_owuydh.jpg"
+        srcset="/static/851299009cbc08dbb9c5bc3a14d43a09/e81c0/Rashid-Johnson_Shelter_untitled-daybed1_owuydh.jpg 200w,
+/static/851299009cbc08dbb9c5bc3a14d43a09/8e8ea/Rashid-Johnson_Shelter_untitled-daybed1_owuydh.jpg 400w,
+/static/851299009cbc08dbb9c5bc3a14d43a09/55fd7/Rashid-Johnson_Shelter_untitled-daybed1_owuydh.jpg 640w"
+        sizes="(max-width: 640px) 100vw, 640px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    
+  <figcaption class="gatsby-resp-image-figcaption">Untitled daybed 1, 2012, Rashid Johnson. Photo: Andy Keate. Image courtesy of the artist, South London Gallery and Hauser & Wirth</figcaption>
+  </figure>
+      </p>
+<p>
+  <figure class="gatsby-resp-image-figure" style="">
+  
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/3743b52d0689c00149c09fabb0c8ea81/55fd7/Rashid-Johnson_The-End-of-Anger-2012_staf6g.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 640px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 75.15624999999999%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAMBAgQF/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/2gAMAwEAAhADEAAAAekrRENKh//EABoQAAEFAQAAAAAAAAAAAAAAAAABAgMREhP/2gAIAQEAAQUCml5nddi5cZZdn//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABoQAAICAwAAAAAAAAAAAAAAAAARARACITH/2gAIAQEABj8CxUdEq3DGq//EABoQAAIDAQEAAAAAAAAAAAAAAAERACExEEH/2gAIAQEAAT8hIKBJq4Mch7xQKTGJSSxkWf/aAAwDAQACAAMAAAAQLy//xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAwEBPxCI/8QAFhEBAQEAAAAAAAAAAAAAAAAAABEB/9oACAECAQE/EKuP/8QAGxABAAIDAQEAAAAAAAAAAAAAAQARITFRcaH/2gAIAQEAAT8QIEeVYMRKV8DRy+3yO4CAFeRT2LIdrSaY37+T/9k='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="Rashid Johnson_The End of Anger 2012"
+        title="The End of Anger, 2012, Rashid Johnson. Image courtesy of the artist, South London Gallery and Hauser & Wirth. Photo: Andy Keate"
+        src="/static/3743b52d0689c00149c09fabb0c8ea81/55fd7/Rashid-Johnson_The-End-of-Anger-2012_staf6g.jpg"
+        srcset="/static/3743b52d0689c00149c09fabb0c8ea81/e81c0/Rashid-Johnson_The-End-of-Anger-2012_staf6g.jpg 200w,
+/static/3743b52d0689c00149c09fabb0c8ea81/8e8ea/Rashid-Johnson_The-End-of-Anger-2012_staf6g.jpg 400w,
+/static/3743b52d0689c00149c09fabb0c8ea81/55fd7/Rashid-Johnson_The-End-of-Anger-2012_staf6g.jpg 640w"
+        sizes="(max-width: 640px) 100vw, 640px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    
+  <figcaption class="gatsby-resp-image-figcaption">The End of Anger, 2012, Rashid Johnson. Image courtesy of the artist, South London Gallery and Hauser & Wirth. Photo: Andy Keate</figcaption>
+  </figure>
+      </p>
+<p>
+  <figure class="gatsby-resp-image-figure" style="">
+  
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/bd86d899bd7496e64e4e20c0d71b6dcf/ee46a/Rashid-Johnson_The-End-of-Anger-detail_musxep.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 481px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 133.05613305613304%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAbABQDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAABAACBQH/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAQL/2gAMAwEAAhADEAAAAXBUOH3Hjpm8xNalVz//xAAdEAACAQQDAAAAAAAAAAAAAAABAgADERIhEyIy/9oACAEBAAEFAiZTZuXODYZbEmBuuVzgsTxUO6agr//EABYRAQEBAAAAAAAAAAAAAAAAAAEQEf/aAAgBAwEBPwGDk//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQIBAT8BH//EAB0QAAIBBAMAAAAAAAAAAAAAAAABEAIDETEhUWH/2gAIAQEABj8CKllm4uP1QsMa7ORRo//EAB0QAAMAAgIDAAAAAAAAAAAAAAABESExEEFRcaH/2gAIAQEAAT8hB9rZ5KW/oWdV4oMgm3ZB2HuLNeRnXuDJyxFbQ//aAAwDAQACAAMAAAAQqCB8/8QAFxEBAQEBAAAAAAAAAAAAAAAAAREAEP/aAAgBAwEBPxDhBpdTf//EABcRAAMBAAAAAAAAAAAAAAAAAAABIRD/2gAIAQIBAT8Qx0p//8QAGhABAAMBAQEAAAAAAAAAAAAAAQARITFBUf/aAAgBAQABPxA0sdeEpHjArNeQJSXCsAebZzyeZV6fSK4zIzyZV2MjsQtOoUa8nQN+JUIRREU9lHyzLyIaP2p//9k='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="Rashid Johnson_The End of Anger (detail)"
+        title="The End of Anger detail, 2012. Image courtesy of the artist, South London Gallery and Hauser & Wirth. Photo: Andy Keate"
+        src="/static/bd86d899bd7496e64e4e20c0d71b6dcf/ee46a/Rashid-Johnson_The-End-of-Anger-detail_musxep.jpg"
+        srcset="/static/bd86d899bd7496e64e4e20c0d71b6dcf/1dda7/Rashid-Johnson_The-End-of-Anger-detail_musxep.jpg 200w,
+/static/bd86d899bd7496e64e4e20c0d71b6dcf/bb095/Rashid-Johnson_The-End-of-Anger-detail_musxep.jpg 400w,
+/static/bd86d899bd7496e64e4e20c0d71b6dcf/ee46a/Rashid-Johnson_The-End-of-Anger-detail_musxep.jpg 481w"
+        sizes="(max-width: 481px) 100vw, 481px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    
+  <figcaption class="gatsby-resp-image-figcaption">The End of Anger detail, 2012. Image courtesy of the artist, South London Gallery and Hauser & Wirth. Photo: Andy Keate</figcaption>
+  </figure>
+      </p>
+<p>
+  <figure class="gatsby-resp-image-figure" style="">
+  
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/fe4ae372f32d4900542f17dd2d57c968/55fd7/Rashid-Johnson_Shelter-2_eq8ffj.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 640px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 74.0625%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABAADBf/EABUBAQEAAAAAAAAAAAAAAAAAAAEA/9oADAMBAAIQAxAAAAFSQ7Fz5UP/xAAcEAACAgIDAAAAAAAAAAAAAAACAwERABIhIiP/2gAIAQEAAQUCQXW8ObKPJjGDqKuP/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAGRAAAgMBAAAAAAAAAAAAAAAAAAEQITFh/9oACAEBAAY/AjRs4ynH/8QAGRAAAwEBAQAAAAAAAAAAAAAAAREhADFB/9oACAEBAAE/IeF8MmKC+3Rn47uQnE0zMzHPTv/aAAwDAQACAAMAAAAQTy//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAXEQADAQAAAAAAAAAAAAAAAAAAAREh/9oACAECAQE/ELhGf//EABoQAQADAQEBAAAAAAAAAAAAAAEAEUEhMWH/2gAIAQEAAT8QZPNJthnCRFrp9gqUrDJThrqTIBKeCnZXOejP/9k='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="Rashid Johnson_Shelter 2"
+        title="Installation view, 2012. Images courtesy the artist and the South London Gallery. Photo: Andy Keate"
+        src="/static/fe4ae372f32d4900542f17dd2d57c968/55fd7/Rashid-Johnson_Shelter-2_eq8ffj.jpg"
+        srcset="/static/fe4ae372f32d4900542f17dd2d57c968/e81c0/Rashid-Johnson_Shelter-2_eq8ffj.jpg 200w,
+/static/fe4ae372f32d4900542f17dd2d57c968/8e8ea/Rashid-Johnson_Shelter-2_eq8ffj.jpg 400w,
+/static/fe4ae372f32d4900542f17dd2d57c968/55fd7/Rashid-Johnson_Shelter-2_eq8ffj.jpg 640w"
+        sizes="(max-width: 640px) 100vw, 640px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    
+  <figcaption class="gatsby-resp-image-figcaption">Installation view, 2012. Images courtesy the artist and the South London Gallery. Photo: Andy Keate</figcaption>
+  </figure>
+      </p>
+<p>Read more:</p>
+<ul>
+<li><a href="http://www.google.co.uk/url?sa=t&#x26;rct=j&#x26;q=&#x26;esrc=s&#x26;source=web&#x26;cd=1&#x26;ved=0CCIQFjAA&#x26;url=http%3A%2F%2Fwww.timeout.com%2Flondon%2Fart%2Fevent%2F60258%2Frashid-johnson-shelter&#x26;ei=RaGrUMiKFKiq0AWt9IC4Bw&#x26;usg=AFQjCNEAUM1WUm7mQM6b1-vSAe5qgYhG9g">Time Out Review: Rashid Johnson – Shelter</a></li>
+<li><a href="http://www.thisistomorrow.info/viewArticle.aspx?artId=1528">Interface: Review: Rashid Johnson – Shelter. This is tomorrow: Rashid Johnson</a></li>
+<li><a href="http://styleandthensome.wordpress.com/2012/11/11/gimme-shelter-rashid-johnson-at-the-south-london-gallery/">Style and then Some: Gimme Shelter – Rashid Johnson</a></li>
+<li><a href="http://www.bbc.co.uk/programmes/p00zws0z">Video: BBC Culture Show – Rashid Johnson</a></li>
+</ul></div><footer><div>Loading...</div><div class="jsx-4158949110 author"><div class="jsx-4158949110 avatar"><img src="/static/avatar-9fed4a6a589d12d55cab4b5621bd21b3.jpg" alt="Momardi - Tuesday Gutierrez" class="jsx-4158949110"/></div><div class="jsx-4158949110 note"><p>Article by <strong>Tuesday Gutierrez</strong>. Former digital marketing manager for the London 2012 Festival, the largest UK festival ever staged. This is her blog about contemporary art, design, film, photography and all that move her soul.</p></div></div><div class="jsx-126278577 links"><a href="/top-19-images-from-the-world-press-photo-contest/"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em"><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"></path></svg><h4 class="jsx-126278577">Top 19 images from the World Press Photo Contest - Southbank Centre<!-- --> <time class="jsx-126278577">2012-11-23<!-- --> </time></h4></a><a href="/anish-kapoor-earth-works-and-floating-bowls-at-the-lisson-gallery/"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em"><path d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"></path></svg><h4 class="jsx-126278577">Anish Kapoor: Earth Works and Floating Bowls at the Lisson Gallery<!-- --> <time class="jsx-126278577">2012-11-07</time></h4></a></div></footer></article></main><footer class="jsx-1209355388 footer"><ul>
+<li>All content copyright by MOMARDI - Tuesday Gutierrez © 2018 All rights reserved</li>
+<li>Copywriter, Content Manager, Strategy, Branding and Marketing || Proudly published with <a href="https://www.gatsbyjs.org/">GatsbyJS</a> and <a href="https://github.com">Github</a></li>
+</ul></footer></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-268014-11', 'auto', {});
+      
+      }
+      </script><script id="gatsby-script-loader">/*<![CDATA[*/window.page={"componentChunkName":"component---src-templates-post-template-js","jsonName":"hijacking-the-domestic-rashid-johnson-shelter-at-the-south-london-gallery-0c9","path":"/hijacking-the-domestic-rashid-johnson-shelter-at-the-south-london-gallery/"};window.dataPath="233/path---hijacking-the-domestic-rashid-johnson-shelter-at-the-south-london-gallery-0-c-9-e85-bBCtaIFZcEfR1hQj83myoX87WjQ";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app.8b1cc9920e75fff049f7.css","/app-19e66dfda9679ae89fc3.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-8fec9522ed849d38d6e1.js"],"component---src-templates-category-template-js":["/component---src-templates-category-template-js-bbbc53f0d10a363d3916.js"],"component---src-templates-post-template-js":["/component---src-templates-post-template-js.b6f197430f783b3e67aa.css","/component---src-templates-post-template-js-6193f23506b3bdb852a8.js"],"component---src-templates-page-template-js":["/component---src-templates-page-template-js-3207c1dd6e884134e246.js"],"component---src-templates-index-js":["/component---src-templates-index-js-206102ca59d9d3ce11c5.js"],"component---src-pages-404-js":["/component---src-pages-404-js-718506eefd248f6f227f.js"],"component---src-pages-category-js":["/component---src-pages-category-js-17964a73e7bbfeb80cbf.js"],"component---src-pages-search-js":["/component---src-pages-search-js-42ae346864b4602c817e.js"]};/*]]>*/</script><script src="/component---src-templates-post-template-js-6193f23506b3bdb852a8.js" async=""></script><script src="/0-b46d511e229ccfe9bbb3.js" async=""></script><script src="/app-19e66dfda9679ae89fc3.js" async=""></script><script src="/webpack-runtime-d1d8e972eb3919d6ad52.js" async=""></script></body></html>

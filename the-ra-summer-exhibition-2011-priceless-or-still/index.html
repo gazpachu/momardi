@@ -1,0 +1,330 @@
+<!DOCTYPE html><html lang="en" prefix="og: http://ogp.me/ns#"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/component---src-templates-post-template-js.b6f197430f783b3e67aa.css">code[class*=language-],pre[class*=language-]{color:#f8f8f2;background:none;text-shadow:0 1px rgba(0,0,0,.3);font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto;border-radius:.3em}:not(pre)>code[class*=language-],pre[class*=language-]{background:#272822}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#f8f8f2}.namespace{opacity:.7}.token.constant,.token.deleted,.token.property,.token.symbol,.token.tag{color:#f92672}.token.boolean,.token.number{color:#ae81ff}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#a6e22e}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url,.token.variable{color:#f8f8f2}.token.atrule,.token.attr-value,.token.class-name,.token.function{color:#e6db74}.token.keyword{color:#66d9ef}.token.important,.token.regex{color:#fd971f}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}</style><style data-href="/app.8b1cc9920e75fff049f7.css">@font-face{font-family:Open Sans;font-style:normal;font-display:swap;font-weight:300;src:local("Open Sans Light "),local("Open Sans-Light"),url(/static/open-sans-latin-300-60c866748ff15f5b347fdba64596b1b1.woff2) format("woff2"),url(/static/open-sans-latin-300-521d17bc9f3526c690e8ada6eee55bec.woff) format("woff")}@font-face{font-family:Open Sans;font-style:italic;font-display:swap;font-weight:300;src:local("Open Sans Light italic"),local("Open Sans-Lightitalic"),url(/static/open-sans-latin-300italic-06bbd3188b34820cd83a0e0b3d0a6f57.woff2) format("woff2"),url(/static/open-sans-latin-300italic-8a648ff38ded89ea15916e84529d62d3.woff) format("woff")}@font-face{font-family:Open Sans;font-style:normal;font-display:swap;font-weight:400;src:local("Open Sans Regular "),local("Open Sans-Regular"),url(/static/open-sans-latin-400-cffb686d7d2f4682df8342bd4d276e09.woff2) format("woff2"),url(/static/open-sans-latin-400-bf2d0783515b7d75c35bde69e01b3135.woff) format("woff")}@font-face{font-family:Open Sans;font-style:italic;font-display:swap;font-weight:400;src:local("Open Sans Regular italic"),local("Open Sans-Regularitalic"),url(/static/open-sans-latin-400italic-987032ea5d57c93d8da215678eae3b86.woff2) format("woff2"),url(/static/open-sans-latin-400italic-db70d0b9cb27ada1a260a2b35e756b8b.woff) format("woff")}@font-face{font-family:Open Sans;font-style:normal;font-display:swap;font-weight:600;src:local("Open Sans SemiBold "),local("Open Sans-SemiBold"),url(/static/open-sans-latin-600-223a277bd88d8a90c8cdf24cda0ad5f5.woff2) format("woff2"),url(/static/open-sans-latin-600-1cd5320f8937d337b61d5117cf9d7b28.woff) format("woff")}@font-face{font-family:Open Sans;font-style:italic;font-display:swap;font-weight:600;src:local("Open Sans SemiBold italic"),local("Open Sans-SemiBolditalic"),url(/static/open-sans-latin-600italic-4950a7205f0b5cefe41fc03ac346e236.woff2) format("woff2"),url(/static/open-sans-latin-600italic-318ea1ada4102c0704a0637228dcad03.woff) format("woff")}@font-face{font-family:Open Sans;font-style:normal;font-display:swap;font-weight:700;src:local("Open Sans Bold "),local("Open Sans-Bold"),url(/static/open-sans-latin-700-d08c09f2f169f4a6edbcf8b8d1636cb4.woff2) format("woff2"),url(/static/open-sans-latin-700-623e3205570002af47fc2b88f9335d19.woff) format("woff")}@font-face{font-family:Open Sans;font-style:italic;font-display:swap;font-weight:700;src:local("Open Sans Bold italic"),local("Open Sans-Bolditalic"),url(/static/open-sans-latin-700italic-c02f5da6e82e1efe0b45841bfd49ce37.woff2) format("woff2"),url(/static/open-sans-latin-700italic-72e19cbb0e38c6773a7751156752cec4.woff) format("woff")}@font-face{font-family:Open Sans;font-style:normal;font-display:swap;font-weight:800;src:local("Open Sans ExtraBold "),local("Open Sans-ExtraBold"),url(/static/open-sans-latin-800-aaeffaf205b9bbb09920089a14dbe9e8.woff2) format("woff2"),url(/static/open-sans-latin-800-c6aa0c4a601fb6ac66f8253fa594dff5.woff) format("woff")}@font-face{font-family:Open Sans;font-style:italic;font-display:swap;font-weight:800;src:local("Open Sans ExtraBold italic"),local("Open Sans-ExtraBolditalic"),url(/static/open-sans-latin-800italic-6b3973ffe02bb6a8be0f8453506ec032.woff2) format("woff2"),url(/static/open-sans-latin-800italic-79b58175343190550489efe46a7f1138.woff) format("woff")}</style><meta name="generator" content="Gatsby 2.0.60"/><style id="__jsx-677817541">.item.jsx-677817541{background:transparent;-webkit-transition:all 0.5s;-webkit-transition:all 0.5s;transition:all 0.5s;display:-webkit-box;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}
+.item.jsx-677817541 a{padding:10px;display:-webkit-box;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}
+.item.jsx-677817541 svg{margin:0 5px 0 0;opacity:0.3;}
+@media screen and (max-width:1023px){.jsx-677817541:not(.homepage) .item.jsx-677817541 a{color:#ffffff;}}
+@media screen and (min-width:1024px){.item.jsx-677817541 a{color:#3e3e3c;padding:10px;-webkit-transition:all 0.5s;-webkit-transition:all 0.5s;transition:all 0.5s;border-radius:5px;}.homepage:not(.fixed) .item.jsx-677817541 a{color:#ffffff;}.item.jsx-677817541 a:hover{color:#709425;background:rgba(255,255,255,0.4);}.item.jsx-677817541 svg{-webkit-transition:all 0.5s;-webkit-transition:all 0.5s;transition:all 0.5s;}.item.jsx-677817541:hover svg{fill:#709425;opacity:1;}.hero .item.jsx-677817541:hover svg svg{fill:green;}}</style><style id="__jsx-1619051672">.menu.jsx-1619051672{-webkit-box-align:center;-ms-flex-align:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-flex:1;-ms-flex-positive:1;-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1;left:0;padding:0 10px;position:fixed;width:100%;z-index:1;-webkit-transition:all 0.5s;-webkit-transition:all 0.5s;transition:all 0.5s;}
+.itemList.jsx-1619051672{display:-webkit-box;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;list-style:none;margin:0;padding:0;position:relative;width:100%;}
+@media screen and (max-width:1023px){.menu.jsx-1619051672{position:static;position:initial;}}
+@media screen and (min-width:1024px){.menu.jsx-1619051672{border-top:none;background:transparent;display:-webkit-box;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;position:relative;-webkit-box-pack:end;-ms-flex-pack:end;-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end;padding-left:50px;-webkit-transition:none;-webkit-transition:none;transition:none;}.itemList.jsx-1619051672{-webkit-box-pack:end;-ms-flex-pack:end;-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end;padding:0;}}</style><style id="__jsx-937100772">.header.jsx-937100772{background-color:#ffffff;position:relative;top:0;width:100%;}
+.header.homepage.jsx-937100772{position:absolute;background-color:transparent;}
+h1.jsx-937100772{font-size:2.2em;font-weight:100;margin:0 0 5px 0;}
+.sensor.jsx-937100772{display:block;position:absolute;bottom:0;z-index:1;left:0;right:0;height:1px;top:80px;}
+@media screen and (min-width:600px){.header.jsx-937100772{padding:20px;}}
+@media screen and (max-width:1023px){.header.jsx-937100772{text-align:center;padding:20px;}.header.homepage.jsx-937100772 .logo.jsx-937100772{border:none;}.header.homepage.jsx-937100772 a.logoType,.header.homepage.jsx-937100772 h1.jsx-937100772{color:#ffffff;}}
+@media screen and (min-width:1024px){.header.jsx-937100772{-webkit-box-align:center;-ms-flex-align:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background-color:#ffffff;display:-webkit-box;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;position:absolute;top:0;width:100%;-webkit-box-pack:justify;-ms-flex-pack:justify;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-transition:padding 0.5s;-webkit-transition:padding 0.5s;transition:padding 0.5s;}.header.fixed.jsx-937100772{height:50px;;background-color:#ffffff;left:0;padding:0 20px;position:fixed;top:0;width:100%;z-index:1;border-bottom:1px solid #ecebea;}.header.fixed.jsx-937100772 h1.jsx-937100772{margin:0 0 2px 0;}.header.jsx-937100772 a.logoType{-webkit-box-align:center;-ms-flex-align:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:"column";-webkit-flex-direction:"column";-ms-flex-direction:"column";flex-direction:"column";color:#3e3e3c;}.header.jsx-937100772 a.logoType .logo.jsx-937100772{-ms-flex-negative:0;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;}.header.homepage.jsx-937100772:not(.fixed) a.logoType,.header.homepage.jsx-937100772:not(.fixed) h1.jsx-937100772{color:#ffffff;}.header.jsx-937100772 a.logoType{text-align:left;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-ms-flex-negative:0;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;width:auto;}.logo.jsx-937100772{margin:0 20px 0 0;}.fixed.jsx-937100772 .logo.jsx-937100772{height:36px;width:36px;}.header.homepage.jsx-937100772:not(.fixed) .logo.jsx-937100772{border:none;}}</style><style id="__jsx-2542452449">h1.jsx-2542452449{font-size:2.2em;margin:0 0 40px 0;-webkit-animation-name:headlineEntry;-webkit-animation-name:headlineEntry-jsx-2542452449;animation-name:headlineEntry-jsx-2542452449;-webkit-animation-duration:1s;-webkit-animation-duration:1s;animation-duration:1s;}
+h1.jsx-2542452449 span{font-weight:400;display:block;font-size:0.5em;-webkit-letter-spacing:0;-moz-letter-spacing:0;-ms-letter-spacing:0;letter-spacing:0;margin:0 0 5px 0;}
+h1.jsx-2542452449 svg{height:0.75em;fill:#709425;}
+@-webkit-keyframes headlineEntry{from.jsx-2542452449{opacity:0.5;}to.jsx-2542452449{opacity:1;}}
+@-webkit-keyframes headlineEntry-jsx-2542452449{from{opacity:0.5;}to{opacity:1;}}
+@keyframes headlineEntry-jsx-2542452449{from{opacity:0.5;}to{opacity:1;}}
+@media screen and (min-width:600px){h1.jsx-2542452449{font-size:calc(2em * 1.2);}}
+@media screen and (min-width:1024px){h1.jsx-2542452449{font-size:calc(2em * 1.4);}}</style><style id="__jsx-2703193364">.meta.jsx-2703193364{display:-webkit-box;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-flow:row wrap;-webkit-flex-flow:row wrap;-ms-flex-flow:row wrap;flex-flow:row wrap;font-size:0.8em;margin:20px 0;background:transparent;}
+.meta.jsx-2703193364 svg{fill:#709425;margin:0 5px 0 0;}
+.meta.jsx-2703193364 span.jsx-2703193364{-webkit-box-align:center;-ms-flex-align:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;text-transform:uppercase;margin:5px 10px 5px 0;}
+@media screen and (min-width:600px){.meta.jsx-2703193364{margin:calc(20px * 1.5) 0 20px;}}</style><style id="__jsx-1849375170">.bodytext.jsx-1849375170{-webkit-animation-name:bodytextEntry;-webkit-animation-name:bodytextEntry-jsx-1849375170;animation-name:bodytextEntry-jsx-1849375170;-webkit-animation-duration:1s;-webkit-animation-duration:1s;animation-duration:1s;}
+.bodytext.jsx-1849375170 h2,.bodytext.jsx-1849375170 h3{margin:1.5em 0 1em;}
+.bodytext.jsx-1849375170 h2{line-height:1.2;font-size:1.7em;}
+.bodytext.jsx-1849375170 h3{font-size:1.35em;line-height:1.3;}
+.bodytext.jsx-1849375170 p{font-size:1.1em;line-height:1.6;margin:0 0 1.5em;}
+.bodytext.jsx-1849375170 ul{list-style:circle;margin:0 0 1.5em;padding:0 0 0 1.5em;}
+.bodytext.jsx-1849375170 li{margin:0.7em 0;line-height:1.5;}
+.bodytext.jsx-1849375170 a{font-weight:600;color:#709425;-webkit-text-decoration:underline;text-decoration:underline;}
+.bodytext.jsx-1849375170 a.gatsby-resp-image-link{border:0;display:block;margin:1em 0;overflow:hidden;}
+.bodytext.jsx-1849375170 code.language-text{background:#ecebea;text-shadow:none;color:inherit;padding:0.1em 0.3em 0.2em;border-radius:0.1em;}
+@-webkit-keyframes bodytextEntry{from.jsx-1849375170{opacity:0;}to.jsx-1849375170{opacity:1;}}
+@-webkit-keyframes bodytextEntry-jsx-1849375170{from{opacity:0;}to{opacity:1;}}
+@keyframes bodytextEntry-jsx-1849375170{from{opacity:0;}to{opacity:1;}}</style><style id="__jsx-4158949110">.author.jsx-4158949110{margin:40px 0;padding:40px 0;border-top:1px solid #ecebea;border-bottom:1px solid #ecebea;}
+.avatar.jsx-4158949110{float:left;border-radius:65% 75%;border:1px solid #ecebea;display:inline-block;height:70px;margin:0 20px 0 0;overflow:hidden;width:70px;}
+.avatar.jsx-4158949110 img.jsx-4158949110{width:100%;}
+.note.jsx-4158949110{font-size:0.9em;line-height:1.6;}
+@media screen and (min-width:600px){.author.jsx-4158949110{display:-webkit-box;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}.avatar.jsx-4158949110{-webkit-box-flex:0;-ms-flex:0 0 auto;-webkit-flex:0 0 auto;-ms-flex:0 0 auto;flex:0 0 auto;}}</style><style id="__jsx-126278577">.links.jsx-126278577{display:-webkit-box;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;padding:0 20px 40px;border-bottom:1px solid #ecebea;margin:0 0 40px 0;}
+.links.jsx-126278577 a{display:-webkit-box;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}
+.links.jsx-126278577 a:nth-child(2){margin:20px 0 0;}
+.links.jsx-126278577 svg{fill:orange;width:20px;height:20px;-ms-flex-negative:0;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;-webkit-box-flex:0;-ms-flex-positive:0;-webkit-box-flex:0;-webkit-flex-grow:0;-ms-flex-positive:0;flex-grow:0;margin:0 20px 0 0;}
+h4.jsx-126278577{font-weight:600;margin:0;font-size:1.1em;}
+time.jsx-126278577{color:#969492;display:block;font-weight:400;font-size:0.8em;margin-top:0.5em;}
+@media screen and (min-width:1024px){.links.jsx-126278577{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-ms-flex-direction:row-reverse;-webkit-flex-direction:row-reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;}.links.jsx-126278577 a{-ms-flex-preferred-size:50%;-webkit-flex-basis:50%;-ms-flex-preferred-size:50%;flex-basis:50%;}.links.jsx-126278577 a:nth-child(2){margin:0;}.links.jsx-126278577 svg{-webkit-transition:all 0.5s;-webkit-transition:all 0.5s;transition:all 0.5s;margin:0 10px 0 0;}@media (hover:hover){.links.jsx-126278577 a:hover svg{-webkit-transform:scale(1.5);-webkit-transform:scale(1.5);-ms-transform:scale(1.5);transform:scale(1.5);}}}</style><style id="__jsx-1766939654">.article.jsx-1766939654{padding:20px;margin:0 auto;}
+@media screen and (min-width:600px){.article.jsx-1766939654{padding:calc(20px) calc(20px * 2);max-width:650px;}}
+@media screen and (min-width:1024px){.article.jsx-1766939654{padding:calc(20px * 2 + 90px) 0 calc(20px * 2);max-width:700px;}}</style><style id="__jsx-1209355388">.footer.jsx-1209355388{background:#ffffff;padding:20px;padding-top:0;padding-bottom:120px;}
+.footer.jsx-1209355388 ul{list-style:none;text-align:center;padding:0;}
+.footer.jsx-1209355388 ul li{color:#969492;font-size:.8em;padding:2px 10px;position:relative;display:inline-block;}
+@media screen and (min-width:1024px){.footer.jsx-1209355388{padding:0 1em 1.5em;max-width:800px;margin:0 auto;}.footer.jsx-1209355388 ul li::after{content:"•";position:absolute;right:calc(5px * -1);}.footer.jsx-1209355388 ul li:last-child::after{content:"";}}</style><style id="__jsx-3017011455">main.jsx-3017011455{min-height:80vh;}</style><style id="__jsx-901573039">html{-webkit-box-sizing:border-box;box-sizing:border-box;}
+*,*:after,*:before{-webkit-box-sizing:inherit;box-sizing:inherit;margin:0;padding:0;}
+body{font-family:Arial, sans-serif;;}
+h1,h2,h3{font-weight:100;line-height:1.1;-webkit-letter-spacing:-0.03em;-moz-letter-spacing:-0.03em;-ms-letter-spacing:-0.03em;letter-spacing:-0.03em;margin:0;}
+h1{-webkit-letter-spacing:-0.04em;-moz-letter-spacing:-0.04em;-ms-letter-spacing:-0.04em;letter-spacing:-0.04em;}
+p{margin:0;}
+strong{font-weight:600;}
+a{-webkit-text-decoration:none;text-decoration:none;color:#666;}
+main{width:auto;display:block;}
+figcaption{text-align:center;font-size:14px;font-style:italic;color:#888;margin-bottom:40px;}</style><title data-react-helmet="true">The RA Summer Exhibition 2011: Priceless or Still Provincial? - Momardi</title><meta data-react-helmet="true" name="description" content="Tuesday Gutierrez. Creative writer, agile content manager and visual artist"/><meta data-react-helmet="true" property="og:url" content="https://momardi.com/the-ra-summer-exhibition-2011-priceless-or-still/"/><meta data-react-helmet="true" property="og:title" content="The RA Summer Exhibition 2011: Priceless or Still Provincial? - Momardi"/><meta data-react-helmet="true" property="og:description" content="Tuesday Gutierrez. Creative writer, agile content manager and visual artist"/><meta data-react-helmet="true" property="og:image" content="https://momardi.comundefined/static/86b9ca57298c1739d5f208b39f2e359f/d927d/Installation-view-of-the-Lecture-Room-in-progress_dy7oew.jpg"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="tuesdaygutz"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#1AA0CD"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link as="script" rel="preload" href="/webpack-runtime-d1d8e972eb3919d6ad52.js"/><link as="script" rel="preload" href="/app-19e66dfda9679ae89fc3.js"/><link as="script" rel="preload" href="/0-b46d511e229ccfe9bbb3.js"/><link as="script" rel="preload" href="/component---src-templates-post-template-js-6193f23506b3bdb852a8.js"/><link rel="preload" href="/static/d/944/path---the-ra-summer-exhibition-2011-priceless-or-still-2-ff-b05-UlxCfeJkvhzBRsdB15o7zFweAQ0.json" as="fetch" crossOrigin="use-credentials"/><meta name="apple-mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-status-bar-style" content="#D0E0D8"/><meta name="apple-mobile-web-app-title" content="Lazywill"/><link rel="apple-touch-icon" href="/icons/apple-icon-57x57.png" sizes="57x57"/><link rel="apple-touch-icon" href="/icons/apple-icon-60x60.png" sizes="60x60"/><link rel="apple-touch-icon" href="/icons/apple-icon-72x72.png" sizes="72x72"/><link rel="apple-touch-icon" href="/icons/apple-icon-76x76.png" sizes="76x76"/><link rel="apple-touch-icon" href="/icons/apple-icon-114x114.png" sizes="114x114"/><link rel="apple-touch-icon" href="/icons/apple-icon-120x120.png" sizes="120x120"/><link rel="apple-touch-icon" href="/icons/apple-icon-144x144.png" sizes="144x144"/><link rel="apple-touch-icon" href="/icons/apple-icon-152x152.png" sizes="152x152"/><link rel="apple-touch-icon" href="/icons/apple-icon-180x180.png" sizes="180x180"/><link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png"/><link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png"/><link rel="icon" type="image/png" sizes="96x96" href="/icons/favicon-96x96.png"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group"><header class="jsx-937100772 header  "><a class="logoType" href="/"><div class="jsx-937100772 type"><h1 class="jsx-937100772">MOMARDI</h1></div></a><nav rel="js-menu" class="jsx-1619051672 menu"><ul class="jsx-1619051672 itemList"><li class="jsx-677817541 item"><a data-slug="/category/" href="/category/"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em"><path d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"></path></svg> <!-- -->Categories</a></li><li class="jsx-677817541 item"><a data-slug="/search/" href="/search/"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg> <!-- -->Search</a></li><li class="jsx-677817541 item"><a data-slug="/about/" href="/about/"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em"><path d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"></path></svg> <!-- -->About</a></li><li class="jsx-677817541 item"><a data-slug="/cv/" href="/cv/"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 384 512" height="1em" width="1em"><path d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm160-14.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"></path></svg> <!-- -->CV</a></li><li class="jsx-677817541 item"><a data-slug="/work/" href="/work/"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em"><path d="M320 336c0 8.84-7.16 16-16 16h-96c-8.84 0-16-7.16-16-16v-48H0v144c0 25.6 22.4 48 48 48h416c25.6 0 48-22.4 48-48V288H320v48zm144-208h-80V80c0-25.6-22.4-48-48-48H176c-25.6 0-48 22.4-48 48v48H48c-25.6 0-48 22.4-48 48v80h512v-80c0-25.6-22.4-48-48-48zm-144 0H192V96h128v32z"></path></svg> <!-- -->Work</a></li><li class="jsx-677817541 item"><a data-slug="/contact/" href="/contact/"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em"><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path></svg> <!-- -->Contact</a></li></ul></nav></header><div class="jsx-937100772 sensor"></div><main class="jsx-3017011455 jsx-901573039"><article class="jsx-1766939654 article"><header><h1 class="jsx-2542452449">The RA Summer Exhibition 2011: Priceless or Still Provincial?</h1><p class="jsx-2703193364 meta"><span class="jsx-2703193364"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" size="18" height="18" width="18"><path d="M12 192h424c6.6 0 12 5.4 12 12v260c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V204c0-6.6 5.4-12 12-12zm436-44v-36c0-26.5-21.5-48-48-48h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v36c0 6.6 5.4 12 12 12h424c6.6 0 12-5.4 12-12z"></path></svg> <!-- -->2011-07-09</span><span class="jsx-2703193364"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" size="18" height="18" width="18"><path d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"></path></svg><a href="/category/exhibits">exhibits</a></span></p></header><div class="jsx-1849375170 bodytext"><p>Inside the show, the first thing that struck me was the hanging sculpture of <strong>Antony Gormley</strong> and <strong>Tony Cragg</strong>´s sculpture. There were several rooms of paintings from amateur and well-known artists and the fact that they were placed side by side was a visual test for anyone who likes art. The words “I Like this, I don´t like that” echoed in the room. <strong>I suggest that you see the RA Summer Exhibition twice</strong>. First, go there without carrying the “List of Works Catalogue” and just let your eye take you to the artwork that appeals to you.You´ll be surprised to know it´s still the same people you´ve always liked.</p>
+<p>
+  <figure class="gatsby-resp-image-figure" style="">
+  
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/94ac509729061fb30473fa5b7c4c8c1f/3a6c9/Jeff-Koons_Coloring-Book2_el2wt3.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 450px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 164.88888888888889%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAhABQDASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAAAAIEBQP/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEAMQAAAB0uValV9no71dgYTfRGQTB//EAB4QAAICAQUBAAAAAAAAAAAAAAECAAMRBBASITEz/9oACAEBAAEFAoWAh1BjWcUVsEy75p63cIDCtK1JAzv/AP/EABcRAAMBAAAAAAAAAAAAAAAAABESICH/2gAIAQMBAT8BTDX/xAAXEQADAQAAAAAAAAAAAAAAAAAQEiBB/9oACAECAQE/AWGR/8QAHxAAAgAFBQAAAAAAAAAAAAAAAAEQESExMgIgYXGR/9oACAEBAAY/Ah8GJPSVu4eD6hJqaMXUts//xAAcEAADAQEBAAMAAAAAAAAAAAAAARExIWEQUXH/2gAIAQEAAT8hSq4xklrStIQeI8o+xs/BtKjqZTm4NFcz6Dd54Z0T8IHA3cX6qMbgQvj/2gAMAwEAAgADAAAAEOzCz3vv/8QAGBEAAwEBAAAAAAAAAAAAAAAAAAERISD/2gAIAQMBAT8QWghE9vH/xAAYEQADAQEAAAAAAAAAAAAAAAAAAREgcf/aAAgBAgEBPxCIUSXWP//EACAQAQACAQQDAQEAAAAAAAAAAAEAESExQWGBEFGRscH/2gAIAQEAAT8QC4E4mUjMklQlRhditdSrQcCtq9/fUV3eEHN2b3E+hQNQ+S0qLRs0Sjr9lGrHcs/ka8piV64j1cqxw45I/gCraHyOWPZdeG3x/9k='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="Jeff Koons Coloring Book2 el2wt3"
+        title="Jeff Koons Hon RA, Coloring Book 1997-2005 Aluminum. 567.7 x 323 x 335cm. Copyright Jeff Koons. Photo: John Bodkin/DawkinsColour"
+        src="/static/94ac509729061fb30473fa5b7c4c8c1f/3a6c9/Jeff-Koons_Coloring-Book2_el2wt3.jpg"
+        srcset="/static/94ac509729061fb30473fa5b7c4c8c1f/c47d9/Jeff-Koons_Coloring-Book2_el2wt3.jpg 200w,
+/static/94ac509729061fb30473fa5b7c4c8c1f/e5963/Jeff-Koons_Coloring-Book2_el2wt3.jpg 400w,
+/static/94ac509729061fb30473fa5b7c4c8c1f/3a6c9/Jeff-Koons_Coloring-Book2_el2wt3.jpg 450w"
+        sizes="(max-width: 450px) 100vw, 450px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    
+  <figcaption class="gatsby-resp-image-figcaption">Jeff Koons Hon RA, Coloring Book 1997-2005 Aluminum. 567.7 x 323 x 335cm. Copyright Jeff Koons. Photo: John Bodkin/DawkinsColour</figcaption>
+  </figure>
+      </p>
+<p><a href="http://www.telegraph.co.uk/culture/art/art-reviews/8562267/Summer-Exhibition-at-the-Royal-Academy-review.html" title="Alistair Sooke">Alistair Sooke of the Telegraph</a> sums up how the RA show has fared for years:</p>
+<p>“Today, suspicion persists that it remains a safe haven for traditional painters who take the “common-sense” view that a picture of a tree must resemble a tree. Yet it strikes me that denigrating the Summer Exhibition is a peculiarly self-flagellating British trait. Nobody could claim that it is cool or cutting-edge. But it is the largest open-submission contemporary art exhibition in the world: this year, the hanging committee vetted more than 12,000 entries from 27 countries.”</p>
+<p>-Alistair Sooke</p>
+<p>
+  <figure class="gatsby-resp-image-figure" style="">
+  
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/86b9ca57298c1739d5f208b39f2e359f/55fd7/Installation-view-of-the-Lecture-Room-in-progress_dy7oew.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 640px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 64.21874999999999%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMEAgX/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/aAAwDAQACEAMQAAAB6CZtStJxP//EABsQAAIBBQAAAAAAAAAAAAAAAAECAAMREiEx/9oACAEBAAEFAgymFhdqiKct9hn/xAAWEQEBAQAAAAAAAAAAAAAAAAAAEQH/2gAIAQMBAT8Bia//xAAWEQEBAQAAAAAAAAAAAAAAAAAAEQH/2gAIAQIBAT8Bq4//xAAYEAACAwAAAAAAAAAAAAAAAAAAIREgQf/aAAgBAQAGPwLRMc0//8QAGxABAAICAwAAAAAAAAAAAAAAAQARIVExcaH/2gAIAQEAAT8hIKAJdwuxx3Kpkq8EEU9Y7Ri5Ln//2gAMAwEAAgADAAAAELzv/8QAFhEBAQEAAAAAAAAAAAAAAAAAAAFR/9oACAEDAQE/EC6P/8QAFREBAQAAAAAAAAAAAAAAAAAAAGH/2gAIAQIBAT8QIP/EABsQAQADAAMBAAAAAAAAAAAAAAEAESExUZGB/9oACAEBAAE/EF4Slma1VdzhxZvg9PNhM7hyDZTeryiwaHdfDyYFQVbP/9k='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="Installation view of the Lecture Room in progress dy7oew"
+        title="Installation view of the Lecture Room in progress. Courtesy Lisa Milroy and Alan Cristea Gallery. Photo: John Bodkin"
+        src="/static/86b9ca57298c1739d5f208b39f2e359f/55fd7/Installation-view-of-the-Lecture-Room-in-progress_dy7oew.jpg"
+        srcset="/static/86b9ca57298c1739d5f208b39f2e359f/e81c0/Installation-view-of-the-Lecture-Room-in-progress_dy7oew.jpg 200w,
+/static/86b9ca57298c1739d5f208b39f2e359f/8e8ea/Installation-view-of-the-Lecture-Room-in-progress_dy7oew.jpg 400w,
+/static/86b9ca57298c1739d5f208b39f2e359f/55fd7/Installation-view-of-the-Lecture-Room-in-progress_dy7oew.jpg 640w"
+        sizes="(max-width: 640px) 100vw, 640px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    
+  <figcaption class="gatsby-resp-image-figcaption">Installation view of the Lecture Room in progress. Courtesy Lisa Milroy and Alan Cristea Gallery. Photo: John Bodkin</figcaption>
+  </figure>
+      </p>
+<p>I didn´t feel that way at all probably because it was my first time to come to the RA show and I have nothing to compare it to. It did not give me the impression that it was pretending to be a major exhibition anyway. It was however, an opportunity to see upcoming artists and be able to buy affordable art if you want to become a future collector.There were prints available for as low as 125 pounds, how great is that?</p>
+<p>
+  <figure class="gatsby-resp-image-figure" style="">
+  
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/233c3dec13c68028456b9bb05f817c2b/55fd7/Installation-view-of-Gallery-III_r7j771.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 640px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 61.71875%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAMABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAMB/8QAFgEBAQEAAAAAAAAAAAAAAAAAAQID/9oADAMBAAIQAxAAAAGVsZXqZP/EABkQAAMBAQEAAAAAAAAAAAAAAAABAgMSE//aAAgBAQABBQJaWdsVUxZo8pOEf//EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oACAEDAQE/AYj/xAAVEQEBAAAAAAAAAAAAAAAAAAAAEv/aAAgBAgEBPwGlP//EABkQAAIDAQAAAAAAAAAAAAAAAABBARAxMv/aAAgBAQAGPwJnRs2z/8QAHBAAAwABBQAAAAAAAAAAAAAAAAERkSExYXGB/9oACAEBAAE/IXpWho2xNX5w5eTsyO2+R//aAAwDAQACAAMAAAAQnP8A/8QAFhEBAQEAAAAAAAAAAAAAAAAAAAER/9oACAEDAQE/ELTT/8QAFhEBAQEAAAAAAAAAAAAAAAAAAAER/9oACAECAQE/EJDD/8QAGxABAAMBAAMAAAAAAAAAAAAAAQARMSFBgbH/2gAIAQEAAT8QdGs2p49RNLhmRBocorJR2SNVK++mf//Z'); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="Installation view of Gallery III r7j771"
+        title="Installation view of Gallery III. Photo: John Bodkin"
+        src="/static/233c3dec13c68028456b9bb05f817c2b/55fd7/Installation-view-of-Gallery-III_r7j771.jpg"
+        srcset="/static/233c3dec13c68028456b9bb05f817c2b/e81c0/Installation-view-of-Gallery-III_r7j771.jpg 200w,
+/static/233c3dec13c68028456b9bb05f817c2b/8e8ea/Installation-view-of-Gallery-III_r7j771.jpg 400w,
+/static/233c3dec13c68028456b9bb05f817c2b/55fd7/Installation-view-of-Gallery-III_r7j771.jpg 640w"
+        sizes="(max-width: 640px) 100vw, 640px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    
+  <figcaption class="gatsby-resp-image-figcaption">Installation view of Gallery III. Photo: John Bodkin</figcaption>
+  </figure>
+      </p>
+<p>Whether the RA show is useless or boring for some, it has served to confirm to myself that I´m still moved by the greats and other newcomers in my life – <strong>Antony Gormley, Anish Kapoor, Tony Cragg, Anselm Kiefer and Edward de Vall</strong> to whom B introduced me to. Most of the things I loved are not being sold according to the catalogue and were only there for display. (Even if they were, I couldn´t afford them anyway.) B says my taste is very expensive. I told her that´s  not true at all because in reality, my taste is priceless.</p>
+<div>
+          <div
+            class="gatsby-resp-iframe-wrapper"
+            style="padding-bottom: 78.90625%; position: relative; height: 0; overflow: hidden;margin-bottom: 2em"
+          >
+            <iframe allowfullscreen class="youtube-player" frameborder="0" src="//www.youtube.com/embed/Hohytde1axU?wmode=transparent&amp;fs=1&amp;hl=en&amp;modestbranding=1&amp;iv_load_policy=3&amp;showsearch=0&amp;rel=0&amp;theme=dark" title="YouTube video player" type="text/html" style="
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+          "></iframe>
+          </div>
+          </div>
+<figcaption>Royal Academy Summer Exhibition 2011</figcaption>
+<p>Other artworks to see in the RA Show:</p>
+<p>
+  <figure class="gatsby-resp-image-figure" style="">
+  
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/e560cc07826dff3c8761a283494a359b/55fd7/Bill-Woodrow-RA_Pillarbox-Invigilator_hfjbl2.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 640px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 70.46874999999999%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAOABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIEAwX/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAv/aAAwDAQACEAMQAAAB66YLNVEwf//EABgQAQEBAQEAAAAAAAAAAAAAAAARIQES/9oACAEBAAEFArHrWqvX/8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAIAQMBAT8BiP/EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oACAECAQE/Aar/xAAWEAADAAAAAAAAAAAAAAAAAAABECD/2gAIAQEABj8Cgr//xAAZEAADAQEBAAAAAAAAAAAAAAAAAREhMWH/2gAIAQEAAT8happNbhRu7ecEzSM9j//aAAwDAQACAAMAAAAQg+//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/EA//xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAgEBPxAh/8QAHRABAAMAAQUAAAAAAAAAAAAAAQARITFBUXHw8f/aAAgBAQABPxAy21AAtVmhZycYe3Hcc67FGuO75i9VZ0j8c//Z'); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="Bill Woodrow RA Pillarbox Invigilator hfjbl2"
+        title="Bill Woodrow RA_Pillarbox Invigilator. Copyright The Artist. Photo: Prudence Cuming Associates Ltd"
+        src="/static/e560cc07826dff3c8761a283494a359b/55fd7/Bill-Woodrow-RA_Pillarbox-Invigilator_hfjbl2.jpg"
+        srcset="/static/e560cc07826dff3c8761a283494a359b/e81c0/Bill-Woodrow-RA_Pillarbox-Invigilator_hfjbl2.jpg 200w,
+/static/e560cc07826dff3c8761a283494a359b/8e8ea/Bill-Woodrow-RA_Pillarbox-Invigilator_hfjbl2.jpg 400w,
+/static/e560cc07826dff3c8761a283494a359b/55fd7/Bill-Woodrow-RA_Pillarbox-Invigilator_hfjbl2.jpg 640w"
+        sizes="(max-width: 640px) 100vw, 640px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    
+  <figcaption class="gatsby-resp-image-figcaption">Bill Woodrow RA_Pillarbox Invigilator. Copyright The Artist. Photo: Prudence Cuming Associates Ltd</figcaption>
+  </figure>
+      </p>
+<p>
+  <figure class="gatsby-resp-image-figure" style="">
+  
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/54f7741ce26d4d0e3447c98c3ffb03e8/3a6c9/Cindy-Sherman-Hon-RA_Untitled-472_c5iqyd.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 450px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 133.77777777777777%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAbABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQBAgMF/8QAFgEBAQEAAAAAAAAAAAAAAAAAAQAC/9oADAMBAAIQAxAAAAHh75OGriYUMK7ssQJ//8QAHhAAAgEDBQAAAAAAAAAAAAAAAQIAAwQREBIhMkH/2gAIAQEAAQUCxwVZUS2NRRkxzvXAlOeN2TQz/8QAFREBAQAAAAAAAAAAAAAAAAAAARD/2gAIAQMBAT8BIT//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAECAQE/AR//xAAdEAACAgEFAAAAAAAAAAAAAAAAAREhAiAyQVGR/9oACAEBAAY/ApLVPklNekGK6Nw9X//EABsQAAIDAQEBAAAAAAAAAAAAAAABESExcVFB/9oACAEBAAE/IQISSmyhWNmLFXyO4Xo/Gupn0G7G3RtJ00f/2gAMAwEAAgADAAAAEFQezP/EABcRAQEBAQAAAAAAAAAAAAAAAAEQESH/2gAIAQMBAT8QBkXJ/8QAFREBAQAAAAAAAAAAAAAAAAAAARD/2gAIAQIBAT8QYk//xAAfEAEBAAICAgMBAAAAAAAAAAABEQAhMUGhsXGBkdH/2gAIAQEAAT8QHFEWc4AQKHfH8ycuwgLNYYkm1esTrE1e0l/Mo1FyXX6uGPwHnIQd85BF5T5xiR6PeKm3TiWl3v25/9k='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="Cindy Sherman Hon RA Untitled 472 c5iqyd"
+        title="Cindy Sherman Hon RA_Untitled #472. 2008, colour photograph, 169.9 x 127cm, edition 3-6. Courtesy of the artist, Metro Pictures and Spruth Magers Berlin London"
+        src="/static/54f7741ce26d4d0e3447c98c3ffb03e8/3a6c9/Cindy-Sherman-Hon-RA_Untitled-472_c5iqyd.jpg"
+        srcset="/static/54f7741ce26d4d0e3447c98c3ffb03e8/c47d9/Cindy-Sherman-Hon-RA_Untitled-472_c5iqyd.jpg 200w,
+/static/54f7741ce26d4d0e3447c98c3ffb03e8/e5963/Cindy-Sherman-Hon-RA_Untitled-472_c5iqyd.jpg 400w,
+/static/54f7741ce26d4d0e3447c98c3ffb03e8/3a6c9/Cindy-Sherman-Hon-RA_Untitled-472_c5iqyd.jpg 450w"
+        sizes="(max-width: 450px) 100vw, 450px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    
+  <figcaption class="gatsby-resp-image-figcaption">Cindy Sherman Hon RA_Untitled #472. 2008, colour photograph, 169.9 x 127cm, edition 3-6. Courtesy of the artist, Metro Pictures and Spruth Magers Berlin London</figcaption>
+  </figure>
+      </p>
+<p>
+  <figure class="gatsby-resp-image-figure" style="">
+  
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/6731484d2bd0d644df39d4c591bf5775/3a6c9/Gary-Hume-RA_The-Cradle_pqujdp.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 450px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 101.11111111111111%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAQCAwH/xAAXAQEBAQEAAAAAAAAAAAAAAAAAAwEC/9oADAMBAAIQAxAAAAGHN/Pisi0b5lM9B//EABsQAAICAwEAAAAAAAAAAAAAAAECABEQEjJB/9oACAEBAAEFAmFHDKCdFlARuvZ//8QAFxEAAwEAAAAAAAAAAAAAAAAAAAEREP/aAAgBAwEBPwGlFn//xAAWEQEBAQAAAAAAAAAAAAAAAAASABD/2gAIAQIBAT8BEd//xAAWEAADAAAAAAAAAAAAAAAAAAABECD/2gAIAQEABj8Cov8A/8QAHBABAAIBBQAAAAAAAAAAAAAAAQAREDFBUaHB/9oACAEBAAE/IbEwKbsa2aR4IAoJ2J4x/9oADAMBAAIAAwAAABCMJ/z/xAAWEQEBAQAAAAAAAAAAAAAAAAABEDH/2gAIAQMBAT8QBGJ//8QAGREAAwADAAAAAAAAAAAAAAAAAAEREDFR/9oACAECAQE/EG1qL6LWP//EABwQAQADAAIDAAAAAAAAAAAAAAEAESExQWGBkf/aAAgBAQABPxDO27sb6m1yy2O7IBZJra9RHcfDKwAi+iDuDZ//2Q=='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="Gary Hume RA The Cradle pqujdp"
+        title="Gary Hume RA, The Cradle. 2011, gloss on aluminium, 196 x 198 x 2.2 cm. Copyright Gary Hume, Photographer Steve White"
+        src="/static/6731484d2bd0d644df39d4c591bf5775/3a6c9/Gary-Hume-RA_The-Cradle_pqujdp.jpg"
+        srcset="/static/6731484d2bd0d644df39d4c591bf5775/c47d9/Gary-Hume-RA_The-Cradle_pqujdp.jpg 200w,
+/static/6731484d2bd0d644df39d4c591bf5775/e5963/Gary-Hume-RA_The-Cradle_pqujdp.jpg 400w,
+/static/6731484d2bd0d644df39d4c591bf5775/3a6c9/Gary-Hume-RA_The-Cradle_pqujdp.jpg 450w"
+        sizes="(max-width: 450px) 100vw, 450px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    
+  <figcaption class="gatsby-resp-image-figcaption">Gary Hume RA, The Cradle. 2011, gloss on aluminium, 196 x 198 x 2.2 cm. Copyright Gary Hume, Photographer Steve White</figcaption>
+  </figure>
+      </p>
+<p>Related links:</p>
+<ul>
+<li><a href="http://www.telegraph.co.uk/culture/art/art-reviews/8562267/Summer-Exhibition-at-the-Royal-Academy-review.html" title="Alistair Sooke">Summer exhibition at the Royal Academy, review by Alistair Sooke</a></li>
+<li><a href="http://belcheresque.wordpress.com/" title="Beyond the Frame">RA Summer Show Decomposes by Beyond the Frame blog</a></li>
+</ul></div><footer><div>Loading...</div><div class="jsx-4158949110 author"><div class="jsx-4158949110 avatar"><img src="/static/avatar-9fed4a6a589d12d55cab4b5621bd21b3.jpg" alt="Momardi - Tuesday Gutierrez" class="jsx-4158949110"/></div><div class="jsx-4158949110 note"><p>Article by <strong>Tuesday Gutierrez</strong>. Former digital marketing manager for the London 2012 Festival, the largest UK festival ever staged. This is her blog about contemporary art, design, film, photography and all that move her soul.</p></div></div><div class="jsx-126278577 links"><a href="/longing-for-the-minimalist-life-fred-sandback-at-the-whitechapel-gallery/"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em"><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"></path></svg><h4 class="jsx-126278577">Longing for the Minimalist Life: Fred Sandback at the WhiteChapel Gallery<!-- --> <time class="jsx-126278577">2011-07-16<!-- --> </time></h4></a><a href="/the-gagosian-guards-john-chamberlains-sculpture/"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em"><path d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"></path></svg><h4 class="jsx-126278577">The Gagosian Guards &amp; John Chamberlain´s Sculpture<!-- --> <time class="jsx-126278577">2011-07-02</time></h4></a></div></footer></article></main><footer class="jsx-1209355388 footer"><ul>
+<li>All content copyright by MOMARDI - Tuesday Gutierrez © 2018 All rights reserved</li>
+<li>Copywriter, Content Manager, Strategy, Branding and Marketing || Proudly published with <a href="https://www.gatsbyjs.org/">GatsbyJS</a> and <a href="https://github.com">Github</a></li>
+</ul></footer></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-268014-11', 'auto', {});
+      
+      }
+      </script><script id="gatsby-script-loader">/*<![CDATA[*/window.page={"componentChunkName":"component---src-templates-post-template-js","jsonName":"the-ra-summer-exhibition-2011-priceless-or-still-2ff","path":"/the-ra-summer-exhibition-2011-priceless-or-still/"};window.dataPath="944/path---the-ra-summer-exhibition-2011-priceless-or-still-2-ff-b05-UlxCfeJkvhzBRsdB15o7zFweAQ0";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app.8b1cc9920e75fff049f7.css","/app-19e66dfda9679ae89fc3.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-8fec9522ed849d38d6e1.js"],"component---src-templates-category-template-js":["/component---src-templates-category-template-js-bbbc53f0d10a363d3916.js"],"component---src-templates-post-template-js":["/component---src-templates-post-template-js.b6f197430f783b3e67aa.css","/component---src-templates-post-template-js-6193f23506b3bdb852a8.js"],"component---src-templates-page-template-js":["/component---src-templates-page-template-js-3207c1dd6e884134e246.js"],"component---src-templates-index-js":["/component---src-templates-index-js-206102ca59d9d3ce11c5.js"],"component---src-pages-404-js":["/component---src-pages-404-js-718506eefd248f6f227f.js"],"component---src-pages-category-js":["/component---src-pages-category-js-17964a73e7bbfeb80cbf.js"],"component---src-pages-search-js":["/component---src-pages-search-js-42ae346864b4602c817e.js"]};/*]]>*/</script><script src="/component---src-templates-post-template-js-6193f23506b3bdb852a8.js" async=""></script><script src="/0-b46d511e229ccfe9bbb3.js" async=""></script><script src="/app-19e66dfda9679ae89fc3.js" async=""></script><script src="/webpack-runtime-d1d8e972eb3919d6ad52.js" async=""></script></body></html>

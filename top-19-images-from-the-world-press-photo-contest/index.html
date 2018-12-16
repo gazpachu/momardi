@@ -1,0 +1,822 @@
+<!DOCTYPE html><html lang="en" prefix="og: http://ogp.me/ns#"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/component---src-templates-post-template-js.b6f197430f783b3e67aa.css">code[class*=language-],pre[class*=language-]{color:#f8f8f2;background:none;text-shadow:0 1px rgba(0,0,0,.3);font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto;border-radius:.3em}:not(pre)>code[class*=language-],pre[class*=language-]{background:#272822}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#f8f8f2}.namespace{opacity:.7}.token.constant,.token.deleted,.token.property,.token.symbol,.token.tag{color:#f92672}.token.boolean,.token.number{color:#ae81ff}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#a6e22e}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url,.token.variable{color:#f8f8f2}.token.atrule,.token.attr-value,.token.class-name,.token.function{color:#e6db74}.token.keyword{color:#66d9ef}.token.important,.token.regex{color:#fd971f}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}</style><style data-href="/app.8b1cc9920e75fff049f7.css">@font-face{font-family:Open Sans;font-style:normal;font-display:swap;font-weight:300;src:local("Open Sans Light "),local("Open Sans-Light"),url(/static/open-sans-latin-300-60c866748ff15f5b347fdba64596b1b1.woff2) format("woff2"),url(/static/open-sans-latin-300-521d17bc9f3526c690e8ada6eee55bec.woff) format("woff")}@font-face{font-family:Open Sans;font-style:italic;font-display:swap;font-weight:300;src:local("Open Sans Light italic"),local("Open Sans-Lightitalic"),url(/static/open-sans-latin-300italic-06bbd3188b34820cd83a0e0b3d0a6f57.woff2) format("woff2"),url(/static/open-sans-latin-300italic-8a648ff38ded89ea15916e84529d62d3.woff) format("woff")}@font-face{font-family:Open Sans;font-style:normal;font-display:swap;font-weight:400;src:local("Open Sans Regular "),local("Open Sans-Regular"),url(/static/open-sans-latin-400-cffb686d7d2f4682df8342bd4d276e09.woff2) format("woff2"),url(/static/open-sans-latin-400-bf2d0783515b7d75c35bde69e01b3135.woff) format("woff")}@font-face{font-family:Open Sans;font-style:italic;font-display:swap;font-weight:400;src:local("Open Sans Regular italic"),local("Open Sans-Regularitalic"),url(/static/open-sans-latin-400italic-987032ea5d57c93d8da215678eae3b86.woff2) format("woff2"),url(/static/open-sans-latin-400italic-db70d0b9cb27ada1a260a2b35e756b8b.woff) format("woff")}@font-face{font-family:Open Sans;font-style:normal;font-display:swap;font-weight:600;src:local("Open Sans SemiBold "),local("Open Sans-SemiBold"),url(/static/open-sans-latin-600-223a277bd88d8a90c8cdf24cda0ad5f5.woff2) format("woff2"),url(/static/open-sans-latin-600-1cd5320f8937d337b61d5117cf9d7b28.woff) format("woff")}@font-face{font-family:Open Sans;font-style:italic;font-display:swap;font-weight:600;src:local("Open Sans SemiBold italic"),local("Open Sans-SemiBolditalic"),url(/static/open-sans-latin-600italic-4950a7205f0b5cefe41fc03ac346e236.woff2) format("woff2"),url(/static/open-sans-latin-600italic-318ea1ada4102c0704a0637228dcad03.woff) format("woff")}@font-face{font-family:Open Sans;font-style:normal;font-display:swap;font-weight:700;src:local("Open Sans Bold "),local("Open Sans-Bold"),url(/static/open-sans-latin-700-d08c09f2f169f4a6edbcf8b8d1636cb4.woff2) format("woff2"),url(/static/open-sans-latin-700-623e3205570002af47fc2b88f9335d19.woff) format("woff")}@font-face{font-family:Open Sans;font-style:italic;font-display:swap;font-weight:700;src:local("Open Sans Bold italic"),local("Open Sans-Bolditalic"),url(/static/open-sans-latin-700italic-c02f5da6e82e1efe0b45841bfd49ce37.woff2) format("woff2"),url(/static/open-sans-latin-700italic-72e19cbb0e38c6773a7751156752cec4.woff) format("woff")}@font-face{font-family:Open Sans;font-style:normal;font-display:swap;font-weight:800;src:local("Open Sans ExtraBold "),local("Open Sans-ExtraBold"),url(/static/open-sans-latin-800-aaeffaf205b9bbb09920089a14dbe9e8.woff2) format("woff2"),url(/static/open-sans-latin-800-c6aa0c4a601fb6ac66f8253fa594dff5.woff) format("woff")}@font-face{font-family:Open Sans;font-style:italic;font-display:swap;font-weight:800;src:local("Open Sans ExtraBold italic"),local("Open Sans-ExtraBolditalic"),url(/static/open-sans-latin-800italic-6b3973ffe02bb6a8be0f8453506ec032.woff2) format("woff2"),url(/static/open-sans-latin-800italic-79b58175343190550489efe46a7f1138.woff) format("woff")}</style><meta name="generator" content="Gatsby 2.0.60"/><style id="__jsx-677817541">.item.jsx-677817541{background:transparent;-webkit-transition:all 0.5s;-webkit-transition:all 0.5s;transition:all 0.5s;display:-webkit-box;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}
+.item.jsx-677817541 a{padding:10px;display:-webkit-box;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}
+.item.jsx-677817541 svg{margin:0 5px 0 0;opacity:0.3;}
+@media screen and (max-width:1023px){.jsx-677817541:not(.homepage) .item.jsx-677817541 a{color:#ffffff;}}
+@media screen and (min-width:1024px){.item.jsx-677817541 a{color:#3e3e3c;padding:10px;-webkit-transition:all 0.5s;-webkit-transition:all 0.5s;transition:all 0.5s;border-radius:5px;}.homepage:not(.fixed) .item.jsx-677817541 a{color:#ffffff;}.item.jsx-677817541 a:hover{color:#709425;background:rgba(255,255,255,0.4);}.item.jsx-677817541 svg{-webkit-transition:all 0.5s;-webkit-transition:all 0.5s;transition:all 0.5s;}.item.jsx-677817541:hover svg{fill:#709425;opacity:1;}.hero .item.jsx-677817541:hover svg svg{fill:green;}}</style><style id="__jsx-1619051672">.menu.jsx-1619051672{-webkit-box-align:center;-ms-flex-align:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-flex:1;-ms-flex-positive:1;-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1;left:0;padding:0 10px;position:fixed;width:100%;z-index:1;-webkit-transition:all 0.5s;-webkit-transition:all 0.5s;transition:all 0.5s;}
+.itemList.jsx-1619051672{display:-webkit-box;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;list-style:none;margin:0;padding:0;position:relative;width:100%;}
+@media screen and (max-width:1023px){.menu.jsx-1619051672{position:static;position:initial;}}
+@media screen and (min-width:1024px){.menu.jsx-1619051672{border-top:none;background:transparent;display:-webkit-box;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;position:relative;-webkit-box-pack:end;-ms-flex-pack:end;-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end;padding-left:50px;-webkit-transition:none;-webkit-transition:none;transition:none;}.itemList.jsx-1619051672{-webkit-box-pack:end;-ms-flex-pack:end;-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end;padding:0;}}</style><style id="__jsx-937100772">.header.jsx-937100772{background-color:#ffffff;position:relative;top:0;width:100%;}
+.header.homepage.jsx-937100772{position:absolute;background-color:transparent;}
+h1.jsx-937100772{font-size:2.2em;font-weight:100;margin:0 0 5px 0;}
+.sensor.jsx-937100772{display:block;position:absolute;bottom:0;z-index:1;left:0;right:0;height:1px;top:80px;}
+@media screen and (min-width:600px){.header.jsx-937100772{padding:20px;}}
+@media screen and (max-width:1023px){.header.jsx-937100772{text-align:center;padding:20px;}.header.homepage.jsx-937100772 .logo.jsx-937100772{border:none;}.header.homepage.jsx-937100772 a.logoType,.header.homepage.jsx-937100772 h1.jsx-937100772{color:#ffffff;}}
+@media screen and (min-width:1024px){.header.jsx-937100772{-webkit-box-align:center;-ms-flex-align:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background-color:#ffffff;display:-webkit-box;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;position:absolute;top:0;width:100%;-webkit-box-pack:justify;-ms-flex-pack:justify;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-transition:padding 0.5s;-webkit-transition:padding 0.5s;transition:padding 0.5s;}.header.fixed.jsx-937100772{height:50px;;background-color:#ffffff;left:0;padding:0 20px;position:fixed;top:0;width:100%;z-index:1;border-bottom:1px solid #ecebea;}.header.fixed.jsx-937100772 h1.jsx-937100772{margin:0 0 2px 0;}.header.jsx-937100772 a.logoType{-webkit-box-align:center;-ms-flex-align:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:"column";-webkit-flex-direction:"column";-ms-flex-direction:"column";flex-direction:"column";color:#3e3e3c;}.header.jsx-937100772 a.logoType .logo.jsx-937100772{-ms-flex-negative:0;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;}.header.homepage.jsx-937100772:not(.fixed) a.logoType,.header.homepage.jsx-937100772:not(.fixed) h1.jsx-937100772{color:#ffffff;}.header.jsx-937100772 a.logoType{text-align:left;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-ms-flex-negative:0;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;width:auto;}.logo.jsx-937100772{margin:0 20px 0 0;}.fixed.jsx-937100772 .logo.jsx-937100772{height:36px;width:36px;}.header.homepage.jsx-937100772:not(.fixed) .logo.jsx-937100772{border:none;}}</style><style id="__jsx-2542452449">h1.jsx-2542452449{font-size:2.2em;margin:0 0 40px 0;-webkit-animation-name:headlineEntry;-webkit-animation-name:headlineEntry-jsx-2542452449;animation-name:headlineEntry-jsx-2542452449;-webkit-animation-duration:1s;-webkit-animation-duration:1s;animation-duration:1s;}
+h1.jsx-2542452449 span{font-weight:400;display:block;font-size:0.5em;-webkit-letter-spacing:0;-moz-letter-spacing:0;-ms-letter-spacing:0;letter-spacing:0;margin:0 0 5px 0;}
+h1.jsx-2542452449 svg{height:0.75em;fill:#709425;}
+@-webkit-keyframes headlineEntry{from.jsx-2542452449{opacity:0.5;}to.jsx-2542452449{opacity:1;}}
+@-webkit-keyframes headlineEntry-jsx-2542452449{from{opacity:0.5;}to{opacity:1;}}
+@keyframes headlineEntry-jsx-2542452449{from{opacity:0.5;}to{opacity:1;}}
+@media screen and (min-width:600px){h1.jsx-2542452449{font-size:calc(2em * 1.2);}}
+@media screen and (min-width:1024px){h1.jsx-2542452449{font-size:calc(2em * 1.4);}}</style><style id="__jsx-2703193364">.meta.jsx-2703193364{display:-webkit-box;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-flow:row wrap;-webkit-flex-flow:row wrap;-ms-flex-flow:row wrap;flex-flow:row wrap;font-size:0.8em;margin:20px 0;background:transparent;}
+.meta.jsx-2703193364 svg{fill:#709425;margin:0 5px 0 0;}
+.meta.jsx-2703193364 span.jsx-2703193364{-webkit-box-align:center;-ms-flex-align:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;text-transform:uppercase;margin:5px 10px 5px 0;}
+@media screen and (min-width:600px){.meta.jsx-2703193364{margin:calc(20px * 1.5) 0 20px;}}</style><style id="__jsx-1849375170">.bodytext.jsx-1849375170{-webkit-animation-name:bodytextEntry;-webkit-animation-name:bodytextEntry-jsx-1849375170;animation-name:bodytextEntry-jsx-1849375170;-webkit-animation-duration:1s;-webkit-animation-duration:1s;animation-duration:1s;}
+.bodytext.jsx-1849375170 h2,.bodytext.jsx-1849375170 h3{margin:1.5em 0 1em;}
+.bodytext.jsx-1849375170 h2{line-height:1.2;font-size:1.7em;}
+.bodytext.jsx-1849375170 h3{font-size:1.35em;line-height:1.3;}
+.bodytext.jsx-1849375170 p{font-size:1.1em;line-height:1.6;margin:0 0 1.5em;}
+.bodytext.jsx-1849375170 ul{list-style:circle;margin:0 0 1.5em;padding:0 0 0 1.5em;}
+.bodytext.jsx-1849375170 li{margin:0.7em 0;line-height:1.5;}
+.bodytext.jsx-1849375170 a{font-weight:600;color:#709425;-webkit-text-decoration:underline;text-decoration:underline;}
+.bodytext.jsx-1849375170 a.gatsby-resp-image-link{border:0;display:block;margin:1em 0;overflow:hidden;}
+.bodytext.jsx-1849375170 code.language-text{background:#ecebea;text-shadow:none;color:inherit;padding:0.1em 0.3em 0.2em;border-radius:0.1em;}
+@-webkit-keyframes bodytextEntry{from.jsx-1849375170{opacity:0;}to.jsx-1849375170{opacity:1;}}
+@-webkit-keyframes bodytextEntry-jsx-1849375170{from{opacity:0;}to{opacity:1;}}
+@keyframes bodytextEntry-jsx-1849375170{from{opacity:0;}to{opacity:1;}}</style><style id="__jsx-4158949110">.author.jsx-4158949110{margin:40px 0;padding:40px 0;border-top:1px solid #ecebea;border-bottom:1px solid #ecebea;}
+.avatar.jsx-4158949110{float:left;border-radius:65% 75%;border:1px solid #ecebea;display:inline-block;height:70px;margin:0 20px 0 0;overflow:hidden;width:70px;}
+.avatar.jsx-4158949110 img.jsx-4158949110{width:100%;}
+.note.jsx-4158949110{font-size:0.9em;line-height:1.6;}
+@media screen and (min-width:600px){.author.jsx-4158949110{display:-webkit-box;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}.avatar.jsx-4158949110{-webkit-box-flex:0;-ms-flex:0 0 auto;-webkit-flex:0 0 auto;-ms-flex:0 0 auto;flex:0 0 auto;}}</style><style id="__jsx-126278577">.links.jsx-126278577{display:-webkit-box;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;padding:0 20px 40px;border-bottom:1px solid #ecebea;margin:0 0 40px 0;}
+.links.jsx-126278577 a{display:-webkit-box;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}
+.links.jsx-126278577 a:nth-child(2){margin:20px 0 0;}
+.links.jsx-126278577 svg{fill:orange;width:20px;height:20px;-ms-flex-negative:0;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;-webkit-box-flex:0;-ms-flex-positive:0;-webkit-box-flex:0;-webkit-flex-grow:0;-ms-flex-positive:0;flex-grow:0;margin:0 20px 0 0;}
+h4.jsx-126278577{font-weight:600;margin:0;font-size:1.1em;}
+time.jsx-126278577{color:#969492;display:block;font-weight:400;font-size:0.8em;margin-top:0.5em;}
+@media screen and (min-width:1024px){.links.jsx-126278577{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-ms-flex-direction:row-reverse;-webkit-flex-direction:row-reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;}.links.jsx-126278577 a{-ms-flex-preferred-size:50%;-webkit-flex-basis:50%;-ms-flex-preferred-size:50%;flex-basis:50%;}.links.jsx-126278577 a:nth-child(2){margin:0;}.links.jsx-126278577 svg{-webkit-transition:all 0.5s;-webkit-transition:all 0.5s;transition:all 0.5s;margin:0 10px 0 0;}@media (hover:hover){.links.jsx-126278577 a:hover svg{-webkit-transform:scale(1.5);-webkit-transform:scale(1.5);-ms-transform:scale(1.5);transform:scale(1.5);}}}</style><style id="__jsx-1766939654">.article.jsx-1766939654{padding:20px;margin:0 auto;}
+@media screen and (min-width:600px){.article.jsx-1766939654{padding:calc(20px) calc(20px * 2);max-width:650px;}}
+@media screen and (min-width:1024px){.article.jsx-1766939654{padding:calc(20px * 2 + 90px) 0 calc(20px * 2);max-width:700px;}}</style><style id="__jsx-1209355388">.footer.jsx-1209355388{background:#ffffff;padding:20px;padding-top:0;padding-bottom:120px;}
+.footer.jsx-1209355388 ul{list-style:none;text-align:center;padding:0;}
+.footer.jsx-1209355388 ul li{color:#969492;font-size:.8em;padding:2px 10px;position:relative;display:inline-block;}
+@media screen and (min-width:1024px){.footer.jsx-1209355388{padding:0 1em 1.5em;max-width:800px;margin:0 auto;}.footer.jsx-1209355388 ul li::after{content:"•";position:absolute;right:calc(5px * -1);}.footer.jsx-1209355388 ul li:last-child::after{content:"";}}</style><style id="__jsx-3017011455">main.jsx-3017011455{min-height:80vh;}</style><style id="__jsx-901573039">html{-webkit-box-sizing:border-box;box-sizing:border-box;}
+*,*:after,*:before{-webkit-box-sizing:inherit;box-sizing:inherit;margin:0;padding:0;}
+body{font-family:Arial, sans-serif;;}
+h1,h2,h3{font-weight:100;line-height:1.1;-webkit-letter-spacing:-0.03em;-moz-letter-spacing:-0.03em;-ms-letter-spacing:-0.03em;letter-spacing:-0.03em;margin:0;}
+h1{-webkit-letter-spacing:-0.04em;-moz-letter-spacing:-0.04em;-ms-letter-spacing:-0.04em;letter-spacing:-0.04em;}
+p{margin:0;}
+strong{font-weight:600;}
+a{-webkit-text-decoration:none;text-decoration:none;color:#666;}
+main{width:auto;display:block;}
+figcaption{text-align:center;font-size:14px;font-style:italic;color:#888;margin-bottom:40px;}</style><title data-react-helmet="true">Top 19 images from the World Press Photo Contest - Southbank Centre - Momardi</title><meta data-react-helmet="true" name="description" content="Tuesday Gutierrez. Creative writer, agile content manager and visual artist"/><meta data-react-helmet="true" property="og:url" content="https://momardi.com/top-19-images-from-the-world-press-photo-contest/"/><meta data-react-helmet="true" property="og:title" content="Top 19 images from the World Press Photo Contest - Southbank Centre - Momardi"/><meta data-react-helmet="true" property="og:description" content="Tuesday Gutierrez. Creative writer, agile content manager and visual artist"/><meta data-react-helmet="true" property="og:image" content="https://momardi.comundefined/static/ba1cec8ea291807772336847ff2f2db1/d927d/16_Yuri-Kozyrev_tqi1gk.jpg"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="tuesdaygutz"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#1AA0CD"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link as="script" rel="preload" href="/webpack-runtime-d1d8e972eb3919d6ad52.js"/><link as="script" rel="preload" href="/app-19e66dfda9679ae89fc3.js"/><link as="script" rel="preload" href="/0-b46d511e229ccfe9bbb3.js"/><link as="script" rel="preload" href="/component---src-templates-post-template-js-6193f23506b3bdb852a8.js"/><link rel="preload" href="/static/d/789/path---top-19-images-from-the-world-press-photo-contest-8-da-3aa-ZyK2FcB8uaV4SSrMv5kWSNF1I.json" as="fetch" crossOrigin="use-credentials"/><meta name="apple-mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-status-bar-style" content="#D0E0D8"/><meta name="apple-mobile-web-app-title" content="Lazywill"/><link rel="apple-touch-icon" href="/icons/apple-icon-57x57.png" sizes="57x57"/><link rel="apple-touch-icon" href="/icons/apple-icon-60x60.png" sizes="60x60"/><link rel="apple-touch-icon" href="/icons/apple-icon-72x72.png" sizes="72x72"/><link rel="apple-touch-icon" href="/icons/apple-icon-76x76.png" sizes="76x76"/><link rel="apple-touch-icon" href="/icons/apple-icon-114x114.png" sizes="114x114"/><link rel="apple-touch-icon" href="/icons/apple-icon-120x120.png" sizes="120x120"/><link rel="apple-touch-icon" href="/icons/apple-icon-144x144.png" sizes="144x144"/><link rel="apple-touch-icon" href="/icons/apple-icon-152x152.png" sizes="152x152"/><link rel="apple-touch-icon" href="/icons/apple-icon-180x180.png" sizes="180x180"/><link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png"/><link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png"/><link rel="icon" type="image/png" sizes="96x96" href="/icons/favicon-96x96.png"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group"><header class="jsx-937100772 header  "><a class="logoType" href="/"><div class="jsx-937100772 type"><h1 class="jsx-937100772">MOMARDI</h1></div></a><nav rel="js-menu" class="jsx-1619051672 menu"><ul class="jsx-1619051672 itemList"><li class="jsx-677817541 item"><a data-slug="/category/" href="/category/"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em"><path d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"></path></svg> <!-- -->Categories</a></li><li class="jsx-677817541 item"><a data-slug="/search/" href="/search/"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg> <!-- -->Search</a></li><li class="jsx-677817541 item"><a data-slug="/about/" href="/about/"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em"><path d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"></path></svg> <!-- -->About</a></li><li class="jsx-677817541 item"><a data-slug="/cv/" href="/cv/"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 384 512" height="1em" width="1em"><path d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm160-14.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"></path></svg> <!-- -->CV</a></li><li class="jsx-677817541 item"><a data-slug="/work/" href="/work/"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em"><path d="M320 336c0 8.84-7.16 16-16 16h-96c-8.84 0-16-7.16-16-16v-48H0v144c0 25.6 22.4 48 48 48h416c25.6 0 48-22.4 48-48V288H320v48zm144-208h-80V80c0-25.6-22.4-48-48-48H176c-25.6 0-48 22.4-48 48v48H48c-25.6 0-48 22.4-48 48v80h512v-80c0-25.6-22.4-48-48-48zm-144 0H192V96h128v32z"></path></svg> <!-- -->Work</a></li><li class="jsx-677817541 item"><a data-slug="/contact/" href="/contact/"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em"><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path></svg> <!-- -->Contact</a></li></ul></nav></header><div class="jsx-937100772 sensor"></div><main class="jsx-3017011455 jsx-901573039"><article class="jsx-1766939654 article"><header><h1 class="jsx-2542452449">Top 19 images from the World Press Photo Contest - Southbank Centre</h1><p class="jsx-2703193364 meta"><span class="jsx-2703193364"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" size="18" height="18" width="18"><path d="M12 192h424c6.6 0 12 5.4 12 12v260c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V204c0-6.6 5.4-12 12-12zm436-44v-36c0-26.5-21.5-48-48-48h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v36c0 6.6 5.4 12 12 12h424c6.6 0 12-5.4 12-12z"></path></svg> <!-- -->2012-11-23</span><span class="jsx-2703193364"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" size="18" height="18" width="18"><path d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"></path></svg><a href="/category/exhibits">exhibits</a></span></p></header><div class="jsx-1849375170 bodytext"><p>In a BBC documentary of his life and works, photographer <strong>William Klein</strong> said that everyone seems to be into photography these days. To quote loosely, he says what’s really fascinating is that people are producing things that are ‘avant-garde’ which professional photographers do not even dream of doing. </p>
+<p>I’m part of this community of instant snappers – with my Lumix and SLR everywhere I go just to capture pretty much ‘whatever’ without having a care in the world whether the picture is good enough. I am sure there are more gung-ho Instagrammers better than me who are producing more creative and quirky stuff but I still have yet to see photos that haunt, disturb or help us reflect about the world in which we live in.</p>
+<p>Thankfully, the <a href="http://www.worldpressphoto.org/2013-photo-contest">World Press Photo Contest</a> is an anti-thesis of Instagram. <strong>Now showing at the <a href="http://www.southbankcentre.co.uk/">Southbank Centre</a> here in London until 27 November</strong>. It provides us with a line-up of the best of photojournalism, all done as a testament to our human history. From child brides, prostitutes to a winning prize photo of a Yemeni mother cradling his son, these are stories that are often overlooked or ignored. We might like our happy-go-lucky Instagram photos to make our day, <strong>but these World Press images force us to look into a reality we often want to escape from.</strong></p>
+<p>Here are the Top 19 images from the World Press Photo Contest:</p>
+<p>
+  <figure class="gatsby-resp-image-figure" style="">
+  
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/1360cfeb214c4431fdbf4a6452603908/55fd7/01_Samuel-Aranda_jduf9x.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 640px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 66.5625%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMEAgX/xAAVAQEBAAAAAAAAAAAAAAAAAAABAP/aAAwDAQACEAMQAAABkWnI1HNI/8QAGhAAAgMBAQAAAAAAAAAAAAAAAQIAAxESFP/aAAgBAQABBQJC7ym3B6YrHk5s/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAHBAAAgICAwAAAAAAAAAAAAAAAAECESFBEDJR/9oACAEBAAY/AsYXo4vR1HFbJUqrj//EABsQAQACAgMAAAAAAAAAAAAAAAEAETFRIUFh/9oACAEBAAE/IeDfWvBFd+GIHJg0KNJZiDcuf//aAAwDAQACAAMAAAAQy+//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAWEQEBAQAAAAAAAAAAAAAAAAAAESH/2gAIAQIBAT8QmI//xAAbEAEAAgMBAQAAAAAAAAAAAAABABEhMUFhcf/aAAgBAQABPxBlvlgcNfZf4ErZfSPg9V1FO7/RmEnlmzdYzFXuf//Z'); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="Samuel Aranda, Spain, for The New York Times"
+        title="Samuel Aranda, Spain, for The New York Times. World Press Photo of the Year 2011. Sanaa, Yemen, 15 October 2011"
+        src="/static/1360cfeb214c4431fdbf4a6452603908/55fd7/01_Samuel-Aranda_jduf9x.jpg"
+        srcset="/static/1360cfeb214c4431fdbf4a6452603908/e81c0/01_Samuel-Aranda_jduf9x.jpg 200w,
+/static/1360cfeb214c4431fdbf4a6452603908/8e8ea/01_Samuel-Aranda_jduf9x.jpg 400w,
+/static/1360cfeb214c4431fdbf4a6452603908/55fd7/01_Samuel-Aranda_jduf9x.jpg 640w"
+        sizes="(max-width: 640px) 100vw, 640px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    
+  <figcaption class="gatsby-resp-image-figcaption">Samuel Aranda, Spain, for The New York Times. World Press Photo of the Year 2011. Sanaa, Yemen, 15 October 2011</figcaption>
+  </figure>
+      </p>
+<p>Fatima al-Qaws cradles her son Zayed (18), who is suffering from the effects of tear gas after participating in a street demonstration, in Sanaa, Yemen, on 15 October. Ongoing protests against the 33-year-long regime of authoritarian President Ali Abdullah Saleh escalated that day. Witnesses said that thousands marched down Zubairy Street, a main city thoroughfare, and were fired on when they reached a government checkpoint near the Ministry of Foreign Affairs. Some demonstrators retreated, others carried on and were shot at again. At least 12 people were killed and some 30 injured. Ms Qaws—who was herself involved in resistance to the regime—found her son after a second visit to look for him, among the wounded at a mosque that was being used as a temporary field hospital. Zayed remained in a coma for two days after the incident. He was injured on two further occasions, as demonstrations continued. On 23 November, President Saleh flew to Saudi Arabia, and signed an agreement transferring power to his deputy, Abdurabu Mansur Hadi. Saleh’s rule ended formally when Hadi was sworn in as president, following an election, on 25 February 2012.</p>
+<p>
+  <figure class="gatsby-resp-image-figure" style="">
+  
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/4e6ad11a6e4a2cf6bfb9dd1e5a3aa9c4/55fd7/02_Vincent-Boisot_kqokmq.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 640px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 66.5625%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMEBQb/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/aAAwDAQACEAMQAAABzmU3S80OKP/EABgQAAMBAQAAAAAAAAAAAAAAAAECAxES/9oACAEBAAEFApz6YS00GOiLkECNVcp//8QAFhEBAQEAAAAAAAAAAAAAAAAAARAh/9oACAEDAQE/AcCf/8QAFhEAAwAAAAAAAAAAAAAAAAAAARAx/9oACAECAQE/AaV//8QAGRAAAgMBAAAAAAAAAAAAAAAAAAECETGh/9oACAEBAAY/AtEujRVDiSR//8QAGxAAAgMBAQEAAAAAAAAAAAAAAREAITFRQWH/2gAIAQEAAT8hMVBnYMZQJXM+DFS8MUnkvERsvxo+if/aAAwDAQACAAMAAAAQnA//xAAXEQADAQAAAAAAAAAAAAAAAAAAARFR/9oACAEDAQE/EFToj//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QD//EABwQAAIDAQADAAAAAAAAAAAAAAERACExUUFhcf/aAAgBAQABPxAwFjPschiTTQYFWZaD2dUHAcJp66PMdClatCRXyI0GQ7Dc/9k='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="Vincent Boisot, France, Riva Press for Le Figaro Magazine"
+        title="2nd prize Arts and Entertainment Singles. Vincent Boisot, France, Riva Press for Le Figaro Magazine. Dakar fashion week, Dakar, Senegal, 9 July 2011"
+        src="/static/4e6ad11a6e4a2cf6bfb9dd1e5a3aa9c4/55fd7/02_Vincent-Boisot_kqokmq.jpg"
+        srcset="/static/4e6ad11a6e4a2cf6bfb9dd1e5a3aa9c4/e81c0/02_Vincent-Boisot_kqokmq.jpg 200w,
+/static/4e6ad11a6e4a2cf6bfb9dd1e5a3aa9c4/8e8ea/02_Vincent-Boisot_kqokmq.jpg 400w,
+/static/4e6ad11a6e4a2cf6bfb9dd1e5a3aa9c4/55fd7/02_Vincent-Boisot_kqokmq.jpg 640w"
+        sizes="(max-width: 640px) 100vw, 640px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    
+  <figcaption class="gatsby-resp-image-figcaption">2nd prize Arts and Entertainment Singles. Vincent Boisot, France, Riva Press for Le Figaro Magazine. Dakar fashion week, Dakar, Senegal, 9 July 2011</figcaption>
+  </figure>
+      </p>
+<p>A model poses in front of a tailor’s stall in the center of Dakar, Senegal during the ninth edition of the Dakar Fashion Week. She is wearing a dress by US-based Senegalese designer Yolande Ngom Mancini. The Fashion Week began in 2003, as a private venture without government support, at the initiative of former model turned designer Adama Paris and has become a leading showcase for design from across the continent.</p>
+<p>
+  <figure class="gatsby-resp-image-figure" style="">
+  
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/055f08a529ad2f0aaf08e6c9b1c44d39/55fd7/03_Rob-Hornstra_y2gxfa.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 640px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 82.96875%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAARABQDASIAAhEBAxEB/8QAGQABAAIDAAAAAAAAAAAAAAAAAAIEAQMF/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQD/2gAMAwEAAhADEAAAAbWeXIqC0KYHUG//xAAbEAACAgMBAAAAAAAAAAAAAAABAgADERITMf/aAAgBAQABBQKsVx1q5HM7MTY7mvUGLD5P/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPwEf/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAgEBPwEf/8QAHRAAAgIBBQAAAAAAAAAAAAAAAREAAhASITFBkf/aAAgBAQAGPwLgO26hsq+Ypp6rEQoHBn//xAAbEAACAwEBAQAAAAAAAAAAAAAAAREhMXEQQf/aAAgBAQABPyGs6CDIoCUaINY4DioROd8Gg2oMceTP/9oADAMBAAIAAwAAABD4N0D/xAAXEQADAQAAAAAAAAAAAAAAAAAAAREQ/9oACAEDAQE/EHSb/8QAFxEBAAMAAAAAAAAAAAAAAAAAEQABEP/aAAgBAgEBPxCgjv8A/8QAHhABAAICAwADAAAAAAAAAAAAAQARITFBUXGBobH/2gAIAQEAAT8QWMdANgUNfMFkioVp1+woGSuiMCVNKb5L6wR4SdgBF3q4iK0jmfTTT7OHk//Z'); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="Rob Hornstra, The Netherlands, Institute for Artist Management"
+        title="1st prize Arts and Entertainment Stories. Rob Hornstra, The Netherlands, Institute for Artist Management. The Sochi Project: Sochi Singers, Sochi, Russia, 2 January 2011"
+        src="/static/055f08a529ad2f0aaf08e6c9b1c44d39/55fd7/03_Rob-Hornstra_y2gxfa.jpg"
+        srcset="/static/055f08a529ad2f0aaf08e6c9b1c44d39/e81c0/03_Rob-Hornstra_y2gxfa.jpg 200w,
+/static/055f08a529ad2f0aaf08e6c9b1c44d39/8e8ea/03_Rob-Hornstra_y2gxfa.jpg 400w,
+/static/055f08a529ad2f0aaf08e6c9b1c44d39/55fd7/03_Rob-Hornstra_y2gxfa.jpg 640w"
+        sizes="(max-width: 640px) 100vw, 640px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    
+  <figcaption class="gatsby-resp-image-figcaption">1st prize Arts and Entertainment Stories. Rob Hornstra, The Netherlands, Institute for Artist Management. The Sochi Project: Sochi Singers, Sochi, Russia, 2 January 2011</figcaption>
+  </figure>
+      </p>
+<p>Marika Bajur sings ‘Kuriu’, in the restaurant Eurasia. Entertainers perform in restaurants in the Russian resort city of Sochi, on the eastern coast of the Black Sea. Greater Sochi sprawls for some 145 kilometers along the shoreline, attracting predominantly Russian holidaymakers, who come for the sun, sea, sand, and nightlife. Restaurants are plentiful and competition is fierce. Most provide entertainment. The singers come from all walks of life, and are of all ages. Some perform in one place all year round, others move from restaurant to restaurant during the summer season. They sing a mixture of Russian ballads and pop music, solo or in duos, accompanied on a synthesizer, by recorded music, or sometimes by live instruments.</p>
+<p>
+  <figure class="gatsby-resp-image-figure" style="">
+  
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/45d7fad06d009371d8bd43cfa1d29624/55fd7/04_Brent-Stirton_q6kqfb.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 640px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 66.71875%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMEAgX/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEAMQAAAB5epLBYgj/8QAGRABAAMBAQAAAAAAAAAAAAAAAQACAyER/9oACAEBAAEFAs6to8mgWt6w1si9/8QAFREBAQAAAAAAAAAAAAAAAAAAEBH/2gAIAQMBAT8Bh//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABoQAAIDAQEAAAAAAAAAAAAAAAERABAxIVH/2gAIAQEABj8C5MjCDpnfa//EABwQAAIDAAMBAAAAAAAAAAAAAAERACExQXGR8P/aAAgBAQABPyH6Vw0RIxggA1MrzIF4+FewrMA9z//aAAwDAQACAAMAAAAQhD//xAAWEQEBAQAAAAAAAAAAAAAAAAABABH/2gAIAQMBAT8QAs5f/8QAFhEBAQEAAAAAAAAAAAAAAAAAAAER/9oACAECAQE/ENqP/8QAHRABAAICAgMAAAAAAAAAAAAAAQARMUEhwWFxof/aAAgBAQABPxBFKXocrxDRANNGPcMG4L411DFRXDUpERQ5T2+R2Yl4XP/Z'); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="Brent Stirton, South Africa, Reportage by Getty Images for Kyiv Post / The Sunday Times Magazine"
+        title="1st prize Contemporary Issues Singles. Brent Stirton, South Africa, Reportage by Getty Images for Kyiv Post / The Sunday Times Magazine. Kryvyi Rig, Ukraine, 31 August 2011"
+        src="/static/45d7fad06d009371d8bd43cfa1d29624/55fd7/04_Brent-Stirton_q6kqfb.jpg"
+        srcset="/static/45d7fad06d009371d8bd43cfa1d29624/e81c0/04_Brent-Stirton_q6kqfb.jpg 200w,
+/static/45d7fad06d009371d8bd43cfa1d29624/8e8ea/04_Brent-Stirton_q6kqfb.jpg 400w,
+/static/45d7fad06d009371d8bd43cfa1d29624/55fd7/04_Brent-Stirton_q6kqfb.jpg 640w"
+        sizes="(max-width: 640px) 100vw, 640px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    
+  <figcaption class="gatsby-resp-image-figcaption">1st prize Contemporary Issues Singles. Brent Stirton, South Africa, Reportage by Getty Images for Kyiv Post / The Sunday Times Magazine. Kryvyi Rig, Ukraine, 31 August 2011</figcaption>
+  </figure>
+      </p>
+<p>Maria, a drug-addicted sex worker, rests between clients in the room she rents in Kryvyi Rih, Ukraine. The country has the highest incidence of HIV/Aids in Europe and, according to a UNICEF report, one in five sex workers is living with HIV. Maria says she remains HIV negative.</p>
+<p>
+  <figure class="gatsby-resp-image-figure" style="">
+  
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/602f8270564bd975d1457802f76884bc/55fd7/05_Stephanie-Sinclair_vwycw3.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 640px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 66.71875%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAIBAwT/xAAWAQEBAQAAAAAAAAAAAAAAAAACAAH/2gAMAwEAAhADEAAAAcrLIVgpl//EABoQAAMAAwEAAAAAAAAAAAAAAAABAgMSEyH/2gAIAQEAAQUCmjt67QpMi1pn/8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAIAQMBAT8BR//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABgQAAIDAAAAAAAAAAAAAAAAAAEQABEx/9oACAEBAAY/AtYgpf/EABoQAAMBAQEBAAAAAAAAAAAAAAABEUEhUZH/2gAIAQEAAT8hatITRtzwoJJ1PgpdZX0i9R//2gAMAwEAAgADAAAAEOQ//8QAFhEBAQEAAAAAAAAAAAAAAAAAARAR/9oACAEDAQE/EEwj/8QAFhEAAwAAAAAAAAAAAAAAAAAAAAER/9oACAECAQE/EKmU/8QAHhABAQABAwUAAAAAAAAAAAAAAREAMUFRIXGBwfD/2gAIAQEAAT8QUCDnUM1+EpRtYPn1jrQHcmUYFR+XC0AO7rcrVF4Zn//Z'); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="Stephanie Sinclair, USA, VII Photo Agency for National Geographic magazine"
+        title="1st prize Contemporary Issues Stories. Stephanie Sinclair, USA, VII Photo Agency for National Geographic magazine. Child brides, Hajjah, Yemen, 10 June 2011"
+        src="/static/602f8270564bd975d1457802f76884bc/55fd7/05_Stephanie-Sinclair_vwycw3.jpg"
+        srcset="/static/602f8270564bd975d1457802f76884bc/e81c0/05_Stephanie-Sinclair_vwycw3.jpg 200w,
+/static/602f8270564bd975d1457802f76884bc/8e8ea/05_Stephanie-Sinclair_vwycw3.jpg 400w,
+/static/602f8270564bd975d1457802f76884bc/55fd7/05_Stephanie-Sinclair_vwycw3.jpg 640w"
+        sizes="(max-width: 640px) 100vw, 640px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    
+  <figcaption class="gatsby-resp-image-figcaption">1st prize Contemporary Issues Stories. Stephanie Sinclair, USA, VII Photo Agency for National Geographic magazine. Child brides, Hajjah, Yemen, 10 June 2011</figcaption>
+  </figure>
+      </p>
+<p>Tahani (in pink), who was married at the age of six, and her former classmate Ghada, also a child bride, stand with their husbands outside their home in Hajjah, Yemen. At first, Tahani hid whenever she saw her husband, who was 25 when they married.</p>
+<p>Every year, all over the world, millions of girls below the age of 18 undergo marriages initiated by their families. The tradition of child marriage spans continents, religion, and class. Girls who marry early often abandon their education. The incidence of maternal and infant death is high for women who give birth under the age of 18. Child marriages often take place in defiance of national laws, and despite education programs about health issues. They are seen as an economic necessity in some regions, or are deeply ingrained in local culture.</p>
+<p>
+  <figure class="gatsby-resp-image-figure" style="">
+  
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/e249b51c2a3021f4e3c82e6ced112f8e/55fd7/06_Damir-Sagolj_lcpb9e.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 640px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 66.71875%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAEDAgX/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEAMQAAAB5bzSyIg//8QAFxABAQEBAAAAAAAAAAAAAAAAAQAQIf/aAAgBAQABBQI0Zl7/AP/EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABYQAAMAAAAAAAAAAAAAAAAAAAAgMf/aAAgBAQAGPwJYf//EABgQAQEBAQEAAAAAAAAAAAAAAAEAETFR/9oACAEBAAE/IQ5M9tDEsAXmX//aAAwDAQACAAMAAAAQGO//xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAwEBPxBX/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPxA//8QAHBABAQEAAgMBAAAAAAAAAAAAAREAMUEhUXGR/9oACAEBAAE/EDRT64p4QL3nIpp1R08JitKz3i5fjv/Z'); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="Damir Sagolj, Bosnia and Herzegovina, Reuters"
+        title="1st prize Daily Life Singles. Damir Sagolj, Bosnia and Herzegovina, Reuters. North Korea, Pyongyang, North Korea, 5 October 2011"
+        src="/static/e249b51c2a3021f4e3c82e6ced112f8e/55fd7/06_Damir-Sagolj_lcpb9e.jpg"
+        srcset="/static/e249b51c2a3021f4e3c82e6ced112f8e/e81c0/06_Damir-Sagolj_lcpb9e.jpg 200w,
+/static/e249b51c2a3021f4e3c82e6ced112f8e/8e8ea/06_Damir-Sagolj_lcpb9e.jpg 400w,
+/static/e249b51c2a3021f4e3c82e6ced112f8e/55fd7/06_Damir-Sagolj_lcpb9e.jpg 640w"
+        sizes="(max-width: 640px) 100vw, 640px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    
+  <figcaption class="gatsby-resp-image-figcaption">1st prize Daily Life Singles. Damir Sagolj, Bosnia and Herzegovina, Reuters. North Korea, Pyongyang, North Korea, 5 October 2011</figcaption>
+  </figure>
+      </p>
+<p>A portrait of North Korea’s founder, Kim Il-sung, decorates a building in the country’s capital Pyongyang. The ‘Great Leader’, as he was known, was succeeded by his son Kim Jong-il, in 1994. Kim Jong-il died on 17 December, having designated his youngest son Kim Jong-un (aged 27 or 28) as heir.</p>
+<p>
+  <figure class="gatsby-resp-image-figure" style="">
+  
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/9e840c8cf19fd09398e4aa8c3867b33a/55fd7/07_Alejandro-Kirchuk_wtevtg.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 640px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 66.71875%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEAv/EABYBAQEBAAAAAAAAAAAAAAAAAAMBAv/aAAwDAQACEAMQAAAB2lsBaQTCT//EABsQAAIDAAMAAAAAAAAAAAAAAAECAAMSESEx/9oACAEBAAEFAsGXdRzllblLnMPv/8QAFREBAQAAAAAAAAAAAAAAAAAAEDH/2gAIAQMBAT8Bp//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABoQAAICAwAAAAAAAAAAAAAAAAABAhAhMXH/2gAIAQEABj8CI9Hk27//xAAZEAEBAQEBAQAAAAAAAAAAAAABEQAhMUH/2gAIAQEAAT8hEL8lzQxfFz+qLSN5k6dPl1AEhm3v/9oADAMBAAIAAwAAABAfz//EABcRAQEBAQAAAAAAAAAAAAAAAAEAESH/2gAIAQMBAT8QUXLb/8QAFxEBAAMAAAAAAAAAAAAAAAAAAAERMf/aAAgBAgEBPxCNU//EABsQAQACAwEBAAAAAAAAAAAAAAEAIRExQWGB/9oACAEBAAE/EC4dq3wvu8kEEGj0R3AK1VwS4PHyFFoFwxLtKjwgg4TOp9xP/9k='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="Alejandro Kirchuk, Argentina"
+        title="1st prize Daily Life Stories. Alejandro Kirchuk, Argentina. Never Let You Go, Buenos Aires, Argentina, 26 May 2009"
+        src="/static/9e840c8cf19fd09398e4aa8c3867b33a/55fd7/07_Alejandro-Kirchuk_wtevtg.jpg"
+        srcset="/static/9e840c8cf19fd09398e4aa8c3867b33a/e81c0/07_Alejandro-Kirchuk_wtevtg.jpg 200w,
+/static/9e840c8cf19fd09398e4aa8c3867b33a/8e8ea/07_Alejandro-Kirchuk_wtevtg.jpg 400w,
+/static/9e840c8cf19fd09398e4aa8c3867b33a/55fd7/07_Alejandro-Kirchuk_wtevtg.jpg 640w"
+        sizes="(max-width: 640px) 100vw, 640px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    
+  <figcaption class="gatsby-resp-image-figcaption">1st prize Daily Life Stories. Alejandro Kirchuk, Argentina. Never Let You Go, Buenos Aires, Argentina, 26 May 2009</figcaption>
+  </figure>
+      </p>
+<p>Marcos and Monica were married for 65 years and, for much of that time, lived in the same apartment in Buenos Aires. In 2007, aged 84, Monica was diagnosed with Alzheimer’s. Marcos looked after her himself, coping with the emotional and physical stress of being a caregiver. In the later stages of Monica’s illness, Marcos had to feed her, pureeing her meals beforehand as she could not chew. During the last year of her life, Monica was bedridden and Marcos had to change her diapers three times daily and help visiting nurses treat her bedsores – activities that took up most of his day. She could barely recognize him, though cuddles and caresses helped her to connect, even if for a few seconds. But Marcos was determined to care for his wife at home. “Tell me where she is going to be better than here,” he said. “I treat her like a princess, here she has everything.” Monica passed away in July 2011.</p>
+<p>
+  <figure class="gatsby-resp-image-figure" style="">
+  
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/ef79f6d947f93027be395936ab74504a/55fd7/08_Alex-Majoli_ckcmyx.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 640px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAECAwX/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIQAxAAAAHIVTGRD//EABgQAQEBAQEAAAAAAAAAAAAAAAEREgAC/9oACAEBAAEFAjkjA7TnTPTX/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAGhAAAgIDAAAAAAAAAAAAAAAAABEBEgIhQf/aAAgBAQAGPwKckTaGbK8EM//EABwQAQADAAIDAAAAAAAAAAAAAAEAITERcUFRYf/aAAgBAQABPyHA/IhQxMgOOmNAX3MpT1l1+WYYJ//aAAwDAQACAAMAAAAQJA//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAbEAEBAQEBAAMAAAAAAAAAAAABIREAQTFRYf/aAAgBAQABPxDVA6Y7lMBdUQmpydpK+uc3zAhi/fDOaEsPORKGQ/J3/9k='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="Alex Majoli, Italy, Magnum Photos for Newsweek"
+        title="1st prize General News Singles. Alex Majoli, Italy, Magnum Photos for Newsweek. Mubarak steps down, Cairo, Egypt, 10 February 2011"
+        src="/static/ef79f6d947f93027be395936ab74504a/55fd7/08_Alex-Majoli_ckcmyx.jpg"
+        srcset="/static/ef79f6d947f93027be395936ab74504a/e81c0/08_Alex-Majoli_ckcmyx.jpg 200w,
+/static/ef79f6d947f93027be395936ab74504a/8e8ea/08_Alex-Majoli_ckcmyx.jpg 400w,
+/static/ef79f6d947f93027be395936ab74504a/55fd7/08_Alex-Majoli_ckcmyx.jpg 640w"
+        sizes="(max-width: 640px) 100vw, 640px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    
+  <figcaption class="gatsby-resp-image-figcaption">1st prize General News Singles. Alex Majoli, Italy, Magnum Photos for Newsweek. Mubarak steps down, Cairo, Egypt, 10 February 2011</figcaption>
+  </figure>
+      </p>
+<p>Demonstrators on Tahrir Square, Cairo, react to a televised speech on 10 February, in which contrary to prior expectations, Egypt’s president Hosni Mubarak said he would not give up power. Since late January, protests against Mubarak’s 30-year-old regime had been held nationwide, with Tahrir Square as an increasingly volatile focal point. Crowds gathering in the square were already celebrating what they thought would be a resignation speech. Following Mubarak’s declaration that he would remain, the number and intensity of demonstrations increased across the country. Eventually, at 18.00 on 11 February, Vice-President Suleiman announced that Mubarak had resigned, handing leadership over to the Supreme Council of the Armed Forces. In response to demonstrators’ demands, the Supreme Council dissolved parliament and suspended the constitution, declaring that it would hold power for six months, or until elections could be held.</p>
+<p>
+  <figure class="gatsby-resp-image-figure" style="">
+  
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/971abc235e0170db69fc39cfb9db25e8/55fd7/09_Paolo-Pellegrin_fytl5d.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 640px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 37.18749999999999%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAHABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUE/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAABl7QlA//EABoQAAICAwAAAAAAAAAAAAAAAAEDABICBBH/2gAIAQEAAQUC4L7DQ7Cxn//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABsQAAAHAQAAAAAAAAAAAAAAAAABEBESIUFh/9oACAEBAAY/At6GjeGn/8QAGRABAQEBAQEAAAAAAAAAAAAAAREAITFR/9oACAEBAAE/ISR8COVKatu7mHGfS7//2gAMAwEAAgADAAAAEIAP/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPxA//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPxA//8QAGBABAAMBAAAAAAAAAAAAAAAAAQARIXH/2gAIAQEAAT8QY0Tpe4WxkUNegrR7AkICilB1J//Z'); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="Paolo Pellegrin, Italy, Magnum Photos for Zeit Magazin"
+        title="2nd prize General News Stories. Paolo Pellegrin, Italy, Magnum Photos for Zeit Magazin. Tsunami aftermath, Kesennuma, Miyagi prefecture, Japan, 14 April 2011"
+        src="/static/971abc235e0170db69fc39cfb9db25e8/55fd7/09_Paolo-Pellegrin_fytl5d.jpg"
+        srcset="/static/971abc235e0170db69fc39cfb9db25e8/e81c0/09_Paolo-Pellegrin_fytl5d.jpg 200w,
+/static/971abc235e0170db69fc39cfb9db25e8/8e8ea/09_Paolo-Pellegrin_fytl5d.jpg 400w,
+/static/971abc235e0170db69fc39cfb9db25e8/55fd7/09_Paolo-Pellegrin_fytl5d.jpg 640w"
+        sizes="(max-width: 640px) 100vw, 640px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    
+  <figcaption class="gatsby-resp-image-figcaption">2nd prize General News Stories. Paolo Pellegrin, Italy, Magnum Photos for Zeit Magazin. Tsunami aftermath, Kesennuma, Miyagi prefecture, Japan, 14 April 2011</figcaption>
+  </figure>
+      </p>
+<p>Tsunami waves created by a massive earthquake off the northeastern shores of Japan caused wide-ranging destruction along the coast. Iwate, Miyagi, and Fukushima—the three worst-hit prefectures—were overwhelmed by an estimated 22.63 million tons of debris. The economic impact of the tsunami was immense, affecting not only regional fishing, trade, and farming, but also transport and industry nationwide. The World Bank estimated the overall economic damage of the tsunami at €178 billion, making it the natural disaster with the highest cost in world history.</p>
+<p>
+  <figure class="gatsby-resp-image-figure" style="">
+  
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/ab4c98254b5098d2d8ebe5b3fadf29fc/55fd7/10_Jenny-E.-Ross_dg5x7v.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 640px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 66.71875%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAgAD/8QAFgEBAQEAAAAAAAAAAAAAAAAAAwAB/9oADAMBAAIQAxAAAAErFEmcaz//xAAXEAADAQAAAAAAAAAAAAAAAAAAATEC/9oACAEBAAEFAlBozB3/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAUEAEAAAAAAAAAAAAAAAAAAAAg/9oACAEBAAY/Al//xAAaEAADAQEBAQAAAAAAAAAAAAAAAREhQTFh/9oACAEBAAE/IYaXo0p8EXoz9M3NIo//2gAMAwEAAgADAAAAEIMf/8QAFhEBAQEAAAAAAAAAAAAAAAAAARAR/9oACAEDAQE/EMWf/8QAFREBAQAAAAAAAAAAAAAAAAAAARD/2gAIAQIBAT8QZ//EABkQAQEBAQEBAAAAAAAAAAAAAAERACFBYf/aAAgBAQABPxAtUnUcioOeEOeZVoxgZg8XknMRQW/d/9k='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="Jenny E. Ross, USA"
+        title="1st prize Nature Singles. Jenny E. Ross, USA. Cliff-climbing polar bear attempting to eat seabird eggs, Ostrova Oranskie, Novaya Zemlya, Russia, 30 June 2011"
+        src="/static/ab4c98254b5098d2d8ebe5b3fadf29fc/55fd7/10_Jenny-E.-Ross_dg5x7v.jpg"
+        srcset="/static/ab4c98254b5098d2d8ebe5b3fadf29fc/e81c0/10_Jenny-E.-Ross_dg5x7v.jpg 200w,
+/static/ab4c98254b5098d2d8ebe5b3fadf29fc/8e8ea/10_Jenny-E.-Ross_dg5x7v.jpg 400w,
+/static/ab4c98254b5098d2d8ebe5b3fadf29fc/55fd7/10_Jenny-E.-Ross_dg5x7v.jpg 640w"
+        sizes="(max-width: 640px) 100vw, 640px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    
+  <figcaption class="gatsby-resp-image-figcaption">1st prize Nature Singles. Jenny E. Ross, USA. Cliff-climbing polar bear attempting to eat seabird eggs, Ostrova Oranskie, Novaya Zemlya, Russia, 30 June 2011</figcaption>
+  </figure>
+      </p>
+<p>A young male polar bear climbs on a cliff face above the ocean at Ostrova Oranskie, in northern Novaya Zemlya, Russia, attempting unsuccessfully to feed on eggs from the nests of Brünnich’s guillemots, in early July. The location falls within the Russkaya Arktika National Park, covering more than 46,000 square kilometers of islands and sea in the Arctic Ocean, one of the largest protected areas in the northern hemisphere. A polar bear’s primary prey is the seal, the blubber satisfying the bear’s enormous energy needs. Bears hunt seals from sea-ice platforms, and also use ice floes to move from place to place. In summer months, when much sea ice melts, polar bears can become stranded, and have to forage for what food they can. Their dependence on sea-ice platforms for food, traveling, and also for breeding, makes polar bears vulnerable to the effects of climate warming. In 2011, the volume of Arctic sea ice was 66 percent lower than the average documented from 1979 through 2010.</p>
+<p>
+  <figure class="gatsby-resp-image-figure" style="">
+  
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/6814eccf4cb34aa672667e62b1387e14/55fd7/11_Brent-Stirton_p6lg4o.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 640px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 66.71875%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAQC/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgP/2gAMAwEAAhADEAAAAdZmTdqUx//EABgQAAMBAQAAAAAAAAAAAAAAAAABEgIR/9oACAEBAAEFAu50J5ZCKJ6U0f/EABcRAQADAAAAAAAAAAAAAAAAAAABEhP/2gAIAQMBAT8BpDJ//8QAFhEBAQEAAAAAAAAAAAAAAAAAABMB/9oACAECAQE/Aaas/8QAFxABAAMAAAAAAAAAAAAAAAAAEAAhMf/aAAgBAQAGPwKW6f/EABsQAQADAAMBAAAAAAAAAAAAAAEAESExQVGR/9oACAEBAAE/IS4cI0R6qb2QTTSCftx9BAFDP//aAAwDAQACAAMAAAAQ6P8A/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAERIf/aAAgBAwEBPxBR1EH/xAAWEQEBAQAAAAAAAAAAAAAAAAABABH/2gAIAQIBAT8QRdG1f//EABwQAQADAAIDAAAAAAAAAAAAAAEAETEhYVFxgf/aAAgBAQABPxCmgQ4trWFCFqMPviAWiYkK3EOl5mzhN+4CUB3P/9k='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="Brent Stirton, South Africa, Reportage by Getty Images for National Geographic magazine"
+        title="1st prize Nature Stories. Brent Stirton, South Africa, Reportage by Getty Images for National Geographic magazine. Rhino Wars, Mount Kenya, Kenya, 13 July 2011"
+        src="/static/6814eccf4cb34aa672667e62b1387e14/55fd7/11_Brent-Stirton_p6lg4o.jpg"
+        srcset="/static/6814eccf4cb34aa672667e62b1387e14/e81c0/11_Brent-Stirton_p6lg4o.jpg 200w,
+/static/6814eccf4cb34aa672667e62b1387e14/8e8ea/11_Brent-Stirton_p6lg4o.jpg 400w,
+/static/6814eccf4cb34aa672667e62b1387e14/55fd7/11_Brent-Stirton_p6lg4o.jpg 640w"
+        sizes="(max-width: 640px) 100vw, 640px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    
+  <figcaption class="gatsby-resp-image-figcaption">1st prize Nature Stories. Brent Stirton, South Africa, Reportage by Getty Images for National Geographic magazine. Rhino Wars, Mount Kenya, Kenya, 13 July 2011</figcaption>
+  </figure>
+      </p>
+<p>An anti-poaching team guards a northern white rhino, part of a 24-hour watch, at Ol Pejeta Conservancy in Kenya. The park is home to four of the world’s remaining eight northern white rhinos, the world’s most endangered animal. Despite the fact that rhinoceros horn is illegal worldwide, demand is rising steeply as a newly wealthy Asian middle class is able to afford the prized substance, previously the province of the rich. Authorities are often bribed, or turn a blind eye to illegal trade in, and use of rhino horn. Ground rhino horn is used primarily as an anti-fever and anti-toxin medication, in practices that go back centuries. In Vietnam, where a senior government minister has claimed that rhino horn cured his cancer, it sells for €1,865 per 100g to local customers, and for over €6,340 to foreign buyers. With rhinoceros horn worth more than gold, the animals are the target of poachers. South Africa alone lost over 400 rhinos to illegal poaching in 2011. It is estimated there are only 16,000 rhinos left in the world, and the animal faces extinction.</p>
+<p>
+  <figure class="gatsby-resp-image-figure" style="">
+  
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/a4aee1f902c990ee53d0d8c2555a13cf/55fd7/12_Tomasz-Lazar_hnrux0.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 640px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 66.71875%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAIBAwQF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAAB5N2ViBQ//8QAGRABAQEAAwAAAAAAAAAAAAAAAQIhADFB/9oACAEBAAEFAvMQiknndU7/AP/EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABoQAAIDAQEAAAAAAAAAAAAAAAABESFRAhL/2gAIAQEABj8CVnmWlEsoR08MP//EABsQAAMAAgMAAAAAAAAAAAAAAAABESExQWGB/9oACAEBAAE/IYmuFTEsRWEQ5uzOlrRR2vCP/9oADAMBAAIAAwAAABAAD//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EAB0QAQEAAQQDAAAAAAAAAAAAAAERACExQVFhcdH/2gAIAQEAAT8Q0KbtRZPWIEv46o8k6scMtTvKFmiidbfcYR8Bol2yEIeRhn//2Q=='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="Tomasz Lazar, Poland"
+        title="2nd prize People in the News Singles. Tomasz Lazar, Poland. Harlem, New York, USA, 21 October 2011"
+        src="/static/a4aee1f902c990ee53d0d8c2555a13cf/55fd7/12_Tomasz-Lazar_hnrux0.jpg"
+        srcset="/static/a4aee1f902c990ee53d0d8c2555a13cf/e81c0/12_Tomasz-Lazar_hnrux0.jpg 200w,
+/static/a4aee1f902c990ee53d0d8c2555a13cf/8e8ea/12_Tomasz-Lazar_hnrux0.jpg 400w,
+/static/a4aee1f902c990ee53d0d8c2555a13cf/55fd7/12_Tomasz-Lazar_hnrux0.jpg 640w"
+        sizes="(max-width: 640px) 100vw, 640px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    
+  <figcaption class="gatsby-resp-image-figcaption">2nd prize People in the News Singles. Tomasz Lazar, Poland. Harlem, New York, USA, 21 October 2011</figcaption>
+  </figure>
+      </p>
+<p>A protester is arrested during demonstrations against police stop-and-frisk tactics in Harlem, New York on 21 October. Stop-and-frisk refers to the New York Police Department practice of detaining and sometimes searching people on the street, when they have not necessarily committed a crime. The police and mayor’s office maintain that this has significantly reduced crime in the city. Opponents argue that the practice victimizes low-income communities and people of color. The October demonstrations against stop-and-frisk attracted support from the Occupy Wall Street (OWS) movement. Scores of OWS supporters made their way up to Harlem from downtown Manhattan, where they had been protesting against corporate greed, social inequality, and what they saw as the power of major banks and multinationals over the democratic process.</p>
+<p>
+  <figure class="gatsby-resp-image-figure" style="">
+  
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/7b8f4b8adb0df2d2bebd3f4fed6335fc/55fd7/13_Yasuyoshi-Chiba_bh0v0h.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 640px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 66.71875%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIDAQT/xAAWAQEBAQAAAAAAAAAAAAAAAAABAAL/2gAMAwEAAhADEAAAAeKjzy6MT//EABkQAAMBAQEAAAAAAAAAAAAAAAABEiECEf/aAAgBAQABBQJWLvdYlZKrfP/EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oACAEDAQE/AYj/xAAWEQEBAQAAAAAAAAAAAAAAAAAAERL/2gAIAQIBAT8BrT//xAAcEAACAgIDAAAAAAAAAAAAAAAAAREhEjEyUXH/2gAIAQEABj8CmTlPaZoeVmkU48R//8QAHRABAQEAAAcAAAAAAAAAAAAAAREAITFBUXGx8P/aAAgBAQABPyE2os6XSqPomOeX4uKpI036OGLCB7Q3/9oADAMBAAIAAwAAABD8L//EABYRAQEBAAAAAAAAAAAAAAAAAAARUf/aAAgBAwEBPxCU4//EABYRAQEBAAAAAAAAAAAAAAAAAAARUf/aAAgBAgEBPxC1a//EAB0QAQEAAgMAAwAAAAAAAAAAAAERACExQVFxgZH/2gAIAQEAAT8QEzI6ZmvOiKgeVd/MyLWPaRj6z7tde9/eAA1WjSnGsSIBxAfmf//Z'); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="Yasuyoshi Chiba, Japan, Agence France-Presse"
+        title="1st prize People in the News Stories. Yasuyoshi Chiba, Japan, Agence France-Presse. Tsunami, Higashimatsushima, Miyagi prefecture, Japan, 3 April 2011"
+        src="/static/7b8f4b8adb0df2d2bebd3f4fed6335fc/55fd7/13_Yasuyoshi-Chiba_bh0v0h.jpg"
+        srcset="/static/7b8f4b8adb0df2d2bebd3f4fed6335fc/e81c0/13_Yasuyoshi-Chiba_bh0v0h.jpg 200w,
+/static/7b8f4b8adb0df2d2bebd3f4fed6335fc/8e8ea/13_Yasuyoshi-Chiba_bh0v0h.jpg 400w,
+/static/7b8f4b8adb0df2d2bebd3f4fed6335fc/55fd7/13_Yasuyoshi-Chiba_bh0v0h.jpg 640w"
+        sizes="(max-width: 640px) 100vw, 640px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    
+  <figcaption class="gatsby-resp-image-figcaption">1st prize People in the News Stories. Yasuyoshi Chiba, Japan, Agence France-Presse. Tsunami, Higashimatsushima, Miyagi prefecture, Japan, 3 April 2011</figcaption>
+  </figure>
+      </p>
+<p>Chieko Matsukawa holds up her daughter’s graduation certificate, which she salvaged from the ruins of their home in Higashimatsushima. On 11 March, a magnitude 9.0 earthquake struck 70 kilometers off the T?hoku coast, in northeastern Japan. The quake triggered a tsunami that swept inland over an area of some 500 square kilometers, destroying buildings, crippling infrastructure, and resulting in the displacement of more than 340,000 people. The earthquake was the most powerful ever to hit Japan and one of the most forceful documented in the world. Flooding and damage to transport connections, power stations, and other vital facilities severely hindered recovery operations.</p>
+<p>
+  <figure class="gatsby-resp-image-figure" style="">
+  
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/c4e10869711087706c5eaafcf455531c/33e24/14_Laerke-Posselt_ypvoc5.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 480px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 150%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAeABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIFA//EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAZGz6EkApPKYUA//xAAcEAACAgIDAAAAAAAAAAAAAAABAwACBBAREjP/2gAIAQEAAQUCUsXjMbikWDZLF6xGdY7z0bE6/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPwEf/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAgEBPwEf/8QAHxABAAEEAQUAAAAAAAAAAAAAAQIAEBESICEiMVFi/9oACAEBAAY/AnaZEreLksdmQfJUpZ0+bMVx6p68f//EAB0QAAIDAAIDAAAAAAAAAAAAAAERABAxIUFRgZH/2gAIAQEAAT8hdBDzphDpdDVmhJz8iQsD7ZTRVuUhrZ6VZACJr//aAAwDAQACAAMAAAAQQAsA/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPxAf/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAgEBPxAf/8QAIBABAAEEAgIDAAAAAAAAAAAAAREAECExQVFhcYGx0f/aAAgBAQABPxDh0UWXwVsjxTruy2VQCpdC/aeLZgG+kjC2EAlNtMQn1jxU5HoE5FcweubCoRhMjRNSTPzb/9k='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="Laerke Posselt, Denmark, for Politiken"
+        title="1st Prize Portraits Singles. Laerke Posselt, Denmark, for Politiken. Danish and Iranian culture”*, Copenhagen, Denmark, 4 May 2011"
+        src="/static/c4e10869711087706c5eaafcf455531c/33e24/14_Laerke-Posselt_ypvoc5.jpg"
+        srcset="/static/c4e10869711087706c5eaafcf455531c/7084e/14_Laerke-Posselt_ypvoc5.jpg 200w,
+/static/c4e10869711087706c5eaafcf455531c/e263b/14_Laerke-Posselt_ypvoc5.jpg 400w,
+/static/c4e10869711087706c5eaafcf455531c/33e24/14_Laerke-Posselt_ypvoc5.jpg 480w"
+        sizes="(max-width: 480px) 100vw, 480px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    
+  <figcaption class="gatsby-resp-image-figcaption">1st Prize Portraits Singles. Laerke Posselt, Denmark, for Politiken. Danish and Iranian culture”*, Copenhagen, Denmark, 4 May 2011</figcaption>
+  </figure>
+      </p>
+<p>Actress Mellica Mehraban, who was born in Iran but grew up in Denmark, played a lead role in the Iranian spy thriller ‘Fox Hunting’, which had its first Danish screening at an Iranian film festival in Copenhagen in May. The role presented her with some challenges, as she had to brush up on her Farsi, and learn how to portray love on screen without telling or touching the man in question. Mehraban also had to reconcile herself to playing the villain in what could be seen as an anti-Western film.</p>
+<p>
+  <figure class="gatsby-resp-image-figure" style="">
+  
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/868525ad7d75dcf3074fb4f9ff1dbd88/33e24/15_Ton-Koene_z4hqbd.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 480px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 150%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFAgP/xAAXAQEAAwAAAAAAAAAAAAAAAAACAAED/9oADAMBAAIQAxAAAAGG+u885IAfSkntVPKhD//EABsQAAICAwEAAAAAAAAAAAAAAAECAAMREhME/9oACAEBAAEFAkXJ4oQw1ahQTzrj52pcox9B0gUKMiGtDP/EABkRAAIDAQAAAAAAAAAAAAAAAAABAhIhMf/aAAgBAwEBPwGUW+MRbC5//8QAGBEBAQADAAAAAAAAAAAAAAAAAQAREkH/2gAIAQIBAT8BEOTYtb//xAAeEAACAgICAwAAAAAAAAAAAAAAEQEhEBICMSJhcf/aAAgBAQAGPwK+ihHlDgjTfjPwl94pP1hlQNH/xAAcEAADAAMAAwAAAAAAAAAAAAAAAREhMUFRYYH/2gAIAQEAAT8hUup06b59TLl2Du/Qob0zQ4FPNZKta6KOshBtt17ZEtkOPWRMNR//2gAMAwEAAgADAAAAEPT4f//EABcRAQEBAQAAAAAAAAAAAAAAAAERADH/2gAIAQMBAT8QfsNUL3FJMFLN/8QAGBEAAwEBAAAAAAAAAAAAAAAAAAERITH/2gAIAQIBAT8QWR0RcO4x76f/xAAbEAEAAwADAQAAAAAAAAAAAAABABEhMUFRgf/aAAgBAQABPxAXO/QE5m+uO9o59jhyGyt66+x4DSxVnsaeoBDtuEvjICy16txmlpawMK8le4YgPSahtStgrGs22f/Z'); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="Ton Koene, The Netherlands, for de Volkskrant"
+        title="2nd prize Portraits Stories. Ton Koene, The Netherlands, for de Volkskrant. Afghan police recruits, Kunduz, Afghanistan, 28 September 2011"
+        src="/static/868525ad7d75dcf3074fb4f9ff1dbd88/33e24/15_Ton-Koene_z4hqbd.jpg"
+        srcset="/static/868525ad7d75dcf3074fb4f9ff1dbd88/7084e/15_Ton-Koene_z4hqbd.jpg 200w,
+/static/868525ad7d75dcf3074fb4f9ff1dbd88/e263b/15_Ton-Koene_z4hqbd.jpg 400w,
+/static/868525ad7d75dcf3074fb4f9ff1dbd88/33e24/15_Ton-Koene_z4hqbd.jpg 480w"
+        sizes="(max-width: 480px) 100vw, 480px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    
+  <figcaption class="gatsby-resp-image-figcaption">2nd prize Portraits Stories. Ton Koene, The Netherlands, for de Volkskrant. Afghan police recruits, Kunduz, Afghanistan, 28 September 2011</figcaption>
+  </figure>
+      </p>
+<p>A new recruit at a police training center run by Germany, in Kunduz, Afghanistan. Young men recruited into the Afghan police force are often from rural areas where education is poor, and are largely illiterate. Many join the police solely for financial reasons—a police officer earns about €130 a month—but their loyalty to the government is thin. Harsh working conditions, and the risk of being killed by the Taliban, lead to many leaving the force before their contract ends.</p>
+<p>
+  <figure class="gatsby-resp-image-figure" style="">
+  
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/ba1cec8ea291807772336847ff2f2db1/55fd7/16_Yuri-Kozyrev_tqi1gk.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 640px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 66.5625%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIEAwX/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/aAAwDAQACEAMQAAABdZNEmOkRX//EABkQAQEAAwEAAAAAAAAAAAAAAAIBAxIiIf/aAAgBAQABBQLjTl1Ym0bzhEUq9//EABcRAQADAAAAAAAAAAAAAAAAAAABERL/2gAIAQMBAT8BzCn/xAAWEQADAAAAAAAAAAAAAAAAAAAAARL/2gAIAQIBAT8BplM//8QAGhABAAIDAQAAAAAAAAAAAAAAAQARECExUf/aAAgBAQAGPwJp3Op6RdEWublvcf/EABoQAAIDAQEAAAAAAAAAAAAAAAABESExYYH/2gAIAQEAAT8h4ZS6xtGiqQeQSRVZOg8YMaoihB//2gAMAwEAAgADAAAAEAf/AP/EABYRAQEBAAAAAAAAAAAAAAAAAAEAEf/aAAgBAwEBPxAKyX//xAAYEQADAQEAAAAAAAAAAAAAAAAAAREhMf/aAAgBAgEBPxBu6U2H/8QAHhABAAMAAgIDAAAAAAAAAAAAAQARITFRQWFxwdH/2gAIAQEAAT8Q2xDX4dFX4e5SAJcEzly31H43NGFEqHCC1uj9iIvPqDjf18R1GDJ//9k='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="Yuri Kozyrev, Russia, Noor Images for Time"
+        title="1st prize Spot News Singles. Yuri Kozyrev, Russia, Noor Images for Time. On revolution road, Ras Lanuf, Libya, 11 March 2011"
+        src="/static/ba1cec8ea291807772336847ff2f2db1/55fd7/16_Yuri-Kozyrev_tqi1gk.jpg"
+        srcset="/static/ba1cec8ea291807772336847ff2f2db1/e81c0/16_Yuri-Kozyrev_tqi1gk.jpg 200w,
+/static/ba1cec8ea291807772336847ff2f2db1/8e8ea/16_Yuri-Kozyrev_tqi1gk.jpg 400w,
+/static/ba1cec8ea291807772336847ff2f2db1/55fd7/16_Yuri-Kozyrev_tqi1gk.jpg 640w"
+        sizes="(max-width: 640px) 100vw, 640px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    
+  <figcaption class="gatsby-resp-image-figcaption">1st prize Spot News Singles. Yuri Kozyrev, Russia, Noor Images for Time. On revolution road, Ras Lanuf, Libya, 11 March 2011</figcaption>
+  </figure>
+      </p>
+<p>Rebels battle for Ras Lanuf, an oil-refining town on the Libyan coast, on 11 March. The uprising against the regime of Colonel Muammar Gaddafi had grown out of clashes with authorities in the east-Libyan city of Benghazi, in mid-February. Anti-Gaddafi sentiment was strongest in the east of the country, and Benghazi came to be seen as the rebel stronghold. Ras Lanuf had fallen to anti-government forces on 4 March, during their initial advance west, towards the capital Tripoli. After heavy bombardment by land, sea and air, Gaddafi’s forces retook the city on 10 March, and began pushing the rebels back. For some days it appeared that even Benghazi would be retaken. Gaddafi’s counter-advance was halted after NATO planes began bombing Libyan military targets, following a UN resolution on 17 March. Rebel forces began moving west again and by the end of the month had recaptured Ras Lanuf, though they would not permanently occupy the city until late August.</p>
+<p>
+  <figure class="gatsby-resp-image-figure" style="">
+  
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/503d8e0dfbafeeef76371db061be5c83/55fd7/17_Niclas-Hammarstrom_gu0sq6.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 640px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 66.71875%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIDAQX/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEAMQAAAB5DyeJGFf/8QAFxAAAwEAAAAAAAAAAAAAAAAAAAECEv/aAAgBAQABBQKZMjFTNMdH/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFRABAQAAAAAAAAAAAAAAAAAAICH/2gAIAQEABj8Cq//EABkQAQEBAAMAAAAAAAAAAAAAAAEAERAhQf/aAAgBAQABPyEE7cQDZsnKVfL/2gAMAwEAAgADAAAAEFjP/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPxA//8QAFREBAQAAAAAAAAAAAAAAAAAAECH/2gAIAQIBAT8Qh//EABoQAQADAQEBAAAAAAAAAAAAAAEAESExUWH/2gAIAQEAAT8QEFGcMjmjSr7sYiNnkJwT6QTM55LYkf/Z'); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="Niclas Hammarström, Sweden, for Aftonbladet"
+        title="2nd prize Spot News Stories. Niclas Hammarström, Sweden, for Aftonbladet. 'Utøya', Utøya, Norway, 22 July 2011"
+        src="/static/503d8e0dfbafeeef76371db061be5c83/55fd7/17_Niclas-Hammarstrom_gu0sq6.jpg"
+        srcset="/static/503d8e0dfbafeeef76371db061be5c83/e81c0/17_Niclas-Hammarstrom_gu0sq6.jpg 200w,
+/static/503d8e0dfbafeeef76371db061be5c83/8e8ea/17_Niclas-Hammarstrom_gu0sq6.jpg 400w,
+/static/503d8e0dfbafeeef76371db061be5c83/55fd7/17_Niclas-Hammarstrom_gu0sq6.jpg 640w"
+        sizes="(max-width: 640px) 100vw, 640px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    
+  <figcaption class="gatsby-resp-image-figcaption">2nd prize Spot News Stories. Niclas Hammarström, Sweden, for Aftonbladet. 'Utøya', Utøya, Norway, 22 July 2011</figcaption>
+  </figure>
+      </p>
+<p>Utøya island, Norway, 22 July 2011. On 22 July, Anders Behring Breivik (32) killed 69 people on the small island of Utøya, 40 kilometers northwest of Oslo, in Norway. The shootings formed the second of two sequential attacks, the first being a car-bomb explosion in the government quarter of the capital, which killed eight people and injured 92. The Utøya incident took place less than two hours later. The island is the site of an annual summer camp organized by the youth division of the Norwegian Labor Party. Breivik gained access by posing as a police officer who had come to conduct a routine check following the Oslo bombing. He went on to shoot indiscriminately, killing and injuring people around the island and firing on those who jumped into the water in an attempt to escape.</p>
+<p>Local police did not have a helicopter appropriate for transporting groups of officers, and could not find a suitable boat to reach the island. When anti-terror police arrived from Oslo, they were eventually carried over to Utøya on civilian craft, reaching the island an hour after the first shots had been fired. Breivik was arrested, and later put on terrorist charges for both attacks. Breivik, who admitted carrying out both the bombing and the shooting, had been preparing for the attacks for a number of years, and had distributed a manifesto outlining his extremist beliefs.</p>
+<p>
+  <figure class="gatsby-resp-image-figure" style="">
+  
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/5333debe5f157f54cef8ac7a6bc1ce84/55fd7/18_Ray-McManus_qencag.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 640px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 67.96875%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAOABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIDBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAcaqMRHD/8QAFxABAQEBAAAAAAAAAAAAAAAAAQARIf/aAAgBAQABBQLLMEiW5f/EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABURAQEAAAAAAAAAAAAAAAAAABAR/9oACAECAQE/Aaf/xAAWEAADAAAAAAAAAAAAAAAAAAAAIDH/2gAIAQEABj8CWH//xAAZEAADAQEBAAAAAAAAAAAAAAAAASERMRD/2gAIAQEAAT8h4hmvSkqIcQzMmeX/2gAMAwEAAgADAAAAEGMP/8QAFREBAQAAAAAAAAAAAAAAAAAAEBH/2gAIAQMBAT8Qh//EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oACAECAQE/ECv/xAAbEAACAgMBAAAAAAAAAAAAAAABEQAhMUFxYf/aAAgBAQABPxAMABnLj9bnZxFnfQZkA5CjQCVT0x7P/9k='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="Ray McManus, Ireland, Sportsfile"
+        title="2nd prize Sports Singles. Ray McManus, Ireland, Sportsfile. Scrum half, Dublin, Ireland, 5 February 2011"
+        src="/static/5333debe5f157f54cef8ac7a6bc1ce84/55fd7/18_Ray-McManus_qencag.jpg"
+        srcset="/static/5333debe5f157f54cef8ac7a6bc1ce84/e81c0/18_Ray-McManus_qencag.jpg 200w,
+/static/5333debe5f157f54cef8ac7a6bc1ce84/8e8ea/18_Ray-McManus_qencag.jpg 400w,
+/static/5333debe5f157f54cef8ac7a6bc1ce84/55fd7/18_Ray-McManus_qencag.jpg 640w"
+        sizes="(max-width: 640px) 100vw, 640px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    
+  <figcaption class="gatsby-resp-image-figcaption">2nd prize Sports Singles. Ray McManus, Ireland, Sportsfile. Scrum half, Dublin, Ireland, 5 February 2011</figcaption>
+  </figure>
+      </p>
+<p>Blackrock College scrum-half Conor Crowley releases the ball after a ruck, during a Division 1A All-Ireland League rugby union match against Old Belvedere, in heavy rain on 5 February, at Anglesea Road, Old Belvedere’s home stadium. Both rugby union clubs are based in Dublin, Ireland. They were originally formed as teams of former pupils of two of the city’s schools, but are now open. Old Belvedere won the match 10-9, and went on to become league champions.</p>
+<p>
+  <figure class="gatsby-resp-image-figure" style="">
+  
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/6d68e35e437d4972a2b3be5a33455516/55fd7/19_Adam-Pretty_pkiu6c.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 640px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAAAAMEBQH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIQAxAAAAGGVw2FUYV0JQf/xAAdEAACAgEFAAAAAAAAAAAAAAAAAgERAwQQEhMh/9oACAEBAAEFAp0qKI3LLYrw553WYqkiNv/EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQMBAT8BH//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQIBAT8BH//EABwQAAEEAwEAAAAAAAAAAAAAAAEAAhAREjFxYf/aAAgBAQAGPwLLInxMNlp3UcTeRoT/AP/EAB0QAQACAgIDAAAAAAAAAAAAAAEAESExUWFxgZH/2gAIAQEAAT8hF0X1NQbZNjnXipSKI6VEQOYLkO8zV9UAR47gz//aAAwDAQACAAMAAAAQEMgA/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPxAf/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAgEBPxAf/8QAHRABAQEAAgIDAAAAAAAAAAAAAREAITFBUWGR8P/aAAgBAQABPxCKSVEBfqnIZe9aAz0T8TfNh2+wZzheG+RGYQwxI3wTDUbUqQyzf//Z'); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;"
+        alt="Adam Pretty, Australia, Getty Images"
+        title="2nd prize Sports Stories. Adam Pretty, Australia, Getty Images. World Aquatics Championships, Shanghai, China, 17 July 2011"
+        src="/static/6d68e35e437d4972a2b3be5a33455516/55fd7/19_Adam-Pretty_pkiu6c.jpg"
+        srcset="/static/6d68e35e437d4972a2b3be5a33455516/e81c0/19_Adam-Pretty_pkiu6c.jpg 200w,
+/static/6d68e35e437d4972a2b3be5a33455516/8e8ea/19_Adam-Pretty_pkiu6c.jpg 400w,
+/static/6d68e35e437d4972a2b3be5a33455516/55fd7/19_Adam-Pretty_pkiu6c.jpg 640w"
+        sizes="(max-width: 640px) 100vw, 640px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    
+  <figcaption class="gatsby-resp-image-figcaption">2nd prize Sports Stories. Adam Pretty, Australia, Getty Images. World Aquatics Championships, Shanghai, China, 17 July 2011</figcaption>
+  </figure>
+      </p>
+<p>Divers practice during the second day of the 14th FINA World Aquatics Championships, in Shanghai, China, in July.</p></div><footer><div>Loading...</div><div class="jsx-4158949110 author"><div class="jsx-4158949110 avatar"><img src="/static/avatar-9fed4a6a589d12d55cab4b5621bd21b3.jpg" alt="Momardi - Tuesday Gutierrez" class="jsx-4158949110"/></div><div class="jsx-4158949110 note"><p>Article by <strong>Tuesday Gutierrez</strong>. Former digital marketing manager for the London 2012 Festival, the largest UK festival ever staged. This is her blog about contemporary art, design, film, photography and all that move her soul.</p></div></div><div class="jsx-126278577 links"><a href="/start-a-war-online-exhibition-interview-with-photographer-kevin-morosky/"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em"><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"></path></svg><h4 class="jsx-126278577">Start a War Online Exhibition: Interview with photographer Kevin Morosky<!-- --> <time class="jsx-126278577">2012-12-02<!-- --> </time></h4></a><a href="/hijacking-the-domestic-rashid-johnson-shelter-at-the-south-london-gallery/"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em"><path d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"></path></svg><h4 class="jsx-126278577">Hijacking the Domestic: Rashid Johnson - Shelter at the South London Gallery<!-- --> <time class="jsx-126278577">2012-11-20</time></h4></a></div></footer></article></main><footer class="jsx-1209355388 footer"><ul>
+<li>All content copyright by MOMARDI - Tuesday Gutierrez © 2018 All rights reserved</li>
+<li>Copywriter, Content Manager, Strategy, Branding and Marketing || Proudly published with <a href="https://www.gatsbyjs.org/">GatsbyJS</a> and <a href="https://github.com">Github</a></li>
+</ul></footer></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-268014-11', 'auto', {});
+      
+      }
+      </script><script id="gatsby-script-loader">/*<![CDATA[*/window.page={"componentChunkName":"component---src-templates-post-template-js","jsonName":"top-19-images-from-the-world-press-photo-contest-8da","path":"/top-19-images-from-the-world-press-photo-contest/"};window.dataPath="789/path---top-19-images-from-the-world-press-photo-contest-8-da-3aa-ZyK2FcB8uaV4SSrMv5kWSNF1I";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app.8b1cc9920e75fff049f7.css","/app-19e66dfda9679ae89fc3.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-8fec9522ed849d38d6e1.js"],"component---src-templates-category-template-js":["/component---src-templates-category-template-js-bbbc53f0d10a363d3916.js"],"component---src-templates-post-template-js":["/component---src-templates-post-template-js.b6f197430f783b3e67aa.css","/component---src-templates-post-template-js-6193f23506b3bdb852a8.js"],"component---src-templates-page-template-js":["/component---src-templates-page-template-js-3207c1dd6e884134e246.js"],"component---src-templates-index-js":["/component---src-templates-index-js-206102ca59d9d3ce11c5.js"],"component---src-pages-404-js":["/component---src-pages-404-js-718506eefd248f6f227f.js"],"component---src-pages-category-js":["/component---src-pages-category-js-17964a73e7bbfeb80cbf.js"],"component---src-pages-search-js":["/component---src-pages-search-js-42ae346864b4602c817e.js"]};/*]]>*/</script><script src="/component---src-templates-post-template-js-6193f23506b3bdb852a8.js" async=""></script><script src="/0-b46d511e229ccfe9bbb3.js" async=""></script><script src="/app-19e66dfda9679ae89fc3.js" async=""></script><script src="/webpack-runtime-d1d8e972eb3919d6ad52.js" async=""></script></body></html>

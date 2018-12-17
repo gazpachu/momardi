@@ -18,11 +18,56 @@ menuTitle: CV
     float: right;
     width: 70px;
   }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 10px;
+  }
+  .chart {
+    text-align: center;
+  }
+  .chart-heading {
+    margin: 0 0 20px 0 !important;
+  }
+  .scale {
+    fill: #eee;
+    stroke: #999;
+    stroke-width: .2;
+  }
+  .axis {
+    stroke: #555;
+    stroke-width: .2;
+  }
+  .shape {
+    fill-opacity: .3;
+    stroke-width: .5;
+  }
+  .shape:hover {
+    fill-opacity: .6;
+  }
+  .caption {
+    font-size: 4px;
+    fill: #444;
+    font-weight: normal;
+    text-shadow: 1px 1px 0 #fff;
+  }
 </style>
 
 ## Summary
 
 Marketing and Communications Professional with 10 years experience. Expert in digital media, content marketing and strategic partnerships.
+
+<div class="grid">
+  <div class="chart">
+    <h3 class="chart-heading">Skills</h3>
+    <svg version="1" xmlns="http://www.w3.org/2000/svg" viewBox="-10 0 120 100"><g transform="translate(50.0000,50.0000)"><g><circle class="scale" fill="none" r="41.66666666666667"></circle><circle class="scale" fill="none" r="33.333333333333336"></circle><circle class="scale" fill="none" r="25.000000000000004"></circle><circle class="scale" fill="none" r="16.666666666666668"></circle><circle class="scale" fill="none" r="8.333333333333334"></circle></g><g><polyline class="axis" points="0.0000,0.0000 0.0000,-41.6667"></polyline><polyline class="axis" points="0.0000,0.0000 29.4628,-29.4628"></polyline><polyline class="axis" points="0.0000,0.0000 41.6667,0.0000"></polyline><polyline class="axis" points="0.0000,0.0000 29.4628,29.4628"></polyline><polyline class="axis" points="0.0000,0.0000 0.0000,41.6667"></polyline><polyline class="axis" points="0.0000,0.0000 -29.4628,29.4628"></polyline><polyline class="axis" points="0.0000,0.0000 -41.6667,0.0000"></polyline><polyline class="axis" points="0.0000,0.0000 -29.4628,-29.4628"></polyline></g><g><path class="shape" fill="#1AA0CD" stroke="#1AA0CD" d="M26.51650429449554,-26.516504294495533C26.51650429449554,-26.516504294495533,33.333333333333336,0,33.333333333333336,0C33.333333333333336,0,29.462782549439485,29.46278254943948,29.462782549439485,29.46278254943948C29.462782549439485,29.46278254943948,2.0410779985789223e-15,33.333333333333336,2.0410779985789223e-15,33.333333333333336C2.0410779985789223e-15,33.333333333333336,-23.570226039551585,23.57022603955159,-23.570226039551585,23.57022603955159C-23.570226039551585,23.57022603955159,-25.000000000000004,3.0616169978683834e-15,-25.000000000000004,3.0616169978683834e-15C-25.000000000000004,3.0616169978683834e-15,-23.570226039551592,-23.570226039551585,-23.570226039551592,-23.570226039551585C-23.570226039551592,-23.570226039551585,2.0410779985789223e-15,-33.333333333333336,2.0410779985789223e-15,-33.333333333333336C2.0410779985789223e-15,-33.333333333333336,26.51650429449554,-26.516504294495533,26.51650429449554,-26.516504294495533"></path></g><g><text class="caption" text-anchor="middle" font-size="3" font-family="sans-serif" x="0.0000" y="-47.5000" dy="1.5">Brand and comms.</text><text class="caption" text-anchor="middle" font-size="3" font-family="sans-serif" x="33.5876" y="-33.5876" dy="1.5">Content Marketing</text><text class="caption" text-anchor="middle" font-size="3" font-family="sans-serif" x="47.5000" y="0.0000" dy="1.5">Social Media</text><text class="caption" text-anchor="middle" font-size="3" font-family="sans-serif" x="33.5876" y="33.5876" dy="1.5">Copywriting</text><text class="caption" text-anchor="middle" font-size="3" font-family="sans-serif" x="0.0000" y="47.5000" dy="1.5">Project Management</text><text class="caption" text-anchor="middle" font-size="3" font-family="sans-serif" x="-33.5876" y="33.5876" dy="1.5">Content Strategy</text><text class="caption" text-anchor="middle" font-size="3" font-family="sans-serif" x="-47.5000" y="0.0000" dy="1.5">Video editing</text><text class="caption" text-anchor="middle" font-size="3" font-family="sans-serif" x="-33.5876" y="-33.5876" dy="1.5">Stakeholder Management</text></g></g></svg>
+  </div>
+  <div class="chart">
+    <h3 class="chart-heading">Interests</h3>
+    <svg version="1" xmlns="http://www.w3.org/2000/svg" viewBox="-10 0 120 100"><g transform="translate(50.0000,50.0000)"><g><circle class="scale" fill="none" r="41.66666666666667"></circle><circle class="scale" fill="none" r="33.333333333333336"></circle><circle class="scale" fill="none" r="25.000000000000004"></circle><circle class="scale" fill="none" r="16.666666666666668"></circle><circle class="scale" fill="none" r="8.333333333333334"></circle></g><g><polyline class="axis" points="0.0000,0.0000 0.0000,-41.6667"></polyline><polyline class="axis" points="0.0000,0.0000 39.6274,-12.8757"></polyline><polyline class="axis" points="0.0000,0.0000 24.4911,33.7090"></polyline><polyline class="axis" points="0.0000,0.0000 -24.4911,33.7090"></polyline><polyline class="axis" points="0.0000,0.0000 -39.6274,-12.8757"></polyline></g><g><path class="shape" fill="#edc951" stroke="#edc951" d="M31.70188387650512,-10.300566479164914C31.70188387650512,-10.300566479164914,17.143736525197134,23.596329002602634,17.143736525197134,23.596329002602634C17.143736525197134,23.596329002602634,-19.592841743082435,26.967233145831585,-19.592841743082435,26.967233145831585C-19.592841743082435,26.967233145831585,-39.62735484563141,-12.875708098956139,-39.62735484563141,-12.875708098956139C-39.62735484563141,-12.875708098956139,2.551347498223653e-15,-41.66666666666667,2.551347498223653e-15,-41.66666666666667C2.551347498223653e-15,-41.66666666666667,31.70188387650512,-10.300566479164914,31.70188387650512,-10.300566479164914"></path></g><g><text class="caption" text-anchor="middle" font-size="3" font-family="sans-serif" x="0.0000" y="-47.5000" dy="1.5">Brand Building</text><text class="caption" text-anchor="middle" font-size="3" font-family="sans-serif" x="45.1752" y="-14.6783" dy="1.5">Sustainability</text><text class="caption" text-anchor="middle" font-size="3" font-family="sans-serif" x="27.9198" y="38.4283" dy="1.5">Design</text><text class="caption" text-anchor="middle" font-size="3" font-family="sans-serif" x="-27.9198" y="38.4283" dy="1.5">Technology</text><text class="caption" text-anchor="middle" font-size="3" font-family="sans-serif" x="-45.1752" y="-14.6783" dy="1.5">Arts and culture</text></g></g></svg>
+  </div>
+</div>
 
 ## Professional experience
 
@@ -160,9 +205,17 @@ I handled editorial administrative duties, proofreading, writing, research and i
 
 **Bachelor of Arts in Literature**. [De la Salle University](http://www.dlsu.edu.ph/). Manila, Philippines. (Jun 1992 – Sep 1996)
 
-**Plastic Arts and Ceramic Art**. [Escuela Superior de Arte](http://www.easda.es/). Alicante, Spain. (2009 – 2010, One year to finish
+**Plastic Arts and Ceramic Art**. [Escuela Superior de Arte](http://www.easda.es/). Alicante, Spain. (2009 – 2010, One year to finish)
 
 **Master in 3D Animation (certificate)**. [Pompeu Fabra University](http://www.upf.edu/en/). Barcelona, Spain (Oct 2002 – Jun 2003)
+
+## Courses, workshops, classes and certificates
+
+**Classic drawing** [Fine Arts Academy of Simón Picó](https://estudiosimonpico.wordpress.com/) Alicante, Spain (Jul 2017 - Present)
+
+**Figure drawing, Saturday School | Sustained Pose** [Lara Atelier Art School](https://www.drawpaintsculpt.com/product/figure-drawing-saturday-school-london/) London, UK (May 2014 - Mar 2015)
+
+**Learning to Look at the Visual Arts (Online)** [University of Oxford](https://www.conted.ox.ac.uk/courses/learning-to-look-at-the-visual-arts-online). (Apr 2013 - Jul 2013)
 
 **Web Design Course (360 hours)**. [Maga Informática](http://www.magainformatica.com/). Alicante, Spain. (May 2006 – Sep 2006)
 
@@ -170,11 +223,11 @@ I handled editorial administrative duties, proofreading, writing, research and i
 
 **Photography Course (Advanced)**. [Philippine Center for Creative Imaging](http://pcci.com.ph/). Manila, Philippines. (2007)
 
-**Certificate Advanced Course of Spanish**. [Instituto Cervantes de Manila](http://manila.cervantes.es/en/default.shtm). Manila, Philippines. (1998 – 2001)
-
 **Certificate French Superior**. [Alliance Française de Manille](http://www.alliance.ph/). Manila, Philippines. (1998 – 2001)
 
 **Japanese Language (Level 1)**. [Universidad de Alicante](http://www.ua.es/es/oriental/index.htm). Alicante, Spain. (2009)
+
+**Certificate Advanced Course of Spanish**. [Instituto Cervantes de Manila](http://manila.cervantes.es/en/default.shtm). Manila, Philippines. (1998 – 2001)
 
 **Certificate for English Teacher**. [Bridge-Linguatec TEFL Online](http://www.bridgetefl.com/). Manila, Philippines. (2008)
 

@@ -81,6 +81,8 @@ Creative Marketing and Communications Professional with 10 years experience. Exp
 - Key partner for cross functional teams and acts as brand manager to solve day-to-day branding issues to ensure brand consistency across platforms (owned, shared, third-party)
 - Collaborated with the brand, marketing and commercial team to develop strategic ways to build a stronger Volvo Ocean Race brand
 
+[Read more and see photos...](/work/volvo-ocean-race)
+
 ### Global People and Content Advisor at [Unilever HQ](http://unilever.com)
 #### Jul 2015 – Jun 2016 ([London, UK](https://www.google.com/maps/place/London)) [Read the work review](/work/unilever)
 [![](../3--work/images/unilever-people.jpg)](/work/unilever)

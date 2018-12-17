@@ -56,7 +56,7 @@ menuTitle: CV
 
 ## Summary
 
-Marketing and Communications Professional with 10 years experience. Expert in digital media, content marketing and strategic partnerships.
+Creative Marketing and Communications Professional with 10 years experience. Expert in digital media, content marketing and strategic partnerships.
 
 <div class="grid">
   <div class="chart">
@@ -208,6 +208,12 @@ I handled editorial administrative duties, proofreading, writing, research and i
 **Plastic Arts and Ceramic Art**. [Escuela Superior de Arte](http://www.easda.es/). Alicante, Spain. (2009 – 2010, One year to finish)
 
 **Master in 3D Animation (certificate)**. [Pompeu Fabra University](http://www.upf.edu/en/). Barcelona, Spain (Oct 2002 – Jun 2003)
+
+## Languages
+
+<div style="text-align: center">
+  <svg style="max-width: 300px;" version="1" xmlns="http://www.w3.org/2000/svg" viewBox="-10 0 120 100"><g transform="translate(50.0000,50.0000)"><g><circle class="scale" fill="none" r="41.66666666666667"></circle><circle class="scale" fill="none" r="33.333333333333336"></circle><circle class="scale" fill="none" r="25.000000000000004"></circle><circle class="scale" fill="none" r="16.666666666666668"></circle><circle class="scale" fill="none" r="8.333333333333334"></circle></g><g><polyline class="axis" points="0.0000,0.0000 0.0000,-41.6667"></polyline><polyline class="axis" points="0.0000,0.0000 36.0844,20.8333"></polyline><polyline class="axis" points="0.0000,0.0000 -36.0844,20.8333"></polyline></g><g><path class="shape" fill="#cc333f" stroke="#cc333f" d="M25.25907427704613,14.583333333333329C25.25907427704613,14.583333333333329,-18.042195912175803,10.416666666666675,-18.042195912175803,10.416666666666675C-18.042195912175803,10.416666666666675,2.551347498223653e-15,-41.66666666666667,2.551347498223653e-15,-41.66666666666667C2.551347498223653e-15,-41.66666666666667,25.25907427704613,14.583333333333329,25.25907427704613,14.583333333333329"></path></g><g><text class="caption" text-anchor="middle" font-size="3" font-family="sans-serif" x="0.0000" y="-47.5000" dy="1.5">English</text><text class="caption" text-anchor="middle" font-size="3" font-family="sans-serif" x="41.1362" y="23.7500" dy="1.5">Spanish</text><text class="caption" text-anchor="middle" font-size="3" font-family="sans-serif" x="-41.1362" y="23.7500" dy="1.5">French</text></g></g></svg>
+</div>
 
 ## Courses, workshops, classes and certificates
 

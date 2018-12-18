@@ -9,6 +9,10 @@ export default class HTML extends React.Component {
           <meta charSet="utf-8" />
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+          <meta
+            name="google-site-verification"
+            content="kIiGEK508Fpc6aMA1k4AQVMA9_MnA1R9D8WV6QidqGw"
+          />
           {this.props.headComponents}
           <meta name="apple-mobile-web-app-capable" content="yes" />
           <meta name="apple-mobile-web-app-status-bar-style" content="#D0E0D8" />

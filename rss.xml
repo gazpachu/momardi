@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Momardi - Tuesday Gutierrez]]></title><description><![CDATA[Tuesday Gutierrez. Creative writer, agile content manager and visual artist]]></description><link>https://momardi.com</link><generator>RSS for Node</generator><lastBuildDate>Sun, 16 Dec 2018 15:35:52 GMT</lastBuildDate><item><title><![CDATA[Contact]]></title><description><![CDATA[If you are an art institution or a creative artist and would like to be featured, email me at  tuesdaygutz  @   gmail.com . I am also doing…]]></description><link>https://momardi.com/contact/</link><guid isPermaLink="false">https://momardi.com/contact/</guid><content:encoded>&lt;p&gt;If you are an art institution or a creative artist and would like to be featured, email me at &lt;strong&gt;tuesdaygutz [@ ] gmail.com&lt;/strong&gt;. I am also doing consultancy work and if you want to me to take a look at the digital and content strategy of your institution, feel free to drop me a line.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Work]]></title><link>https://momardi.com/work/</link><guid isPermaLink="false">https://momardi.com/work/</guid><content:encoded>&lt;p&gt;&lt;a href=&quot;/volvo-ocean-race&quot;&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Momardi - Tuesday Gutierrez]]></title><description><![CDATA[Tuesday Gutierrez. Creative writer, agile content manager and visual artist]]></description><link>https://momardi.com</link><generator>RSS for Node</generator><lastBuildDate>Thu, 20 Dec 2018 13:17:46 GMT</lastBuildDate><item><title><![CDATA[Contact]]></title><description><![CDATA[If you are an art institution or a creative artist and would like to be featured, email me at  tuesdaygutz  @   gmail.com . I am also doing…]]></description><link>https://momardi.com/contact/</link><guid isPermaLink="false">https://momardi.com/contact/</guid><content:encoded>&lt;p&gt;If you are an art institution or a creative artist and would like to be featured, email me at &lt;strong&gt;tuesdaygutz [@ ] gmail.com&lt;/strong&gt;. I am also doing consultancy work and if you want to me to take a look at the digital and content strategy of your institution, feel free to drop me a line.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Work]]></title><link>https://momardi.com/work/</link><guid isPermaLink="false">https://momardi.com/work/</guid><content:encoded>&lt;p&gt;&lt;a href=&quot;/work/volvo-ocean-race&quot;&gt;
   &lt;span
     class=&quot;gatsby-resp-image-wrapper&quot;
     style=&quot;position: relative; display: block;  max-width: 800px; margin-left: auto; margin-right: auto;&quot;
@@ -25403,7 +25403,7 @@ Laura&lt;/p&gt;
           &quot;&gt;&lt;/iframe&gt;
           &lt;/div&gt;
           &lt;/div&gt;
-&lt;figcaption&gt;Antony Gormley encourages us to go barefoot to change the world&lt;/figcaption&gt;</content:encoded></item><item><title><![CDATA[Curriculum]]></title><description><![CDATA[Summary Marketing and Communications Professional with 10 years experience. Expert in digital media, content marketing and strategic…]]></description><link>https://momardi.com/cv/</link><guid isPermaLink="false">https://momardi.com/cv/</guid><content:encoded>&lt;style&gt;
+&lt;figcaption&gt;Antony Gormley encourages us to go barefoot to change the world&lt;/figcaption&gt;</content:encoded></item><item><title><![CDATA[Curriculum]]></title><description><![CDATA[Summary Creative Marketing and Communications Professional with 10 years experience. Expert in digital media, content marketing and…]]></description><link>https://momardi.com/cv/</link><guid isPermaLink="false">https://momardi.com/cv/</guid><content:encoded>&lt;style&gt;
   h3 { margin: 40px 0 10px 0 !important; }
   h4 {
     font-weight: lighter;
@@ -25418,9 +25418,53 @@ Laura&lt;/p&gt;
     float: right;
     width: 70px;
   }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 10px;
+  }
+  .chart {
+    text-align: center;
+  }
+  .chart-heading {
+    margin: 0 0 20px 0 !important;
+  }
+  .scale {
+    fill: #eee;
+    stroke: #999;
+    stroke-width: .2;
+  }
+  .axis {
+    stroke: #555;
+    stroke-width: .2;
+  }
+  .shape {
+    fill-opacity: .3;
+    stroke-width: .5;
+  }
+  .shape:hover {
+    fill-opacity: .6;
+  }
+  .caption {
+    font-size: 4px;
+    fill: #444;
+    font-weight: normal;
+    text-shadow: 1px 1px 0 #fff;
+  }
 &lt;/style&gt;
 &lt;h2&gt;Summary&lt;/h2&gt;
-&lt;p&gt;Marketing and Communications Professional with 10 years experience. Expert in digital media, content marketing and strategic partnerships.&lt;/p&gt;
+&lt;p&gt;Creative Marketing and Communications Professional with 10 years experience. Expert in digital media, content marketing and strategic partnerships.&lt;/p&gt;
+&lt;div class=&quot;grid&quot;&gt;
+  &lt;div class=&quot;chart&quot;&gt;
+    &lt;h3 class=&quot;chart-heading&quot;&gt;Skills&lt;/h3&gt;
+    &lt;svg version=&quot;1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;-10 0 120 100&quot;&gt;&lt;g transform=&quot;translate(50.0000,50.0000)&quot;&gt;&lt;g&gt;&lt;circle class=&quot;scale&quot; fill=&quot;none&quot; r=&quot;41.66666666666667&quot;&gt;&lt;/circle&gt;&lt;circle class=&quot;scale&quot; fill=&quot;none&quot; r=&quot;33.333333333333336&quot;&gt;&lt;/circle&gt;&lt;circle class=&quot;scale&quot; fill=&quot;none&quot; r=&quot;25.000000000000004&quot;&gt;&lt;/circle&gt;&lt;circle class=&quot;scale&quot; fill=&quot;none&quot; r=&quot;16.666666666666668&quot;&gt;&lt;/circle&gt;&lt;circle class=&quot;scale&quot; fill=&quot;none&quot; r=&quot;8.333333333333334&quot;&gt;&lt;/circle&gt;&lt;/g&gt;&lt;g&gt;&lt;polyline class=&quot;axis&quot; points=&quot;0.0000,0.0000 0.0000,-41.6667&quot;&gt;&lt;/polyline&gt;&lt;polyline class=&quot;axis&quot; points=&quot;0.0000,0.0000 29.4628,-29.4628&quot;&gt;&lt;/polyline&gt;&lt;polyline class=&quot;axis&quot; points=&quot;0.0000,0.0000 41.6667,0.0000&quot;&gt;&lt;/polyline&gt;&lt;polyline class=&quot;axis&quot; points=&quot;0.0000,0.0000 29.4628,29.4628&quot;&gt;&lt;/polyline&gt;&lt;polyline class=&quot;axis&quot; points=&quot;0.0000,0.0000 0.0000,41.6667&quot;&gt;&lt;/polyline&gt;&lt;polyline class=&quot;axis&quot; points=&quot;0.0000,0.0000 -29.4628,29.4628&quot;&gt;&lt;/polyline&gt;&lt;polyline class=&quot;axis&quot; points=&quot;0.0000,0.0000 -41.6667,0.0000&quot;&gt;&lt;/polyline&gt;&lt;polyline class=&quot;axis&quot; points=&quot;0.0000,0.0000 -29.4628,-29.4628&quot;&gt;&lt;/polyline&gt;&lt;/g&gt;&lt;g&gt;&lt;path class=&quot;shape&quot; fill=&quot;#1AA0CD&quot; stroke=&quot;#1AA0CD&quot; d=&quot;M26.51650429449554,-26.516504294495533C26.51650429449554,-26.516504294495533,33.333333333333336,0,33.333333333333336,0C33.333333333333336,0,29.462782549439485,29.46278254943948,29.462782549439485,29.46278254943948C29.462782549439485,29.46278254943948,2.0410779985789223e-15,33.333333333333336,2.0410779985789223e-15,33.333333333333336C2.0410779985789223e-15,33.333333333333336,-23.570226039551585,23.57022603955159,-23.570226039551585,23.57022603955159C-23.570226039551585,23.57022603955159,-25.000000000000004,3.0616169978683834e-15,-25.000000000000004,3.0616169978683834e-15C-25.000000000000004,3.0616169978683834e-15,-23.570226039551592,-23.570226039551585,-23.570226039551592,-23.570226039551585C-23.570226039551592,-23.570226039551585,2.0410779985789223e-15,-33.333333333333336,2.0410779985789223e-15,-33.333333333333336C2.0410779985789223e-15,-33.333333333333336,26.51650429449554,-26.516504294495533,26.51650429449554,-26.516504294495533&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g&gt;&lt;text class=&quot;caption&quot; text-anchor=&quot;middle&quot; font-size=&quot;3&quot; font-family=&quot;sans-serif&quot; x=&quot;0.0000&quot; y=&quot;-47.5000&quot; dy=&quot;1.5&quot;&gt;Brand and comms.&lt;/text&gt;&lt;text class=&quot;caption&quot; text-anchor=&quot;middle&quot; font-size=&quot;3&quot; font-family=&quot;sans-serif&quot; x=&quot;33.5876&quot; y=&quot;-33.5876&quot; dy=&quot;1.5&quot;&gt;Content Marketing&lt;/text&gt;&lt;text class=&quot;caption&quot; text-anchor=&quot;middle&quot; font-size=&quot;3&quot; font-family=&quot;sans-serif&quot; x=&quot;47.5000&quot; y=&quot;0.0000&quot; dy=&quot;1.5&quot;&gt;Social Media&lt;/text&gt;&lt;text class=&quot;caption&quot; text-anchor=&quot;middle&quot; font-size=&quot;3&quot; font-family=&quot;sans-serif&quot; x=&quot;33.5876&quot; y=&quot;33.5876&quot; dy=&quot;1.5&quot;&gt;Copywriting&lt;/text&gt;&lt;text class=&quot;caption&quot; text-anchor=&quot;middle&quot; font-size=&quot;3&quot; font-family=&quot;sans-serif&quot; x=&quot;0.0000&quot; y=&quot;47.5000&quot; dy=&quot;1.5&quot;&gt;Project Management&lt;/text&gt;&lt;text class=&quot;caption&quot; text-anchor=&quot;middle&quot; font-size=&quot;3&quot; font-family=&quot;sans-serif&quot; x=&quot;-33.5876&quot; y=&quot;33.5876&quot; dy=&quot;1.5&quot;&gt;Content Strategy&lt;/text&gt;&lt;text class=&quot;caption&quot; text-anchor=&quot;middle&quot; font-size=&quot;3&quot; font-family=&quot;sans-serif&quot; x=&quot;-47.5000&quot; y=&quot;0.0000&quot; dy=&quot;1.5&quot;&gt;Video editing&lt;/text&gt;&lt;text class=&quot;caption&quot; text-anchor=&quot;middle&quot; font-size=&quot;3&quot; font-family=&quot;sans-serif&quot; x=&quot;-33.5876&quot; y=&quot;-33.5876&quot; dy=&quot;1.5&quot;&gt;Stakeholder Management&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;/svg&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;chart&quot;&gt;
+    &lt;h3 class=&quot;chart-heading&quot;&gt;Interests&lt;/h3&gt;
+    &lt;svg version=&quot;1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;-10 0 120 100&quot;&gt;&lt;g transform=&quot;translate(50.0000,50.0000)&quot;&gt;&lt;g&gt;&lt;circle class=&quot;scale&quot; fill=&quot;none&quot; r=&quot;41.66666666666667&quot;&gt;&lt;/circle&gt;&lt;circle class=&quot;scale&quot; fill=&quot;none&quot; r=&quot;33.333333333333336&quot;&gt;&lt;/circle&gt;&lt;circle class=&quot;scale&quot; fill=&quot;none&quot; r=&quot;25.000000000000004&quot;&gt;&lt;/circle&gt;&lt;circle class=&quot;scale&quot; fill=&quot;none&quot; r=&quot;16.666666666666668&quot;&gt;&lt;/circle&gt;&lt;circle class=&quot;scale&quot; fill=&quot;none&quot; r=&quot;8.333333333333334&quot;&gt;&lt;/circle&gt;&lt;/g&gt;&lt;g&gt;&lt;polyline class=&quot;axis&quot; points=&quot;0.0000,0.0000 0.0000,-41.6667&quot;&gt;&lt;/polyline&gt;&lt;polyline class=&quot;axis&quot; points=&quot;0.0000,0.0000 39.6274,-12.8757&quot;&gt;&lt;/polyline&gt;&lt;polyline class=&quot;axis&quot; points=&quot;0.0000,0.0000 24.4911,33.7090&quot;&gt;&lt;/polyline&gt;&lt;polyline class=&quot;axis&quot; points=&quot;0.0000,0.0000 -24.4911,33.7090&quot;&gt;&lt;/polyline&gt;&lt;polyline class=&quot;axis&quot; points=&quot;0.0000,0.0000 -39.6274,-12.8757&quot;&gt;&lt;/polyline&gt;&lt;/g&gt;&lt;g&gt;&lt;path class=&quot;shape&quot; fill=&quot;#edc951&quot; stroke=&quot;#edc951&quot; d=&quot;M31.70188387650512,-10.300566479164914C31.70188387650512,-10.300566479164914,17.143736525197134,23.596329002602634,17.143736525197134,23.596329002602634C17.143736525197134,23.596329002602634,-19.592841743082435,26.967233145831585,-19.592841743082435,26.967233145831585C-19.592841743082435,26.967233145831585,-39.62735484563141,-12.875708098956139,-39.62735484563141,-12.875708098956139C-39.62735484563141,-12.875708098956139,2.551347498223653e-15,-41.66666666666667,2.551347498223653e-15,-41.66666666666667C2.551347498223653e-15,-41.66666666666667,31.70188387650512,-10.300566479164914,31.70188387650512,-10.300566479164914&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g&gt;&lt;text class=&quot;caption&quot; text-anchor=&quot;middle&quot; font-size=&quot;3&quot; font-family=&quot;sans-serif&quot; x=&quot;0.0000&quot; y=&quot;-47.5000&quot; dy=&quot;1.5&quot;&gt;Brand Building&lt;/text&gt;&lt;text class=&quot;caption&quot; text-anchor=&quot;middle&quot; font-size=&quot;3&quot; font-family=&quot;sans-serif&quot; x=&quot;45.1752&quot; y=&quot;-14.6783&quot; dy=&quot;1.5&quot;&gt;Sustainability&lt;/text&gt;&lt;text class=&quot;caption&quot; text-anchor=&quot;middle&quot; font-size=&quot;3&quot; font-family=&quot;sans-serif&quot; x=&quot;27.9198&quot; y=&quot;38.4283&quot; dy=&quot;1.5&quot;&gt;Design&lt;/text&gt;&lt;text class=&quot;caption&quot; text-anchor=&quot;middle&quot; font-size=&quot;3&quot; font-family=&quot;sans-serif&quot; x=&quot;-27.9198&quot; y=&quot;38.4283&quot; dy=&quot;1.5&quot;&gt;Technology&lt;/text&gt;&lt;text class=&quot;caption&quot; text-anchor=&quot;middle&quot; font-size=&quot;3&quot; font-family=&quot;sans-serif&quot; x=&quot;-45.1752&quot; y=&quot;-14.6783&quot; dy=&quot;1.5&quot;&gt;Arts and culture&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;/svg&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
 &lt;h2&gt;Professional experience&lt;/h2&gt;
 &lt;h3&gt;Content Marketing Strategist at &lt;a href=&quot;http://volvooceanrace.com&quot;&gt;Volvo Ocean Race&lt;/a&gt;&lt;/h3&gt;
 &lt;h4&gt;Nov 2016 – Aug 2018 (&lt;a href=&quot;https://www.google.com/maps/place/Alicante&quot;&gt;Alicante, Spain&lt;/a&gt;) &lt;a href=&quot;/work/volvo-ocean-race&quot;&gt;Read the work review&lt;/a&gt;&lt;/h4&gt;
@@ -25455,6 +25499,7 @@ Laura&lt;/p&gt;
 &lt;li&gt;Key partner for cross functional teams and acts as brand manager to solve day-to-day branding issues to ensure brand consistency across platforms (owned, shared, third-party)&lt;/li&gt;
 &lt;li&gt;Collaborated with the brand, marketing and commercial team to develop strategic ways to build a stronger Volvo Ocean Race brand&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;&lt;a href=&quot;/work/volvo-ocean-race&quot;&gt;Read more and see photos…&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;Global People and Content Advisor at &lt;a href=&quot;http://unilever.com&quot;&gt;Unilever HQ&lt;/a&gt;&lt;/h3&gt;
 &lt;h4&gt;Jul 2015 – Jun 2016 (&lt;a href=&quot;https://www.google.com/maps/place/London&quot;&gt;London, UK&lt;/a&gt;) &lt;a href=&quot;/work/unilever&quot;&gt;Read the work review&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&quot;/work/unilever&quot;&gt;
@@ -25859,20 +25904,334 @@ food, design and photography.&lt;/li&gt;
 &lt;p&gt;I handled editorial administrative duties, proofreading, writing, research and interviews for the Lifestyle and Travel Section of the newspaper.&lt;/p&gt;
 &lt;h2&gt;Education&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Bachelor of Arts in Literature&lt;/strong&gt;. &lt;a href=&quot;http://www.dlsu.edu.ph/&quot;&gt;De la Salle University&lt;/a&gt;. Manila, Philippines. (Jun 1992 – Sep 1996)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Plastic Arts and Ceramic Art&lt;/strong&gt;. &lt;a href=&quot;http://www.easda.es/&quot;&gt;Escuela Superior de Arte&lt;/a&gt;. Alicante, Spain. (2009 – 2010, One year to finish&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Plastic Arts and Ceramic Art&lt;/strong&gt;. &lt;a href=&quot;http://www.easda.es/&quot;&gt;Escuela Superior de Arte&lt;/a&gt;. Alicante, Spain. (2009 – 2010, One year to finish)&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Master in 3D Animation (certificate)&lt;/strong&gt;. &lt;a href=&quot;http://www.upf.edu/en/&quot;&gt;Pompeu Fabra University&lt;/a&gt;. Barcelona, Spain (Oct 2002 – Jun 2003)&lt;/p&gt;
+&lt;h2&gt;Languages&lt;/h2&gt;
+&lt;div style=&quot;text-align: center&quot;&gt;
+  &lt;svg style=&quot;max-width: 300px;&quot; version=&quot;1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;-10 0 120 100&quot;&gt;&lt;g transform=&quot;translate(50.0000,50.0000)&quot;&gt;&lt;g&gt;&lt;circle class=&quot;scale&quot; fill=&quot;none&quot; r=&quot;41.66666666666667&quot;&gt;&lt;/circle&gt;&lt;circle class=&quot;scale&quot; fill=&quot;none&quot; r=&quot;33.333333333333336&quot;&gt;&lt;/circle&gt;&lt;circle class=&quot;scale&quot; fill=&quot;none&quot; r=&quot;25.000000000000004&quot;&gt;&lt;/circle&gt;&lt;circle class=&quot;scale&quot; fill=&quot;none&quot; r=&quot;16.666666666666668&quot;&gt;&lt;/circle&gt;&lt;circle class=&quot;scale&quot; fill=&quot;none&quot; r=&quot;8.333333333333334&quot;&gt;&lt;/circle&gt;&lt;/g&gt;&lt;g&gt;&lt;polyline class=&quot;axis&quot; points=&quot;0.0000,0.0000 0.0000,-41.6667&quot;&gt;&lt;/polyline&gt;&lt;polyline class=&quot;axis&quot; points=&quot;0.0000,0.0000 36.0844,20.8333&quot;&gt;&lt;/polyline&gt;&lt;polyline class=&quot;axis&quot; points=&quot;0.0000,0.0000 -36.0844,20.8333&quot;&gt;&lt;/polyline&gt;&lt;/g&gt;&lt;g&gt;&lt;path class=&quot;shape&quot; fill=&quot;#cc333f&quot; stroke=&quot;#cc333f&quot; d=&quot;M25.25907427704613,14.583333333333329C25.25907427704613,14.583333333333329,-18.042195912175803,10.416666666666675,-18.042195912175803,10.416666666666675C-18.042195912175803,10.416666666666675,2.551347498223653e-15,-41.66666666666667,2.551347498223653e-15,-41.66666666666667C2.551347498223653e-15,-41.66666666666667,25.25907427704613,14.583333333333329,25.25907427704613,14.583333333333329&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g&gt;&lt;text class=&quot;caption&quot; text-anchor=&quot;middle&quot; font-size=&quot;3&quot; font-family=&quot;sans-serif&quot; x=&quot;0.0000&quot; y=&quot;-47.5000&quot; dy=&quot;1.5&quot;&gt;English&lt;/text&gt;&lt;text class=&quot;caption&quot; text-anchor=&quot;middle&quot; font-size=&quot;3&quot; font-family=&quot;sans-serif&quot; x=&quot;41.1362&quot; y=&quot;23.7500&quot; dy=&quot;1.5&quot;&gt;Spanish&lt;/text&gt;&lt;text class=&quot;caption&quot; text-anchor=&quot;middle&quot; font-size=&quot;3&quot; font-family=&quot;sans-serif&quot; x=&quot;-41.1362&quot; y=&quot;23.7500&quot; dy=&quot;1.5&quot;&gt;French&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;/svg&gt;
+&lt;/div&gt;
+&lt;h2&gt;Courses, workshops, classes and certificates&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Classic drawing&lt;/strong&gt; &lt;a href=&quot;https://estudiosimonpico.wordpress.com/&quot;&gt;Fine Arts Academy of Simón Picó&lt;/a&gt; Alicante, Spain (Jul 2017 - Present)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure drawing, Saturday School | Sustained Pose&lt;/strong&gt; &lt;a href=&quot;https://www.drawpaintsculpt.com/product/figure-drawing-saturday-school-london/&quot;&gt;Lara Atelier Art School&lt;/a&gt; London, UK (May 2014 - Mar 2015)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Learning to Look at the Visual Arts (Online)&lt;/strong&gt; &lt;a href=&quot;https://www.conted.ox.ac.uk/courses/learning-to-look-at-the-visual-arts-online&quot;&gt;University of Oxford&lt;/a&gt;. (Apr 2013 - Jul 2013)&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Web Design Course (360 hours)&lt;/strong&gt;. &lt;a href=&quot;http://www.magainformatica.com/&quot;&gt;Maga Informática&lt;/a&gt;. Alicante, Spain. (May 2006 – Sep 2006)&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Photography Course (Basic)&lt;/strong&gt;. &lt;a href=&quot;http://photoworldmanila.com/&quot;&gt;Federation of Philippine Photographers&lt;/a&gt;. Manila, Philippines. (2007)&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Photography Course (Advanced)&lt;/strong&gt;. &lt;a href=&quot;http://pcci.com.ph/&quot;&gt;Philippine Center for Creative Imaging&lt;/a&gt;. Manila, Philippines. (2007)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Certificate Advanced Course of Spanish&lt;/strong&gt;. &lt;a href=&quot;http://manila.cervantes.es/en/default.shtm&quot;&gt;Instituto Cervantes de Manila&lt;/a&gt;. Manila, Philippines. (1998 – 2001)&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Certificate French Superior&lt;/strong&gt;. &lt;a href=&quot;http://www.alliance.ph/&quot;&gt;Alliance Française de Manille&lt;/a&gt;. Manila, Philippines. (1998 – 2001)&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Japanese Language (Level 1)&lt;/strong&gt;. &lt;a href=&quot;http://www.ua.es/es/oriental/index.htm&quot;&gt;Universidad de Alicante&lt;/a&gt;. Alicante, Spain. (2009)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Certificate Advanced Course of Spanish&lt;/strong&gt;. &lt;a href=&quot;http://manila.cervantes.es/en/default.shtm&quot;&gt;Instituto Cervantes de Manila&lt;/a&gt;. Manila, Philippines. (1998 – 2001)&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Certificate for English Teacher&lt;/strong&gt;. &lt;a href=&quot;http://www.bridgetefl.com/&quot;&gt;Bridge-Linguatec TEFL Online&lt;/a&gt;. Manila, Philippines. (2008)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Professional Education Diploma&lt;/strong&gt;. &lt;a href=&quot;http://pwu.edu.ph/&quot;&gt;Philippine Women University&lt;/a&gt;. Manila, Philippines. (2007 – 2008)&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Volvo Ocean Race]]></title><description><![CDATA[blablablabla]]></description><link>https://momardi.com/work/volvo-ocean-race/</link><guid isPermaLink="false">https://momardi.com/work/volvo-ocean-race/</guid><content:encoded>&lt;p&gt;blablablabla&lt;/p&gt;</content:encoded></item><item><title><![CDATA[About]]></title><description><![CDATA[Hi, I am Tuesday. Welcome to my art blog! Two years ago, I had the privilege to work with the best art practitioners in the country for the…]]></description><link>https://momardi.com/about/</link><guid isPermaLink="false">https://momardi.com/about/</guid><content:encoded>&lt;p&gt;Hi, I am Tuesday. Welcome to my art blog!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Professional Education Diploma&lt;/strong&gt;. &lt;a href=&quot;http://pwu.edu.ph/&quot;&gt;Philippine Women University&lt;/a&gt;. Manila, Philippines. (2007 – 2008)&lt;/p&gt;</content:encoded></item><item><title><![CDATA[About]]></title><description><![CDATA[Hi, I am Tuesday. Welcome to my art blog! Two years ago, I had the privilege to work with the best art practitioners in the country for the…]]></description><link>https://momardi.com/about/</link><guid isPermaLink="false">https://momardi.com/about/</guid><content:encoded>&lt;p&gt;Hi, I am Tuesday. Welcome to my art blog!&lt;/p&gt;
 &lt;p&gt;Two years ago, I had the privilege to work with the best art practitioners in the country for the &lt;strong&gt;London 2012 Festival – the largest UK-wide  festival ever staged&lt;/strong&gt;. As the digital manager for the culture team, we were able to deliver more than 12,000 events attended by more than &lt;strong&gt;20 million people around the UK&lt;/strong&gt; in celebration of the &lt;a href=&quot;http://www.london2012.com&quot;&gt;Olympic and Paralympic Games&lt;/a&gt;. Watch the highlights of the Festival at &lt;a href=&quot;http://thespace.org/items/p0001f60&quot;&gt;TheSpace&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;About the blog&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;I’ve created Momardi as a way of educating myself about the arts and creative sector. Through this blog, &lt;strong&gt;I want to promote artists I like and also feature the latest art exhibitions around London and occasionally some international exhibits.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;More on the digital me et.al&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;I am an all-around digital professional with years of experience in content creation, content strategy and social media. &lt;a href=&quot;http://uk.linkedin.com/in/tuesdaygutz&quot;&gt;View my curriculum at LinkedIn&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Disclaimer&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;All views expressed are my own and not those of the companies I work for.&lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;p&gt;All views expressed are my own and not those of the companies I work for.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Volvo Ocean Race]]></title><description><![CDATA[The Volvo Ocean Race is the world’s toughest sailing competition, and is considered by most of the greatest sailors as their personal Mt…]]></description><link>https://momardi.com/work/volvo-ocean-race/</link><guid isPermaLink="false">https://momardi.com/work/volvo-ocean-race/</guid><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/1f65539690fe7ade96a475de8537c5e9/ed558/volvo-ocean-race.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 800px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 37.64705882352941%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAAAsSAAALEgHS3X78AAACOElEQVQozx2RTVNSARSG+Sst2uempo9Fmk5TKWkJkaUjgoOKEAKCwOVyAfkmQVBQJD/QBlNJFJIxLTOzdMbWTa2qP/J0p8VZvHPOeeed51WsbVRZLm+zvr1HpX5A7eCE7f3PVA+/srLZoFR+y7vGIadnF9T2jyi9qbNQ2qK4VqG+f8DO7g5bmxs06lX293ZQHJ2c8OH4WH4444s85xffOf12ztp6lSGzhPq5hQGDE4d7EpNtkic6LyqdiFrvI5CYp1LdpVavsbi4wviED4VLiuAJxpGiaflgBimWxelLYnWFsXtiOMQkvtA03uAUEXkvhtKIgSnC8Vk8vgSCPybrKKMmOzO5IgrlUwPKHgOdfUZ6u3X0G130W7xox0SsUgJ3dBaL6EOIxwilC0j+CPm5VxSXVikUl8jPF/CKIo29Or///EXRP2xFbxMYGTBhbu7CNBHAGUgiRKZxBpPY/Uk0g3Y84RSxVI7cTJ5iqczLTJ5EKoPD5aFcLvPj5y/uKNUoOnp0PNKO4LzUhPlqq5zOjVUIEUzOEk7liaZzpLNzMtMK2flFhFASlxQmFJ8iEI7J/Or/zTQDw1xvbUfRqu5j+IGK1ZttLEyIZOaWSWYKBONZDFY3z/RaDBYrdm+IMZefUbuA2eHFIfhZKr3m/cdPtLSrMNtcjDkFFLfvdaG+28FDZSddml70Jge9Q1a65dSaQTOPtUaaOzUyWzvGcQGbxy8XJvJi3CWXJnHlVhuXm27QplRxreU+/wDyGJi2fR38HAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
+        alt=&quot;volvo ocean race&quot;
+        title=&quot;&quot;
+        src=&quot;/static/1f65539690fe7ade96a475de8537c5e9/4582e/volvo-ocean-race.png&quot;
+        srcset=&quot;/static/1f65539690fe7ade96a475de8537c5e9/9edb8/volvo-ocean-race.png 200w,
+/static/1f65539690fe7ade96a475de8537c5e9/f3745/volvo-ocean-race.png 400w,
+/static/1f65539690fe7ade96a475de8537c5e9/4582e/volvo-ocean-race.png 800w,
+/static/1f65539690fe7ade96a475de8537c5e9/ed558/volvo-ocean-race.png 850w&quot;
+        sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;The Volvo Ocean Race is the world’s toughest sailing competition, and is considered by most of the greatest sailors as their personal Mt. Everest. Running 45,000 nautical miles around the world for eight months and stopping over several Host Cities, it is an ultimate test of endurance for teams not only for sailors but even for people behind the scenes.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Winning mentality&lt;/strong&gt; - &lt;strong&gt;and an experience to remember!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Many consider this as just as a sports event, but the values it perpetuates has a lot of parallels in running a business or even life. For one, it takes a village to put this race together (from logistical operations, marketing promotion, branding, race management) that’s why only MENTALLY TOUGH people are called into the fold. The people who thrive in this environment are natural leaders who know how to be team players and can manouvre their way around highly stressful situations.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Marketing - Host Cities&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;As the Content Marketing Strategist, I worked in partnership with the Host Cities’ delivery partners to promote the race and the Race Villages. The Race Villages provide the public the opportunity to take part and experience the race first-hand in their city. Aside from being a vehicle for branding and commercial opportunities for both global and local sponsors, the Race Village works as a marketing platform which can help strengthen the brand of Volvo Ocean Race/Volvo whilst putting a spotlight on the city brand.&lt;/p&gt;
+&lt;p&gt;Host Cities are required to create a strategy on the following: city branding, digital platforms like web/mobile, brochures, commercial playbooks, social media editorial plan. I oversee the marketing strategies created by the delivery partners and work closely with them and their creative agencies to ensure that all produced content comply with our branding and editorial guidelines and are delivered on time.&lt;/p&gt;
+&lt;p&gt;The most exciting part of my job was collaborating with multicultural teams from Host Cities (Alicante, Lisbon, Cape Town Melbourne, Guangzhou, Hong Kong, Itajaí, Lisbon, Cardiff, Gothenburg, the Hague), and working together to make this race a success.&lt;/p&gt;
+&lt;p&gt;
+  &lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+  
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/002d5d8fbb4b40e00e4c95edbaa2df90/55fd7/colleagues.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 640px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGQABAQADAQAAAAAAAAAAAAAAAAUBAwQG/8QAFwEAAwEAAAAAAAAAAAAAAAAAAAECA//aAAwDAQACEAMQAAABp4j6KXokEHfMM7oiX//EABoQAAEFAQAAAAAAAAAAAAAAAAIAAQMRIRL/2gAIAQEAAQUCxWLNSN7POI5ZOT1TC1BCLD//xAAXEQADAQAAAAAAAAAAAAAAAAAAARIQ/9oACAEDAQE/AZJHn//EABcRAAMBAAAAAAAAAAAAAAAAAAABEhD/2gAIAQIBAT8BooWf/8QAHxAAAgECBwAAAAAAAAAAAAAAAAERAmEQEiExQVGx/9oACAEBAAY/AhudsHS5Knm1OybL0buzk//EAB4QAQADAAEFAQAAAAAAAAAAAAEAETFBIVFhgbHB/9oACAEBAAE/IatVl7FEFb8QCWczUr3lRbVFqq4ImeFnSVrB3DPzhw+p/9oADAMBAAIAAwAAABADCH//xAAYEQADAQEAAAAAAAAAAAAAAAAAAREQQf/aAAgBAwEBPxBJ0rEP/8QAGREAAgMBAAAAAAAAAAAAAAAAAAEQETFB/9oACAECAQE/EL8jobZ//8QAIRABAAICAQMFAAAAAAAAAAAAAQARITFRQWGRgaGxwfD/2gAIAQEAAT8QCbIFhemrgjzI+Rv5gBBBY9oWMFZoBRnyyoTgOyjvH7ULhS4rdQg7ZeEfSo8rgaHuwaNKH1A/c//Z&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
+        alt=&quot;colleagues&quot;
+        title=&quot;With my Marketing Team Colleagues&quot;
+        src=&quot;/static/002d5d8fbb4b40e00e4c95edbaa2df90/55fd7/colleagues.jpg&quot;
+        srcset=&quot;/static/002d5d8fbb4b40e00e4c95edbaa2df90/e81c0/colleagues.jpg 200w,
+/static/002d5d8fbb4b40e00e4c95edbaa2df90/8e8ea/colleagues.jpg 400w,
+/static/002d5d8fbb4b40e00e4c95edbaa2df90/55fd7/colleagues.jpg 640w&quot;
+        sizes=&quot;(max-width: 640px) 100vw, 640px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    
+  &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;With my Marketing Team Colleagues&lt;/figcaption&gt;
+  &lt;/figure&gt;
+      &lt;/p&gt;
+&lt;p&gt;
+  &lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+  
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/f8046fd68495cb90c91ff2c22eab87d1/55fd7/desk.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 640px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 77.1875%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwAC/8QAFgEBAQEAAAAAAAAAAAAAAAAAAgAB/9oADAMBAAIQAxAAAAE2Fg8W6z//xAAZEAEBAAMBAAAAAAAAAAAAAAABAhESISP/2gAIAQEAAQUCue+WLJEBrQzUd//EABcRAQEBAQAAAAAAAAAAAAAAAAEAERL/2gAIAQMBAT8Bxblv/8QAFxEBAQEBAAAAAAAAAAAAAAAAAQAREv/aAAgBAgEBPwHQui//xAAeEAACAgICAwAAAAAAAAAAAAAAAQIRIUESYXGBkf/aAAgBAQAGPwLlOOPJdpdJmXZUpORr4aXo/8QAGxABAAIDAQEAAAAAAAAAAAAAAQARITGBQVH/2gAIAQEAAT8hpL/GaQKrCAmLhdlQKn+OpuAOYujyz//aAAwDAQACAAMAAAAQQD//xAAWEQEBAQAAAAAAAAAAAAAAAAARAGH/2gAIAQMBAT8QYtrf/8QAFhEBAQEAAAAAAAAAAAAAAAAAEQBh/9oACAECAQE/ECBY3//EABsQAQEAAgMBAAAAAAAAAAAAAAERACFBYXEx/9oACAEBAAE/EDkhDAe6wFkg7KcF1MTBIFQnTMZWnWn1Mk6h4gdYofO2c2f/2Q==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
+        alt=&quot;desk&quot;
+        title=&quot;My desk&quot;
+        src=&quot;/static/f8046fd68495cb90c91ff2c22eab87d1/55fd7/desk.jpg&quot;
+        srcset=&quot;/static/f8046fd68495cb90c91ff2c22eab87d1/e81c0/desk.jpg 200w,
+/static/f8046fd68495cb90c91ff2c22eab87d1/8e8ea/desk.jpg 400w,
+/static/f8046fd68495cb90c91ff2c22eab87d1/55fd7/desk.jpg 640w&quot;
+        sizes=&quot;(max-width: 640px) 100vw, 640px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    
+  &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;My desk&lt;/figcaption&gt;
+  &lt;/figure&gt;
+      &lt;/p&gt;
+&lt;p&gt;
+  &lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+  
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/cc58c6e2a04d7bbfeb562659370a5a69/55fd7/race-control-room.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 640px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 99.375%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAME/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAEC/9oADAMBAAIQAxAAAAHFSeozqqrlMgl//8QAGxAAAgIDAQAAAAAAAAAAAAAAAQIDEQAEEhP/2gAIAQEAAQUC9F5RSZGjAYoI8jNgSsma1XCL2eiG/8QAFhEAAwAAAAAAAAAAAAAAAAAAABAR/9oACAEDAQE/ASP/xAAYEQACAwAAAAAAAAAAAAAAAAAAARAREv/aAAgBAgEBPwGzQ4//xAAeEAACAgICAwAAAAAAAAAAAAAAAQIRITEDElFhgf/aAAgBAQAGPwLCal5QlyX9KVy9pDyWpPOzrFqkKNLKsa1sksbP/8QAGRAAAwEBAQAAAAAAAAAAAAAAAAERITFR/9oACAEBAAE/IVh4m3TKg+1YMjUIDJnSkMYXnVZUqWCpRaG1WL0U8EoULwf/2gAMAwEAAgADAAAAEPcIwv/EABcRAAMBAAAAAAAAAAAAAAAAAAABERD/2gAIAQMBAT8QieEU/8QAGBEAAwEBAAAAAAAAAAAAAAAAAAEREJH/2gAIAQIBAT8QtIoScz//xAAcEAEBAAMBAAMAAAAAAAAAAAABEQAhMWFRcYH/2gAIAQEAAT8QE9BKEHJD83kdpuxBGKYwppRHX3h+eXxX58DLwl2BvL01zE7wCnTuNw51wvrhgUvWcsxaYkKfM//Z&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
+        alt=&quot;race control room&quot;
+        title=&quot;Race control room&quot;
+        src=&quot;/static/cc58c6e2a04d7bbfeb562659370a5a69/55fd7/race-control-room.jpg&quot;
+        srcset=&quot;/static/cc58c6e2a04d7bbfeb562659370a5a69/e81c0/race-control-room.jpg 200w,
+/static/cc58c6e2a04d7bbfeb562659370a5a69/8e8ea/race-control-room.jpg 400w,
+/static/cc58c6e2a04d7bbfeb562659370a5a69/55fd7/race-control-room.jpg 640w&quot;
+        sizes=&quot;(max-width: 640px) 100vw, 640px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    
+  &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;Race control room&lt;/figcaption&gt;
+  &lt;/figure&gt;
+      &lt;/p&gt;
+&lt;p&gt;
+  &lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+  
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/78392d63d50b0a8e1c306fbc0455d09e/55fd7/flags.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 640px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAQCAwX/xAAWAQEBAQAAAAAAAAAAAAAAAAACAQD/2gAMAwEAAhADEAAAAfRi1Ej3QLtZBbQV/8QAGhAAAgMBAQAAAAAAAAAAAAAAAQIAAyEREv/aAAgBAQABBQIsTLMXzGuUNZbhusjDVdoOc//EABcRAQADAAAAAAAAAAAAAAAAAAABEBH/2gAIAQMBAT8BYiv/xAAXEQADAQAAAAAAAAAAAAAAAAAAAREQ/9oACAECAQE/AaUef//EABsQAAICAwEAAAAAAAAAAAAAAAABESECEDEy/9oACAEBAAY/AoK00rZWB0ZEnlH/xAAbEAADAAMBAQAAAAAAAAAAAAAAAREhQVFhwf/aAAgBAQABPyHOh3aL6VtZGSaBjhiza9jD+EKrvo9wHA//2gAMAwEAAgADAAAAEFjI/v/EABgRAAMBAQAAAAAAAAAAAAAAAAABETEQ/9oACAEDAQE/EI3pRrn/xAAYEQADAQEAAAAAAAAAAAAAAAAAETEBEP/aAAgBAgEBPxBMgpHP/8QAHBABAQACAwEBAAAAAAAAAAAAAREAMSFBYVGR/9oACAEBAAE/EDFNBjQE2HTFASI5D7kHykBwTeb0eidjv3KKzwAw5yVY3hQnGbit5QS/jn//2Q==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
+        alt=&quot;flags&quot;
+        title=&quot;Flags&quot;
+        src=&quot;/static/78392d63d50b0a8e1c306fbc0455d09e/55fd7/flags.jpg&quot;
+        srcset=&quot;/static/78392d63d50b0a8e1c306fbc0455d09e/e81c0/flags.jpg 200w,
+/static/78392d63d50b0a8e1c306fbc0455d09e/8e8ea/flags.jpg 400w,
+/static/78392d63d50b0a8e1c306fbc0455d09e/55fd7/flags.jpg 640w&quot;
+        sizes=&quot;(max-width: 640px) 100vw, 640px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    
+  &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;Flags&lt;/figcaption&gt;
+  &lt;/figure&gt;
+      &lt;/p&gt;
+&lt;p&gt;
+  &lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+  
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/3f0eca25d4fe5984c324697b426e01a7/55fd7/lisboa-branding.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 640px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGQABAAMBAQAAAAAAAAAAAAAAAAECAwQF/8QAFgEBAQEAAAAAAAAAAAAAAAAAAgED/9oADAMBAAIQAxAAAAHk0jXWUSo47gfqDJf/xAAbEAACAgMBAAAAAAAAAAAAAAABAgADERMhI//aAAgBAQABBQKziqDrxL2WI/lsEtc5UwEz/8QAFxEAAwEAAAAAAAAAAAAAAAAAARAhMf/aAAgBAwEBPwEZUV//xAAaEQACAgMAAAAAAAAAAAAAAAAAAQIRECEx/9oACAECAQE/AU7eiyPHj//EAB0QAAICAQUAAAAAAAAAAAAAAAABAhEQEiExMkH/2gAIAQEABj8CIvGlXz6hI6yN3dZ//8QAGxAAAgMAAwAAAAAAAAAAAAAAAREAITEQQdH/2gAIAQEAAT8hDuTKhBDIVcShSI1RNiGsUV5Q0AhhxSoRLZ//2gAMAwEAAgADAAAAECTXvf/EABcRAQEBAQAAAAAAAAAAAAAAAAEAERD/2gAIAQMBAT8QIKY8YX//xAAXEQEBAQEAAAAAAAAAAAAAAAAAEQGh/9oACAECAQE/ENKEuRdf/8QAGxABAQADAQEBAAAAAAAAAAAAAREAITFRQaH/2gAIAQEAAT8Qah9R5gsDZpCXv7g5zN2JWBBSjd4wblPZ3dYuTg+8pUFgZCxLDe9YRTpvM//Z&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
+        alt=&quot;lisboa branding&quot;
+        title=&quot;Lisboa branding&quot;
+        src=&quot;/static/3f0eca25d4fe5984c324697b426e01a7/55fd7/lisboa-branding.jpg&quot;
+        srcset=&quot;/static/3f0eca25d4fe5984c324697b426e01a7/e81c0/lisboa-branding.jpg 200w,
+/static/3f0eca25d4fe5984c324697b426e01a7/8e8ea/lisboa-branding.jpg 400w,
+/static/3f0eca25d4fe5984c324697b426e01a7/55fd7/lisboa-branding.jpg 640w&quot;
+        sizes=&quot;(max-width: 640px) 100vw, 640px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    
+  &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;Lisboa branding&lt;/figcaption&gt;
+  &lt;/figure&gt;
+      &lt;/p&gt;
+&lt;p&gt;
+  &lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+  
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/26aaa70d4ded07c7f0ec9e3b5c841069/55fd7/M32-catamarans.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 640px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAAAAIDBQT/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAQL/2gAMAwEAAhADEAAAAdCrgr1nVcYzIkkwf//EABoQAAMBAAMAAAAAAAAAAAAAAAABEgIDEBH/2gAIAQEAAQUCkkgpi5DOvU+kf//EABcRAAMBAAAAAAAAAAAAAAAAAAABERD/2gAIAQMBAT8BiJv/xAAXEQADAQAAAAAAAAAAAAAAAAAAARIQ/9oACAECAQE/AaZT3//EABsQAAEEAwAAAAAAAAAAAAAAAAABAxARICEx/9oACAEBAAY/ApU7RpzD/8QAHRABAAICAgMAAAAAAAAAAAAAAQARITFBUWFxof/aAAgBAQABPyFy2QFGTUB38lqhuuOZnC/tMsIeWJhNNE//2gAMAwEAAgADAAAAENjXv//EABcRAQEBAQAAAAAAAAAAAAAAAAEAEBH/2gAIAQMBAT8QGuYz/8QAFxEAAwEAAAAAAAAAAAAAAAAAABARYf/aAAgBAgEBPxCBs//EABwQAQACAwEBAQAAAAAAAAAAAAEAESExYVFxwf/aAAgBAQABPxAmtkFvkNXEF/pHBv2pr6PYDY4ZRY50MRrmqqV7FLmnk3gDo8n/2Q==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
+        alt=&quot;M32 catamarans&quot;
+        title=&quot;M32 catamarans&quot;
+        src=&quot;/static/26aaa70d4ded07c7f0ec9e3b5c841069/55fd7/M32-catamarans.jpg&quot;
+        srcset=&quot;/static/26aaa70d4ded07c7f0ec9e3b5c841069/e81c0/M32-catamarans.jpg 200w,
+/static/26aaa70d4ded07c7f0ec9e3b5c841069/8e8ea/M32-catamarans.jpg 400w,
+/static/26aaa70d4ded07c7f0ec9e3b5c841069/55fd7/M32-catamarans.jpg 640w&quot;
+        sizes=&quot;(max-width: 640px) 100vw, 640px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    
+  &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;M32 catamarans&lt;/figcaption&gt;
+  &lt;/figure&gt;
+      &lt;/p&gt;
+&lt;p&gt;
+  &lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+  
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/68b27e2f20164c6cf6ae8dfa449ebb5c/55fd7/pirates.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 640px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAEDBAX/xAAVAQEBAAAAAAAAAAAAAAAAAAABA//aAAwDAQACEAMQAAAB3ccvHdkTzqSrAP8A/8QAGxAAAgMBAQEAAAAAAAAAAAAAAQIAAxETEiH/2gAIAQEAAQUCpAxj995BaVXuu9KTBqzYVn//xAAXEQADAQAAAAAAAAAAAAAAAAAAARIQ/9oACAEDAQE/AZIFn//EABgRAAMBAQAAAAAAAAAAAAAAAAABEhAh/9oACAECAQE/Aa6Wh5//xAAcEAADAAEFAAAAAAAAAAAAAAAAAREQAiEzQoH/2gAIAQEABj8Co5jjcHVqR3NmzzH/xAAcEAEAAgMAAwAAAAAAAAAAAAABABEhMVFBYfH/2gAIAQEAAT8hc8n3Br3jrZ4AuMAqxpwT5EQXpdl7DuUG9s//2gAMAwEAAgADAAAAEEc/Qf/EABgRAAMBAQAAAAAAAAAAAAAAAAABERAx/9oACAEDAQE/EKnMM4U//8QAFxEBAQEBAAAAAAAAAAAAAAAAARARIf/aAAgBAgEBPxBHSxJs/8QAHRABAAICAwEBAAAAAAAAAAAAAQARITFRcYFhof/aAAgBAQABPxDLEvpEMZJvdVxAVdpy3AwdxD5MlADdioOWk3SzTbVb+oOOg9mYm36z/9k=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
+        alt=&quot;pirates&quot;
+        title=&quot;Pirates of the Caribean&quot;
+        src=&quot;/static/68b27e2f20164c6cf6ae8dfa449ebb5c/55fd7/pirates.jpg&quot;
+        srcset=&quot;/static/68b27e2f20164c6cf6ae8dfa449ebb5c/e81c0/pirates.jpg 200w,
+/static/68b27e2f20164c6cf6ae8dfa449ebb5c/8e8ea/pirates.jpg 400w,
+/static/68b27e2f20164c6cf6ae8dfa449ebb5c/55fd7/pirates.jpg 640w&quot;
+        sizes=&quot;(max-width: 640px) 100vw, 640px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    
+  &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;Pirates of the Caribean&lt;/figcaption&gt;
+  &lt;/figure&gt;
+      &lt;/p&gt;</content:encoded></item></channel></rss>

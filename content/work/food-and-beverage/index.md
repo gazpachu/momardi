@@ -2,9 +2,7 @@
 title: Food and beverage
 ---
 
-![](../../pages/work/images/food-and-beverage.jpg)
-
-## Writer
+## Writer (samples of work)
 
 ![](./images/chocolates-cover.jpg)
 

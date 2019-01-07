@@ -178,12 +178,14 @@ I launched a successful blog called [Saveguimaras.com](http://saveguimaras.herok
 - I helped promote non-profit organisations for [Techsoup.org](http://techsoup.org) using the [Second Life](http://secondlife.com/) online tool.
 
 ### Senior Copywriter at MSI – Magic Spell Inc. Advertising
-#### Jul 2001 – Sep 2002 ([Manila, Philippines](https://www.google.com/maps/place/Manila))
+#### Jul 2001 – Sep 2002 ([Manila, Philippines](https://www.google.com/maps/place/Manila)) [Samples of work](/work/magic-spell)
+[![](../work/images/magic-spell.jpg)](/work/magic-spell)
 
-I was a senior copywriter handling media accounts for Print, TV, Radio and below the line campaigns. I was involved in all aspects of the campaign from conceptualization to presentation. [Samples of work](/work/magic-spell)
+I was a senior copywriter handling media accounts for Print, TV, Radio and below the line campaigns. I was involved in all aspects of the campaign from conceptualization to presentation.
 
 ### Writer for Food and Beverage Magazine
 #### Mar 2001 – Sep 2001 ([Manila, Philippines](https://www.google.com/maps/place/Manila))
+[![](../work/images/food-and-beverage.jpg)](/work/food-and-beverage)
 
 I was a regular contributing writer for a monthly trade magazine which caters to the Philippine hotel and restaurant industry. [Samples of work](/work/food-and-beverage)
 

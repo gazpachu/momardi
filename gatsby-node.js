@@ -12,27 +12,27 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     const slug = createFilePath({ node, getNode });
     const fileNode = getNode(node.parent);
     const source = fileNode.sourceInstanceName;
-    const separtorIndex = ~slug.indexOf("--") ? slug.indexOf("--") : 0;
-    const shortSlugStart = separtorIndex ? separtorIndex + 2 : 0;
+    const separatorIndex = slug.indexOf("--") > 0 ? slug.indexOf("--") : 0;
+    const shortSlugStart = separatorIndex > 0 ? separatorIndex + 2 : 0;
 
     if (source !== "parts" && source !== "work") {
       createNodeField({
         node,
         name: `slug`,
-        value: `${separtorIndex ? "/" : ""}${slug.substring(shortSlugStart)}`
+        value: `${separatorIndex ? "/" : ""}${slug.substring(shortSlugStart)}`
       });
     }
     if (source === "work") {
       createNodeField({
         node,
         name: `slug`,
-        value: `${separtorIndex ? "/" : ""}work/${slug.substring(shortSlugStart)}`
+        value: `${separatorIndex ? "/" : ""}work${slug}`
       });
     }
     createNodeField({
       node,
       name: `prefix`,
-      value: separtorIndex ? slug.substring(1, separtorIndex) : ""
+      value: separatorIndex ? slug.substring(1, separatorIndex) : ""
     });
     createNodeField({
       node,
@@ -63,7 +63,7 @@ exports.createPages = ({ graphql, actions }) => {
                   id
                   fields {
                     slug
-                    prefix
+                    prefix(formatString: "D MMMM YYYY")
                     source
                   }
                   frontmatter {
@@ -130,24 +130,8 @@ exports.createPages = ({ graphql, actions }) => {
         });
 
         // pages
-        const pages = items.filter(item => item.node.fields.source === "pages");
+        const pages = items.filter(item => item.node.fields.source === "pages" || item.node.fields.source === "work");
         pages.forEach(({ node }) => {
-          const slug = node.fields.slug;
-          const source = node.fields.source;
-
-          createPage({
-            path: slug,
-            component: pageTemplate,
-            context: {
-              slug,
-              source
-            }
-          });
-        });
-
-        // work
-        const work = items.filter(item => item.node.fields.source === "work");
-        work.forEach(({ node }) => {
           const slug = node.fields.slug;
           const source = node.fields.source;
 

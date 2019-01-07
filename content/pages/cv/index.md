@@ -73,7 +73,7 @@ Creative Marketing and Communications Professional with 10 years experience. Exp
 
 ### Content Marketing Strategist at [Volvo Ocean Race](http://volvooceanrace.com)
 #### Nov 2016 – Aug 2018 ([Alicante, Spain](https://www.google.com/maps/place/Alicante)) [Read the work review](/work/volvo-ocean-race)
-[![](../3--work/images/volvo-ocean-race.png)](/work/volvo-ocean-race)
+[![](../work/images/volvo-ocean-race.png)](/work/volvo-ocean-race)
 
 - Managed relationship with 12 international Host Cities to develop a marketing strategy to promote the Volvo Ocean Race as a world-class premiere event
 - Supervised and advised international sport marketing companies and creative agencies to optimise all marketing activations and promotions to drive footfall to the Volvo Ocean Race Villages
@@ -84,8 +84,8 @@ Creative Marketing and Communications Professional with 10 years experience. Exp
 [Read more and see photos...](/work/volvo-ocean-race)
 
 ### Global People and Content Advisor at [Unilever HQ](http://unilever.com)
-#### Jul 2015 – Jun 2016 ([London, UK](https://www.google.com/maps/place/London)) [Read the work review](/work/unilever)
-[![](../3--work/images/unilever-people.jpg)](/work/unilever)
+#### Jul 2015 – Jun 2016 ([London, UK](https://www.google.com/maps/place/London)) [Read the work review](/work/unilever-people)
+[![](../work/images/unilever-people.jpg)](/work/unilever-people)
 
 - Responsible for driving our thought leadership strategy which contributed to an increase of 2M in LinkedIn followers and strengthened Unilever's employer brand
 - Managed editorial calendar and content campaign schedule
@@ -95,7 +95,7 @@ Creative Marketing and Communications Professional with 10 years experience. Exp
 
 ### Social/Multimedia Content Specialist at [Unilever HQ](http://unilever.com)
 #### Mar 2013 – Aug 2015 ([London, UK](https://www.google.com/maps/place/London)) [Read the work review](/work/unilever)
-[![](../3--work/images/unilever.jpg)](/work/unilever)
+[![](../work/images/unilever.jpg)](/work/unilever)
 
 - Managed the creation/promotion of social media campaigns in support of Unilever's global communication and business strategy
 - Produced videos to support global comms strategy & media relations campaigns, and CEO Office communications
@@ -105,7 +105,7 @@ Creative Marketing and Communications Professional with 10 years experience. Exp
 
 ### Digital Marketing Executive at [London 2012 Cultural Olympiad](https://web.archive.org/web/20110509074335/http://www.london2012.com:80/get-involved/cultural-olympiad/index.php)
 #### Jan 2012 – Oct 2012 ([London, UK](https://www.google.com/maps/place/London)) [Read the work review](/work/london-2012)
-[![](../3--work/images/london-2012.jpg)](/work/london-2012)
+[![](../work/images/london-2012.jpg)](/work/london-2012)
 
 - Managed all the digital channels for the cultural programme of London 2012 Olympics (London 2012 Festival) including CMS, CRM and B2B email marketing campaigns, and social media
 - Acted as the content manager for the website – sourcing, curating and producing content for the homepage and the main London 2012 website (2 million visits for Festival website, 431 million for London 2012 website)
@@ -113,7 +113,7 @@ Creative Marketing and Communications Professional with 10 years experience. Exp
 
 ### PR Communications Officer at [Sue Ryder](https://www.sueryder.org/)
 #### Oct 2011 – Dec 2011 ([London, UK](https://www.google.com/maps/place/London)) [Read the work review](/work/sue-ryder)
-[![](../3--work/images/sue-ryder.jpg)](/work/sue-ryder)
+[![](../work/images/sue-ryder.jpg)](/work/sue-ryder)
 
 - Handled press and media enquiries
 - Responsible for media monitoring and writing of daily press briefs
@@ -122,7 +122,7 @@ Creative Marketing and Communications Professional with 10 years experience. Exp
 
 ### Digital Marketing Assistant at [Phaidon Press](http://Phaidon.co.uk)
 #### May 2011 – Aug 2011 ([London, UK](https://www.google.com/maps/place/London)) [Read the work review](/work/phaidon)
-[![](../3--work/images/phaidon.jpg)](/work/phaidon)
+[![](../work/images/phaidon.jpg)](/work/phaidon)
 
 - Created digital marketing and social media strategies for upcoming book titles and also managed link-building outreach with bloggers as an affiliate marketing strategy.
 - Built an extensive database of bloggers with particular specialisation in
@@ -132,25 +132,25 @@ food, design and photography.
 
 ### Production Assistant at [Royal Opera House](http://roh.org.uk)
 #### April 2011 ([London, UK](https://www.google.com/maps/place/London)) [Read related blog post](/the-earth-moves-momardis-baby-steps)
-[![](../3--work/images/roh.jpg)](/the-earth-moves-momardis-baby-steps)
+[![](../work/images/roh.jpg)](/the-earth-moves-momardis-baby-steps)
 
 I worked as a production assistant for the film shoot of the world-renowned opera singer Angela Gheorghiu, in line with the upcoming series of ROH summer shows for 2011.
 
 ### Digital Consultant at [Asia House](https://asiahouse.org/)
 #### Sep 2010 – Jan 2011 ([London, UK](https://www.google.com/maps/place/London))
-![](../3--work/images/asia-house.jpg)
+![](../work/images/asia-house.jpg)
 
 I was responsible for creating online marketing material for the Asian Business Leaders Summit. Other duties include: photo captioning, as well as copywriting and web updates/social media using Facebook, Twitter and Youtube. Volunteered for the cultural and marketing department from August to October 2010.
 
 ### Bilingual Operations Assistant at [European Union Intellectual Property Office](https://euipo.europa.eu)
 #### Jun 2008 – Jun 2009 ([Alicante, Spain](https://www.google.com/maps/place/Alicante))
-![](../3--work/images/euipo.jpg)
+![](../work/images/euipo.jpg)
 
 I handled administrative duties, communication correspondence and customer support for the Data Reception and Capture Department, Trademark and Registration office of the European Union.
 
 ### Web Writer at [Cafe Babel](http://Cafebabel.com)
 #### Dec 2008 – Jan 2009 ([Paris, France](https://www.google.com/maps/place/Paris))
-![](../3--work/images/cafebabel.jpg)
+![](../work/images/cafebabel.jpg)
 
 I contributed articles for this European online magazine. [Sample 1](https://cafebabel.com/en/article/young-europeans-only-know-the-holocaust-through-war-movies-5ae00554f723b35a145de036/), [Sample 2](https://cafebabel.com/en/article/f1-premier-league-football-and-london-olympics-hit-by-crisis-5ae0054af723b35a145ddd9b/)
 
@@ -161,13 +161,13 @@ I prepared class lessons for special education at Odelco Elementary School, Mani
 
 ### Online Citizen reporter for [Ohmynews.com](http://Ohmynews.com)
 #### Jun 2006 – Oct 2008
-![](../3--work/images/ohmynews.jpg)
+![](../work/images/ohmynews.jpg)
 
 I wrote articles about non-profit organizations and social institutions that advocate social change. I was chosen as a delegate of the Philippines in the international citizen reporters conference in Seoul, Korea in July 2007. [Samples of work](http://english.ohmynews.com/english/eng_article_diff.asp?writer_id=tuesday74&at_code=356588)
 
 ### Web writer / Blogger
 #### Aug 2006 – Jun 2007
-![](../3--work/images/saveguimaras.jpg)
+![](../work/images/saveguimaras.jpg)
 
 I launched a successful blog called [Saveguimaras.com](http://saveguimaras.herokuapp.com/) in response to the oil spill tragedy in Guimaras, Philippines – This became one of the premiere informative sites regarding the oil spill.
 
@@ -175,18 +175,17 @@ I launched a successful blog called [Saveguimaras.com](http://saveguimaras.herok
 #### Feb 2004 – Jun 2005
 
 - I co-founded a web portal about NGO’s and Social Organisations called [Lasolidaridad.com](http://lasolidaridad.herokuapp.com/)
-
 - I helped promote non-profit organisations for [Techsoup.org](http://techsoup.org) using the [Second Life](http://secondlife.com/) online tool.
 
 ### Senior Copywriter at MSI – Magic Spell Inc. Advertising
 #### Jul 2001 – Sep 2002 ([Manila, Philippines](https://www.google.com/maps/place/Manila))
 
-I was a senior copywriter handling media accounts for Print, TV, Radio and below the line campaigns. I was involved in all aspects of the campaign from conceptualization to presentation. [Samples of work](http://momardi.com/archive/Magic_Spell_Inc)
+I was a senior copywriter handling media accounts for Print, TV, Radio and below the line campaigns. I was involved in all aspects of the campaign from conceptualization to presentation. [Samples of work](/work/magic-spell)
 
 ### Writer for Food and Beverage Magazine
 #### Mar 2001 – Sep 2001 ([Manila, Philippines](https://www.google.com/maps/place/Manila))
 
-I was a regular contributing writer for a monthly trade magazine which caters to the Philippine hotel and restaurant industry. [Samples of work](http://momardi.com/archive/Food_And_Beverage)
+I was a regular contributing writer for a monthly trade magazine which caters to the Philippine hotel and restaurant industry. [Samples of work](/work/food-and-beverage)
 
 ### Scriptwriter for [Allmedia.com.ph](http://www.allmedia.com.ph/)
 #### Jan 2001 – Jun 2001 ([Manila, Philippines](https://www.google.com/maps/place/Manila))

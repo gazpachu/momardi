@@ -47,7 +47,7 @@ export const postQuery = graphql`
       html
       fields {
         slug
-        prefix
+        prefix(formatString: "D MMMM YYYY")
       }
       frontmatter {
         title

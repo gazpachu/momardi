@@ -11,7 +11,6 @@ const Footer = props => {
       {/* --- STYLES --- */}
       <style jsx>{`
         .footer {
-          background: ${theme.color.neutral.white};
           padding: ${theme.space.inset.default};
           padding-top: 0;
           padding-bottom: 120px;

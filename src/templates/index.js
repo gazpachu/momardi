@@ -153,7 +153,7 @@ export const query = graphql`
           excerpt
           fields {
             slug
-            prefix
+            prefix(formatString: "D MMMM YYYY")
           }
           frontmatter {
             title
@@ -161,7 +161,7 @@ export const query = graphql`
             cover {
               children {
                 ... on ImageSharp {
-                  fluid(maxWidth: 800, maxHeight: 360) {
+                  fluid(quality: 90, maxWidth: 800, maxHeight: 360) {
                     ...GatsbyImageSharpFluid_withWebp
                   }
                 }

@@ -56,7 +56,7 @@ menuTitle: CV
 
 ## Summary
 
-Creative Marketing and Communications Professional with 10 years experience. Expert in digital media, content marketing and strategic partnerships.
+Creative Marketing and Communications Professional with more than 10 years of international experience in Manila, Barcelona, Madrid, Alicante and London. Expert in digital media, content marketing and strategic partnerships.
 
 <div class="grid">
   <div class="chart">

@@ -34,10 +34,10 @@ const Item = props => {
         }
 
         @below desktop {
-          :not(.homepage) {
+          :global(.homepage) {
             .item {
               :global(a) {
-                color: ${theme.color.neutral.white};
+                color: white;
               }
             }
           }

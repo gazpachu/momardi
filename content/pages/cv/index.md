@@ -93,6 +93,8 @@ Creative Marketing and Communications Professional with more than 10 years of in
 - Led the global content refresh project of [unilever.com/careers](http://unilever.com/careers)
 - Managed agency relationship and a team of content creators
 
+[Read more and see photos...](/work/unilever-people)
+
 ### Social/Multimedia Content Specialist at [Unilever HQ](http://unilever.com)
 #### Mar 2013 – Aug 2015 ([London, UK](https://www.google.com/maps/place/London)) [Read the work review](/work/unilever)
 [![](../work/images/unilever.jpg)](/work/unilever)
@@ -103,6 +105,8 @@ Creative Marketing and Communications Professional with more than 10 years of in
 - Worked with global cross-functional teams and key stakeholders to develop and align Unilever’s sustainability agenda across platforms
 - Engaged with content partnership teams to share content best practice
 
+[Read more and see photos...](/work/unilever)
+
 ### Digital Marketing Executive at [London 2012 Cultural Olympiad](https://web.archive.org/web/20110509074335/http://www.london2012.com:80/get-involved/cultural-olympiad/index.php)
 #### Jan 2012 – Oct 2012 ([London, UK](https://www.google.com/maps/place/London)) [Read the work review](/work/london-2012)
 [![](../work/images/london-2012.jpg)](/work/london-2012)
@@ -110,6 +114,8 @@ Creative Marketing and Communications Professional with more than 10 years of in
 - Managed all the digital channels for the cultural programme of London 2012 Olympics (London 2012 Festival) including CMS, CRM and B2B email marketing campaigns, and social media
 - Acted as the content manager for the website – sourcing, curating and producing content for the homepage and the main London 2012 website (2 million visits for Festival website, 431 million for London 2012 website)
 - Managed the events database for the Festival website and the London 2012 Join-in app
+
+[Read more and see photos...](/work/london-2012)
 
 ### PR Communications Officer at [Sue Ryder](https://www.sueryder.org/)
 #### Oct 2011 – Dec 2011 ([London, UK](https://www.google.com/maps/place/London)) [Read the work review](/work/sue-ryder)
@@ -120,6 +126,8 @@ Creative Marketing and Communications Professional with more than 10 years of in
 - Handled social media/community management as well as copywriting for newsletters and internal communications.
 - Assisted the Head of Internal Communications in coordinating and curating the 2nd Sue Ryder newspaper, which was distributed to 8,000 employees across the UK.
 
+[Read more and see photos...](/work/sue-ryder)
+
 ### Digital Marketing Assistant at [Phaidon Press](http://Phaidon.co.uk)
 #### May 2011 – Aug 2011 ([London, UK](https://www.google.com/maps/place/London)) [Read the work review](/work/phaidon)
 [![](../work/images/phaidon.jpg)](/work/phaidon)
@@ -129,6 +137,8 @@ Creative Marketing and Communications Professional with more than 10 years of in
 food, design and photography.
 - Created social media strategies for the Art Museum book, their most ambitious project in 2011.
 - Managed content on their website
+
+[Read more and see photos...](/work/phaidon)
 
 ### Production Assistant at [Royal Opera House](http://roh.org.uk)
 #### April 2011 ([London, UK](https://www.google.com/maps/place/London)) [Read related blog post](/the-earth-moves-momardis-baby-steps)

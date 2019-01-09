@@ -39,3 +39,5 @@ I also **created best practices strategy on email marketing and content distribu
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IiCDPDhi6GA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/W700bpAPdQw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+![](./images/unilever-shanghai.jpg "With the team at Unilever Shanghai. I'm the one with the skirt")

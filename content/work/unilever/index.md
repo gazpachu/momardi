@@ -32,6 +32,12 @@ To help the campaigns team with their sustainability campaigns and activations, 
 
 I also **created best practices strategy on email marketing and content distribution workflow** that optimises our content and maximises audience impact.
 
+## Some of the videos I filmed and edited
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/otVy1P86yaY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ky5ipAVbXGM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ### Relevant photos and videos
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/PWt1cjt_x7I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -41,3 +47,5 @@ I also **created best practices strategy on email marketing and content distribu
 <iframe width="560" height="315" src="https://www.youtube.com/embed/W700bpAPdQw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ![](./images/unilever-shanghai.jpg "With the team at Unilever Shanghai. I'm the one with the skirt")
+
+![](./images/1.jpg "With my co-worker Becky")

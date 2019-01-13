@@ -6,4 +6,4 @@ title: Sue Ryder
 
 ## PR Communications Officer
 
-Case study pending to be uploaded.
+Work review pending to be uploaded.

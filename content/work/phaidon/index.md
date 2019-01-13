@@ -6,4 +6,4 @@ title: Phaidon Press
 
 ## Digital Marketing Assistant
 
-Case study pending to be uploaded.
+Work review pending to be uploaded.

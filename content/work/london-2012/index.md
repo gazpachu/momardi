@@ -12,21 +12,21 @@ I was running and overseeing all digital platforms and was the only person respo
 
 Here are some of the highlights of my role:
 
-- I managed all the digital channels including CMS, CRM and B2B email marketing campaigns, web analytics, **social media and community management**. Attendances of London 2012 Festival events top **19.8 million** with 80% of audiences coming from free events.
+- I managed all the digital channels including CMS, CRM and B2B email marketing campaigns, web analytics, **social media and community management**. Attendances of London 2012 Festival events top **19.8 million** with 80% of audiences coming from free events
 
-- I acted as the content manager for the website – sourcing, curating and producing content for the homepage and the main London 2012 website (Final Olympic web visits: **2 million for the Festival website** and 431 million for the London 2012 website, 109m unique users).
+- I acted as the content manager for the website – sourcing, curating and producing content for the homepage and the main London 2012 Festival website. The final visits to the website were **2 million**
 
 - I managed the events database for the Festival website and the London 2012 Join-in app (Final total: **15 million app downloads**)
 
-- I managed social media for the Festival (**80,000 followers**) and also scheduled content for the London 2012 social networks (**4.7 million followers**). I also liaised with third-party social media monitoring agency and used user feedback for content and social media strategy.
+- I managed social media for the Festival (**80,000 followers**) and also scheduled content for the London 2012 social networks (**4.7 million followers**). I also liaised with third-party social media monitoring agency and used user feedback for content and social media strategy
 
-- I was  In charge of sourcing and uploading of video content and creation of picture galleries in the gallery section of the Festival website.
+- I was  In charge of sourcing and uploading of video content and creation of picture galleries in the gallery section of the Festival website
 
 - I developed the build of Festival newsletters (from brief, writing to broadcast) with the help of the CRM and editorial team and scheduled the inclusion of Festival events in the wider London 2012 newsletters. (Half a million database for Festival; **5 million sign-ups** for the L2012 emails)
 
-- I handled Connect B2B monthly newsletters from brief, writing copy, build to broadcast.
+- I handled Connect B2B monthly newsletters from brief, writing copy, build to broadcast
 
-- I liaised with cross-multiple teams within London 2012 (editorial, new media, marketing, CRM) and with external press teams and delivery partners to ensure timely delivery of assets.
+- I liaised with cross-multiple teams within London 2012 (editorial, new media, marketing, CRM) and with external press teams and delivery partners to ensure timely delivery of assets
 
 ## Relevant videos, screenshots and photos
 

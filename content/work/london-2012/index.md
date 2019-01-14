@@ -16,13 +16,13 @@ Here are some of the highlights of my role:
 
 - I acted as the content manager for the website – sourcing, curating and producing content for the homepage and the main London 2012 Festival website. The final visits to the website were **2 million**
 
-- I managed the events database for the Festival website and the London 2012 Join-in app (Final total: **15 million app downloads**)
+- I managed the events database for the Festival website and the London 2012 Join-in app (**15 million app downloads**)
 
 - I managed social media for the Festival (**80,000 followers**) and also scheduled content for the London 2012 social networks (**4.7 million followers**). I also liaised with third-party social media monitoring agency and used user feedback for content and social media strategy
 
-- I was  In charge of sourcing and uploading of video content and creation of picture galleries in the gallery section of the Festival website
+- I was in charge of sourcing and uploading video content and the creation of picture galleries in the gallery section of the Festival website
 
-- I developed the build of Festival newsletters (from brief, writing to broadcast) with the help of the CRM and editorial team and scheduled the inclusion of Festival events in the wider London 2012 newsletters. (Half a million database for Festival; **5 million sign-ups** for the L2012 emails)
+- I developed the build of Festival newsletters (from brief, writing to broadcast) with the help of the CRM and editorial team and scheduled the inclusion of Festival events in the wider London 2012 newsletters. (**500K database entries** for the Festival; **5 million sign-ups** for the L2012 emails)
 
 - I handled Connect B2B monthly newsletters from brief, writing copy, build to broadcast
 

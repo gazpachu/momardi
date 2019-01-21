@@ -29,8 +29,8 @@ title: London 2012 Cultural Olympiad
 ![](../../pages/work/images/london-2012.jpg)
 
 <p style="text-align: center">
-  <a class="btn" href="./files/london-2012-cultural-festival-evaluation-summary.pdf" target="_blank" rel="noopener noreferrer">Evaluation Summary (PDF)</a>
-  <a class="btn" href="./files/london-2012-cultural-festival-social-media-analysis.pdf" target="_blank" rel="noopener noreferrer">Social Media Analysis (PDF)</a>
+  <a class="btn" href="https://l.messenger.com/l.php?u=http%3A%2F%2Fwww.beatrizgarcia.net%2Fwp-content%2Fuploads%2F2017%2F03%2FGarcia2013London2012COEvaluation-Summary.pdf&h=AT0HSd6iY4Jb13qch1jsFJIoMci-L1a7YEHXYG4Q1N_G_huazTkiJQrXQXNGTIC9YGcOByxtjC7WM2ZxUlM6ETJCGCt2oqmJqG501saVYdtKFsddag9h_ahJq5-pH8FgftKEXQoC" target="_blank" rel="noopener noreferrer">Evaluation Summary (PDF)</a>
+  <a class="btn" href="https://l.messenger.com/l.php?u=http%3A%2F%2Ficcliverpool.ac.uk%2Fwp-content%2Fuploads%2F2013%2F08%2FAppendix-7-Social-Media-Analysis.pdf&h=AT0HSd6iY4Jb13qch1jsFJIoMci-L1a7YEHXYG4Q1N_G_huazTkiJQrXQXNGTIC9YGcOByxtjC7WM2ZxUlM6ETJCGCt2oqmJqG501saVYdtKFsddag9h_ahJq5-pH8FgftKEXQoC" target="_blank" rel="noopener noreferrer">Social Media Analysis (PDF)</a>
 </p>
 
 ## Digital Marketing Executive (Lead)

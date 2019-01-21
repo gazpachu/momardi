@@ -29,8 +29,8 @@ title: London 2012 Cultural Olympiad
 ![](../../pages/work/images/london-2012.jpg)
 
 <p style="text-align: center">
-  <a class="btn" href="./files/Garcia2013London2012COEvaluation-Summary.pdf" target="_blank" rel="noopener noreferrer">Evaluation Summary (PDF)</a>
-  <a class="btn" href="./files/Appendix-7-Social-Media-Analysis.pdf.pdf" target="_blank" rel="noopener noreferrer">Social Media Analysis (PDF)</a>
+  <a class="btn" href="./files/london-2012-cultural-festival-evaluation-summary.pdf" target="_blank" rel="noopener noreferrer">Evaluation Summary (PDF)</a>
+  <a class="btn" href="./files/london-2012-cultural-festival-social-media-analysis.pdf" target="_blank" rel="noopener noreferrer">Social Media Analysis (PDF)</a>
 </p>
 
 ## Digital Marketing Executive (Lead)

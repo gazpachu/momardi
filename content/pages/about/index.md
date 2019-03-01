@@ -12,7 +12,7 @@ Soon to be based in Tokyo, she will launch her career there as a communications 
 
 See [LinkedIn profile](http://linkedin.com/in/tuesdaygutz).
 
-****Art
+**Art**
 
 In her after-work alternate universe, she studies classical drawing and will soon experiment with colour.
 

@@ -38,4 +38,4 @@ The most exciting **part of my job was collaborating with multicultural teams** 
 
 ![](./images/M32-catamarans.jpg "M32 catamarans")
 
-![](./images/pirates.jpg "Pirates of the Caribean")
+![](./images/pirates.jpg "Pirates of the Caribbean")

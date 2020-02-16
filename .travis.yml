@@ -13,8 +13,8 @@ deploy:
   on:
     branch: master
 before_script:
-  - "npm global add gatsby-cli"
-  - "npm"
+  - "npm i gatsby-cli --global"
+  - "npm i"
 script:
   - "npm run build"
 after_success:
